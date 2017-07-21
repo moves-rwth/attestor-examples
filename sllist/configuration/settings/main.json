@@ -1,0 +1,30 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"List",
+            "method":"main"
+        },
+        "grammar":{
+            "path":"configuration/grammar",
+            "file":"sllist.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"empty.json",
+            "description":"An empty heap"
+        }
+    },
+    "options":{
+        "depth":1,
+        "logging":false
+    },
+    "output":{
+        "defaultPath":"output",
+        "stateSpace":{
+            "path":".",
+            "file":"stateSpace",
+            "description":"State space generated for List.main()"
+        }
+    }
+}
