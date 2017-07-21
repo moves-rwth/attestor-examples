@@ -1,0 +1,26 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"delete"
+        },
+        "grammar":{
+            "path":"configuration/grammar",
+            "file":"bimap.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"bimap.json",
+            "description":"A heap with an arbitrary BiMap"
+        }
+    },
+    "options":{
+        "maximalStateSpace":5500,
+        "depth":1,
+        "mode":"indexed",
+        "logging":false
+    },
+    "output":{
+    }
+}
