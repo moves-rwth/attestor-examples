@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ca.mcgill.sable:soot:trunk">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/trunk/soot-trunk.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/trunk/soot-trunk-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/trunk/soot-trunk-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

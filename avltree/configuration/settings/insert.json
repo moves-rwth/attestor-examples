@@ -1,0 +1,26 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"executeRebalance"
+        },
+        "grammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"inserted.json",
+            "description":"A general balanced AVL tree after insertion of an element"
+        }
+    },
+    "options":{
+        "maximalStateSpace":6000,
+        "depth":1,
+        "mode":"indexed",
+        "logging":false
+    },
+    "output":{
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"rotateLeft"
+        },
+        "grammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"before_left.json",
+            "description":"General AVL tree that needs a left rotation."
+        }
+    },
+    "options":{
+        "maximalStateSpace":2000,
+        "depth":1,
+        "mode":"indexed",
+        "logging":false
+    },
+    "output":{
+    }
+}

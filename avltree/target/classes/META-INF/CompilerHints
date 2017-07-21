@@ -1,0 +1,15 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,de/rwth/i2/attestor/examples/AVLTree.binary_search
+inline,de/rwth/i2/attestor/examples/AVLTree.binary_search_and_back
+inline,de/rwth/i2/attestor/examples/AVLTree.binary_search_and_swap_subtrees
+inline,de/rwth/i2/attestor/examples/AVLTree.insert
+inline,de/rwth/i2/attestor/examples/AVLTree.left_right_rotate
+inline,de/rwth/i2/attestor/examples/AVLTree.left_rotate
+inline,de/rwth/i2/attestor/examples/AVLTree.max_value
+inline,de/rwth/i2/attestor/examples/AVLTree.min_value
+inline,de/rwth/i2/attestor/examples/AVLTree.right_left_rotate
+inline,de/rwth/i2/attestor/examples/AVLTree.right_rotate

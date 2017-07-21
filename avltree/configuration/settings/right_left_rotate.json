@@ -1,0 +1,26 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"rotateRightLeft"
+        },
+        "grammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"before_right_left.json",
+            "description":"A general balanced AVL tree"
+        }
+    },
+    "options":{
+        "maximalStateSpace":2000,
+        "depth":1,
+        "mode":"indexed",
+        "logging":false
+    },
+    "output":{
+    }
+}

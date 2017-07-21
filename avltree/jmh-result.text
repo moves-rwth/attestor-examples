@@ -1,0 +1,11 @@
+Benchmark                                Mode  Cnt   Score   Error  Units
+AVLTree.binary_search                      ss        2.190           s/op
+AVLTree.binary_search_and_back             ss        2.429           s/op
+AVLTree.binary_search_and_swap_subtrees    ss        4.935           s/op
+AVLTree.insert                             ss       15.570           s/op
+AVLTree.left_right_rotate                  ss        1.970           s/op
+AVLTree.left_rotate                        ss        3.343           s/op
+AVLTree.max_value                          ss        2.174           s/op
+AVLTree.min_value                          ss        2.212           s/op
+AVLTree.right_left_rotate                  ss        3.439           s/op
+AVLTree.right_rotate                       ss        2.256           s/op
