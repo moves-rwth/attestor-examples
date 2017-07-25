@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.rwth.i2.attestor.examples</groupId>
+    <artifactId>benchmark</artifactId>
+    <version>0.2</version>
+    <packaging>jar</packaging>
+
+    <name>Attestor Benchmark Archetype</name>
+
+    <repositories>
+        <repository>
+            <id>mvn-repo</id>
+            <url>https://raw.githubusercontent.com/cmatheja/mvn-repo/master/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
