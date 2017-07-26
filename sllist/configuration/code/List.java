@@ -16,6 +16,7 @@ public class List{
 
 	public static void main( String [] args ){
 		List head = buildList();
+		
 		List reversedPart = null;
 		List current = head;
 		while (current != null) {
