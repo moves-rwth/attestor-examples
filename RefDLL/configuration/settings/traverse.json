@@ -1,0 +1,36 @@
+{
+    "input":{
+        "program":{
+            "classpath":"../attestor-examples/RefDLL/configuration/code",
+            "class":"DLList",
+            "method":"traverse"
+        },
+        "grammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"../attestor-examples/RefDLL/configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+            "path":"../attestor-examples/RefDLL/configuration/inputs",
+            "file":"dll.json",
+            "description":"A heap with an arbitrary long doubly-linked list and head variable"
+        }
+    },
+    "options":{
+        "depth":1,
+        "logging":true
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples/RefDLL"
+        },
+        "grammar":{
+            "path":"../attestor-examples/RefDLL",
+            "folder":"grammarOutput",
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
+    }        
+}
