@@ -1,0 +1,37 @@
+{
+    "input":{
+        "program":{
+            "classpath":"../attestor-examples/RefBTDLL/configuration/code",
+            "class":"BTNodeAlt",
+            "method":"getLeft"
+        },
+        "grammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "BT", "definition":"../attestor-examples/RefBTDLL/configuration/grammar/RenameBT.java" },
+            { "type": "DLList", "definition":"../attestor-examples/RefBTDLL/configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+            "path":"../attestor-examples/RefBTDLL/configuration/inputs",
+            "file":"bt.json",
+            "description":"An arbitrary binary tree"
+        }
+    },
+    "options":{
+        "depth":1,
+        "logging":true
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples/RefBTDLL"
+        },
+        "grammar":{
+            "path":"../attestor-examples/RefBTDLL",
+            "folder":"grammarOutput",
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
+    }        
+}
