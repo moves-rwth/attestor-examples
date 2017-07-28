@@ -1,0 +1,34 @@
+{
+    "input":{
+        "program":{
+            "classpath":"../attestor-examples/RefSLL/configuration/code",
+            "class":"ListNodeAlt",
+            "method":"main"
+        },
+        "grammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"../attestor-examples/RefSLL/configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+        }
+    },
+    "options":{
+        "depth":1,
+        "logging":true
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples/RefSLL"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
+    }        
+}
+
+
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"search"
