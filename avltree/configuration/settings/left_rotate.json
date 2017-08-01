@@ -13,7 +13,8 @@
             "path":"configuration/inputs",
             "file":"before_left.json",
             "description":"General AVL tree that needs a left rotation."
-        }
+        },
+        "predefinedGrammars":[]
     },
     "options":{
         "maximalStateSpace":2000,
@@ -22,5 +23,6 @@
         "logging":false
     },
     "output":{
-    }
+    },
+    "modelChecking":{}
 }

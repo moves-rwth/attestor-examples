@@ -13,7 +13,8 @@
             "path":"configuration/inputs",
             "file":"empty.json",
             "description":"An empty heap"
-        }
+        },
+        "predefinedGrammars":[]
     },
     "options":{
         "depth":1,
@@ -26,5 +27,6 @@
             "file":"stateSpace",
             "description":"State space generated for List.main()"
         }
-    }
+    },
+    "modelChecking":{}
 }

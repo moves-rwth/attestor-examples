@@ -13,7 +13,8 @@
             "path":"configuration/inputs",
             "file":"bimap.json",
             "description":"A heap with an arbitrary BiMap"
-        }
+        },
+        "predefinedGrammars":[]
     },
     "options":{
         "maximalStateSpace":5500,
@@ -22,5 +23,6 @@
         "logging":false
     },
     "output":{
-    }
+    },
+    "modelChecking":{}
 }

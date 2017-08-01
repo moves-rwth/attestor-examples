@@ -13,7 +13,8 @@
             "path":"configuration/inputs",
             "file":"balanced_tree.json",
             "description":"A general balanced AVL tree"
-        }
+        },
+        "predefinedGrammars":[]
     },
     "options":{
         "maximalStateSpace":500,
@@ -22,5 +23,6 @@
         "logging":false
     },
     "output":{
-    }
+    },
+    "modelChecking":{}
 }

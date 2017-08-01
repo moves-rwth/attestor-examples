@@ -13,7 +13,8 @@
             "path":"configuration/inputs",
             "file":"before_left_right.json",
             "description":"AVL tree that needs left right rotation"
-        }
+        },
+        "predefinedGrammars":[]
     },
     "options":{
         "maximalStateSpace":2000,
@@ -22,5 +23,6 @@
         "logging":false
     },
     "output":{
-    }
+    },
+    "modelChecking":{}
 }
