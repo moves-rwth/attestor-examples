@@ -18,7 +18,8 @@
     },
     "options":{
         "depth":1,
-        "logging":false
+        "logging":false,
+        "stateLabeling":["reach"]
     },
     "output":{
         "defaultPath":"output",

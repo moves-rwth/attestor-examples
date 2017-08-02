@@ -1,1 +1,3 @@
-Benchmark  Mode  Cnt  Score   Error  Units
+Benchmark               Mode  Cnt   Score   Error  Units
+RefBT.getLeft             ss        1.676           s/op
+RefBT.getLeftmostChild    ss       10.422           s/op

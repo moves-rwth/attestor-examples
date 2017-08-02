@@ -9,7 +9,6 @@
       <resource>configuration/code/AVLTree.java</resource>
       <resource>configuration/grammar/avltree.json</resource>
       <resource>configuration/inputs/balanced_tree.json</resource>
-      <resource>configuration/log4j2.xml</resource>
       <resource>configuration/settings/binary_search.json</resource>
       <resource>README.md</resource>
       <resource>benchmarks.sh</resource>
