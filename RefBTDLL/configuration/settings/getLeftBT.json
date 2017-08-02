@@ -1,18 +1,18 @@
 {
     "input":{
         "program":{
-            "classpath":"../attestor-examples/RefBTDLL/configuration/code",
+            "classpath":"configuration/code",
             "class":"BTNodeAlt",
             "method":"getLeft"
         },
         "grammar":{
         },
         "predefinedGrammars":[
-            { "type": "BT", "definition":"../attestor-examples/RefBTDLL/configuration/grammar/RenameBT.java" },
-            { "type": "DLList", "definition":"../attestor-examples/RefBTDLL/configuration/grammar/RenameDLL.java" }
+            { "type": "BT", "definition":"configuration/grammar/RenameBT.java" },
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
         ],
         "initialState":{
-            "path":"../attestor-examples/RefBTDLL/configuration/inputs",
+            "path":"configuration/inputs",
             "file":"bt.json",
             "description":"An arbitrary binary tree"
         }
@@ -23,10 +23,10 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples/RefBTDLL"
+            "path":"../attestor-examples-output/RefBTDLL"
         },
         "grammar":{
-            "path":"../attestor-examples/RefBTDLL",
+            "path":"../attestor-examples-output/RefBTDLL",
             "folder":"grammarOutput",
         }
     },

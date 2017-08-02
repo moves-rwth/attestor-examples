@@ -1,14 +1,14 @@
 {
     "input":{
         "program":{
-            "classpath":"../attestor-examples/RefDLL/configuration/code",
+            "classpath":"configuration/code",
             "class":"DLList",
             "method":"main"
         },
         "grammar":{
         },
         "predefinedGrammars":[
-            { "type": "DLList", "definition":"../attestor-examples/RefDLL/configuration/grammar/RenameDLL.java" }
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
         ],
         "initialState":{
         }
@@ -19,10 +19,10 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples/RefDLL"
+            "path":"../attestor-examples-output/RefDLL"
         },
         "grammar":{
-            "path":"../attestor-examples/RefDLL",
+            "path":"../attestor-examples-output/RefDLL",
             "folder":"grammarOutput",
         }
     },

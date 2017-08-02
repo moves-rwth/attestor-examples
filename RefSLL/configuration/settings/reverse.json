@@ -1,14 +1,14 @@
 {
     "input":{
         "program":{
-            "classpath":"../attestor-examples/RefSLL/configuration/code",
+            "classpath":"configuration/code",
             "class":"ListNodeAlt",
             "method":"main"
         },
         "grammar":{
         },
         "predefinedGrammars":[
-            { "type": "SLList", "definition":"../attestor-examples/RefSLL/configuration/grammar/RenameSLL.java" }
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
         ],
         "initialState":{
         }
@@ -19,7 +19,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples/RefSLL"
+            "path":"../attestor-examples-output/RefSLL"
         }
     },
     "modelChecking":{
@@ -27,8 +27,3 @@
 	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
     }        
 }
-
-
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"search"
