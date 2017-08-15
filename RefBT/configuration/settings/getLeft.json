@@ -5,7 +5,7 @@
             "class":"BTNodeAlt",
             "method":"getLeft"
         },
-        "grammar":{
+        "userDefinedGrammar":{
         },
         "predefinedGrammars":[
             { "type": "BT", "definition":"configuration/grammar/RenameBT.java" }
@@ -17,7 +17,7 @@
         }
     },
     "options":{
-        "depth":1,
+        "abstractionDistance":1,
         "logging":true
     },
     "output":{

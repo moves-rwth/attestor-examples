@@ -5,7 +5,7 @@
             "class":"List",
             "method":"main"
         },
-        "grammar":{
+        "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"sllist.json"
         },
@@ -17,7 +17,7 @@
         "predefinedGrammars":[]
     },
     "options":{
-        "depth":1,
+        "abstractionDistance":1,
         "logging":false,
         "stateLabeling":["reach"]
     },
