@@ -20,7 +20,8 @@
         "maximalStateSpace":6000,
         "depth":1,
         "mode":"indexed",
-        "logging":false
+        "logging":false,
+        "stateRefinement":["balance"]
     },
     "output":{
     },
