@@ -7,7 +7,7 @@
         },
         "initialState":{},
         "predefinedGrammars":[],
-        "grammar":{}
+        "userDefinedGrammar":{}
     },
     "output":{},
     "options":{},
