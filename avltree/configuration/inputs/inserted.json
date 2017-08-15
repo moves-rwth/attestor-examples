@@ -104,12 +104,12 @@
 			"hyperedges":[
 			 {
 				"label":"P",
-				"stack":["s","Z"],
+				"index":["s","Z"],
 				"tentacles":[0,1,2,3,4]
 				
 			 },{
 				"label":"BT",
-				"stack":["Z"],
+				"index":["Z"],
 				"tentacles":[0,1,2,3,7]
 			 }
 			]

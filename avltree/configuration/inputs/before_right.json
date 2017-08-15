@@ -93,19 +93,19 @@
 			"hyperedges":[
                 {
                         "label":"BT",
-                        "stack":["s","_X"],
+                        "index":["s","_X"],
                         "tentacles":[0,1,2,3,7]
                 },{
 					"label":"BT",
-					"stack":["_X"],
+					"index":["_X"],
 					"tentacles":[0,1,2,3,6]
                 },{
 					"label":"BT",
-					"stack":["_X"],
+					"index":["_X"],
 					"tentacles":[0,1,2,3,8]
                 },{
 					"label":"P",
-					"stack":["s","s","_X"],
+					"index":["s","s","_X"],
 					"tentacles":[0,1,2,3,4]
 				}
 			],
