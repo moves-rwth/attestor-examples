@@ -49,7 +49,7 @@
 			"hyperedges":[
 				{
 					"label":"BT",
-					"stack":["_X"],
+					"index":["_X"],
 					"tentacles":[0,1,2,3,4]
 				}
 			]
