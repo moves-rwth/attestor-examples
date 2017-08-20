@@ -17,7 +17,7 @@
         "predefinedGrammars":[],
     },
     "options":{
-        "depth":1,
+        "abstractionDistance":1,
         "logging":false,
         "stateLabeling":["reach"]
     },

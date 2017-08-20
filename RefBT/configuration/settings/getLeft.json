@@ -17,7 +17,7 @@
         }
     },
     "options":{
-        "depth":1,
+        "abstractionDistance":1,
         "logging":true
     },
     "output":{
