@@ -5,7 +5,7 @@
             "class":"ListNodeAlt",
             "method":"main"
         },
-        "grammar":{
+        "userDefinedGrammar":{
         },
         "predefinedGrammars":[
             { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }

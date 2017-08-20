@@ -5,7 +5,7 @@
             "class":"DLList",
             "method":"traverse"
         },
-        "grammar":{
+        "userDefinedGrammar":{
         },
         "predefinedGrammars":[
             { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }

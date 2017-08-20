@@ -5,7 +5,7 @@
             "class":"DLList",
             "method":"delete"
         },
-        "grammar":{
+        "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"bimap.json"
         },

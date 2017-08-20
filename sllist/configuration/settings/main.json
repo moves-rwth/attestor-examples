@@ -5,7 +5,7 @@
             "class":"List",
             "method":"main"
         },
-        "grammar":{
+        "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"sllist.json"
         },
@@ -14,7 +14,7 @@
             "file":"empty.json",
             "description":"An empty heap"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars":[],
     },
     "options":{
         "depth":1,

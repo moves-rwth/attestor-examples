@@ -5,7 +5,7 @@
             "class":"BTNodeAlt",
             "method":"getLeftmostChild"
         },
-        "grammar":{
+        "userDefinedGrammar":{
         },
         "predefinedGrammars":[
             { "type": "BT", "definition":"configuration/grammar/RenameBT.java" }

@@ -5,7 +5,7 @@
             "class":"AVLTree",
             "method":"leftTraversal"
         },
-        "grammar":{
+        "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"avltree.json"
         },

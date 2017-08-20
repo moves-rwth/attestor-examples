@@ -5,7 +5,7 @@
             "class":"AVLTree",
             "method":"rotateRight"
         },
-        "grammar":{
+        "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"avltree.json"
         },
