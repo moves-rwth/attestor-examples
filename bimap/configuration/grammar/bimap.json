@@ -3,7 +3,7 @@
     "nonterminal":"DLList",
     "rank":4,
     "reductionTentacles":[true,false,false,true],
-    "stack":["Z"],
+    "index":["Z"],
     "rules":[
         {
             "nodes":[
@@ -47,7 +47,7 @@
     "nonterminal":"DLList",
     "rank":4,
     "reductionTentacles":[true,false,false,true],
-    "stack":["C"],
+    "index":["C"],
     "rules":[
         {
             "nodes":[
@@ -91,7 +91,7 @@
     "nonterminal":"DLList",
     "rank":4,
     "reductionTentacles":[true,false,false,true],
-    "stack":["s","()"],
+    "index":["s","()"],
     "rules":[
         {    
             "nodes":[
@@ -119,7 +119,7 @@
                 {
                 "label":"DLList",
                 "tentacles":[1,4,2,3],
-                "stack":["()"],
+                "index":["()"],
                 }
             ]
         },{
@@ -148,7 +148,7 @@
                 {
                     "label":"DLList",
                     "tentacles":[0,1,4,2],
-                    "stack":["()"],
+                    "index":["()"],
                 }
             ]
         },
