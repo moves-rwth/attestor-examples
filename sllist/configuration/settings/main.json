@@ -14,7 +14,7 @@
             "file":"empty.json",
             "description":"An empty heap"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars":[],
     },
     "options":{
         "abstractionDistance":1,
