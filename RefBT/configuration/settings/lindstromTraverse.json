@@ -2,13 +2,13 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"BTNodeAlt",
-            "method":"getLeftmostChild"
+            "class":"Tree",
+            "method":"traverse"
         },
         "userDefinedGrammar":{
         },
         "predefinedGrammars":[
-            { "type": "BT", "definition":"configuration/grammar/RenameBT.java" }
+            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
         ],
         "initialState":{
             "path":"configuration/inputs",
@@ -18,14 +18,15 @@
     },
     "options":{
         "abstractionDistance":0,
-        "logging":true
+        "logging":true,
+        "maximalStateSpace":6000
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT"
+            "path":"../attestor-examples-output/RefBT/Lindstrom"
         },
         "grammar":{
-            "path":"../attestor-examples-output/RefBT",
+            "path":"../attestor-examples-output/RefBT/Lindstrom",
             "folder":"grammarOutput"
         }
     },

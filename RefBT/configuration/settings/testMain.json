@@ -2,8 +2,8 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"BTNodeAlt",
-            "method":"getLeftmostChild"
+            "class":"Test",
+            "method":"main"
         },
         "userDefinedGrammar":{
         },
@@ -18,14 +18,15 @@
     },
     "options":{
         "abstractionDistance":0,
-        "logging":true
+        "logging":true,
+        "maximalStateSpace":6000
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT"
+            "path":"../attestor-examples-output/RefBT/Test"
         },
         "grammar":{
-            "path":"../attestor-examples-output/RefBT",
+            "path":"../attestor-examples-output/RefBT/Test",
             "folder":"grammarOutput"
         }
     },
