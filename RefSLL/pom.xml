@@ -126,6 +126,8 @@
                                 <argument>1</argument>
                                 <argument>-rf</argument>
                                 <argument>text</argument>
+                                <argument>-foe</argument>
+                                <argument>true</argument>
                             </arguments>
                         </configuration>
                     </execution>
@@ -145,6 +147,8 @@
                                 <argument>1</argument>
                                 <argument>-rf</argument>
                                 <argument>text</argument>
+                                <argument>-foe</argument>
+                                <argument>true</argument>
                             </arguments>
                         </configuration>
                     </execution>
