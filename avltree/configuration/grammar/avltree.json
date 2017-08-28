@@ -182,11 +182,8 @@
 				"type":"NULL",
 				"number":1
 			},{
-				"type":"NULL",
-				"number":1
-			},{
 				"type":"AVLTree",
-				"number":2
+				"number":3
 			}],
 			"externals":[0,1,2,3,4],
 			"variables":[],

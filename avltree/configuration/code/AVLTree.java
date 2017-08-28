@@ -57,7 +57,7 @@ public class AVLTree {
 		
         n = search(n, value);
         n = climbUpwards(n);
-        
+
         return n;
     }
     
@@ -65,7 +65,7 @@ public class AVLTree {
 		
         n = search(n, value);
         //n = switchSubtrees(n);
-        
+
         while(n != null && n.parent != null) {
             n = switchSubtrees(n);
             n = n.parent;
@@ -95,7 +95,7 @@ public class AVLTree {
         while(n != null && n.parent != null) {
             n = n.parent;
         }
-    
+
         return n;
     }
 	
