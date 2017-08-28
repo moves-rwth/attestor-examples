@@ -23,13 +23,6 @@
         "removeDeadVariables" : true
     },
     "output":{        
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/Lindstrom"
-        },
-        "grammar":{
-            "path":"../attestor-examples-output/RefBT/Lindstrom",
-            "folder":"grammarOutput"
-        }
     },
     "modelChecking":{
        "enabled":true,
