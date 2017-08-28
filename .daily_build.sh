@@ -19,7 +19,7 @@ runTest sllist
 runTest RefSLL
 runTest RefDLL
 runTest RefBTDLL
-runTest RefBT
+#runTest RefBT
 runTest bimap
 runTest avltree
 
