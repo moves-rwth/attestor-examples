@@ -21,7 +21,7 @@
         "abstractionDistance":0,
         "mode":"indexed",
         "logging":false,
-        "stateLabeling":["reach"],
+        "stateLabeling":[],
         "stateRefinement":["balance"]
     },
     "output":{
