@@ -1,0 +1,33 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"TreeFlatten",
+            "method":"push"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"dataListDataTree.json"
+        },
+        "predefinedGrammars":[],
+        "initialState":{}
+    },
+    "options":{
+        "abstractionDistance":0,
+        "logging":true,
+        "maximalStateSpace":100 
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/TreeFlattenPush"
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/TreeFlattenPush",
+            "folder":"grammarOutput",
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
+    }        
+}
