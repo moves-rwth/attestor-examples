@@ -7,11 +7,6 @@ import de.rwth.i2.attestor.main.Attestor;
 public class RefBT {
 
     @Benchmark
-    public void testMain(){
-        BenchmarkHelper.run();
-    }
-
-    @Benchmark
     public void getLeft() {
         BenchmarkHelper.run();
     }
@@ -20,6 +15,11 @@ public class RefBT {
     public void getLeftmostChild() {
         BenchmarkHelper.run();
     }
+    
+    //@Benchmark
+    //public void recursiveTraverse(){
+    //    BenchmarkHelper.run();
+    //}
     
     @Benchmark
     public void lindstromTraverse(){
