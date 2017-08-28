@@ -24,6 +24,12 @@
         "stateRefinement":["balance"]
     },
     "output":{
+        "defaultPath":"output",
+        "stateSpace":{
+            "path":".",
+            "file":"stateSpace",
+            "description":"State space generated for AVLTree.binary_search_and_back()"
+        }
     },
     "modelChecking":{}
 }
