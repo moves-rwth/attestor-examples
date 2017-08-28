@@ -2,8 +2,8 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"Tree",
-            "method":"traverseLindstrom"
+            "class":"Lindstrom",
+            "method":"traverse"
         },
         "userDefinedGrammar":{
         },
