@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"Tree",
-            "method":"traverse"
+            "method":"traverseLindstrom"
         },
         "userDefinedGrammar":{
         },
@@ -19,9 +19,10 @@
     "options":{
         "abstractionDistance":0,
         "logging":true,
-        "maximalStateSpace":6000
+        "maximalStateSpace":5000,
+        "removeDeadVariables" : true
     },
-    "output":{
+    "output":{        
         "stateSpace":{
             "path":"../attestor-examples-output/RefBT/Lindstrom"
         },

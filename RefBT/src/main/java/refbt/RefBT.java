@@ -22,6 +22,11 @@ public class RefBT {
     }
     
     @Benchmark
+    public void recursiveTraverse(){
+        BenchmarkHelper.run();
+    }
+    
+    @Benchmark
     public void lindstromTraverse(){
         BenchmarkHelper.run();
     }

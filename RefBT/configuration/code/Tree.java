@@ -3,7 +3,7 @@ public class Tree{
 	Tree right;
 	Tree left;
 		
-	static void traverse(Tree root){
+	static void traverseLindstrom(Tree root){
 		
 		if(root == null) return;
 		Tree sen = new Tree();		
@@ -25,6 +25,13 @@ public class Tree{
 				prev = null;
 			}
 		}	
+	}
+	
+	static public void traverseRecursive(Tree tree){
+		if(tree != null){
+			traverseRecursive(tree.left);
+			traverseRecursive(tree.right);
+		}
 	}
 	
 	public static void main(String[] args) {
