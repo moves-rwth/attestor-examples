@@ -13,7 +13,7 @@ runTest() {
     cd ..
 }  
 
-rm $RESULTS
+rm -f $RESULTS
 
 runTest sllist
 runTest RefSLL
