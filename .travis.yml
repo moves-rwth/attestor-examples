@@ -3,4 +3,4 @@ sudo: required
 jdk:
     - oraclejdk8
 
-install: ./.daily_build.sh
+script: ./.daily_build.sh
