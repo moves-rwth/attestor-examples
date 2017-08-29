@@ -18,12 +18,17 @@
     },
     "options":{
         "maximalStateSpace":5000,
-        "abstractionDistance":0,
+        "abstractionDistance":1,
+        "aggressiveAbstractionThreshold":5,
         "mode":"indexed",
         "logging":false,
         "stateRefinement":["balance"]
     },
     "output":{
+        "stateSpace":{
+            "path":"",
+            "folder":"stateSpace"
+        }
     },
     "modelChecking":{}
 }
