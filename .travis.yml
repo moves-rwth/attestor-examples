@@ -3,4 +3,9 @@ sudo: required
 jdk:
     - oraclejdk8
 
-script: ./.daily_build.sh
+jobs:
+    include:
+        - stage: sllist 
+            script: ./run_test.sh sllist
+        - stage: RefBT 
+            script: ./run_test.sh RefBT 
