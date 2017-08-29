@@ -1,11 +1,9 @@
-sudo: required
-
 jdk:
     - oraclejdk8
 
 jobs:
-    include:
-        - stage: sllist 
-            script: ./run_test.sh sllist
-        - stage: RefBT 
-            script: ./run_test.sh RefBT 
+  include:
+    - stage: list
+      script: ./.run_test.sh sllist
+    - stage: tree
+      script: ./.run_test.sh RefBT
