@@ -60,3 +60,11 @@ jmh-result.text
 attestor-examples-output/
 
 sllist/target/
+RefDLL/target/
+RefSLL/target/
+TreeFlatten/target/
+RefBTDLL/target/
+RefBT/target/
+bimap/target/
+avltree/target/
+results.text

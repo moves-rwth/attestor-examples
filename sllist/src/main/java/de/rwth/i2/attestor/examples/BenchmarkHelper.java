@@ -1,4 +1,4 @@
-package avltree;
+package sllist;
 
 import de.rwth.i2.attestor.main.Attestor;
 
@@ -13,7 +13,9 @@ public class BenchmarkHelper {
         Attestor attestor = new Attestor();
         attestor.run(new String[]{
                 "-sf",
-                "configuration/settings/" + methodName + ".json"
+                "configuration/settings/" + methodName + ".json",
+                "-rp",
+                "."
         });
     }
 }
