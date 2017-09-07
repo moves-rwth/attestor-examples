@@ -26,7 +26,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":".",
+            "path":"",
             "folder":"stateSpace"
         }
     },

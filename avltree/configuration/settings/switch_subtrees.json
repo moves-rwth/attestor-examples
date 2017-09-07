@@ -2,32 +2,32 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"List",
-            "method":"main"
+            "class":"AVLTree",
+            "method":"switchSubtrees"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "file":"sllist.json"
+            "file":"avltree.json"
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"empty.json",
-            "description":"An empty heap"
+            "file":"debug_switch.json",
+            "description":"A general balanced AVL tree"
         },
-        "predefinedGrammars":[],
+        "predefinedGrammars":[]
     },
     "options":{
+        "maximalStateSpace":5000,
         "abstractionDistance":1,
+        "aggressiveAbstractionThreshold":5,
+        "mode":"indexed",
         "logging":false,
-        "stateLabeling":[],
-        "stateRefinement":[]
+        "stateRefinement":["balance"]
     },
     "output":{
-        "defaultPath":"output",
         "stateSpace":{
             "path":"",
-            "file":"stateSpace",
-            "description":"State space generated for List.main()"
+            "folder":"subStateSpace"
         }
     },
     "modelChecking":{}
