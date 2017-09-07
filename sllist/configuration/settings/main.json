@@ -19,7 +19,8 @@
     "options":{
         "abstractionDistance":1,
         "logging":false,
-        "stateLabeling":["reach"]
+        "stateLabeling":[],
+        "stateRefinement":[]
     },
     "output":{
         "defaultPath":"output",
