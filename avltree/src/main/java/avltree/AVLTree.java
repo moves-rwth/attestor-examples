@@ -12,7 +12,7 @@ public class AVLTree {
 
     @Benchmark
     public void binary_search() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run(192, 192, 6);
     }
 
     @Benchmark

@@ -137,6 +137,7 @@
                         <configuration>
                             <arguments>
                                 <argument>-Djmh.ignoreLock=true</argument>
+                                <argument>-disableassertions</argument>
                                 <argument>-jar</argument>
                                 <argument>${project.build.directory}${file.separator}benchmarks.jar</argument>
                                 <argument>-bm</argument>
