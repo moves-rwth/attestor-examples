@@ -24,6 +24,9 @@
         "stateRefinement":["balance"]
     },
     "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/right_rotate"
+        }
     },
     "modelChecking":{}
 }
