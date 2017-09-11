@@ -19,11 +19,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL"
+            "path":"../attestor-examples-output/RefDLL/buildAndTraverse"
         },
         "grammar":{
             "path":"../attestor-examples-output/RefDLL",
-            "folder":"grammarOutput",
+            "folder":"grammarOutput"
         }
     },
     "modelChecking":{

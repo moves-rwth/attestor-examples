@@ -26,8 +26,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"",
-            "folder":"subStateSpace"
+            "path":"../attestor-examples-output/avltree/switch_subtrees"
         }
     },
     "modelChecking":{}

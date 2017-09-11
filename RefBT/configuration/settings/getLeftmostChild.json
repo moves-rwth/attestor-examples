@@ -22,7 +22,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT"
+            "path":"../attestor-examples-output/RefBT/getLeftmostChild"
         },
         "grammar":{
             "path":"../attestor-examples-output/RefBT",

@@ -22,7 +22,10 @@
         "maximalStateSpace":5000,
         "removeDeadVariables" : true
     },
-    "output":{        
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse"
+        },
     },
     "modelChecking":{
        "enabled":true,

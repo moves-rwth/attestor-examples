@@ -22,12 +22,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"",
-            "folder":"stateSpace"
+            "path":"../attestor-examples-output/RefDLL/traverse"
         },
         "grammar":{
             "path":"../attestor-examples-output/RefDLL",
-            "folder":"grammarOutput",
+            "folder":"grammarOutput"
         }
     },
     "modelChecking":{

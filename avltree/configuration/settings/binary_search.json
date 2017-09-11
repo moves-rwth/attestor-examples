@@ -25,11 +25,8 @@
         "stateRefinement":["balance"]
     },
     "output":{
-        "defaultPath":"output",
         "stateSpace":{
-            "path":".",
-            "file":"stateSpace",
-            "description":"State space generated for List.main()"
+            "path":"../attestor-examples-output/avltree/binary_search"
         }
     },
     "modelChecking":{}
