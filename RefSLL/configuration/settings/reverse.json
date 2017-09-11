@@ -19,7 +19,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL"
+            "path":"../attestor-examples-output/RefSLL/reverse"
         }
     },
     "modelChecking":{

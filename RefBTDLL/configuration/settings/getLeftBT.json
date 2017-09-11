@@ -23,7 +23,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBTDLL"
+            "path":"../attestor-examples-output/RefBTDLL/getLeftBT"
         },
         "grammar":{
             "path":"../attestor-examples-output/RefBTDLL",

@@ -23,11 +23,8 @@
         "stateRefinement":[]
     },
     "output":{
-        "defaultPath":"output",
         "stateSpace":{
-            "path":"",
-            "file":"stateSpace",
-            "description":"State space generated for List.main()"
+            "path":"../attestor-examples-output/sllist/main"
         }
     },
     "modelChecking":{}

@@ -23,7 +23,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/TreeFlatten"
+            "path":"../attestor-examples-output/TreeFlatten/flatten"
         },
         "grammar":{
             "path":"../attestor-examples-output/TreeFlatten",

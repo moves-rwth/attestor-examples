@@ -20,7 +20,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBTDLL"
+            "path":"../attestor-examples-output/RefBTDLL/buildAndTraverseDLL"
         },
         "grammar":{
             "path":"../attestor-examples-output/RefBTDLL",

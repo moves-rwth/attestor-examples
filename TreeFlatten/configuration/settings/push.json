@@ -19,7 +19,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/TreeFlattenPush"
+            "path":"../attestor-examples-output/TreeFlattenPush/push"
         },
         "grammar":{
             "path":"../attestor-examples-output/TreeFlattenPush",

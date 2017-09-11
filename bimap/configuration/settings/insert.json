@@ -23,6 +23,9 @@
         "logging":false
     },
     "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/bimap/insert"
+        }
     },
     "modelChecking":{}
 }
