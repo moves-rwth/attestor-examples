@@ -37,7 +37,7 @@ public class AVLTree {
     
     @Benchmark
     public void left_right_rotate() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run( 69, 19, 1);
     }
     
     @Benchmark
