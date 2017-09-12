@@ -8,6 +8,6 @@ public class RefBTDLL {
 
     @Benchmark
     public void getLeftBT() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run( 10, 10, 2 );
     }
 }
