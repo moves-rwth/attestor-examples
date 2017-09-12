@@ -16,7 +16,7 @@
 				"number":1
 			},{
 				"type":"AVLTree",
-				"number":3
+				"number":5
 			}],
 			"externals":[],
 			"variables":[
@@ -42,12 +42,12 @@
 					"label":"left",
 					"annotation":"",
 					"origin":4,
-					"target":6
+					"target":5
 				},{
 					"label":"right",
 					"annotation":"",
 					"origin":4,
-					"target":5
+					"target":6
 				},{
 					"label":"parent",
 					"annotation":"",
@@ -63,17 +63,46 @@
 					"annotation":"",
 					"origin":4,
 					"target":0
-				}
+				},{
+                    "label":"left",
+                    "annotation":"",
+                    "origin":6,
+                    "target":7
+                },{
+                    "label":"right",
+                    "annotation":"",
+                    "origin":6,
+                    "target":8
+                },{
+                    "label":"parent",
+                    "annotation":"",
+                    "origin":7,
+                    "target":6
+                },{
+                    "label":"parent",
+                    "annotation":"",
+                    "origin":8,
+                    "target":6
+                },{
+                    "label":"balance",
+                    "annotation":"",
+                    "origin":6,
+                    "target":1
+                }
 			],
 			"hyperedges":[
                 {
                     "label":"BT",
-                    "index":["s","_X"],
+                    "index":["_X"],
                     "tentacles":[0,1,2,3,5]
                 },{
 					"label":"BT",
 					"index":["_X"],
-					"tentacles":[0,1,2,3,6]
+					"tentacles":[0,1,2,3,7]
+                },{
+					"label":"BT",
+					"index":["s","_X"],
+					"tentacles":[0,1,2,3,8]
                 },{
 					"label":"P",
 					"index":["s","s","_X"],
