@@ -52,7 +52,7 @@ public class AVLTree {
     
     @Benchmark
     public void min_value() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run( 220, 220, 14 );
     }
     
     @Benchmark
