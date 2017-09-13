@@ -2,31 +2,27 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"BTNodeAlt",
-            "method":"getLeftmostChild"
+            "class":"DLList",
+            "method":"buildList"
         },
         "userDefinedGrammar":{
         },
         "predefinedGrammars":[
-            { "type": "BT", "definition":"configuration/grammar/RenameBT.java" }
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
         ],
         "initialState":{
-            "path":"configuration/inputs",
-            "file":"bt.json",
-            "description":"An arbitrary binary tree"
         }
     },
     "options":{
         "abstractionDistance":1,
-        "aggressiveReturn":false,
         "logging":true
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/getLeftmostChild"
+            "path":"../attestor-examples-output/RefDLL/buildAndTraverse"
         },
         "grammar":{
-            "path":"../attestor-examples-output/RefBT",
+            "path":"../attestor-examples-output/RefDLL",
             "folder":"grammarOutput"
         }
     },

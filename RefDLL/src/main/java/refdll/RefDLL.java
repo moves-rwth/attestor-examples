@@ -12,7 +12,7 @@ public class RefDLL {
     }
     
       @Benchmark
-    public void build() {
+    public void buildList() {
         BenchmarkHelper.run( 96, 44, 4 );
     }
     
@@ -20,6 +20,5 @@ public class RefDLL {
     public void buildAndTraverse(){
         BenchmarkHelper.run( 335, 14, 4  );
     }
-
-
+    
 }
