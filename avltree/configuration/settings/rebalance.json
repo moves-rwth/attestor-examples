@@ -1,0 +1,33 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"rebalance"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"inserted.json",
+            "description":"AVL after a node has been inserted"
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":2000,
+        "abstractionDistance":1,
+        "aggressiveReturnAbstraction":true,
+        "mode":"indexed",
+        "logging":false,
+        "stateRefinement":["balance"]
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/rebalance"
+        }
+    },
+    "modelChecking":{}
+}
