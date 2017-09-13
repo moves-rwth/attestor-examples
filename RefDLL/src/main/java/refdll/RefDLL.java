@@ -8,7 +8,7 @@ public class RefDLL {
 
     @Benchmark
     public void traverse() {
-        BenchmarkHelper.run( 74, 74, 3 );
+        BenchmarkHelper.run( 44, 44, 2 );
     }
     
       @Benchmark
@@ -18,7 +18,7 @@ public class RefDLL {
     
     @Benchmark
     public void buildAndTraverse(){
-        BenchmarkHelper.run( 335, 14, 4  );
+        BenchmarkHelper.run( 213, 12, 3  );
     }
     
 }

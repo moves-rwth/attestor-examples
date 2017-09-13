@@ -17,12 +17,12 @@ public class AVLTree {
 
     @Benchmark
     public void binary_search_and_back() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run( 455, 11, 1);
     }
 
     @Benchmark
     public void binary_search_and_swap_subtrees() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run( 449, 107, 1);
     }
     
     @Benchmark
