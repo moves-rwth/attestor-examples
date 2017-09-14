@@ -139,8 +139,17 @@ public class AVLTree {
             }
         }		
 	}
+    
+    //insert the element at the left-most-position instead of searching
+    public void pseudoInsert( AVLTree n ){
+        
+        AVLTree leftMost = leftTraversal( n );
+        AVLTree newNode = new AVLTree( leftMost , null, null, 0 );
+        leftMost.left = newNode;
+        rebalance( newNode );
+    }
 	
-		public static void insert(AVLTree n, int value) {
+	public  void insert(AVLTree n, int value) {
 		
 		if(n == null) {
 			n = new AVLTree(null, null, null, 0);
