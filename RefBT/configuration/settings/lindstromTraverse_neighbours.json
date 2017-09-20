@@ -1,0 +1,31 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"Lindstrom",
+            "method":"traverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"bt_typed.json",
+            "description":"An arbitrary binary tree"
+        }
+    },
+    "options":{
+        "abstractionDistance":0,
+        "logging":true,
+        "maximalStateSpace":100000,
+        "removeDeadVariables" : true
+    },
+    "output":{
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"F { identicNeighbours }"
+    }        
+}
