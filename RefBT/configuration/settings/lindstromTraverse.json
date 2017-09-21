@@ -1,4 +1,5 @@
 {
+    "scenario":"Show that Lindstrom results in a binary tree again.",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -28,7 +29,7 @@
         },
     },
     "modelChecking":{
-       "enabled":true,
-	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
+       "enabled":false,
+	   "formulae":""
     }        
 }
