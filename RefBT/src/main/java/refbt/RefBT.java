@@ -6,24 +6,33 @@ import de.rwth.i2.attestor.main.Attestor;
 
 public class RefBT {
 
-
     @Benchmark
     public void getLeft() {
         BenchmarkHelper.run();
     }
+
     @Benchmark
     public void getLeftmostChild() {
         BenchmarkHelper.run( 43, 43, 4 );
     }
- 
-    
-    //@Benchmark
-    //public void recursiveTraverse(){
-    //    BenchmarkHelper.run();
-    //}
+
     @Benchmark
     public void lindstromTraverse(){
         BenchmarkHelper.run();
     }
-    
+
+    @Benchmark
+    public void lindstromTraverse_visited(){
+        BenchmarkHelper.run();
+    }
+
+    @Benchmark
+    public void lindstromTraverse_terminateAtRoot(){
+        BenchmarkHelper.run();
+    }
+
+    @Benchmark
+    public void lindstromTraverse_neighbourhood(){
+        BenchmarkHelper.run();
+    }
 }
