@@ -1,0 +1,32 @@
+{
+    "scenario":"Upon termination variable cur is at the root of the tree.",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"Lindstrom",
+            "method":"traverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"bt.json",
+            "description":"An arbitrary binary tree"
+        }
+    },
+    "options":{
+        "abstractionDistance":0,
+        "logging":true,
+        "maximalStateSpace":100000,
+        "removeDeadVariables" : true
+    },
+    "output":{
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"( G F { terminated } -> F ( { terminated } & { cur == root } ) )"
+    }        
+}
