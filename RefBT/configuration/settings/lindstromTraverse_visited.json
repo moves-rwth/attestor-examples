@@ -27,6 +27,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"F { visited(cur) }"
+	   "formulae":"F { visited }"
     }        
 }
