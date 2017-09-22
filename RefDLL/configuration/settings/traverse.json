@@ -31,6 +31,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"ap1, ap3 U ap4, (ap1 & ap2)"
+	   "formulae":"ap1"
     }        
 }

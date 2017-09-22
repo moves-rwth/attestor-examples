@@ -33,11 +33,20 @@ public class ListNodeAlt{
 		return list;
 	}
 	
-	public static void traverseList( ListNodeAlt list ){
+	public static void traverseList( ListNodeAlt head ){
 	
-		ListNodeAlt curr = list;
-		while( curr.nextAlt != null ){
-			curr = curr.nextAlt;
+		ListNodeAlt cur = head;
+		while( cur.nextAlt != null ){
+			cur = cur.nextAlt;
+		}
+		
+	}
+	
+	public static void traverseListWithNullVisit( ListNodeAlt head ){
+	
+		ListNodeAlt cur = head;
+		while( cur != null ){
+			cur = cur.nextAlt;
 		}
 		
 	}

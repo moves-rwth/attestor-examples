@@ -10,4 +10,19 @@ public class RefSLL {
     public void reverse() {
         BenchmarkHelper.run( 76, 46, 1 );
     }
+	
+	@Benchmark
+	public void reverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Completeness_traverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Completeness_traverseWithInitialListWithNullVisit(){
+		BenchmarkHelper.run();
+	}
 }

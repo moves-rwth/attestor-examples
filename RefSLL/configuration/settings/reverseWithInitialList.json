@@ -2,18 +2,17 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"BTNodeAlt",
-            "method":"getLeft"
+            "class":"ListNodeAlt",
+            "method":"reverseList"
         },
         "userDefinedGrammar":{
         },
         "predefinedGrammars":[
-            { "type": "BT", "definition":"configuration/grammar/RenameBT.java" }
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"bt.json",
-            "description":"An arbitrary binary tree"
+            "file":"sll.json"
         }
     },
     "options":{
@@ -22,15 +21,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/getLeft"
-        },
-        "grammar":{
-            "path":"../attestor-examples-output/RefBT",
-            "folder":"grammarOutput",
+            "path":"../attestor-examples-output/RefSLL/reverseWithInitialList"
         }
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"ap1"
+	   "formulae":"(GF {terminated} -> false); (F {terminated} -> F {visited}); (F {terminated} -> F {visited(current)}); F {visited(list)}"
     }        
 }
