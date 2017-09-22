@@ -26,6 +26,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"{isReachable(head,tail)}"
+	   "formulae":"GF {isReachable(head,tail)}"
     }        
 }
