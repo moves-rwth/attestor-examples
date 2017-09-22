@@ -25,7 +25,7 @@
 			],
 			"selectors":[
 			     {
-			         "label":"next",
+			         "label":"nextAlt",
 					 "origin":2,
 					 "target":0
 			     }

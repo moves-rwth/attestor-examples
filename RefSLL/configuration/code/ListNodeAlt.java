@@ -10,17 +10,16 @@ public class ListNodeAlt{
 		this.nextAlt = next;
 	}
 	
-	public static void reverseList( ListNodeAlt list ){
+	public static void reverseList( ListNodeAlt head ){
 		
 		ListNodeAlt reversedPart = null;
-		ListNodeAlt current = list;
+		ListNodeAlt current = head;
 		while (current != null) {
 			ListNodeAlt next = current.nextAlt;
 			current.nextAlt = reversedPart;
 			reversedPart = current;
 			current = next;
 		}
-		list = reversedPart;
 			
 	}
 	
