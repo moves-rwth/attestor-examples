@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"buildList"
+            "method":"traverse"
         },
         "userDefinedGrammar":{
         },
@@ -11,6 +11,8 @@
             { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
         ],
         "initialState":{
+            "path":"configuration/inputs",
+            "file":"dll.json"
         }
     },
     "options":{
@@ -19,12 +21,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/buildAndTraverse"
-        },
-        "grammar":{
-            "path":"../attestor-examples-output/RefDLL",
-            "folder":"grammarOutput"
+            "path":"../attestor-examples-output/RefDLL/MC_NeighbourhoodPreservance_traverseWithInitialList"
         }
     },
-    "modelChecking":{}        
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"({terminated} -> {identicNeighbours})"
+    }        
 }

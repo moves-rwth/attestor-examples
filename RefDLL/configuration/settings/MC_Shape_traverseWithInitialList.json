@@ -12,22 +12,23 @@
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"dll.json",
-            "description":"A heap with an arbitrary long doubly-linked list and head variable"
+            "file":"dll.json"
         }
     },
     "options":{
-        "abstractionDistance":1,
+        "abstractionDistance":0,
         "logging":true
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/traverse"
-        },
+            "path":"../attestor-examples-output/RefDLL/MC_Shape_traverseWithInitialList"},
         "grammar":{
-            "path":"../attestor-examples-output/RefDLL",
-            "folder":"grammarOutput"
+            "path":"../attestor-examples-output/RefDLL/MC_Shape_traverseWithInitialList",
+            "folder":"grammar"
         }
     },
-    "modelChecking":{}        
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
+    }        
 }

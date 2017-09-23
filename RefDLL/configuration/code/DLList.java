@@ -17,14 +17,14 @@ public class DLList {
         cur.prevAlt = this;
     }
     
-    public static DLList traverse(DLList l) {
+    public static void traverse(DLList head) {
     
-        while(l.nextAlt != null){
+		DLList cur = head;
+		
+        while(cur != null){
         
-            l = l.nextAlt;
+            cur = cur.nextAlt;
         }
-        
-        return l;
     }
     
     public static DLList buildList(){
