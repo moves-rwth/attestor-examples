@@ -21,11 +21,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/MC_Reach_traverseWithInitialList"
+            "path":"../attestor-examples-output/RefSLL/MC_Shape_traverseWithInitialList"
         }
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"(GX {terminated} -> {isReachable(head,tail)}); XG {isReachable(head,tail)}; (GX {terminated} -> {isReachable(head,tail,[nextAlt])})"
+	   "formulae":"(GF {terminated} -> GF { L(RefSLList) })"
     }        
 }

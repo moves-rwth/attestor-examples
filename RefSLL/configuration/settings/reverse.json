@@ -22,8 +22,5 @@
             "path":"../attestor-examples-output/RefSLL/reverse"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(F {terminated} -> false)"
-    }        
+    "modelChecking":{}        
 }

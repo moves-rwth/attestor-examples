@@ -24,8 +24,5 @@
             "path":"../attestor-examples-output/RefSLL/reverseWithInitialList"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(GF {terminated} -> false); (F {terminated} -> F {visited}); (F {terminated} -> F {visited(current)}); F {visited(list)}"
-    }        
+    "modelChecking":{}        
 }
