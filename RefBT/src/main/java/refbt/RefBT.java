@@ -25,14 +25,19 @@ public class RefBT {
     public void lindstromTraverse_visited(){
         BenchmarkHelper.run();
     }
+	
+    @Benchmark
+    public void lindstromTraverse_shape(){
+        BenchmarkHelper.run();
+    }	
 
     @Benchmark
-    public void lindstromTraverse_terminateAtRoot(){
+    public void lindstromTraverse_terminateAtSen(){
         BenchmarkHelper.run();
     }
 
-    @Benchmark
+    /*@Benchmark
     public void lindstromTraverse_neighbourhood(){
         BenchmarkHelper.run();
-    }
+    }*/
 }

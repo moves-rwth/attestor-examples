@@ -6,7 +6,7 @@
 			},
 			{
 				"type":"DLList",
-				"number":3
+				"number":4
 			}
 			],
 			"externals":[],
@@ -18,13 +18,27 @@
                     "name":"@parameter0:",
                     "target":1,
                 },
+                {
+                    "name":"tail",
+                    "target":4
+                }
 			],
 			"selectors":[
+			     {
+			         "label":"nextAlt",
+					 "origin":4,
+					 "target":0
+			     },
+			     {
+			         "label":"prevAlt",
+					 "origin":4,
+					 "target":2
+			     }
 			],
 			"hyperedges":[
 				{
 					"label":"RefDLList",
-					"tentacles":[3,1,2,0]
+					"tentacles":[3,1,2,4]
 				},
 			]
 		}

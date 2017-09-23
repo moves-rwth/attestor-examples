@@ -28,8 +28,5 @@
             "path":"../attestor-examples-output/RefBT/lindstromTraverse"
         },
     },
-    "modelChecking":{
-       "enabled":false,
-	   "formulae":""
-    }        
+    "modelChecking":{}        
 }

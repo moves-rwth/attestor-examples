@@ -1,5 +1,5 @@
 {
-    "scenario":"Upon termination variable cur is at the root of the tree.",
+    "scenario":"Lindstrom terminates, i.e. variable cur is set to sen.",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -24,9 +24,12 @@
         "removeDeadVariables" : true
     },
     "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefBT/lindstrom_terminateAtSen"
+        }    
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"( G F { terminated } -> F ( { terminated } & { cur == root } ) )"
+	   "formulae":"( G F { terminated } -> (GX {terminated} -> { cur == sen } ) )"
     }        
 }

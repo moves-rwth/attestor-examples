@@ -20,5 +20,45 @@ public class RefDLL {
     public void buildAndTraverse(){
         BenchmarkHelper.run( 213, 12, 3  );
     }
+	
+	@Benchmark
+	public void MC_Completeness_traverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Reach_traverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Shape_traverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Completeness_reverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Reach_reverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
+	
+	@Benchmark
+	public void MC_Shape_reverseWithInitialList(){
+		BenchmarkHelper.run();
+	}
     
 }

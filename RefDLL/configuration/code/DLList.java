@@ -26,7 +26,24 @@ public class DLList {
             cur = cur.nextAlt;
         }
     }
-    
+	
+	public void reverse(DLList head){
+				
+		DLList pos = head;
+				
+		while(pos != null){
+			
+			DLList tmp = pos.nextAlt;
+			
+			pos.nextAlt = pos.prevAlt;
+			pos.prevAlt = tmp;
+			
+			pos = pos.prevAlt;
+		}
+		
+		head = pos;				
+	}
+	
     public static DLList buildList(){
         DLList list = new DLList();
         for( int i = 0; i < 10; i++ ){

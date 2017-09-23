@@ -29,8 +29,5 @@
             "folder":"grammarOutput",
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"ap1"
-    }        
+    "modelChecking":{}        
 }

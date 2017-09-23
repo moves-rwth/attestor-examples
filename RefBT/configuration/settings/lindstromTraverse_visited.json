@@ -27,6 +27,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"F { visited }"
+	   "formulae":"(GF {terminated} -> F { visited(cur) })"
     }        
 }

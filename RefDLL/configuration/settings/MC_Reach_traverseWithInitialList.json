@@ -2,17 +2,17 @@
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"ListNodeAlt",
-            "method":"traverseList"
+            "class":"DLList",
+            "method":"traverse"
         },
         "userDefinedGrammar":{
         },
         "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"sllHeadTail.json"
+            "file":"dll.json"
         }
     },
     "options":{
@@ -21,11 +21,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/MC_Reach_traverseWithInitialList"
+            "path":"../attestor-examples-output/RefDLL/MC_Reach_traverseWithInitialList"
         }
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"F (X {terminated} -> {isReachable(head,tail,[nextAlt])})"
+	   "formulae":"F (X {terminated} -> ({isReachable(head,tail,[nextAlt])} & {isReachable(tail,head,[prevAlt])}))"
     }        
 }
