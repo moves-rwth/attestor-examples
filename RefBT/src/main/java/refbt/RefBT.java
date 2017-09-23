@@ -36,8 +36,8 @@ public class RefBT {
         BenchmarkHelper.run();
     }
 
-    /*@Benchmark
+    @Benchmark
     public void lindstromTraverse_neighbourhood(){
         BenchmarkHelper.run();
-    }*/
+    }
 }
