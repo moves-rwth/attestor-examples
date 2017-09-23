@@ -26,6 +26,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"({terminated} -> {identicNeighbours})"
+	   "formulae":"(FG {terminated} -> FG {identicNeighbours})"
     }        
 }

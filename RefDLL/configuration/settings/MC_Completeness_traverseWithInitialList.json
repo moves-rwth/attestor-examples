@@ -12,7 +12,7 @@
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"dll.json"
+            "file":"dllNull.json"
         }
     },
     "options":{
@@ -21,7 +21,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/traverseWithInitialList"
+            "path":"../attestor-examples-output/RefDLL/MC_Completeness_traverseWithInitialList"
         }
     },
     "modelChecking":{

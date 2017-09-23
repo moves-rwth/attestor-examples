@@ -21,11 +21,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Completeness_reverseWithInitialList"
+            "path":"../attestor-examples-output/RefDLL/MC_NeighbourhoodPreservance_reverseWithInitialList"
         }
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"FG ! {identicNeighbours}"
+	   "formulae":"(FG {terminated} -> FG ! {identicNeighbours})"
     }        
 }

@@ -12,7 +12,7 @@
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"dll.json"
+            "file":"dllNull.json"
         }
     },
     "options":{

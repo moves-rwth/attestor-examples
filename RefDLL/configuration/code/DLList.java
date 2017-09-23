@@ -27,6 +27,23 @@ public class DLList {
         }
     }
 	
+	public void reverseIncomplete(DLList head){
+				
+		DLList pos = head;
+				
+		while(pos.nextAlt != null){
+			
+			DLList tmp = pos.nextAlt;
+			
+			pos.nextAlt = pos.prevAlt;
+			pos.prevAlt = tmp;
+			
+			pos = pos.prevAlt;
+		}
+		
+		head = pos;				
+	}
+	
 	public void reverse(DLList head){
 				
 		DLList pos = head;

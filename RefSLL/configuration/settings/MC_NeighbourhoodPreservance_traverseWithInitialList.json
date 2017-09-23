@@ -12,7 +12,7 @@
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"sllHeadTail.json"
+            "file":"sll.json"
         }
     },
     "options":{
