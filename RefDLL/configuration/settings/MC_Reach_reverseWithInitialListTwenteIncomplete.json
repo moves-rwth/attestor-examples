@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"reverse"
+            "method":"reverseIncomplete"
         },
         "userDefinedGrammar":{
         },
@@ -21,11 +21,11 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialList"
+            "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialListIncomplete"
         }
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"F ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])})"
+	   "formulae":"(GF {terminated} -> F ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])}))"
     }        
 }

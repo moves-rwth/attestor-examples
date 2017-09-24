@@ -26,6 +26,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"F ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])})"
+	   "formulae":"(GF {terminated} -> F ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])}))"
     }        
 }

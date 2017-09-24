@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"reverse"
+            "method":"reverseIncomplete"
         },
         "userDefinedGrammar":{
         },
@@ -21,11 +21,15 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_NeighbourhoodPreservance_reverseWithInitialList"
+            "path":"../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialListTwenteFail"
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialListTwenteFail",
+            "folder":"grammar"
         }
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"( G F { terminated } -> F ( { terminated } & ! { identicNeighbours } ) )"
+	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
     }        
 }
