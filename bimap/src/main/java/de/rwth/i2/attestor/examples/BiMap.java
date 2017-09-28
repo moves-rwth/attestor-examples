@@ -1,6 +1,6 @@
 package de.rwth.i2.attestor.examples;
 
-import bimap.BenchmarkHelper;
+import jmhBenchmarkHelper.BenchmarkHelper;
 import org.openjdk.jmh.annotations.Benchmark;
 import de.rwth.i2.attestor.main.Attestor;
 
