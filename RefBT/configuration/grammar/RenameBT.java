@@ -1,5 +1,5 @@
 // Please adapt the following mapping here
-@Rename BTNode -> BTNodeAlt
+@Rename BTNode -> Tree 
 @Rename left -> leftAlt
 @Rename right -> rightAlt
 
