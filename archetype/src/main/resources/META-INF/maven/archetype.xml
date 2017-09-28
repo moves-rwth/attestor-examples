@@ -3,7 +3,6 @@
   <id>attestor-benchmark</id>
   <sources>
     <source>src/main/java/AVLTree.java</source>
-    <source>src/main/java/BenchmarkHelper.java</source>
   </sources>
   <resources>
       <resource>configuration/code/AVLTree.java</resource>
