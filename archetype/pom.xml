@@ -4,7 +4,7 @@
 
     <groupId>de.rwth.i2.attestor.examples</groupId>
     <artifactId>benchmark</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
     <packaging>jar</packaging>
 
     <name>Attestor Benchmark Archetype</name>
