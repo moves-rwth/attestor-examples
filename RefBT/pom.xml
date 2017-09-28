@@ -12,5 +12,16 @@
     <artifactId>RefBT</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Attestor examples: ${artifactId}</name>
+    <repositories>
+        <repository>
+            <id>mvn-repo</id>
+            <url>https://raw.githubusercontent.com/cmatheja/mvn-repo/master/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
 
 </project>
