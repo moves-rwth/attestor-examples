@@ -9,8 +9,8 @@ jobs:
       script: ./.run_test.sh RefBT
     - stage: refSLL 
       script: ./.run_test.sh RefSLL
-      #    - stage: refDLL
-      #script: ./.run_test.sh RefDLL
+    - stage: refDLL
+      script: ./.run_test.sh RefDLL
     - stage: refBTDLL
       script: ./.run_test.sh RefBTDLL
     - stage: avltree 
