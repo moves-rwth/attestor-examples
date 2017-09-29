@@ -1,0 +1,34 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"Intree",
+            "method":"union"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"IT.json"
+        
+        },
+        "predefinedGrammars":[],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"itUnionOneTree.json",
+            "description":"An arbitrary intree"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "logging":true
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/Intree/unionOneTree"
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/Intree",
+            "folder":"grammarOutput",
+        }
+    },
+    "modelChecking":{}        
+}
