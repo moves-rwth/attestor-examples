@@ -1,18 +1,19 @@
-[{ 
+[
+{ 
     "nonterminal":"BT",
     "rank":5,
     "reductionTentacles":[false,false,false,false,false],
     "rules":[]
-},{ 
+},
+{ 
     "nonterminal":"P",
     "rank":5,
     "reductionTentacles":[false,false,false,false,false],
     "rules":[]
 },
-
 {
 	"nonterminal":"BT_TEMP",
-	"rank":2,
+	"rank":5,
 	"reductionTentacles":[false,true],
 	"rules":[
 		{
@@ -36,7 +37,7 @@
 				"type":"AVLTree",
 				"number":1
 			}],
-			"externals":[4,3],
+			"externals":[0,1,2,4,3],
 			"variables":[],
 			"selectors":[
 				{
@@ -47,6 +48,10 @@
 					"label":"right",
 					"origin":4,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":1
 				}
 			],
 			"hyperedges":[]
@@ -72,7 +77,7 @@
 				"type":"AVLTree",
 				"number":2
 			}],
-			"externals":[4,3],
+			"externals":[0,1,2,4,3],
 			"variables":[],
 			"selectors":[
 				{
@@ -87,12 +92,114 @@
 					"label":"right",
 					"origin":4,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":0
 				}
 			],
 			"hyperedges":[
 				{
 					"label":"BT_TEMP",
-					"tentacles":[5,3]
+					"tentacles":[0,1,2,5,3]
+				}
+			]
+		},
+		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},
+            {
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"AVLTree",
+				"number":2
+			}],
+			"externals":[0,1,2,4,3],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":4,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":4
+				},{
+					"label":"right",
+					"origin":4,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":1
+				}
+			],
+			"hyperedges":[
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,3]
+				}
+			]
+		},
+		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},
+            {
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"AVLTree",
+				"number":2
+			}],
+			"externals":[0,1,2,4,3],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":4,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":4
+				},{
+					"label":"right",
+					"origin":4,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":2
+				}
+			],
+			"hyperedges":[
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,3]
 				}
 			]
 		},
@@ -117,7 +224,7 @@
 				"type":"AVLTree",
 				"number":2
 			}],
-			"externals":[4,3],
+			"externals":[0,1,2,4,3],
 			"variables":[],
 			"selectors":[
 				{
@@ -132,12 +239,112 @@
 					"label":"parent",
 					"origin":5,
 					"target":4
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":0
 				}
 			],
 			"hyperedges":[
 				{
 					"label":"BT_TEMP",
-					"tentacles":[5,3]
+					"tentacles":[0,1,2,5,3]
+				}
+			]
+		},	{
+			"nodes":[
+            {
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},
+			{
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"AVLTree",
+				"number":2
+			}],
+			"externals":[0,1,2,4,3],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":4,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":4
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":1
+				}
+			],
+			"hyperedges":[
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,3]
+				}
+			]
+		},	{
+			"nodes":[
+            {
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},
+			{
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"AVLTree",
+				"number":2
+			}],
+			"externals":[0,1,2,4,3],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":4,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":4
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":2
+				}
+			],
+			"hyperedges":[
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,3]
 				}
 			]
 		},
@@ -162,7 +369,7 @@
 				"type":"AVLTree",
 				"number":3
 			}],
-			"externals":[4,3],
+			"externals":[0,1,2,4,3],
 			"variables":[],
 			"selectors":[
 				{
@@ -181,16 +388,132 @@
 					"label":"parent",
 					"origin":6,
 					"target":4
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":0
 				}
 			],
 			"hyperedges":[
 				{
 					"label":"BT_TEMP",
-					"tentacles":[5,3]
+					"tentacles":[0,1,2,5,3]
 				},
 				{
 					"label":"BT_TEMP",
-					"tentacles":[6,3]
+					"tentacles":[0,1,2,6,3]
+				}
+			]
+		},		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},
+            {
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"AVLTree",
+				"number":3
+			}],
+			"externals":[0,1,2,4,3],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":4,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":4
+				},{
+					"label":"right",
+					"origin":4,
+					"target":6
+				},{
+					"label":"parent",
+					"origin":6,
+					"target":4
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":1
+				}
+			],
+			"hyperedges":[
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,3]
+				},
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,6,3]
+				}
+			]
+		},		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},
+            {
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"AVLTree",
+				"number":3
+			}],
+			"externals":[0,1,2,4,3],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":4,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":4
+				},{
+					"label":"right",
+					"origin":4,
+					"target":6
+				},{
+					"label":"parent",
+					"origin":6,
+					"target":4
+				},{
+					"label":"balance",
+					"origin":4,
+					"target":2
+				}
+			],
+			"hyperedges":[
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,3]
+				},
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,6,3]
 				}
 			]
 		},
@@ -215,17 +538,17 @@
 		              "number":2
 		          }
 		      ],
-		      "externals":[4,3],
+		      "externals":[0,1,2,4,3],
 		      "variables":[],
 		      "selectors":[],
 		      "hyperedges":[
 		          {
 		              "label":"RefTP",
-		              "tentacles":[4,5,3]
+		              "tentacles":[0,1,2,4,5,3]
 		          },
 		          {
 		              "label":"BT_TEMP",
-		              "tentacles":[5,3]
+		              "tentacles":[0,1,2,5,3]
 		          }
 		      ]
 		}
@@ -233,7 +556,7 @@
   },
   {
 	"nonterminal":"RefTP",
-	"rank":3,
+	"rank":6,
 	"reductionTentacles":[false,true, true],
 	"rules":[
 		{
@@ -259,7 +582,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,4,5],
+			"externals":[0,1,2,3,4,5],
 			"variables":[],
 			"selectors":[
 				{
@@ -274,6 +597,100 @@
 					"label":"right",
 					"origin":3,
 					"target":5
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":0
+				}
+			],
+			"hyperedges":[]
+		},{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":2
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,4,5],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[]
+		},{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":2
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,4,5],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":2
 				}
 			],
 			"hyperedges":[]
@@ -301,7 +718,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,4,5],
+			"externals":[0,1,2,3,4,5],
 			"variables":[],
 			"selectors":[
 				{
@@ -316,6 +733,100 @@
 					"label":"parent",
 					"origin":4,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":0
+				}
+			],
+			"hyperedges":[]
+		},	{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},            
+			{
+				"type":"AVLTree",
+				"number":2
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,4,5],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":5
+				},{
+					"label":"right",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[]
+		},	{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},            
+			{
+				"type":"AVLTree",
+				"number":2
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,4,5],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":5
+				},{
+					"label":"right",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":2
 				}
 			],
 			"hyperedges":[]
@@ -343,7 +854,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,4,5],
+			"externals":[0,1,2,3,4,5],
 			"variables":[],
 			"selectors":[
 				{
@@ -362,12 +873,128 @@
 					"label":"parent",
 					"origin":5,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":0
 				}
 			],
 			"hyperedges":[
 			    {
 					"label":"BT_TEMP",
-					"tentacles":[5,6]
+					"tentacles":[0,1,2,5,6]
+				}
+			
+			
+			]
+		},{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,4,5],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,6]
+				}
+			
+			
+			]
+		},{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,4,5],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":2
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,6]
 				}
 			
 			
@@ -396,7 +1023,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,5,6],
+			"externals":[0,1,2,3,5,6],
 			"variables":[],
 			"selectors":[
 				{
@@ -415,12 +1042,128 @@
 					"label":"parent",
 					"origin":5,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":0
 				}
 			],
 			"hyperedges":[
 			    {
 					"label":"BT_TEMP",
-					"tentacles":[4,6]
+					"tentacles":[0,1,2,4,6]
+				}
+			
+			
+			]
+		},		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,5,6],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,4,6]
+				}
+			
+			
+			]
+		},		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,5,6],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":2
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,4,6]
 				}
 			
 			
@@ -449,7 +1192,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,5,6],
+			"externals":[0,1,2,3,5,6],
 			"variables":[],
 			"selectors":[
 				{
@@ -464,12 +1207,120 @@
 					"label":"right",
 					"origin":3,
 					"target":6
+				},{
+					"label":"target",
+					"origin":3,
+					"target":0
 				}
 			],
 			"hyperedges":[
 			    {
 					"label":"RefTP",
-					"tentacles":[4,5,6]
+					"tentacles":[0,1,2,4,5,6]
+				}
+			
+			
+			]
+		},{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},            
+			{
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,5,6],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":6
+				},{
+					"label":"target",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,4,5,6]
+				}
+			
+			
+			]
+		},{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},            
+			{
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,5,6],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":6
+				},{
+					"label":"target",
+					"origin":3,
+					"target":2
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,4,5,6]
 				}
 			
 			
@@ -498,7 +1349,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,5,6],
+			"externals":[0,1,2,3,5,6],
 			"variables":[],
 			"selectors":[
 				{
@@ -513,12 +1364,120 @@
 					"label":"parent",
 					"origin":4,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":3, 
+					"target":0
 				}
 			],
 			"hyperedges":[
 			    {
 					"label":"RefTP",
-					"tentacles":[4,5,6]
+					"tentacles":[0,1,2,4,5,6]
+				}
+			
+			
+			]
+		},	{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,5,6],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":6
+				},{
+					"label":"right",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3, 
+					"target":1
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,4,5,6]
+				}
+			
+			
+			]
+		},	{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":3
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,5,6],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":6
+				},{
+					"label":"right",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3, 
+					"target":2
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,4,5,6]
 				}
 			
 			
@@ -547,7 +1506,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,6,7],
+			"externals":[0,1,2,3,6,7],
 			"variables":[],
 			"selectors":[
 				{
@@ -566,16 +1525,136 @@
 					"label":"parent",
 					"origin":5,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":0
 				}
 			],
 			"hyperedges":[
 			    {
 					"label":"RefTP",
-					"tentacles":[4,6,7]
+					"tentacles":[0,1,2,4,6,7]
 				},
 				{
 					"label":"BT_TEMP",
-					"tentacles":[5,7]
+					"tentacles":[0,1,2,5,7]
+				}
+			]
+		},		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":4
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,6,7],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,4,6,7]
+				},
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,7]
+				}
+			]
+		},		{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":4
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,6,7],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":2
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,4,6,7]
+				},
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,5,7]
 				}
 			]
 		},
@@ -602,7 +1681,7 @@
 				"number":1
 			}
 			],
-			"externals":[3,6,7],
+			"externals":[0,1,2,3,6,7],
 			"variables":[],
 			"selectors":[
 				{
@@ -621,16 +1700,136 @@
 					"label":"parent",
 					"origin":5,
 					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":0
 				}
 			],
 			"hyperedges":[
 			    {
 					"label":"RefTP",
-					"tentacles":[5,6,7]
+					"tentacles":[0,1,2,5,6,7]
 				},
 				{
 					"label":"BT_TEMP",
-					"tentacles":[4,7]
+					"tentacles":[0,1,2,4,7]
+				}
+			]
+		},	{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":4
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,6,7],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":1
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,5,6,7]
+				},
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,4,7]
+				}
+			]
+		},	{
+			"nodes":[
+			{
+				"type":"int_-1",
+				"number":1
+			},
+			{
+				"type":"int_0",
+				"number":1
+			},
+			{
+				"type":"int_1",
+				"number":1
+			},			
+            {
+				"type":"AVLTree",
+				"number":4
+			},
+			{
+				"type":"NULL",
+				"number":1
+			}
+			],
+			"externals":[0,1,2,3,6,7],
+			"variables":[],
+			"selectors":[
+				{
+					"label":"left",
+					"origin":3,
+					"target":4
+				},{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},{
+					"label":"right",
+					"origin":3,
+					"target":5
+				},{
+					"label":"parent",
+					"origin":5,
+					"target":3
+				},{
+					"label":"balance",
+					"origin":3,
+					"target":2
+				}
+			],
+			"hyperedges":[
+			    {
+					"label":"RefTP",
+					"tentacles":[0,1,2,5,6,7]
+				},
+				{
+					"label":"BT_TEMP",
+					"tentacles":[0,1,2,4,7]
 				}
 			]
 		},
@@ -657,17 +1856,17 @@
 		            "number":1
 		        }
 		      ],
-		      "externals":[3,4,6],
+		      "externals":[0,1,2,3,4,6],
 		      "variables":[],
 		      "selectors":[],
 		      "hyperedges":[
 		          {
 		              "label":"RefTP",
-		              "tentacles":[3,5,6]
+		              "tentacles":[0,1,2,3,5,6]
 		          },
 		          {
 		              "label":"RefTP",
-		              "tentacles":[5,4,6]
+		              "tentacles":[0,1,2,5,4,6]
 		          }
 		      ]
 		}
