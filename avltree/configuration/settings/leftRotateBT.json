@@ -1,0 +1,34 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"rotateLeft"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"avlTreeWithoutIndices.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"before_left.json",
+            "description":"General AVL tree that needs a left rotation."
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":2000,
+        "abstractionDistance":1,
+        "logging":false,
+        "stateRefinement":[]
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/left_rotate_bt"
+        },
+        "grammar":{
+            "path":"..attestor-examples-output/avltree/grammar_bt"
+        }
+    },
+    "modelChecking":{}
+}
