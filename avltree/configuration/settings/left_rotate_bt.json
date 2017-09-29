@@ -27,7 +27,7 @@
             "path":"../attestor-examples-output/avltree/left_rotate_bt"
         },
         "grammar":{
-            "path":"..attestor-examples-output/avltree/grammar_bt"
+            "path":"../attestor-examples-output/avltree/grammar_bt"
         }
     },
     "modelChecking":{}
