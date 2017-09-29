@@ -21,7 +21,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialListTwenteSuccees"
+            "path":"../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialListTwenteSuccess"
         }
     },
     "modelChecking":{

@@ -21,7 +21,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialListIncomplete"
+            "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialListTwenteFail"
         }
     },
     "modelChecking":{
