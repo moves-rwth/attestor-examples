@@ -11,7 +11,7 @@
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"before_left.json",
+            "file":"before_left_bt.json",
             "description":"General AVL tree that needs a left rotation."
         },
         "predefinedGrammars":[]
