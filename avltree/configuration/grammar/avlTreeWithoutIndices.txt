@@ -1,5 +1,5 @@
 [{
-	"nonterminal":"RefBT",
+	"nonterminal":"BT",
 	"rank":2,
 	"reductionTentacles":[false,true],
 	"rules":[
@@ -9,7 +9,7 @@
 				"type":"NULL",
 				"number":1
 			},{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":1
 			}],
 			"externals":[1,0],
@@ -33,7 +33,7 @@
 				"type":"NULL",
 				"number":1
 			},{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":2
 			}],
 			"externals":[1,0],
@@ -55,7 +55,7 @@
 			],
 			"hyperedges":[
 				{
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[2,0]
 				}
 			]
@@ -66,7 +66,7 @@
 				"type":"NULL",
 				"number":1
 			},{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":2
 			}],
 			"externals":[1,0],
@@ -88,7 +88,7 @@
 			],
 			"hyperedges":[
 				{
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[2,0]
 				}
 			]
@@ -99,7 +99,7 @@
 				"type":"NULL",
 				"number":1
 			},{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":3
 			}],
 			"externals":[1,0],
@@ -125,11 +125,11 @@
 			],
 			"hyperedges":[
 				{
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[2,0]
 				},
 				{
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[3,0]
 				}
 			]
@@ -140,7 +140,7 @@
 		              "type":"NULL",
 		              "number":1
 		          },{
-		              "type":"BTNode",
+		              "type":"AVLTree",
 		              "number":2
 		          }
 		      ],
@@ -153,7 +153,7 @@
 		              "tentacles":[1,2,0]
 		          },
 		          {
-		              "label":"RefBT",
+		              "label":"BT",
 		              "tentacles":[2,0]
 		          }
 		      ]
@@ -168,7 +168,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":2
 			},
 			{
@@ -198,7 +198,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":2
 			},
 			{
@@ -228,7 +228,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":3
 			},
 			{
@@ -259,7 +259,7 @@
 			],
 			"hyperedges":[
 			    {
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[2,3]
 				}
 			
@@ -269,7 +269,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":3
 			},
 			{
@@ -300,7 +300,7 @@
 			],
 			"hyperedges":[
 			    {
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[1,3]
 				}
 			
@@ -310,7 +310,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":3
 			},
 			{
@@ -347,7 +347,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":3
 			},
 			{
@@ -384,7 +384,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":4
 			},
 			{
@@ -419,7 +419,7 @@
 					"tentacles":[1,3,4]
 				},
 				{
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[2,4]
 				}
 			]
@@ -427,7 +427,7 @@
 		{
 			"nodes":[
 			{
-				"type":"BTNode",
+				"type":"AVLTree",
 				"number":4
 			},
 			{
@@ -462,7 +462,7 @@
 					"tentacles":[2,3,4]
 				},
 				{
-					"label":"RefBT",
+					"label":"BT",
 					"tentacles":[1,4]
 				}
 			]
@@ -470,7 +470,7 @@
 		{
 		      "nodes":[
 		          {
-		              "type":"BTNode",
+		              "type":"AVLTree",
 		              "number":3
 		          },
 		          {
