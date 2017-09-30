@@ -11,7 +11,7 @@
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"before_left_bt.json",
+            "file":"before_left.json",
             "description":"General AVL tree that needs a left rotation."
         },
         "predefinedGrammars":[]
@@ -24,10 +24,7 @@
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/left_rotate_bt"
-        },
-        "grammar":{
-            "path":"../attestor-examples-output/avltree/grammar_bt"
+            "path":"../attestor-examples-output/avltree/bt/left_rotate"
         }
     },
     "modelChecking":{}

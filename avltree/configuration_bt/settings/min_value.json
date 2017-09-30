@@ -1,0 +1,32 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"leftTraversal"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"avlTreeWithoutIndices.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"balanced_tree.json",
+            "description":"A general balanced AVL tree"
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":500,
+        "abstractionDistance":1,
+        "aggressiveReturn":false,
+        "logging":false,
+        "stateRefinement":[]
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/bt/min_value"
+        }
+    },
+    "modelChecking":{}
+}
