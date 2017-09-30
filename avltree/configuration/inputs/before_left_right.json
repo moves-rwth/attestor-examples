@@ -38,6 +38,12 @@
                 }
 			],
 			"selectors":[
+				{
+					"label":"parent",
+					"annotation":"",
+					"origin":4,
+					"target":3
+				},
                 {
 					"label":"left",
 					"annotation":"",
