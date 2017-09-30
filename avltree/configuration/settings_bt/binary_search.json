@@ -3,28 +3,29 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"searchAndBack"
+            "method":"search"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"avlTreeWithoutIndices.json"
         },
         "initialState":{
-            "path":"configuration/inputs",
+            "path":"configuration/inputs_bt",
             "file":"balanced_tree.json",
             "description":"A general balanced AVL tree"
         },
         "predefinedGrammars":[]
     },
     "options":{
-        "maximalStateSpace":2000,
+        "maximalStateSpace":500,
         "abstractionDistance":0,
         "logging":false,
+        "stateLabeling":[],
         "stateRefinement":[]
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/bt/binary_search_and_back"
+            "path":"../attestor-examples-output/avltree/bt/binary_search"
         }
     },
     "modelChecking":{}

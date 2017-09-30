@@ -3,29 +3,28 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"switchSubtrees"
+            "method":"rotateLeft"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"avlTreeWithoutIndices.json"
         },
         "initialState":{
-            "path":"configuration/inputs",
-            "file":"debug_switch.json",
-            "description":"A general balanced AVL tree"
+            "path":"configuration/inputs_bt",
+            "file":"before_left.json",
+            "description":"General AVL tree that needs a left rotation."
         },
         "predefinedGrammars":[]
     },
     "options":{
-        "maximalStateSpace":5000,
+        "maximalStateSpace":2000,
         "abstractionDistance":1,
-        "aggressiveAbstractionThreshold":5,
         "logging":false,
         "stateRefinement":[]
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/bt/switch_subtrees"
+            "path":"../attestor-examples-output/avltree/bt/left_rotate"
         }
     },
     "modelChecking":{}

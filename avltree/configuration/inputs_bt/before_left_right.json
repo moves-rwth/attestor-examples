@@ -38,6 +38,11 @@
                 }
 			],
 			"selectors":[
+				{
+					"label":"parent",
+					"origin":4,
+					"target":3
+				},
                 {
 					"label":"left",
 					"origin":4,

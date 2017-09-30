@@ -3,14 +3,14 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"executeRebalance"
+            "method":"rebalance"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"avlTreeWithoutIndices.json"
         },
         "initialState":{
-            "path":"configuration/inputs",
+            "path":"configuration/inputs_bt",
             "file":"inserted.json",
             "description":"AVL after a node has been inserted"
         },
@@ -21,11 +21,11 @@
         "abstractionDistance":1,
         "aggressiveReturnAbstraction":true,
         "logging":false,
-        "stateRefinement":["balance"]
+        "stateRefinement":[]
     },
     "output":{
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/bt/call_rebalance"
+            "path":"../attestor-examples-output/avltree/bt/rebalance"
         }
     },
     "modelChecking":{}

@@ -10,14 +10,14 @@
             "file":"avlTreeWithoutIndices.json"
         },
         "initialState":{
-            "path":"configuration/inputs",
+            "path":"configuration/inputs_bt",
             "file":"balanced_tree.json",
             "description":"A general balanced AVL tree"
         },
         "predefinedGrammars":[]
     },
     "options":{
-        "maximalStateSpace":500,
+        "maximalStateSpace":1000,
         "abstractionDistance":1,
         "aggressiveReturn":false,
         "logging":false,
