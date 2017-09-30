@@ -40,52 +40,42 @@
 			"selectors":[
                 {
 					"label":"left",
-					"annotation":"",
 					"origin":4,
 					"target":5
 				},{
 					"label":"right",
-					"annotation":"",
 					"origin":4,
 					"target":6
 				},{
 					"label":"parent",
-					"annotation":"",
 					"origin":5,
 					"target":4
 				},{
 					"label":"parent",
-					"annotation":"",
 					"origin":6,
 					"target":4
 				},{
 					"label":"balance",
-					"annotation":"",
 					"origin":4,
 					"target":0
 				},{
                     "label":"left",
-                    "annotation":"",
                     "origin":6,
                     "target":7
                 },{
                     "label":"right",
-                    "annotation":"",
                     "origin":6,
                     "target":8
                 },{
                     "label":"parent",
-                    "annotation":"",
                     "origin":7,
                     "target":6
                 },{
                     "label":"parent",
-                    "annotation":"",
                     "origin":8,
                     "target":6
                 },{
                     "label":"balance",
-                    "annotation":"",
                     "origin":6,
                     "target":1
                 }
