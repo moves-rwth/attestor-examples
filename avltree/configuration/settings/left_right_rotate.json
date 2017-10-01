@@ -26,7 +26,10 @@
     "output":{
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/left_right_rotate"
-        }
+        },
+		"grammar":{
+			"path":"../attestor-examples-output/avltree"
+		}
     },
     "modelChecking":{}
 }

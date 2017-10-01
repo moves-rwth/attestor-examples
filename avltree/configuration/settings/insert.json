@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"pseudoInsert"
+            "method":"insert"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -25,9 +25,11 @@
         "stateRefinement":["balance"]
     },
     "output":{
+		"defaultPath":"../attestor-examples-output/avltree/insert",
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/insert"
-        }
+        },
+		"customHCs":{
+		}
     },
     "modelChecking":{}
 }
