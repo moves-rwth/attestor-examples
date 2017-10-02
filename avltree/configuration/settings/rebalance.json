@@ -11,7 +11,7 @@
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"difficultRebalance.json",
+            "file":"inserted.json",
             "description":"AVL after a node has been inserted"
         },
         "predefinedGrammars":[]
