@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"insert"
+            "method":"pseudoInsert"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -11,7 +11,7 @@
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"balanced_tree.json",
+            "file":"balanced_tree_with_this.json",
             "description":"A general balanced AVL tree after insertion of an element"
         },
         "predefinedGrammars":[]

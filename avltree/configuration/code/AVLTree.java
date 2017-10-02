@@ -141,8 +141,8 @@ public class AVLTree {
 	}
     
     //insert the element at the left-most-position instead of searching
-    public void pseudoInsert( AVLTree n ){
-        
+    public void pseudoInsert(){
+        AVLTree n = this;
         AVLTree leftMost = leftTraversal( n );
         AVLTree newNode = new AVLTree( leftMost , null, null, 0 );
         leftMost.left = newNode;
