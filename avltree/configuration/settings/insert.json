@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"pseudoInsert"
+            "method":"insert"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",

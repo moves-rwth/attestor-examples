@@ -163,8 +163,10 @@ public class AVLTree {
         return returnNode;
     }
 	
-	public  void insert(AVLTree n, int value) {
+	public  void insert( int value) {
 		
+        AVLTree n = this;
+        
 		if(n == null) {
 			n = new AVLTree(null, null, null, 0);
 			return;
@@ -179,7 +181,12 @@ public class AVLTree {
 					
 					AVLTree newNode = new AVLTree(n, null, null, 0);
 					n.left = newNode;
-					rebalance(newNode);
+                    if( n.balance == 0 ){
+                        n.balance = -1;
+                        rebalance( n );
+                    }else{
+                        n.balance = 0;
+                    }
 					return;
 				} else {
 					
@@ -193,7 +200,12 @@ public class AVLTree {
             		
             		AVLTree newNode = new AVLTree(n, null, null, 0);
             		n.right = newNode;
-            		rebalance(n);
+                    if( n.balance == 0 ){
+                        n.balance = 1;
+                        rebalance( n );
+                    }else{
+                        n.balance = 0;
+                    }
             		return;            		
             	} else {
             		
