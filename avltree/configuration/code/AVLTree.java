@@ -147,16 +147,14 @@ public class AVLTree {
         AVLTree newNode = new AVLTree( leftMost , null, null, 0 );
         leftMost.left = newNode;
         
-        return rebalance( newNode );
-        
-        //newNode = rebalance( newNode );
-        /*
-        while( newNode.parent != null ){
-            newNode = newNode.parent;
+        AVLTree returnNode = rebalance( newNode );
+       
+       
+        while( returnNode.parent != null ){
+            returnNode = returnNode.parent;
         }
         
-        return newNode;
-        */
+        return returnNode;
     }
 	
 	public  void insert(AVLTree n, int value) {
@@ -343,64 +341,90 @@ public class AVLTree {
 		AVLTree t = rebalance( z );	
 	}
 	
-	static AVLTree rebalance( AVLTree z ) {
+    //rebalance after Insert (Assumes inserted to be a freshly inserted node )
+	static AVLTree rebalance( AVLTree inserted ) {
+        
+        if( inserted.parent == null ){
+               return inserted;
+        }
 		
-		AVLTree x = z.parent;
-		AVLTree p1 = null;
-		AVLTree p2 = null;
-		while(x != null) {
+		AVLTree localRoot = inserted.parent;
+        if( localRoot.right == inserted ){
+            if( localRoot.balance == 0 ){
+                localRoot.balance = 1;
+            }else if( localRoot.balance == -1 ){
+                localRoot.balance = 0;
+                return localRoot;
+            }
+            //localRoot.balance = 1
+            //kann im ersten schritt nicht passieren, da wir rechts neu eingefügt haben
+            
+        }else if( localRoot.left == inserted ){
+            if( localRoot.balance == 0 ){
+                localRoot.balance = -1;
+            }else if( localRoot.balance == 1 ){
+                localRoot.balance = 0;
+                return localRoot;
+            }
+            //localRoot.balance = -1
+            //kann im ersten schritt nicht passieren, da wir links neu eingefügt haben
+        }
+        
+        if( localRoot.parent == null ){
+               return localRoot;
+        }
+        
+        inserted = localRoot;
+        localRoot = localRoot.parent;
+       
+		while( true ) {
 			
-			if(x.right == z) { 
+			if(localRoot.right == inserted ) { 
 				
-				if(x.balance == 1) {
+				if( localRoot.balance == 1) {
 					
-					if(z.balance == -1) {
-						rotateRightLeft(x);
+					if( inserted.balance == -1) {
+						rotateRightLeft( localRoot );
+                        return inserted.parent;
 					} else {
-						rotateLeft(x);
+						rotateLeft( localRoot );
+                        return inserted;
 					}
 					
-					break;
-					// adapt parent?
-					
-				} else if(x.balance == -1) {
-					x.balance = 0;
-					break;
+				} else if( localRoot.balance == -1) {
+					localRoot.balance = 0;
+					return localRoot;
 				} else {
-					x.balance = 1;
-					z = x;
+					localRoot.balance = 1;
 				}
 			} else {
 
-				if(x.balance == -1) {
+				if( localRoot.balance == -1) {
 					
-					if(z.balance == 1) {
-						rotateLeftRight(x);
+					if( inserted.balance == 1) {
+						rotateLeftRight( localRoot );
+                        return inserted.parent;
 					} else {
-						rotateRight(x);
+						rotateRight( localRoot );
+                        return inserted;
 					}
 					
-					break;
-					// adapt parent?
-					
-				} else if(x.balance == 1) {
-					x.balance = 0;
-					break;
+				} else if( localRoot.balance == 1) {
+					localRoot.balance = 0;
+					return localRoot;
 				} else {
-					x.balance = -1;
-					z = x;
+					localRoot.balance = -1;
 				}
 			}
 			
-			p2 = p1;
-			p1 = z;
-			x = z.parent;
+			if( localRoot.parent != null ){
+                inserted = localRoot;
+                localRoot = localRoot.parent;
+            }else{
+                return localRoot;
+            }
 		}
 		
-		if( p2 != null ){
-			return z.parent;
-		}
-		return x;
 	}
 	
 	static AVLTree originalRebalance( AVLTree z ) {
@@ -463,7 +487,7 @@ public class AVLTree {
 		return x;
 	}
     
-    
+    /*
     public static List listToAVL( ){
      
         List list = null;
@@ -480,7 +504,7 @@ public class AVLTree {
         }
                 
         return list;
-    }
+    }*/
     
 }
 	
