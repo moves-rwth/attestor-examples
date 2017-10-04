@@ -146,17 +146,21 @@ public class AVLTree {
         AVLTree leftMost = leftTraversal( n );
         AVLTree newNode = new AVLTree( leftMost , null, null, 0 );
         leftMost.left = newNode;
+        AVLTree returnNode = null;
         
-        return rebalance( newNode );
-        
-        //newNode = rebalance( newNode );
-        /*
-        while( newNode.parent != null ){
-            newNode = newNode.parent;
+        if( leftMost.balance == 0 ){
+            leftMost.balance = -1;
+            returnNode = rebalance( leftMost );
+        }else{
+            leftMost.balance = 0;
+             returnNode = leftMost;
         }
         
-        return newNode;
-        */
+        while( returnNode.parent != null ){
+            returnNode = returnNode.parent;
+        }
+        
+        return returnNode;
     }
 	
 	public  void insert(AVLTree n, int value) {
@@ -278,7 +282,10 @@ public class AVLTree {
 		AVLTree b = x.right;
 		AVLTree c = x.right.left;
 		if( c != null ){
-			int balance = c.balance;
+			int balance = c.balance;            
+            AVLTree doNotAbstract1 = c.left;
+            AVLTree doNotAbstract2 = c.right;
+            
 			x.right = rotateRight(x.right);
 			x = rotateLeft(x);
 			if( balance == -1  ){
@@ -286,6 +293,10 @@ public class AVLTree {
 			}else if( balance == 1 && a != null ){
 				a.balance = -1;
 			}
+            
+            if( doNotAbstract1 == doNotAbstract2 ){
+                return x;
+            }
 		}else{
 			x.right = rotateRight(x.right);
 			x = rotateLeft(x);
@@ -311,6 +322,9 @@ public class AVLTree {
 		AVLTree c = x.left.right;
 		if( c != null ){
 			int balance = c.balance;
+            AVLTree doNotAbstract1 = c.left;
+            AVLTree doNotAbstract2 = c.right;
+            
 			x.left = rotateLeft(x.left);
 			x = rotateRight(x);
 		
@@ -319,6 +333,10 @@ public class AVLTree {
 			}else if( balance == 1 ){
 				b.balance = -1;
 			}
+            
+            if( doNotAbstract1 == doNotAbstract2 ){
+                return x;
+            }
 		}else{
 			x.left = rotateLeft(x.left);
 			x = rotateRight(x);
@@ -346,8 +364,6 @@ public class AVLTree {
 	static AVLTree rebalance( AVLTree z ) {
 		
 		AVLTree x = z.parent;
-		AVLTree p1 = null;
-		AVLTree p2 = null;
 		while(x != null) {
 			
 			if(x.right == z) { 
@@ -392,78 +408,18 @@ public class AVLTree {
 				}
 			}
 			
-			p2 = p1;
-			p1 = z;
 			x = z.parent;
 		}
 		
-		if( p2 != null ){
-			return z.parent;
-		}
-		return x;
+		if( x != null ){
+			return x;
+		}else{
+            return z;
+        }
 	}
 	
-	static AVLTree originalRebalance( AVLTree z ) {
-		
-		AVLTree x = z.parent;
-		AVLTree p1 = null;
-		AVLTree p2 = null;
-		while(x != null) {
-			
-			if(x.right == z) { 
-				
-				if(x.balance == 1) {
-					
-					if(z.balance == -1) {
-						rotateRightLeft(x);
-					} else {
-						rotateLeft(x);
-					}
-					
-					break;
-					// adapt parent?
-					
-				} else if(x.balance == -1) {
-					x.balance = 0;
-					break;
-				} else {
-					x.balance = 1;
-					z = x;
-				}
-			} else {
-
-				if(x.balance == -1) {
-					
-					if(z.balance == 1) {
-						rotateLeftRight(x);
-					} else {
-						rotateRight(x);
-					}
-					
-					break;
-					// adapt parent?
-					
-				} else if(x.balance == 1) {
-					x.balance = 0;
-					break;
-				} else {
-					x.balance = -1;
-					z = x;
-				}
-			}
-			
-			p2 = p1;
-			p1 = z;
-			x = z.parent;
-		}
-		
-		if( p2 != null ){
-			return z.parent;
-		}
-		return x;
-	}
-    
-    
+	
+    /*
     public static List listToAVL( ){
      
         List list = null;
@@ -481,6 +437,7 @@ public class AVLTree {
                 
         return list;
     }
+    */
     
 }
 	
