@@ -141,12 +141,22 @@ public class AVLTree {
 	}
     
     //insert the element at the left-most-position instead of searching
-    public void pseudoInsert(){
+    public AVLTree pseudoInsert(){
         AVLTree n = this;
         AVLTree leftMost = leftTraversal( n );
         AVLTree newNode = new AVLTree( leftMost , null, null, 0 );
         leftMost.left = newNode;
-        rebalance( newNode );
+        
+        return rebalance( newNode );
+        
+        //newNode = rebalance( newNode );
+        /*
+        while( newNode.parent != null ){
+            newNode = newNode.parent;
+        }
+        
+        return newNode;
+        */
     }
 	
 	public  void insert(AVLTree n, int value) {
@@ -347,7 +357,7 @@ public class AVLTree {
 					if(z.balance == -1) {
 						rotateRightLeft(x);
 					} else {
-						rotateLeft(x)
+						rotateLeft(x);
 					}
 					
 					break;
@@ -407,7 +417,7 @@ public class AVLTree {
 					if(z.balance == -1) {
 						rotateRightLeft(x);
 					} else {
-						rotateLeft(x)
+						rotateLeft(x);
 					}
 					
 					break;
@@ -452,5 +462,25 @@ public class AVLTree {
 		}
 		return x;
 	}
+    
+    
+    public static List listToAVL( ){
+     
+        List list = null;
+        for( int i = 0; i < 10; i++ ){
+            List newList = new List();
+            newList.next = list;
+            list = newList;    
+        }
+        AVLTree tree = new AVLTree( null, null, null, 0 );
+        
+        if( list != null ){
+            tree = tree.pseudoInsert( );
+            list = list.next;
+        }
+                
+        return list;
+    }
+    
 }
 	
