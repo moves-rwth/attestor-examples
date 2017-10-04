@@ -419,7 +419,7 @@ public class AVLTree {
 	}
 	
 	
-    /*
+    
     public static List listToAVL( ){
      
         List list = null;
@@ -430,14 +430,15 @@ public class AVLTree {
         }
         AVLTree tree = new AVLTree( null, null, null, 0 );
         
-        if( list != null ){
-            tree = tree.pseudoInsert( );
+        while( list != null ){
+            
             list = list.next;
+            tree = tree.pseudoInsert();
         }
                 
         return list;
     }
-    */
+    
     
 }
 	
