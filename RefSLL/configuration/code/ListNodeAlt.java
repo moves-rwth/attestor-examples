@@ -53,16 +53,11 @@ public class ListNodeAlt{
 	public static void main( String [] args ){
 		ListNodeAlt head = buildList();
 		
-
-		
 		/*ListNodeAlt tail = head;
 		while( tail.nextAlt != null ){
 			tail = tail.nextAlt;
 		}
 		*/
-		
-
-		
 		
 		ListNodeAlt reversedPart = null;
 		ListNodeAlt current = head;
@@ -72,11 +67,6 @@ public class ListNodeAlt{
 			reversedPart = current;
 			current = next;
 		}
-		
-		
-		
-	
-		
 		
 		//traverseList( list );
 		//reverseList( head );

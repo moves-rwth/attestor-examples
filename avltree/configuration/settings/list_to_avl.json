@@ -1,0 +1,34 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"listToAVL"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+    },
+    "options":{
+        "maximalStateSpace":6000,
+        "abstractionDistance":1,
+        "aggressiveReturn":false,
+        "mode":"indexed",
+        "logging":false,
+        "stateRefinement":["balance"]
+    },
+    "output":{
+		"defaultPath":"../attestor-examples-output/avltree/listToAVL",
+        "stateSpace":{
+        },
+		"grammar":{
+		}
+    },
+    "modelChecking":{}
+}
