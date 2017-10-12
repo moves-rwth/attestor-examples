@@ -11,7 +11,7 @@
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"before_left_right.json",
+            "file":"before_left_right_2.json",
             "description":"AVL tree that needs left right rotation"
         },
         "predefinedGrammars":[]
@@ -19,6 +19,7 @@
     "options":{
         "maximalStateSpace":2000,
         "abstractionDistance":1,
+        "aggressiveReturnAbstraction":true,
         "mode":"indexed",
         "logging":false,
         "stateRefinement":["balance"]
