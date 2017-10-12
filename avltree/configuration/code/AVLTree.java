@@ -294,9 +294,7 @@ public class AVLTree {
 		AVLTree b = x.right;
 		AVLTree c = x.right.left;
 		if( c != null ){
-			int balance = c.balance;            
-            AVLTree doNotAbstract1 = c.left;
-            AVLTree doNotAbstract2 = c.right;
+			int balance = c.balance;
             
 			x.right = rotateRight(x.right);
 			x = rotateLeft(x);
@@ -306,7 +304,7 @@ public class AVLTree {
 				a.balance = -1;
 			}
             
-            if( doNotAbstract1 == doNotAbstract2 ){
+            if( c == x ){
                 return x;
             }
 		}else{
