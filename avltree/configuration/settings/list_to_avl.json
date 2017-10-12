@@ -3,7 +3,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"listToAVL"
+            "method":"sortedListToAVL"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -24,7 +24,7 @@
         "stateRefinement":["balance"]
     },
     "output":{
-		"defaultPath":"../attestor-examples-output/avltree/listToAVL",
+		"defaultPath":"../attestor-examples-output/avltree/list_to_avl",
         "stateSpace":{
         },
 		"grammar":{

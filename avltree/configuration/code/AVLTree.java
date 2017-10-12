@@ -141,7 +141,7 @@ public class AVLTree {
 	}
     
     //insert the element at the left-most-position instead of searching
-    public AVLTree pseudoInsert(){
+    public AVLTree leftMostInsert(){
         AVLTree n = this;
         AVLTree leftMost = leftTraversal( n );
         AVLTree newNode = new AVLTree( leftMost , null, null, 0 );
@@ -430,7 +430,7 @@ public class AVLTree {
 	
 	
     
-    public static List listToAVL( ){
+    public static List sortedListToAVL( ){
      
         List list = null;
         for( int i = 0; i < 10; i++ ){
@@ -443,7 +443,7 @@ public class AVLTree {
         while( list != null ){
             
             list = list.next;
-            tree = tree.pseudoInsert();
+            tree = tree.leftMostInsert();
         }
                 
         return list;
