@@ -26,11 +26,6 @@ public class AVLTree {
     }
     
     @Benchmark
-    public void insert() {
-        BenchmarkHelper.run();
-    }
-    
-    @Benchmark
     public void left_rotate() {
         BenchmarkHelper.run( 179, 179, 1 );
     }
@@ -62,14 +57,14 @@ public class AVLTree {
     
     @Benchmark
     public void rebalance() {
-        BenchmarkHelper.run(3509/397/2);
+        BenchmarkHelper.run(3509,397,2);
     }
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run(23511/1323/2);
+        BenchmarkHelper.run(23511,1323,2);
     }
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(34280/140/3);
+        BenchmarkHelper.run(34280,140,3);
     }
 }
