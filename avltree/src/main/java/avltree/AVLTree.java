@@ -32,12 +32,12 @@ public class AVLTree {
     
     @Benchmark
     public void left_rotate() {
-        BenchmarkHelper.run( 190, 190, 1 );
+        BenchmarkHelper.run( 179, 179, 1 );
     }
     
     @Benchmark
     public void left_right_rotate() {
-        BenchmarkHelper.run( 61, 19, 1);
+        BenchmarkHelper.run( 1077, 64, 1);
     }
     
     @Benchmark
@@ -58,5 +58,18 @@ public class AVLTree {
     @Benchmark
     public void max_value() {
         BenchmarkHelper.run();
+    }
+    
+    @Benchmark
+    public void rebalance() {
+        BenchmarkHelper.run(3509/397/2);
+    }
+    @Benchmark
+    public void insert() {
+        BenchmarkHelper.run(23511/1323/2);
+    }
+    @Benchmark
+    public void list_to_avl() {
+        BenchmarkHelper.run(34280/140/3);
     }
 }
