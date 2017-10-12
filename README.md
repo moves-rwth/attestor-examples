@@ -1,18 +1,6 @@
 # attestor-examples
-A collection of examples and benchmarks for attestor.
 
-## Running all examples
-
-There is a prepared shell script to run all existing benchmarks:
-
-    $ ./run-all.sh
-
-Alternatively, every set of examples is provided as a standalone maven project
-that can be installed and executed as follows:
-
-    $ mvn clean install exec:exec@run
-
-Further detail are provided in the README file of the respective example project.
+This branch contains the Maven archetype for attestor examples.
 
 ## Creating new benchmarks
 
