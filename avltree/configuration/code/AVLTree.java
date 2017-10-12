@@ -334,8 +334,6 @@ public class AVLTree {
 		AVLTree c = x.left.right;
 		if( c != null ){
 			int balance = c.balance;
-            AVLTree doNotAbstract1 = c.left;
-            AVLTree doNotAbstract2 = c.right;
             
 			x.left = rotateLeft(x.left);
 			x = rotateRight(x);
@@ -345,10 +343,12 @@ public class AVLTree {
 			}else if( balance == 1 ){
 				b.balance = -1;
 			}
-            
-            if( doNotAbstract1 == doNotAbstract2 ){
-                return x;
+           
+            //ensure c is not abstracted -- essentially dead code, since x!=c.
+            if( c == x ){
+                   return x;
             }
+             
 		}else{
 			x.left = rotateLeft(x.left);
 			x = rotateRight(x);
