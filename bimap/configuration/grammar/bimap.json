@@ -9,7 +9,11 @@
             "nodes":[
                 {
                     "type":"DLList",
-                    "number":4
+                    "number":3
+                },
+                {
+                    "type":"NULL",
+                    "number":1
                 }
             ],
             "externals":[0,1,2,3],
@@ -46,8 +50,12 @@
         {
             "nodes":[
                 {
+                    "type":"NULL",
+                    "number":1
+                },
+                {
                     "type":"DLList",
-                    "number":4
+                    "number":3
                 }
             ],
             "externals":[0,1,2,3],
