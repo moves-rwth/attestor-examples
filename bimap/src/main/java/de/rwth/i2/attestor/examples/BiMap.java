@@ -8,17 +8,17 @@ public class BiMap {
 
     @Benchmark
     public void search() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run(98,98,5);
     }
     
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run(83,59,1);
     }
     
     @Benchmark
     public void delete() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.run(210,89,7);
     }
 
 }
