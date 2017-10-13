@@ -9,10 +9,7 @@
             "nodes":[
                 {
                     "type":"DLList",
-                    "number":3
-                },{
-                    "type":"null",
-                    "number":1
+                    "number":4
                 }
             ],
             "externals":[0,1,2,3],
@@ -21,29 +18,26 @@
                 {
                     "label":"next",
                     "origin":1,
-                    "annotation":"",
                     "target":2
                 },{
                     "label":"next",
                     "origin":2,
-                    "annotation":"",
                     "target":3
                 },{
                     "label":"prev",
                     "origin":1,
-                    "annotation":"",
                     "target":0
                 },{
                     "label":"prev",
                     "origin":2,
-                    "annotation":"",
                     "target":1
                 },
             ],
             "hyperedges":[]
         }
     ]
-    },{
+    },
+    {
     "nonterminal":"DLList",
     "rank":4,
     "reductionTentacles":[true,false,false,true],
@@ -52,12 +46,9 @@
         {
             "nodes":[
                 {
-                    "type":"null",
-                    "number":1
-                },{
                     "type":"DLList",
-                    "number":3
-                },
+                    "number":4
+                }
             ],
             "externals":[0,1,2,3],
             "variables":[],
@@ -65,29 +56,26 @@
                 {
                     "label":"next",
                     "origin":1,
-                    "annotation":"",
                     "target":2
                 },{
                     "label":"next",
                     "origin":2,
-                    "annotation":"",
                     "target":3
                 },{
                     "label":"prev",
                     "origin":1,
-                    "annotation":"",
                     "target":0
                 },{
                     "label":"prev",
-                    "annotation":"",
                     "origin":2,
                     "target":1
                 },
             ],
             "hyperedges":[]
         }
-        ]
-    },{
+    ]
+    },
+    {
     "nonterminal":"DLList",
     "rank":4,
     "reductionTentacles":[true,false,false,true],
@@ -105,12 +93,10 @@
             "selectors":[
                 {
                     "label":"next",
-                    "annotation":"",
                     "origin":1,
                     "target":4
                 },{
                     "label":"prev",
-                    "annotation":"",
                     "origin":1,
                     "target":0
                 },
@@ -122,7 +108,8 @@
                 "index":["()"],
                 }
             ]
-        },{
+        },
+        {
             "nodes":[
                 {
                     "type":"DLList",
@@ -134,12 +121,10 @@
             "selectors":[
                 {
                     "label":"next",
-                    "annotation":"",
                     "origin":2,
                     "target":3
                 },{
                     "label":"prev",
-                    "annotation":"",
                     "origin":2,
                     "target":4
                 },

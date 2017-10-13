@@ -17,7 +17,7 @@
         "predefinedGrammars":[]
     },
     "options":{
-        "maximalStateSpace":5500,
+        "maximalStateSpace":1000,
         "abstractionDistance":1,
         "mode":"indexed",
         "logging":false
@@ -25,6 +25,10 @@
     "output":{
         "stateSpace":{
             "path":"../attestor-examples-output/bimap/search"
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/bimap",
+            "folder":"grammarOutput",
         }
     },
     "modelChecking":{}
