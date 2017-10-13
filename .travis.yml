@@ -3,17 +3,17 @@ jdk:
 
 jobs:
   include:
-    - stage: slllist
+    - stage: Singly-Linked-List-Manual
       script: ./.run_test.sh sllist
-    - stage: refSLL 
+    - stage: Singly-Linked-List
       script: ./.run_test.sh RefSLL
-    - stage: refDLL
+    - stage: Doubly-Linked-List
       script: ./.run_test.sh RefDLL
-    - stage: refBTDLL
+    - stage: Binary-Tree-And-Doubly-Linked-List
       script: ./.run_test.sh RefBTDLL
-    - stage: refBT
+    - stage: Binary-Tree
       script: ./.run_test.sh RefBT
-    - stage: bimap 
+    - stage: Bidirectional-Map
       script: ./.run_test.sh bimap
-    - stage: avltree 
+    - stage: AVL-Tree
       script: ./.run_test.sh avltree 
