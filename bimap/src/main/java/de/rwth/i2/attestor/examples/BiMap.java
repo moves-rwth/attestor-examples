@@ -18,7 +18,7 @@ public class BiMap {
     
     @Benchmark
     public void delete() {
-        BenchmarkHelper.run(210,89,7);
+        BenchmarkHelper.run(211,88,6);
     }
 
 }
