@@ -65,6 +65,6 @@ public class AVLTree {
     }
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(33374,140,3);
+        BenchmarkHelper.run(34280, 140,3);
     }
 }
