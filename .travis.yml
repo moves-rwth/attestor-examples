@@ -3,15 +3,17 @@ jdk:
 
 jobs:
   include:
-    - stage: list
+    - stage: slllist
       script: ./.run_test.sh sllist
-    - stage: refBT
-      script: ./.run_test.sh RefBT
     - stage: refSLL 
       script: ./.run_test.sh RefSLL
     - stage: refDLL
       script: ./.run_test.sh RefDLL
     - stage: refBTDLL
       script: ./.run_test.sh RefBTDLL
+    - stage: refBT
+      script: ./.run_test.sh RefBT
+    - stage: bimap 
+      script: ./.run_test.sh bimap
     - stage: avltree 
       script: ./.run_test.sh avltree 
