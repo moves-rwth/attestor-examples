@@ -89,8 +89,14 @@ public class AVLTree {
     public void rebalance() {
         BenchmarkHelper.run(3509,397,2);
     }
+    
     @Benchmark
     public void insert() {
+        BenchmarkHelper.run(23511,1323,2);
+    }
+    
+    @Benchmark
+    public void insert_S() {
         BenchmarkHelper.run(23511,1323,2);
     }
     

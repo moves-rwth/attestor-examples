@@ -1,5 +1,5 @@
 {
-    "scenario":"memory safety",
+    "scenario":"(S) shape: balanced tree in final states",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -32,5 +32,8 @@
 		"customHCs":{
 		}
     },
-    "modelChecking":{}
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF { terminated } -> F ({ terminated } & { btree }))"
+    }
 }
