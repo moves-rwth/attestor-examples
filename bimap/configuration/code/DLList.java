@@ -39,7 +39,7 @@ public class DLList {
         return null;
     }
     
-    public static void insert(DLList l, DLList r, int key, int value) {
+    public static DLList insert(DLList l, DLList r, int key, int value) {
     
         while(l.next != null && r.next != null) {
             l = l.next;
@@ -53,6 +53,8 @@ public class DLList {
         DLList p = new DLList(null,r,17);
         r.next = p;
         r.key = value;
+        
+        return n;
         
     }
     

@@ -1,5 +1,5 @@
 {
-    "scenario":"Memory safety",
+    "scenario":"(S) shape: two doubly-linked lists of equal length",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -29,5 +29,8 @@
             "path":"../attestor-examples-output/bimap/insert"
         }
     },
-    "modelChecking":{}
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> GF { bimap })"
+    }
 }

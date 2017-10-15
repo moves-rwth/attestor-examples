@@ -1,4 +1,5 @@
 {
+    "scenario":"Memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",

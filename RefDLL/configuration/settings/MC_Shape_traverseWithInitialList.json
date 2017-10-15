@@ -1,4 +1,5 @@
 {
+    "scenario":"(S) shape: doubly-linked list",
     "input":{
         "program":{
             "classpath":"configuration/code",

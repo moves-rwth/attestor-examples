@@ -1,10 +1,10 @@
 {
-    "scenario":"Memory safety",
+    "scenario":"(S) shape: two doubly-linked lists of equal length",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"insert"
+            "method":"search"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -18,7 +18,7 @@
         "predefinedGrammars":[]
     },
     "options":{
-        "maximalStateSpace":5500,
+        "maximalStateSpace":1000,
         "abstractionDistance":1,
         "mode":"indexed",
         "logging":false
@@ -26,8 +26,15 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/bimap/insert"
+            "path":"../attestor-examples-output/bimap/search"
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/bimap",
+            "folder":"grammarOutput",
         }
     },
-    "modelChecking":{}
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> GF { bimap })"
+    }
 }

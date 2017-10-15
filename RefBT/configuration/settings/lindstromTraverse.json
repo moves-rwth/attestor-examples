@@ -1,5 +1,5 @@
 {
-    "scenario":"Show that Lindstrom results in a binary tree again.",
+    "scenario":"Memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -24,6 +24,7 @@
         "removeDeadVariables" : true
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/RefBT/lindstromTraverse"
         },

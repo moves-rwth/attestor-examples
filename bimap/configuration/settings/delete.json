@@ -1,4 +1,5 @@
 {
+    "scenario":"Memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -23,6 +24,7 @@
         "logging":false
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/bimap/delete"
         }

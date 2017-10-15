@@ -1,4 +1,5 @@
 {
+    "scenario":"(C) output DLL is exactly the same as the input DLL",
     "input":{
         "program":{
             "classpath":"configuration/code",

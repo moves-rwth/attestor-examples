@@ -24,6 +24,7 @@
         "removeDeadVariables" : true
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/RefBT/lindstrom_terminateAtSen"
         }    

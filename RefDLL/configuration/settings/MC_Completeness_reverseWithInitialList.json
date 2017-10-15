@@ -1,4 +1,5 @@
 {
+    "scenario":"(C) every DLL element has been accessed by variable pos",
     "input":{
         "program":{
             "classpath":"configuration/code",

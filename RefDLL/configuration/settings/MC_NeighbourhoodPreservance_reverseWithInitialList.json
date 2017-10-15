@@ -1,4 +1,5 @@
 {
+    "scenario":"check whether elements have the same pointer structure after reversal (expected to fail)",
     "input":{
         "program":{
             "classpath":"configuration/code",
