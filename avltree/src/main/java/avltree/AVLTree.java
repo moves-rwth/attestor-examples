@@ -36,7 +36,17 @@ public class AVLTree {
     }
 
     @Benchmark
-    public void binary_search_and_swap_subtrees() {
+    public void search_and_swap() {
+        BenchmarkHelper.run( 449, 107, 1);
+    }
+    
+    @Benchmark
+    public void search_and_swap_S() {
+        BenchmarkHelper.run( 449, 107, 1);
+    }
+    
+    @Benchmark
+    public void search_and_swap_C() {
         BenchmarkHelper.run( 449, 107, 1);
     }
     

@@ -1,0 +1,34 @@
+{
+    "scenario":"memory safety",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"searchAndSwap"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"balanced_tree.json",
+            "description":"A general balanced AVL tree"
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":5000,
+        "abstractionDistance":1,
+        "aggressiveAbstractionThreshold":5,
+        "mode":"indexed",
+        "logging":false,
+    },
+    "output":{
+        "enabled":false,
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/binary_search_and_swap_subtrees"
+        }
+    },
+    "modelChecking":{}
+}

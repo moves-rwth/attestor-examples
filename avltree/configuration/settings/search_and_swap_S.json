@@ -1,9 +1,10 @@
 {
+    "scenario":"memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"searchAndSwitchSubtrees"
+            "method":"searchAndSwap"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -22,12 +23,15 @@
         "aggressiveAbstractionThreshold":5,
         "mode":"indexed",
         "logging":false,
-        "stateRefinement":["balance"]
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/binary_search_and_swap_subtrees"
         }
     },
-    "modelChecking":{}
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF { terminated } -> F ({ terminated } & { btree }))"
+    }
 }

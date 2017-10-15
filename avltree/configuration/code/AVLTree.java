@@ -68,7 +68,7 @@ public class AVLTree {
         return n;
     }
     
-    static AVLTree searchAndSwitchSubtrees(AVLTree n, int value) {	
+    static AVLTree searchAndSwap(AVLTree n, int value) {	
 		
         n = binarySearch(n, value);
         //n = switchSubtrees(n);
