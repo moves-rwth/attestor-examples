@@ -1,9 +1,10 @@
 {
+    "scenario":"memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"search"
+            "method":"binarySearch"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -21,13 +22,13 @@
         "abstractionDistance":0,
         "mode":"indexed",
         "logging":false,
-        "stateLabeling":[],
-        "stateRefinement":["balance"]
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/binary_search"
         }
     },
-    "modelChecking":{}
+    "modelChecking":{
+    }
 }

@@ -40,7 +40,7 @@ public class AVLTree {
 		return n;
 	}
 	
-	static AVLTree search(AVLTree n, int value) {	
+	static AVLTree binarySearch(AVLTree n, int value) {	
 		
         while(n != null) {
             if( n.key == value ) {
@@ -62,7 +62,7 @@ public class AVLTree {
 	
 	static AVLTree searchAndBack(AVLTree n, int value) {	
 		
-        n = search(n, value);
+        n = binarySearch(n, value);
         n = climbUpwards(n);
 
         return n;
@@ -70,7 +70,7 @@ public class AVLTree {
     
     static AVLTree searchAndSwitchSubtrees(AVLTree n, int value) {	
 		
-        n = search(n, value);
+        n = binarySearch(n, value);
         //n = switchSubtrees(n);
 
         while(n != null && n.parent != null) {

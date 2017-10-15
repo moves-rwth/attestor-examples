@@ -14,6 +14,21 @@ public class AVLTree {
     public void binary_search() {
         BenchmarkHelper.run(192, 192, 6);
     }
+    
+    @Benchmark
+    public void binary_search_C() {
+        BenchmarkHelper.run(192, 192, 6);
+    }
+    
+    @Benchmark
+    public void binary_search_S() {
+        BenchmarkHelper.run(192, 192, 6);
+    }
+    
+    @Benchmark
+    public void binary_search_S_final() {
+        BenchmarkHelper.run(192, 192, 6);
+    }
 
     @Benchmark
     public void binary_search_and_back() {

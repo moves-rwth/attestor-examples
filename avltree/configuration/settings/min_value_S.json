@@ -1,5 +1,5 @@
 {
-    "scenario":"(S) shape: balanced tree",
+    "scenario":"(S) shape: balanced tree for all states",
     "input":{
         "program":{
             "classpath":"configuration/code",
