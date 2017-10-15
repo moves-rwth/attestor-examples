@@ -1,5 +1,5 @@
 {
-    "scenario":"memory safety with index grammars",
+    "scenario":"(P) functional correctness: return value is leftmost leaf in the tree",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -31,5 +31,7 @@
         }
     },
     "modelChecking":{
+       "enabled":true,
+	   "formulae":"G ({terminated} -> { return.left == null })"
     }      
 }

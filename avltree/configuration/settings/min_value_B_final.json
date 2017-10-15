@@ -1,5 +1,5 @@
 {
-    "scenario":"memory safety with index grammars",
+    "scenario":"memory safety + balanced tree shaped in final states",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -31,5 +31,7 @@
         }
     },
     "modelChecking":{
+        "enabled":true,
+        "formulae":"G ({terminated} -> { btree })"
     }      
 }
