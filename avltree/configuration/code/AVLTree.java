@@ -18,6 +18,13 @@ public class AVLTree {
 		this.right = right;
 		this.balance = balance;
 	}
+	
+    static AVLTree minValue(AVLTree n) {	
+		while(n.left != null) {
+			n = n.left;
+		}
+		return n;
+	}
 
 	static AVLTree leftTraversal(AVLTree n) {	
 		while(n.left != null) {

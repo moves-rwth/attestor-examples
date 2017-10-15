@@ -1,10 +1,10 @@
 {
-    "scenario":"memory safety + balanced tree shaped in final states",
+    "scenario":"(S) shape: balanced tree",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"leftTraversal"
+            "method":"minValue"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -25,13 +25,13 @@
         "logging":false,
     },
     "output":{
-        "enabled":true,
+        "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/min_value"
+            "path":"../attestor-examples-output/avltree/min_value_S"
         }
     },
     "modelChecking":{
         "enabled":true,
-        "formulae":"G ({terminated} -> { btree })"
+	    "formulae":"G { btree }"
     }      
 }

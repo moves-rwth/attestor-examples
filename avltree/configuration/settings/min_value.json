@@ -1,10 +1,10 @@
 {
-    "scenario":"memory safety with index grammars",
+    "scenario":"memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"leftTraversal"
+            "method":"minValue"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -25,7 +25,7 @@
         "logging":false,
     },
     "output":{
-        "enabled":true,
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/min_value"
         }

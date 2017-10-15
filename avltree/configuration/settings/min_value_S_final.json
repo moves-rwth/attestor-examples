@@ -1,10 +1,10 @@
 {
-    "scenario":"(P) functional correctness: return value is leftmost leaf in the tree",
+    "scenario":"(S) shape: balanced tree in final states",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"leftTraversal"
+            "method":"minValue"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -25,13 +25,13 @@
         "logging":false,
     },
     "output":{
-        "enabled":true,
+        "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/min_value"
+            "path":"../attestor-examples-output/avltree/min_value_S_final"
         }
     },
     "modelChecking":{
-       "enabled":true,
-	   "formulae":"G ({terminated} -> { return.left == null })"
+        "enabled":true,
+        "formulae":"G ({terminated} -> { btree })"
     }      
 }
