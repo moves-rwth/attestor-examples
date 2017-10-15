@@ -437,7 +437,7 @@ public class AVLTree {
 	
 	
     
-    public static List sortedListToAVL( ){
+    public static List sllToAVLTree( ){
      
         List list = null;
         for( int i = 0; i < 10; i++ ){

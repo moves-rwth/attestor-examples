@@ -93,8 +93,19 @@ public class AVLTree {
     public void insert() {
         BenchmarkHelper.run(23511,1323,2);
     }
+    
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(33374, 140,3);
+        BenchmarkHelper.run(34280, 140,3);
+    }
+    
+    @Benchmark
+    public void list_to_avl_C() {
+        BenchmarkHelper.run(34280, 140,3);
+    }
+    
+    @Benchmark
+    public void list_to_avl_S() {
+        BenchmarkHelper.run(34280, 140,3);
     }
 }

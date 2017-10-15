@@ -1,4 +1,5 @@
 {
+    "scenario":"(S) shape: balanced tree in final states",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -31,5 +32,7 @@
 		}
     },
     "modelChecking":{
+        "enabled":true,
+	    "formulae":"(GF { terminated } -> F ({ terminated } & { btree }))"
     }
 }
