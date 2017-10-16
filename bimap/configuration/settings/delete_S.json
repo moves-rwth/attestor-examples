@@ -31,6 +31,6 @@
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"(GF {terminated} -> GF { bimap })"
+	   "formulae":"(GF { terminated } -> F ({ terminated } & { bimap }))"
     }
 }
