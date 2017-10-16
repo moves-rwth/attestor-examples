@@ -1,7 +1,7 @@
 Attestor Examples: User-defined singly-linked list
 ==================================================
 
-This is a minimal attestor example covering a user-defined singly-linked list.
+This is a small collection of attestor examples covering a user-defined singly-linked list.
 
 To run the examples execute the following maven statement within this directory:
 
