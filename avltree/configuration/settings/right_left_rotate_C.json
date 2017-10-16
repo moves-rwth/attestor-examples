@@ -1,5 +1,5 @@
 {
-    "scenario":"Memory safety",
+    "scenario":"(C) correctness: return placed on tree element",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -29,8 +29,5 @@
             "path":"../attestor-examples-output/avltree/right_left_rotate"
         }
     },
-    "modelChecking":{
-        "enabled":true,
-	    "formulae":"(GF { terminated } -> F ({ terminated } & { return != null }))"
-    }
+    "modelChecking":{}
 }
