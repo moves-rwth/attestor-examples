@@ -1,7 +1,7 @@
 Attestor Examples: Bidirectional Map
 ====================================
 
-This collection of examples covers bidirectional maps that are implemented using two doubly-linked lists of even length.
+This collection of examples covers bidirectional maps that are implemented using two doubly-linked lists of equal length.
 
 To run the examples execute the following maven statement within this directory:
 
