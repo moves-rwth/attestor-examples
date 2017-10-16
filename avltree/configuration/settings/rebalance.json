@@ -1,4 +1,5 @@
 {
+    "scenario":"Memory safety",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -22,12 +23,13 @@
         "aggressiveReturnAbstraction":true,
         "mode":"indexed",
         "logging":false,
-        "stateRefinement":["balance"]
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/rebalance"
         }
     },
-    "modelChecking":{}
+    "modelChecking":{
+    }
 }

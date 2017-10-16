@@ -111,6 +111,16 @@ public class AVLTree {
     }
     
     @Benchmark
+    public void rebalance_S() {
+        BenchmarkHelper.run(3509,397,2);
+    }
+    
+    @Benchmark
+    public void rebalance_C() {
+        BenchmarkHelper.run(3509,397,2);
+    }
+    
+    @Benchmark
     public void insert() {
         BenchmarkHelper.run(23511,1323,2);
     }
