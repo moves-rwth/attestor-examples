@@ -38,17 +38,17 @@ public class BiMap {
     
     @Benchmark
     public void delete() {
-        BenchmarkHelper.run(211,88,6);
+        BenchmarkHelper.run(226, 90, 7); // or 211,88,6 depending on java compiler;
     }
     
     @Benchmark
     public void delete_S() {
-        BenchmarkHelper.run(211,88,6);
+        BenchmarkHelper.run(226, 90, 7); // or 211,88,6 depending on java compiler;
     }
     
     @Benchmark
     public void delete_C() {
-        BenchmarkHelper.run(211,88,6);
+        BenchmarkHelper.run(226, 90, 7); // or 211,88,6 depending on java compiler;
     }
 
 }
