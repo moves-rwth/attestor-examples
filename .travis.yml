@@ -9,8 +9,6 @@ jobs:
       script: ./.run_test.sh RefSLL
     - stage: Doubly-Linked-List
       script: ./.run_test.sh RefDLL
-    - stage: Binary-Tree-And-Doubly-Linked-List
-      script: ./.run_test.sh RefBTDLL
     - stage: Binary-Tree
       script: ./.run_test.sh RefBT
     - stage: Bidirectional-Map
