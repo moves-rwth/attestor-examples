@@ -1,5 +1,5 @@
 # attestor-examples
-A collection of examples and benchmarks for attestor.
+A collection of examples and benchmarks for [Attestor](https://github.com/moves-rwth/attestor).
 
 ## Running all examples
 
@@ -14,5 +14,7 @@ that can be installed and executed as follows:
 
 Further detail are provided in the README file of the respective example project.
 
+## Creating new example projects
 
-
+There a maven archetype to create minimal working example projects.
+Details are found [here](https://github.com/moves-rwth/attestor-examples/tree/archetype).
