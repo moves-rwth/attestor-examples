@@ -1,0 +1,37 @@
+{
+    "scenario":"(C) correctness: return placed on tree element",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"rebalance"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"avltree.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"inserted.json",
+            "description":"AVL after a node has been inserted"
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":2000,
+        "abstractionDistance":1,
+        "aggressiveReturnAbstraction":true,
+        "mode":"indexed",
+        "logging":false,
+    },
+    "output":{
+        "enabled":false,
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/rebalance"
+        }
+    },
+    "modelChecking":{
+        "enabled":true,
+	    "formulae":"(GF { terminated } -> F ({ terminated } & { return != null }))"
+    }
+}
