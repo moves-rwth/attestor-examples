@@ -29,5 +29,8 @@
             "path":"../attestor-examples-output/avltree/right_left_rotate"
         }
     },
-    "modelChecking":{}
+    "modelChecking":{
+        "enabled":true,
+	    "formulae":"(GF { terminated } -> F ({ terminated } & { return != null }))"
+    }
 }
