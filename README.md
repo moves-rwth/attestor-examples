@@ -1,5 +1,5 @@
 # attestor-examples
-A collection of examples and benchmarks for attestor.
+A collection of examples and benchmarks for [Attestor](https://github.com/moves-rwth/attestor).
 
 ## Running all examples
 
