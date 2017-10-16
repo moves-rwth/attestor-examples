@@ -1,11 +1,12 @@
 {
+    "scenario":"(S) shape: balanced tree for all states",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"search"
+            "method":"binarySearch"
         },
-        "grammar":{
+        "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"avltree.json"
         },
@@ -13,14 +14,23 @@
             "path":"configuration/inputs",
             "file":"balanced_tree.json",
             "description":"A general balanced AVL tree"
-        }
+        },
+        "predefinedGrammars":[]
     },
     "options":{
         "maximalStateSpace":500,
-        "depth":0,
+        "abstractionDistance":0,
         "mode":"indexed",
-        "logging":false
+        "logging":false,
     },
     "output":{
+        "enabled":false,
+        "stateSpace":{
+            "path":"../attestor-examples-output/avltree/binary_search"
+        }
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"G { btree }"
     }
 }

@@ -17,7 +17,7 @@ public class AVLTree {
         this.balance = balance;
     }
     
-    static AVLTree search(AVLTree n, int value) {    
+    static AVLTree binarySearch(AVLTree n, int value) {
         
         while(n != null) {
             if( n.key == value ) {

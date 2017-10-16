@@ -21,12 +21,12 @@ First, you have to install the archetype in your local repository:
     $ cd archetype
     $ mvn install
 
-After that a new example can be created by running the following:
+After that a new example can be created by running the following (outside of any other directory that is part of a maven project):
 
     mvn archetype:generate \
         -DarchetypeGroupId=de.rwth.i2.attestor.examples \
         -DarchetypeVersion=0.4 \
-        -DarchetypeArtifactId=benchmark \
+        -DarchetypeArtifactId=benchmark
 
 Alternatively, there is a shell script new_benchmark.sh containing this command.
 Maven will ask for a few project related information, such as project name and 
