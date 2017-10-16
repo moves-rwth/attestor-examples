@@ -10,9 +10,10 @@ There is a prepared shell script to run all existing benchmarks:
 Alternatively, every set of examples is provided as a standalone maven project
 that can be installed and executed as follows:
 
+    (cd to example directory)
     $ mvn clean install exec:exec@run
 
-Further detail are provided in the README file of the respective example project.
+Further details are provided in the README file of the respective example project.
 
 ## Creating new example projects
 
