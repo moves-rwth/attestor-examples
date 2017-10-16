@@ -8,6 +8,6 @@ public class SLList {
 
     @Benchmark
     public void main() {
-        BenchmarkHelper.run( 76,46,1 );
+        BenchmarkHelper.run();
     }
 }

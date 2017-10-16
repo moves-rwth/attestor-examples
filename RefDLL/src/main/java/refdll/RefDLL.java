@@ -8,17 +8,17 @@ public class RefDLL {
 
     @Benchmark
     public void traverse() {
-        BenchmarkHelper.run( 38, 38, 1 );
+        BenchmarkHelper.run();
     }
     
       @Benchmark
     public void buildList() {
-        BenchmarkHelper.run( 102, 48, 4 );
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void buildAndTraverse(){
-        BenchmarkHelper.run( 214, 12, 3  );
+        BenchmarkHelper.run();
     }
 	
 	@Benchmark

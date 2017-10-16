@@ -13,7 +13,7 @@ public class RefBT {
 
     @Benchmark
     public void getLeftmostChild() {
-        BenchmarkHelper.run( 43, 43, 4 );
+        BenchmarkHelper.run();
     }
 
     @Benchmark

@@ -12,62 +12,62 @@ public class AVLTree {
 
     @Benchmark
     public void binary_search() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void binary_search_C() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void binary_search_S() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void binary_search_S_final() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.run();
     }
 
     @Benchmark
     public void search_and_back() {
-        BenchmarkHelper.run( 455, 11, 1);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void search_and_back_S() {
-        BenchmarkHelper.run( 455, 11, 1);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void search_and_back_C() {
-        BenchmarkHelper.run( 455, 11, 1);
+        BenchmarkHelper.run();
     }
 
     @Benchmark
     public void search_and_swap() {
-        BenchmarkHelper.run( 449, 107, 1);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void search_and_swap_S() {
-        BenchmarkHelper.run( 449, 107, 1);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void search_and_swap_C() {
-        BenchmarkHelper.run( 449, 107, 1);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void left_rotate() {
-        BenchmarkHelper.run( 179, 179, 1 );
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void left_right_rotate() {
-        BenchmarkHelper.run( 1077, 64, 1);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
@@ -82,22 +82,22 @@ public class AVLTree {
     
     @Benchmark
     public void min_value() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void min_value_S_final() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void min_value_S() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void min_value_C() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.run();
     }
     
     @Benchmark
@@ -107,41 +107,41 @@ public class AVLTree {
     
     @Benchmark
     public void rebalance() {
-        BenchmarkHelper.run(3509,397,2);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void rebalance_S() {
-        BenchmarkHelper.run(3509,397,2);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void rebalance_C() {
-        BenchmarkHelper.run(3509,397,2);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run(23511,1323,2);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void insert_S() {
-        BenchmarkHelper.run(23511,1323,2);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(34280, 140,3);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void list_to_avl_C() {
-        BenchmarkHelper.run(34280, 140,3);
+        BenchmarkHelper.run();
     }
     
     @Benchmark
     public void list_to_avl_S() {
-        BenchmarkHelper.run(34280, 140,3);
+        BenchmarkHelper.run();
     }
 }
