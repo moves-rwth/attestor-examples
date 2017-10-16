@@ -81,6 +81,16 @@ public class AVLTree {
     }
     
     @Benchmark
+    public void right_left_rotate_S() {
+        BenchmarkHelper.run();
+    }
+    
+    @Benchmark
+    public void right_left_rotate_C() {
+        BenchmarkHelper.run();
+    }
+    
+    @Benchmark
     public void min_value() {
         BenchmarkHelper.run();
     }
