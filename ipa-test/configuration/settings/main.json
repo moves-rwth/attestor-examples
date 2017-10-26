@@ -1,0 +1,35 @@
+{
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"List",
+            "method":"main"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"sllist.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"empty.json",
+            "description":"An empty heap"
+        },
+        "predefinedGrammars":[],
+        "contracts":{
+            "path":"configuration/contracts",
+            "files":["buildList"],
+        },
+    },
+    "options":{
+        "abstractionDistance":1,
+        "logging":false,
+        "stateLabeling":[],
+        "stateRefinement":[]
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/sllist/main"
+        }
+    },
+    "modelChecking":{}
+}
