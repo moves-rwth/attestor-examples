@@ -3,11 +3,87 @@
     [
         {
             "precondition":{
-                
+                "nodes":[
+                    {
+                    "type":"int_0",
+                    "number":1
+                    },
+                    {
+                    "type":"int_1",
+                    "number":1
+                    },{
+                    "type":"NULL",
+                    "number":1
+                    }],
+                "externals":[0,1,2],
+                "variables":[
+                    {
+                    "name":"0",
+                    "target":0
+                    },{
+                    "name":"false",
+                    "target":0
+                    },{
+                    "name":"1",
+                    "target":1
+                    },{
+                    "name":"true",
+                    "target":1
+                    },{
+                    "name":"null",
+                    "target":2
+                    }
+                ],
+                "selectors":[],
+                "hyperedges":[]
             },
             "postcondtions":[
-
-
+            {
+            "nodes":[
+                    {
+                    "type":"int_0",
+                    "number":1
+                    },
+                    {
+                    "type":"int_1",
+                    "number":1
+                    },{
+                    "type":"NULL",
+                    "number":1
+                    },{
+                    "type":"List",
+                    "number":1
+                    }],
+                "externals":[0,1,2],
+                "variables":[
+                    {
+                    "name":"0",
+                    "target":0
+                    },{
+                    "name":"false",
+                    "target":0
+                    },{
+                    "name":"1",
+                    "target":1
+                    },{
+                    "name":"true",
+                    "target":1
+                    },{
+                    "name":"null",
+                    "target":2
+                    },{
+                    "name":"@return",
+                    "target":3
+                    }
+                ],
+                "selectors":[],
+                "hyperedges":[
+                    {
+                    "label":"SLList",
+                    "tentacles":[3,2]
+                    }
+                ]
+            }
             ]
         } 
     ]
