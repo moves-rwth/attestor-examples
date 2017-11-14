@@ -303,7 +303,7 @@ public class AVLTree {
 		if( c != null ){
 			int balance = c.balance;
             
-			x.right = rotateRight(x.right);
+			rotateRight(x.right);
 			x = rotateLeft(x);
 			if( balance == -1  ){
 				b.balance = 1;
