@@ -24,7 +24,7 @@
         "logging":false,
     },
     "output":{
-        "enabled":false,
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/right_left_rotate"
         }

@@ -23,7 +23,6 @@
         "logging":false,
     },
     "output":{
-        "enabled":false,
 		"defaultPath":"../attestor-examples-output/avltree/list_to_avl",
         "stateSpace":{
         },

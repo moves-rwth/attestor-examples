@@ -4,7 +4,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"insert"
+            "method":"leftMostInsert"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -25,7 +25,6 @@
         "logging":false,
     },
     "output":{
-        "enabled":false,
 		"defaultPath":"../attestor-examples-output/avltree/insert",
         "stateSpace":{
         },
