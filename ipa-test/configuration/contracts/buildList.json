@@ -1,16 +1,13 @@
 {
-"method":"buildList",
-    [
+"method":"<List: List buildList()>",
+ "contracts":
+ [
         {
             "precondition":{
                 "nodes":[
                     {
-                    "type":"int_0",
-                    "number":1
-                    },
-                    {
-                    "type":"int_1",
-                    "number":1
+                    "type":"int",
+                    "number":2
                     },{
                     "type":"NULL",
                     "number":1
@@ -37,7 +34,7 @@
                 "selectors":[],
                 "hyperedges":[]
             },
-            "postcondtions":[
+            "postconditions":[
             {
             "nodes":[
                     {

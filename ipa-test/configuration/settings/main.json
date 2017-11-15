@@ -17,7 +17,7 @@
         "predefinedGrammars":[],
         "contracts":{
             "path":"configuration/contracts",
-            "files":["buildList"],
+            "files":["buildList.json"],
         },
     },
     "options":{
