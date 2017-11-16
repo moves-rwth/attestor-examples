@@ -107,41 +107,41 @@ public class AVLTree {
     
     @Benchmark
     public void rebalance() {
-        BenchmarkHelper.run(3509,397,2);
+        BenchmarkHelper.run(3499,397,2);
     }
     
     @Benchmark
     public void rebalance_S() {
-        BenchmarkHelper.run(3509,397,2);
+        BenchmarkHelper.run(3499,397,2);
     }
     
     @Benchmark
     public void rebalance_C() {
-        BenchmarkHelper.run(3509,397,2);
+        BenchmarkHelper.run(3499,397,2);
     }
     
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run(10476,1323,2);
+        BenchmarkHelper.run(6146,444,4);
     }
     
     @Benchmark
     public void insert_S() {
-        BenchmarkHelper.run(23511,1323,2);
+        BenchmarkHelper.run(10464,1323,2);
     }
     
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(34280, 140,3);
+        BenchmarkHelper.run(7193, 140,3);
     }
     
     @Benchmark
     public void list_to_avl_C() {
-        BenchmarkHelper.run(34280, 140,3);
+        BenchmarkHelper.run(7193, 140,3);
     }
     
     @Benchmark
     public void list_to_avl_S() {
-        BenchmarkHelper.run(7203, 140,3);
+        BenchmarkHelper.run(7193, 140,3);
     }
 }

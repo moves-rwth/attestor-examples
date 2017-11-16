@@ -23,17 +23,17 @@ public class BiMap {
     
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run(83,59,1);
+        BenchmarkHelper.run(71,59,1);
     }
     
     @Benchmark
     public void insert_S() {
-        BenchmarkHelper.run(83,59,1);
+        BenchmarkHelper.run(71,59,1);
     }
     
     @Benchmark
     public void insert_C() {
-        BenchmarkHelper.run(83,59,1);
+        BenchmarkHelper.run(71,59,1);
     }
     
     @Benchmark
