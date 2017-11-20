@@ -1,5 +1,5 @@
 {
-    "scenario":"Lindstrom terminates, i.e. variable cur is set to sen.",
+    "scenario":"Lindstrom terminates",
     "input":{
         "program":{
             "classpath":"configuration/code",

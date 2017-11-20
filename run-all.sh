@@ -8,8 +8,5 @@ for D in `find . -maxdepth 1 -mindepth 1 -not -path '*/\.*' -not -path './attest
 do
     cd $D
     mvn clean install exec:exec@run
-    cat $FILE >> ../$RESULTS
-    rm -f $FILE
     cd ..
 done
-echo "All results have been written to $RESULTS."

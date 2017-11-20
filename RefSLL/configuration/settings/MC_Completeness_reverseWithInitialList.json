@@ -1,4 +1,5 @@
 {
+    "scenario":"tba",
     "input":{
         "program":{
             "classpath":"configuration/code",
