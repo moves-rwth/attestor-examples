@@ -51,6 +51,11 @@ public class RefDLL {
 		BenchmarkHelper.run();
 	}
 	
+    @Benchmark
+	public void MC_NeighbourhoodPreservance_reverseWithInitialList_GC(){
+		BenchmarkHelper.run();
+	}
+	
 	@Benchmark
 	public void MC_Reach_reverseWithInitialList(){
 		BenchmarkHelper.run();
