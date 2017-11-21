@@ -68,6 +68,15 @@ public class DLList {
         }
         return list;
     }
+	
+	public DLList testDelete(){
+		DLList head = buildList();
+		DLList next = head.nextAlt;
+		if( next != null ){
+			next.prevAlt = null;
+		}
+		return next;
+	}
     
     public static void main(String[] args) {
     
