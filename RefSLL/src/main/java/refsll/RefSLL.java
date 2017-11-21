@@ -8,7 +8,7 @@ public class RefSLL {
 
     @Benchmark
     public void reverse() {
-        BenchmarkHelper.run( 76, 46, 1 );
+        BenchmarkHelper.run( 74, 46, 1 );
     }
 	
 	@Benchmark
