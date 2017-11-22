@@ -1,20 +1,8 @@
 language: java
-jdk: oraclejdk8
 
-jobs:
-  include:
-    - stage: Singly-Linked-List-Manual
-      jdk:
-        - oraclejdk8
-        - openjdk8
-      script: ./.run_test.sh sllist
-    - stage: Singly-Linked-List
-      script: ./.run_test.sh RefSLL
-    - stage: Doubly-Linked-List
-      script: ./.run_test.sh RefDLL
-    - stage: Binary-Tree
-      script: ./.run_test.sh RefBT
-    - stage: Bidirectional-Map
-      script: ./.run_test.sh bimap
-    - stage: AVL-Tree
-      script: ./.run_test.sh avltree 
+jdk: 
+    - oraclejdk8
+    - openjdk8
+
+script: ./run-all.sh
+
