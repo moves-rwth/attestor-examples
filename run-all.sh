@@ -1,6 +1,3 @@
-RESULTS=results.text
-FILE=jmh-result.text
-
 set -e
 
 rm -f $RESULTS
