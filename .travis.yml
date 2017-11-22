@@ -4,6 +4,9 @@ jdk: oraclejdk8
 jobs:
   include:
     - stage: Singly-Linked-List-Manual
+      jdk:
+        - oraclejdk8
+        - openjdk8
       script: ./.run_test.sh sllist
     - stage: Singly-Linked-List
       script: ./.run_test.sh RefSLL
