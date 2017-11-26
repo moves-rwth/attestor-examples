@@ -16,9 +16,9 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":true
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefDLL/buildAndTraverse"
         },

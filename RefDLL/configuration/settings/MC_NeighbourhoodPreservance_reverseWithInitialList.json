@@ -17,10 +17,10 @@
         }
     },
     "options":{
-        "abstractionDistance":1,
-        "logging":true
+        "abstractionDistance":1
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefDLL/MC_NeighbourhoodPreservance_reverseWithInitialList"
         }

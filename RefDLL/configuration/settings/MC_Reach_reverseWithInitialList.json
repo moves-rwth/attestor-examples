@@ -1,5 +1,5 @@
 {
-    "scenario":"memory safety",
+    "scenario":"reachability",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -18,9 +18,9 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":true
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialList"
         }

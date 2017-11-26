@@ -18,9 +18,10 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":true
+        "garbageCollection":false,
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialList"
         }
