@@ -1,5 +1,5 @@
 {
-    "scenario":"tba",
+    "scenario":"build & reverse",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -19,11 +19,9 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":false,
-        "stateLabeling":[],
-        "stateRefinement":[]
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/sllist/main"
         }

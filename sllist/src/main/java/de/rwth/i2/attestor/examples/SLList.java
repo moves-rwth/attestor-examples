@@ -5,9 +5,8 @@ import org.openjdk.jmh.annotations.Benchmark;
 import de.rwth.i2.attestor.main.Attestor;
 
 public class SLList {
-
     @Benchmark
     public void main() {
-        BenchmarkHelper.run( 74,46,1 );
+        BenchmarkHelper.run( 90,47,1 );
     }
 }
