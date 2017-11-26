@@ -1,5 +1,5 @@
 {
-    "scenario":"Prove that the neighbourhood of every node is the orignal one upon termination.",
+    "scenario":"Prove that the neighbourhood of every node is the original one upon termination.",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -19,12 +19,13 @@
     },
     "options":{
         "abstractionDistance":0,
-        "logging":true,
         "maximalStateSpace":100000,
-        "removeDeadVariables" : true
     },
     "output":{
-        "enabled":false
+        "enabled":false,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse_neighbourhood"
+        }
     },
     "modelChecking":{
        "enabled":true,

@@ -9,20 +9,19 @@
         "userDefinedGrammar":{
         },
         "predefinedGrammars":[
-            { "type": "BT", "definition":"configuration/grammar/RenameBT.java" }
+            { "type": "BT", "definition":"configuration/grammar/RenameBTNodeAlt.java" }
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"bt.json",
+            "file":"btalt.json",
             "description":"An arbitrary binary tree"
         }
     },
     "options":{
-        "abstractionDistance":1,
-        "aggressiveReturn":false,
-        "logging":true
+        "abstractionDistance":1
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefBT/getLeftmostChild"
         },

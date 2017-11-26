@@ -19,14 +19,12 @@
     },
     "options":{
         "abstractionDistance":0,
-        "logging":true,
         "maximalStateSpace":100000,
-        "removeDeadVariables" : true
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstrom_terminateAtSen"
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse_terminateAtSen"
         }    
     },
     "modelChecking":{

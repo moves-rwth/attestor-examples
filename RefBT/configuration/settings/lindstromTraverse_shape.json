@@ -19,12 +19,13 @@
     },
     "options":{
         "abstractionDistance":0,
-        "logging":true,
         "maximalStateSpace":100000,
-        "removeDeadVariables" : true
     },
     "output":{
-        "enabled":false
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse_shape"
+        }
     },
     "modelChecking":{
        "enabled":true,

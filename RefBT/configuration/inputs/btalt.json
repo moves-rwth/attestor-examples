@@ -5,7 +5,7 @@
 				"number":1
 			},
 			{
-				"type":"Tree",
+				"type":"BTNodeAlt",
 				"number":1
 			}
 			],

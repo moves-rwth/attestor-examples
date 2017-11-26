@@ -1,8 +1,8 @@
 public class Lindstrom{
 		
-	static void traverse(Tree root){
+	static Tree traverse(Tree root){
 		
-		if(root == null) return;
+		if(root == null) return root;
 		Tree sen = new Tree();		
 		
 		Tree prev = sen;
@@ -22,6 +22,8 @@ public class Lindstrom{
 				prev = null;
 			}
 		}	
+		
+		return cur;
 	}
 	
 	public static void main(String[] args) {
