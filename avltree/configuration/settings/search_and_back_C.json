@@ -21,12 +21,11 @@
         "maximalStateSpace":2000,
         "abstractionDistance":0,
         "mode":"indexed",
-        "logging":false,
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/binary_search_and_back"
+            "path":"../attestor-examples-output/avltree/binary_search_and_back_C"
         }
     },
     "modelChecking":{

@@ -1,5 +1,5 @@
 {
-    "scenario":"memory safety",
+    "scenario":"(S) shape",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -20,9 +20,8 @@
     "options":{
         "maximalStateSpace":5000,
         "abstractionDistance":1,
-        "aggressiveAbstractionThreshold":5,
         "mode":"indexed",
-        "logging":false,
+        "garbageCollection":false
     },
     "output":{
         "enabled":false,

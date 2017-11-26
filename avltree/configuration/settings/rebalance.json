@@ -20,9 +20,7 @@
     "options":{
         "maximalStateSpace":2000,
         "abstractionDistance":1,
-        "aggressiveReturnAbstraction":true,
         "mode":"indexed",
-        "logging":false,
     },
     "output":{
         "enabled":true,

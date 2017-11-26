@@ -47,27 +47,27 @@ public class AVLTree {
 
     @Benchmark
     public void search_and_swap() {
-        BenchmarkHelper.run( 449, 107, 1);
+        BenchmarkHelper.run(3855, 920, 1);
     }
     
     @Benchmark
     public void search_and_swap_S() {
-        BenchmarkHelper.run( 449, 107, 1);
+        BenchmarkHelper.run(3855, 920, 1);
     }
     
     @Benchmark
     public void search_and_swap_C() {
-        BenchmarkHelper.run( 449, 107, 1);
+        BenchmarkHelper.run(4104, 907, 7);
     }
     
     @Benchmark
     public void left_rotate() {
-        BenchmarkHelper.run( 179, 179, 1 );
+        BenchmarkHelper.run( 190, 190, 1 );
     }
     
     @Benchmark
     public void left_right_rotate() {
-        BenchmarkHelper.run( 1077, 64, 1);
+        BenchmarkHelper.run( 1132, 64, 1);
     }
     
     @Benchmark
@@ -107,17 +107,17 @@ public class AVLTree {
     
     @Benchmark
     public void rebalance() {
-        BenchmarkHelper.run(3499,397,2);
+        BenchmarkHelper.run(3644,402,2);
     }
     
     @Benchmark
     public void rebalance_S() {
-        BenchmarkHelper.run(3499,397,2);
+        BenchmarkHelper.run(3644,402,2);
     }
     
     @Benchmark
     public void rebalance_C() {
-        BenchmarkHelper.run(3499,397,2);
+        BenchmarkHelper.run(3644,402,2);
     }
     
     @Benchmark
@@ -129,15 +129,15 @@ public class AVLTree {
     public void insert_S() {
         BenchmarkHelper.run(10388,1323,2);
     }
-    
+
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(7167, 140,3);
+        BenchmarkHelper.run(7165, 138,1);
     }
     
     @Benchmark
     public void list_to_avl_C() {
-        BenchmarkHelper.run(7167, 140,3);
+        BenchmarkHelper.run(7165, 138,1);
     }
     
     @Benchmark

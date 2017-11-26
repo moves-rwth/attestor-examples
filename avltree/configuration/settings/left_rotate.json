@@ -20,11 +20,10 @@
     "options":{
         "maximalStateSpace":2000,
         "abstractionDistance":1,
-        "mode":"indexed",
-        "logging":false,
-        "stateRefinement":["balance"]
+        "mode":"indexed"
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/left_rotate"
         }

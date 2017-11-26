@@ -20,11 +20,10 @@
     "options":{
         "maximalStateSpace":500,
         "abstractionDistance":0,
-        "mode":"indexed",
-        "logging":false,
-        "stateRefinement":["balance"]
+        "mode":"indexed"
     },
     "output":{
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/max_value"
         }

@@ -1,19 +1,26 @@
-Attestor Examples: AVLTrees
+Attestor Examples: AVL trees
 ============================
 
-This collection of examples covers AVLTrees.
+This is a small collection of attestor examples using AVL trees.
 
-To run the examples execute the following maven statement within this directory:
+
+## Running examples
+
+You can run all examples once using a prepared shell script as follows:
+
+    $ ./run.sh
+
+Alternatively, exexute the following maven statement within this directory:
 
     $ mvn clean install exec:exec@run.
 
-Alternatively, there are two prepared shellscripts to build and execute all benchmarks.
-For testing purposes, all benchmarks can be run once by executing
+
+## Measuring performance
+
+The full benchmark suite runs each example multiple times. It can be started using the following script:
 
     $ ./benchmarks.sh
 
-To obtain realisitic measurements, the full benchmark suite can be started by running
+Alternatively, you can use the following maven statement: 
 
-    $ ./full-benchmarks.sh
-    (or)
     $ mvn clean install exec:exec@benchmark

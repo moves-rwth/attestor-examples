@@ -20,14 +20,12 @@
     "options":{
         "maximalStateSpace":2000,
         "abstractionDistance":1,
-        "aggressiveReturnAbstraction":true,
-        "mode":"indexed",
-        "logging":false,
+        "mode":"indexed"
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/rebalance"
+            "path":"../attestor-examples-output/avltree/rebalance_C"
         }
     },
     "modelChecking":{

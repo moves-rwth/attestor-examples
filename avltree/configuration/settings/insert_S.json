@@ -20,17 +20,15 @@
     "options":{
         "maximalStateSpace":6000,
         "abstractionDistance":1,
-        "aggressiveReturn":false,
         "mode":"indexed",
-        "logging":false,
+        "stateSpacePostProcessing":false,
+        "garbageCollection":false
     },
     "output":{
         "enabled":false,
-		"defaultPath":"../attestor-examples-output/avltree/insert",
         "stateSpace":{
-        },
-		"customHCs":{
-		}
+            "path":"../attestor-examples-output/avltree/insert_S"
+        }
     },
     "modelChecking":{
         "enabled":true,

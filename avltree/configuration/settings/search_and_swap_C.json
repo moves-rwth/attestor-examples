@@ -20,14 +20,14 @@
     "options":{
         "maximalStateSpace":5000,
         "abstractionDistance":1,
-        "aggressiveAbstractionThreshold":5,
         "mode":"indexed",
-        "logging":false,
+        "garbageCollection":false,
+        "stateSpacePostProcessing":false
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/binary_search_and_swap_subtrees"
+            "path":"../attestor-examples-output/avltree/binary_search_and_swap_C"
         }
     },
     "modelChecking":{

@@ -20,9 +20,8 @@
     "options":{
         "maximalStateSpace":500,
         "abstractionDistance":1,
-        "aggressiveReturn":false,
+        "stateSpacePostProcessing":false,
         "mode":"indexed",
-        "logging":false,
     },
     "output":{
         "enabled":false,

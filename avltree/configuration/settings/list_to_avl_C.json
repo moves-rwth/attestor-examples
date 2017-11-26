@@ -19,17 +19,14 @@
     "options":{
         "maximalStateSpace":6000,
         "abstractionDistance":1,
-        "aggressiveReturn":false,
-        "mode":"indexed",
-        "logging":false,
+        "stateSpacePostProcessing":false,
+        "mode":"indexed"
     },
     "output":{
         "enabled":false,
-		"defaultPath":"../attestor-examples-output/avltree/list_to_avl",
         "stateSpace":{
-        },
-		"grammar":{
-		}
+            "path":"../attestor-examples-output/avltree/list_to_avl_C"
+        }
     },
     "modelChecking":{
         "enabled":true,

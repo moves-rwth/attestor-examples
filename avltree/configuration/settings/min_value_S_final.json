@@ -20,14 +20,14 @@
     "options":{
         "maximalStateSpace":500,
         "abstractionDistance":1,
-        "aggressiveReturn":false,
+        "stateSpacePostProcessing":false,
         "mode":"indexed",
-        "logging":false,
+        "garbageCollection":false
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/min_value_S_final"
+            "path":"../attestor-examples-output/avltree/min_value_S"
         }
     },
     "modelChecking":{
