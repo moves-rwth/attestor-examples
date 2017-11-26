@@ -1,5 +1,5 @@
 {
-    "scenario":"tba",
+    "scenario":"same list after traversal",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -18,9 +18,9 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":true
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefSLL/MC_NeighbourhoodPreservance_traverseWithInitialList"
         }

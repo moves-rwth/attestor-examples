@@ -1,5 +1,5 @@
 {
-    "scenario":"tba",
+    "scenario":"all elements visited by 'cur' upon termination",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -18,11 +18,11 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":true
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/traverseWithInitialList"
+            "path":"../attestor-examples-output/RefSLL/MC_Completeness_traverseWithInitialList"
         }
     },
     "modelChecking":{

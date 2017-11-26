@@ -1,5 +1,5 @@
 {
-    "scenario":"tba",
+    "scenario":"memory safety: build & reverse list",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -16,9 +16,9 @@
     },
     "options":{
         "abstractionDistance":1,
-        "logging":true
     },
     "output":{
+        "enabled":true,
         "stateSpace":{
             "path":"../attestor-examples-output/RefSLL/reverse"
         }
