@@ -1,5 +1,5 @@
 {
-    "scenario":"build & reverse",
+    "scenario":"build and reverse",
     "input":{
         "program":{
             "classpath":"configuration/code",

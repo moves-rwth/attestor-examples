@@ -1,5 +1,5 @@
 {
-    "scenario":"memory safety: build & reverse list",
+    "scenario":"memory safety: build and reverse list",
     "input":{
         "program":{
             "classpath":"configuration/code",
