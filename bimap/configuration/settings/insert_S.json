@@ -20,7 +20,8 @@
     "options":{
         "maximalStateSpace":5500,
         "abstractionDistance":1,
-        "mode":"indexed"
+        "mode":"indexed",
+        "garbageCollection":false
     },
     "output":{
         "enabled":false,

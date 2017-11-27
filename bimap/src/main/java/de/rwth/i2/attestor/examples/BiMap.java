@@ -13,7 +13,7 @@ public class BiMap {
     
     @Benchmark
     public void search_S() {
-        BenchmarkHelper.run(97,97,4);
+        BenchmarkHelper.run(98,98,5);
     }
     
     @Benchmark
