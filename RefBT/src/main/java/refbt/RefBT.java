@@ -23,7 +23,7 @@ public class RefBT {
 
     @Benchmark
     public void lindstromTraverse_visited(){
-        BenchmarkHelper.run(2805,2799,1);
+        BenchmarkHelper.run(2583,2577,1);
     }
 	
     @Benchmark
