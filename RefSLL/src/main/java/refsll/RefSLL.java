@@ -23,12 +23,12 @@ public class RefSLL {
 	
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialListWithNullVisit(){
-		BenchmarkHelper.run(209,209,1);
+		BenchmarkHelper.run(161,161,1);
 	}
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
-		BenchmarkHelper.run(116,116,1);
+		BenchmarkHelper.run(94,94,1);
 	}
 	
 	@Benchmark
@@ -48,7 +48,7 @@ public class RefSLL {
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
-		BenchmarkHelper.run(295,295,1);
+		BenchmarkHelper.run(247,247,1);
 	}
 	
 	@Benchmark

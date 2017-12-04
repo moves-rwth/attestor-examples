@@ -23,12 +23,12 @@ public class RefDLL {
 	
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialList(){
-		BenchmarkHelper.run(430,430,1);
+		BenchmarkHelper.run(361,361,1);
 	}
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
-		BenchmarkHelper.run(834,834,1);
+		BenchmarkHelper.run(785,785,1);
 	}
 	
 	@Benchmark
@@ -43,12 +43,12 @@ public class RefDLL {
 	
 	@Benchmark
 	public void MC_Completeness_reverseWithInitialList(){
-		BenchmarkHelper.run(816,816,1);
+		BenchmarkHelper.run(687,687,1);
 	}
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
-		BenchmarkHelper.run(1581,1581,1);
+		BenchmarkHelper.run(1489,1489,1);
 	}
 	
 	@Benchmark
