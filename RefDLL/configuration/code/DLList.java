@@ -64,7 +64,14 @@ public class DLList {
 	public static DLList walkAround(DLList head) {
 
     	DLList pos = findLast(head);
-    	pos = findFirst(pos);
+    	//pos = findFirst(pos);
+    	return pos;
+	}
+
+	public static DLList walkAroundAndReverse(DLList head) {
+
+    	DLList pos = walkAround(head);
+    	reverse(pos);
     	return pos;
 	}
 
@@ -86,7 +93,7 @@ public class DLList {
 		head = pos;				
 	}
 	
-	public void reverse(DLList head){
+	public static void reverse(DLList head){
 
 		DLList pos = head;
 

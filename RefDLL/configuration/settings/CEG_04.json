@@ -1,0 +1,32 @@
+{
+    "scenario":"Counterexample generation test 04",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"walkAroundAndReverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"dllNull.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefDLL/CEG_01"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+        "formulae":"(GF {terminated} -> F ({ return == null } & {terminated}))"
+    }
+}
