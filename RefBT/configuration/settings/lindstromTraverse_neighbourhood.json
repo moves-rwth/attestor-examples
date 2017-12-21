@@ -19,7 +19,7 @@
     },
     "options":{
         "abstractionDistance":0,
-        "maximalStateSpace":100000,
+        "maximalStateSpace":100000
     },
     "output":{
         "enabled":false,
