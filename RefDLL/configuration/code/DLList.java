@@ -18,15 +18,57 @@ public class DLList {
     }
     
     public static void traverse(DLList head) {
-    
+
 		DLList cur = head;
-		
+
         while(cur != null){
-        
+
             cur = cur.nextAlt;
         }
     }
-	
+
+    public static void traverseInverse(DLList head) {
+
+		DLList pos = head;
+
+		while(pos != null){
+
+			pos = pos.prevAlt;
+		}
+	}
+
+	public static DLList findFirst(DLList head) {
+
+		DLList pos = head;
+
+		while(pos.prevAlt != null){
+
+			pos = pos.prevAlt;
+		}
+
+		return pos;
+	}
+
+	public static DLList findLast(DLList head) {
+
+		DLList pos = head;
+
+		while(pos.nextAlt != null){
+
+			pos = pos.nextAlt;
+		}
+
+		return pos;
+	}
+
+	public static DLList walkAround(DLList head) {
+
+    	DLList pos = findLast(head);
+    	pos = findFirst(pos);
+    	return pos;
+	}
+
+
 	public void reverseIncomplete(DLList head){
 				
 		DLList pos = head;
@@ -45,22 +87,23 @@ public class DLList {
 	}
 	
 	public void reverse(DLList head){
-				
+
 		DLList pos = head;
-				
+
 		while(pos != null){
-			
+
 			DLList tmp = pos.nextAlt;
-			
+
 			pos.nextAlt = pos.prevAlt;
 			pos.prevAlt = tmp;
-			
+
 			pos = pos.prevAlt;
 		}
-		
-		head = pos;				
+
+		head = pos;
 	}
-	
+
+
     public static DLList buildList(){
         DLList list = new DLList();
         for( int i = 0; i < 10; i++ ){
@@ -76,6 +119,12 @@ public class DLList {
 			next.prevAlt = null;
 		}
 		return next;
+	}
+
+	public void reverseAndTraverseBack(DLList head) {
+
+		reverse(head);
+
 	}
     
     public static void main(String[] args) {

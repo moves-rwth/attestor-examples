@@ -1,0 +1,33 @@
+{
+    "scenario":"Integration test for counterexample generation",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"ListNodeAlt",
+            "method":"reverseList"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"sllHeadTail.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "garbageCollection":false,
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefSLL/CEG_reverse_01"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> F ({ terminated } & { cur != null }))"
+    }        
+}

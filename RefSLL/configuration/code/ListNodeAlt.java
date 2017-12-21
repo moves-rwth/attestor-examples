@@ -33,14 +33,13 @@ public class ListNodeAlt{
 	}
 	
 	public static void traverseList( ListNodeAlt head ){
-	
+
 		ListNodeAlt cur = head;
 		while( cur.nextAlt != null ){
 			cur = cur.nextAlt;
 		}
-		
 	}
-	
+
 	public static void traverseListWithNullVisit( ListNodeAlt head ){
 	
 		ListNodeAlt cur = head;
