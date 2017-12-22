@@ -1,5 +1,5 @@
 {
-    "scenario":"Counterexample generation test 05",
+    "scenario":"Counterexample with nested procedures",
     "input":{
         "program":{
             "classpath":"configuration/code",

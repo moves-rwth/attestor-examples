@@ -1,10 +1,10 @@
 {
-    "scenario":"Counterexample generation test 06 (all counterexamples are spurious)",
+    "scenario":"Counterexample test with procedure calls",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"findLast"
+            "method":"dummyReverse"
         },
         "userDefinedGrammar":{
         },
@@ -22,11 +22,11 @@
     "output":{
         "enabled":true,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/CEG_06"
+            "path":"../attestor-examples-output/RefDLL/CEG_01"
         }
     },
     "modelChecking":{
        "enabled":true,
-        "formulae":"F {terminated}"
+        "formulae":"(GF {terminated} -> F ({ return == null } & {terminated}))"
     }
 }

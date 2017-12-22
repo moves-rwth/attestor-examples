@@ -1,5 +1,5 @@
 {
-    "scenario":"Integration test for counterexample generation",
+    "scenario":"Counterexample generation test after list reversal",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -29,5 +29,5 @@
     "modelChecking":{
        "enabled":true,
 	   "formulae":"(GF {terminated} -> F ({ terminated } & { cur != null }))"
-    }        
+    }
 }

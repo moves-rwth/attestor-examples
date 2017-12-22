@@ -125,4 +125,13 @@ public class RefSLL {
 				.build()
 				.run();
 	}
+
+	@Benchmark
+	public void CEG_reverse(){
+		BenchmarkHelper.builder()
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
+				.build()
+				.run();
+	}
 }

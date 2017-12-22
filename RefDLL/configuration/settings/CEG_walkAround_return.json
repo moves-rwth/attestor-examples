@@ -1,10 +1,10 @@
 {
-    "scenario":"Counterexample generation test 02",
+    "scenario":"Counterexample for return value",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"traverseInverse"
+            "method":"walkAround"
         },
         "userDefinedGrammar":{
         },
@@ -27,6 +27,6 @@
     },
     "modelChecking":{
        "enabled":true,
-        "formulae":"(GF {terminated} -> F ({ pos != null } & X{terminated}))"
+        "formulae":"(GF {terminated} -> F ({ return == null } & {terminated}))"
     }
 }

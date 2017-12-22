@@ -118,4 +118,59 @@ public class RefDLL {
 				.build()
 				.run();
 	}
+
+	@Benchmark
+	public void CEG_reverse_final_pos() {
+		BenchmarkHelper.builder()
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
+				.build()
+				.run();
+	}
+
+	@Benchmark
+	public void CEG_traverse_inverse_final_pos() {
+		BenchmarkHelper.builder()
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
+				.build()
+				.run();
+	}
+
+	@Benchmark
+	public void CEG_walkAround_return() {
+		BenchmarkHelper.builder()
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
+				.build()
+				.run();
+	}
+
+	@Benchmark
+	public void CEG_dummyReverse() {
+		BenchmarkHelper.builder()
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
+				.build()
+				.run();
+	}
+
+	@Benchmark
+	public void CEG_dummyWalkAround() {
+		BenchmarkHelper.builder()
+				// this fails probably due to a wrong language inclusion check while matching IPA preconditions
+				//.expectLTLResults(false)
+				//.expectNoCounterexamples(1)
+				.build()
+				.run();
+	}
+
+	@Benchmark
+	public void CEG_findLast_spurious() {
+		BenchmarkHelper.builder()
+				.expectLTLResults(false)
+				.expectNoCounterexamples(0)
+				.build()
+				.run();
+	}
 }

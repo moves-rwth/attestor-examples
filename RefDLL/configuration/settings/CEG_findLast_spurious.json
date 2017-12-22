@@ -1,10 +1,10 @@
 {
-    "scenario":"Counterexample generation test 01",
+    "scenario":"Spurious counterexample test",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"reverse"
+            "method":"findLast"
         },
         "userDefinedGrammar":{
         },
@@ -22,11 +22,11 @@
     "output":{
         "enabled":true,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/CEG_01"
+            "path":"../attestor-examples-output/RefDLL/CEG_06"
         }
     },
     "modelChecking":{
        "enabled":true,
-        "formulae":"(GF {terminated} -> F ({ pos != null } & X{terminated}))"
+        "formulae":"F {terminated}"
     }
 }
