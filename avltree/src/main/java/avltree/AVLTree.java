@@ -12,136 +12,277 @@ public class AVLTree {
 
     @Benchmark
     public void binary_search() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.builder()
+                .expectTotalStates(192)
+                .expectMainProcedureStates(192)
+                .expectFinalStates(6)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void binary_search_C() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.builder()
+                .expectTotalStates(192)
+                .expectMainProcedureStates(192)
+                .expectFinalStates(6)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void binary_search_S() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.builder()
+                .expectTotalStates(192)
+                .expectMainProcedureStates(192)
+                .expectFinalStates(6)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
-    
+
     @Benchmark
     public void binary_search_S_final() {
-        BenchmarkHelper.run(192, 192, 6);
+        BenchmarkHelper.builder()
+                .expectTotalStates(192)
+                .expectMainProcedureStates(192)
+                .expectFinalStates(6)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void search_and_back() {
-        BenchmarkHelper.run( 455, 11, 1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(455)
+                .expectMainProcedureStates(11)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void search_and_back_S() {
-        BenchmarkHelper.run( 455, 11, 1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(455)
+                .expectMainProcedureStates(11)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void search_and_back_C() {
-        BenchmarkHelper.run( 455, 11, 1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(455)
+                .expectMainProcedureStates(11)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void search_and_swap() {
-        BenchmarkHelper.run(3855, 920, 1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(3855)
+                .expectMainProcedureStates(920)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void search_and_swap_S() {
-        BenchmarkHelper.run(3855, 920, 1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(3855)
+                .expectMainProcedureStates(920)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void search_and_swap_C() {
-        BenchmarkHelper.run(4104, 907, 7);
+        BenchmarkHelper.builder()
+                .expectTotalStates(4104)
+                .expectMainProcedureStates(907)
+                .expectFinalStates(7)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void left_rotate() {
-        BenchmarkHelper.run( 190, 190, 1 );
+        BenchmarkHelper.builder()
+                .expectTotalStates(190)
+                .expectMainProcedureStates(190)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void left_right_rotate() {
-        BenchmarkHelper.run( 1132, 64, 1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(1132)
+                .expectMainProcedureStates(64)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void right_rotate() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.builder()
+                .build()
+                .run();
     }
     
     @Benchmark
     public void right_left_rotate() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.builder()
+                .build()
+                .run();
     }
     
     @Benchmark
     public void min_value() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.builder()
+                .expectTotalStates(220)
+                .expectMainProcedureStates(220)
+                .expectFinalStates(14)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void min_value_S_final() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.builder()
+                .expectTotalStates(220)
+                .expectMainProcedureStates(220)
+                .expectFinalStates(14)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void min_value_S() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.builder()
+                .expectTotalStates(220)
+                .expectMainProcedureStates(220)
+                .expectFinalStates(14)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void min_value_C() {
-        BenchmarkHelper.run( 220, 220, 14 );
+        BenchmarkHelper.builder()
+                .expectTotalStates(220)
+                .expectMainProcedureStates(220)
+                .expectFinalStates(14)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void max_value() {
-        BenchmarkHelper.run();
+        BenchmarkHelper.builder()
+                .build()
+                .run();
     }
     
     @Benchmark
     public void rebalance() {
-        BenchmarkHelper.run(3644,402,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(3644)
+                .expectMainProcedureStates(402)
+                .expectFinalStates(2)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void rebalance_S() {
-        BenchmarkHelper.run(3644,402,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(3644)
+                .expectMainProcedureStates(402)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void rebalance_C() {
-        BenchmarkHelper.run(3644,402,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(3644)
+                .expectMainProcedureStates(402)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run(6120,444,4);
+        BenchmarkHelper.builder()
+                .expectTotalStates(6120)
+                .expectMainProcedureStates(444)
+                .expectFinalStates(4)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void insert_S() {
-        BenchmarkHelper.run(10388,1323,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(10388)
+                .expectMainProcedureStates(1323)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void list_to_avl() {
-        BenchmarkHelper.run(7166, 139,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(7166)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(2)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void list_to_avl_C() {
-        BenchmarkHelper.run(7166, 139,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(7166)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void list_to_avl_S() {
-        BenchmarkHelper.run(7166, 139,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(7166)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 }
