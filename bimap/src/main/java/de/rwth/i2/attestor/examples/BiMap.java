@@ -8,47 +8,92 @@ public class BiMap {
 
     @Benchmark
     public void search() {
-        BenchmarkHelper.run(97,97,4);
+        BenchmarkHelper.builder()
+                .expectTotalStates(97)
+                .expectMainProcedureStates(97)
+                .expectFinalStates(4)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void search_S() {
-        BenchmarkHelper.run(98,98,5);
+        BenchmarkHelper.builder()
+                .expectTotalStates(98)
+                .expectMainProcedureStates(98)
+                .expectFinalStates(5)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void search_C() {
-        BenchmarkHelper.run(97,97,4);
+        BenchmarkHelper.builder()
+                .expectTotalStates(97)
+                .expectMainProcedureStates(97)
+                .expectFinalStates(4)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void insert() {
-        BenchmarkHelper.run(71,59,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(71)
+                .expectMainProcedureStates(59)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void insert_S() {
-        BenchmarkHelper.run(71,59,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(71)
+                .expectMainProcedureStates(59)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void insert_C() {
-        BenchmarkHelper.run(71,59,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(71)
+                .expectMainProcedureStates(59)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void delete() {
-        BenchmarkHelper.run(123,78,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(123)
+                .expectMainProcedureStates(78)
+                .expectFinalStates(2)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void delete_S() {
-        BenchmarkHelper.run(123,78,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(123)
+                .expectMainProcedureStates(78)
+                .expectFinalStates(2)
+                .build()
+                .run();
     }
     
     @Benchmark
     public void delete_C() {
-        BenchmarkHelper.run(123,78,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(123)
+                .expectMainProcedureStates(78)
+                .expectFinalStates(2)
+                .build()
+                .run();
     }
 
 }

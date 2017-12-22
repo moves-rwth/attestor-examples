@@ -8,56 +8,121 @@ public class RefSLL {
 
     @Benchmark
     public void reverse() {
-        BenchmarkHelper.run( 90, 47, 1 );
+		BenchmarkHelper.builder()
+				.expectTotalStates(90)
+				.expectMainProcedureStates(47)
+				.expectFinalStates(1)
+				.build()
+				.run();
     }
 	
 	@Benchmark
 	public void reverseWithInitialList(){
-		BenchmarkHelper.run(46,46,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(46)
+				.expectMainProcedureStates(46)
+				.expectFinalStates(1)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialList(){
-		BenchmarkHelper.run(46,46,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(46)
+				.expectMainProcedureStates(46)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialListWithNullVisit(){
-		BenchmarkHelper.run(161,161,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(161)
+				.expectMainProcedureStates(161)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
-		BenchmarkHelper.run(94,94,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(94)
+				.expectMainProcedureStates(94)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Reach_traverseWithInitialList(){
-		BenchmarkHelper.run(44,44,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(44)
+				.expectMainProcedureStates(44)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Shape_traverseWithInitialList(){
-		BenchmarkHelper.run(29,29,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(29)
+				.expectMainProcedureStates(29)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Completeness_reverseWithInitialList(){
-		BenchmarkHelper.run(169,169,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(169)
+				.expectMainProcedureStates(169)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
-		BenchmarkHelper.run(247,247,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(247)
+				.expectMainProcedureStates(247)
+				.expectFinalStates(1)
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Reach_reverseWithInitialList(){
-		BenchmarkHelper.run(76,76,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(76)
+				.expectMainProcedureStates(76)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 	
 	@Benchmark
 	public void MC_Shape_reverseWithInitialList(){
-		BenchmarkHelper.run(55,55,1);
+		BenchmarkHelper.builder()
+				.expectTotalStates(55)
+				.expectMainProcedureStates(55)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
 	}
 }

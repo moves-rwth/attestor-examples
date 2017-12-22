@@ -7,6 +7,11 @@ import de.rwth.i2.attestor.main.Attestor;
 public class SLList {
     @Benchmark
     public void main() {
-        BenchmarkHelper.run( 90,47,1 );
+        BenchmarkHelper.builder()
+                .expectTotalStates(90)
+                .expectMainProcedureStates(47)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
 }

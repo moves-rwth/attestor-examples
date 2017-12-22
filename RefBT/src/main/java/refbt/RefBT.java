@@ -8,36 +8,74 @@ public class RefBT {
 
     @Benchmark
     public void getLeft() {
-        BenchmarkHelper.run(10,10,2);
+        BenchmarkHelper.builder()
+                .expectTotalStates(10)
+                .expectMainProcedureStates(10)
+                .expectFinalStates(2)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void getLeftmostChild() {
-        BenchmarkHelper.run(21,21,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(21)
+                .expectMainProcedureStates(21)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void lindstromTraverse(){
-        BenchmarkHelper.run(229,223,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void lindstromTraverse_visited(){
-        BenchmarkHelper.run(2583,2577,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(2583)
+                .expectMainProcedureStates(2577)
+                .expectFinalStates(1)
+                .build()
+                .run();
     }
 	
     @Benchmark
     public void lindstromTraverse_shape(){
-        BenchmarkHelper.run(229,223,1);
-    }	
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
 
     @Benchmark
     public void lindstromTraverse_terminateAtSen(){
-        BenchmarkHelper.run(229,223,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 
     @Benchmark
     public void lindstromTraverse_neighbourhood(){
-        BenchmarkHelper.run(30607,30601,1);
+        BenchmarkHelper.builder()
+                .expectTotalStates(30607)
+                .expectMainProcedureStates(30601)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 }
