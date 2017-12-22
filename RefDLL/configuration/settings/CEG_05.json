@@ -1,10 +1,10 @@
 {
-    "scenario":"Counterexample generation test 04",
+    "scenario":"Counterexample generation test 05",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"dummyReverse"
+            "method":"dummyWalkAround"
         },
         "userDefinedGrammar":{
         },
@@ -22,7 +22,7 @@
     "output":{
         "enabled":true,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/CEG_01"
+            "path":"../attestor-examples-output/RefDLL/CEG_05"
         }
     },
     "modelChecking":{
