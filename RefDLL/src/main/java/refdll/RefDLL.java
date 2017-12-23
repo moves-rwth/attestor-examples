@@ -158,9 +158,8 @@ public class RefDLL {
 	@Benchmark
 	public void CEG_dummyWalkAround() {
 		BenchmarkHelper.builder()
-				// this fails probably due to a wrong language inclusion check while matching IPA preconditions
-				//.expectLTLResults(false)
-				//.expectNoCounterexamples(1)
+				.expectLTLResults(false)
+				.expectNoCounterexamples(1)
 				.build()
 				.run();
 	}
