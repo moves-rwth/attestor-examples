@@ -18,7 +18,7 @@
     },
     "options":{
         "abstractionDistance":1,
-        "garbageCollection":false,
+        "garbageCollection":false
     },
     "output":{
         "enabled":true,
