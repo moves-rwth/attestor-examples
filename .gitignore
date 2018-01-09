@@ -69,3 +69,15 @@ RefBT/target/
 bimap/target/
 avltree/target/
 results.text
+RefBT/logfiles/
+RefBT/null/
+RefDLL/logfiles/
+RefDLL/null/
+RefSLL/logfiles/
+RefSLL/null/
+avltree/logfiles/
+avltree/null/
+bimap/logfiles/
+sllist/logfiles/
+sllist/null/
+
