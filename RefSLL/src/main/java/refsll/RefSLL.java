@@ -26,7 +26,6 @@ public class RefSLL {
 				.run();
 	}
 
-	/*
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialList(){
 		BenchmarkHelper.builder()
@@ -48,7 +47,6 @@ public class RefSLL {
 				.build()
 				.run();
 	}
-	*/
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
@@ -83,7 +81,6 @@ public class RefSLL {
 				.run();
 	}
 
-	/*
 	@Benchmark
 	public void MC_Completeness_reverseWithInitialList(){
 		BenchmarkHelper.builder()
@@ -93,7 +90,7 @@ public class RefSLL {
 				.expectLTLResults(true)
 				.build()
 				.run();
-	}*/
+	}
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
