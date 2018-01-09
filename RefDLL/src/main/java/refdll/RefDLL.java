@@ -36,6 +36,7 @@ public class RefDLL {
                 .run();
     }
 
+    /*
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialList(){
 		BenchmarkHelper.builder()
@@ -46,6 +47,7 @@ public class RefDLL {
 				.build()
 				.run();
 	}
+	*/
 
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
@@ -77,7 +79,8 @@ public class RefDLL {
 				.build()
 				.run();
 	}
-	
+
+	/*
 	@Benchmark
 	public void MC_Completeness_reverseWithInitialList(){
 		BenchmarkHelper.builder()
@@ -88,6 +91,7 @@ public class RefDLL {
 				.build()
 				.run();
 	}
+	*/
 	
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
