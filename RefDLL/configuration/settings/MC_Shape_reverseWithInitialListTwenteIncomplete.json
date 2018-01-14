@@ -1,4 +1,5 @@
 {
+    "name":"M-S",
     "scenario":"(S) shape: doubly-linked list (expected to fail)",
     "input":{
         "program":{

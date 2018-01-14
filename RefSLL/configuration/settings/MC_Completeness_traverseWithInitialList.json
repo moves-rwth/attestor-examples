@@ -1,4 +1,5 @@
 {
+    "name":"M-V",
     "scenario":"all elements visited by 'cur' upon termination",
     "input":{
         "program":{

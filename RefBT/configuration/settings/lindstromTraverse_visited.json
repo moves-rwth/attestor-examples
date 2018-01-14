@@ -1,4 +1,5 @@
 {
+    "name":"M-V",
     "scenario":"Prove that every node has been visited by variable cur.",
     "input":{
         "program":{

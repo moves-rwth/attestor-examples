@@ -1,4 +1,5 @@
 {
+    "name":"M-C-Y",
     "scenario":"Spurious counterexample test",
     "input":{
         "program":{

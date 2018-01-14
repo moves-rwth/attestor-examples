@@ -1,4 +1,5 @@
 {
+    "name":"M-V",
     "scenario":"sll + null visited by cur",
     "input":{
         "program":{

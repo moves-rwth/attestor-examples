@@ -1,4 +1,5 @@
 {
+    "name":"N-S",
     "scenario":"After traversal we obtain a tree again.",
     "input":{
         "program":{

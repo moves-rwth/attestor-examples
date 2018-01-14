@@ -1,4 +1,5 @@
 {
+    "name":"M-C-X",
     "scenario":"Counterexample generation test after list reversal",
     "input":{
         "program":{

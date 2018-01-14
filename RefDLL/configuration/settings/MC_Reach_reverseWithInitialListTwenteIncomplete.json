@@ -1,4 +1,5 @@
 {
+    "name":"M-R",
     "scenario":"memory safety",
     "input":{
         "program":{

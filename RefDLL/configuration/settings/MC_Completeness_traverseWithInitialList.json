@@ -1,5 +1,6 @@
 {
-    "scenario":"(C) every DLL element has been accessed by variable cur",
+    "name":"M-V",
+    "scenario":"Every DLL element has been accessed by variable cur",
     "input":{
         "program":{
             "classpath":"configuration/code",

@@ -1,4 +1,5 @@
 {
+    "name":"M-C-X",
     "scenario":"Counterexample with nested procedures",
     "input":{
         "program":{

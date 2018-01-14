@@ -1,4 +1,5 @@
 {
+    "name":"M",
     "scenario":"Memory safety",
     "input":{
         "program":{

@@ -1,4 +1,5 @@
 {
+    "name": "M",
     "scenario":"memory safety: build and reverse list",
     "input":{
         "program":{
