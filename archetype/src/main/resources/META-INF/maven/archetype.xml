@@ -6,6 +6,7 @@
   </sources>
   <resources>
       <resource>configuration/code/BinaryTree.java</resource>
+      <resource>configuration/code/Tree.java</resource>
       <resource>configuration/grammar/BinaryTree.json</resource>
       <resource>configuration/inputs/BinaryTree.json</resource>
       <resource>configuration/settings/lindstrom_m.json</resource>
