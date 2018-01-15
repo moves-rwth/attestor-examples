@@ -5,4 +5,6 @@ dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,de/rwth/i2/attestor/examples/ForesterSLL.sll_bubblesort
 inline,de/rwth/i2/attestor/examples/ForesterSLL.sll_delete
+inline,de/rwth/i2/attestor/examples/ForesterSLL.sll_headptr
+inline,de/rwth/i2/attestor/examples/ForesterSLL.sll_insertsort
 inline,de/rwth/i2/attestor/examples/ForesterSLL.sll_rev

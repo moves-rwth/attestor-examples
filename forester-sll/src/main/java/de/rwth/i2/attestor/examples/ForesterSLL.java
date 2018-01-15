@@ -30,4 +30,20 @@ public class ForesterSLL {
                 .build()
                 .run();
     }
+
+    @Benchmark
+    public void sll_insertsort(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void sll_headptr(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
 }
