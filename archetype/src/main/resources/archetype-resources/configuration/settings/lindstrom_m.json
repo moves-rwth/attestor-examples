@@ -1,0 +1,32 @@
+{
+  "name":"M",
+  "scenario":"Analyzing the Lindtrom tree traversal for memory safety.",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"BinaryTree",
+      "method":"lindstrom"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "BT", "definition":"configuration/grammar/BinaryTree.java" }
+    ],
+    "initialState":{
+      "path":"configuration/inputs",
+      "file":"BinaryTree.json",
+      "description":"An arbitrary binary tree"
+    }
+  },
+  "options":{
+    "abstractionDistance":0,
+    "maximalStateSpace":5000
+  },
+  "output":{
+    "enabled":false,
+    "stateSpace":{
+      "path":"../attestor-examples-output/BinaryTree/traverse_m"
+    },
+  },
+  "modelChecking":{}
+}
