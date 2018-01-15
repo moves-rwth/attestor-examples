@@ -46,4 +46,12 @@ public class ForesterSLL {
                 .build()
                 .run();
     }
+
+    @Benchmark
+    public void sll_listofclists(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
 }
