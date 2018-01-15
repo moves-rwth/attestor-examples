@@ -1,20 +1,51 @@
-Attestor Benchmark
-==================
+Attestor Examples: Lindstrom Tree Traversal
+===========================================
 
-## Running the benchmarks
+This is a small collection of attestor examples using predefined binary trees.
 
-There are two prepared shellscripts to build and execute all benchmarks.
-For testing purposes, all benchmarks can be run once by executing
+
+## Running examples
+
+You can run all examples once using a prepared shell script as follows:
+
+    $ ./run.sh
+
+Alternatively, exexute the following maven statement within this directory:
+
+    $ mvn clean install exec:exec@run.
+
+
+## Measuring performance
+
+The full benchmark suite runs each example multiple times. It can be started using the following script:
 
     $ ./benchmarks.sh
 
-To obtain realisitic measurements, the full benchmark suite can be started by running
+Alternatively, you can use the following maven statement:
 
-    $ ./full-benchmarks.sh
-
-In both cases, results will be saved to a file called jmh-result.text.
-Alternatively, one can directly build and execute benchmarks from maven 
-using the following instructions to run each example once or to run the full benchmark suite, respectively:
-
-    $ mvn clean install exec:exec@run
     $ mvn clean install exec:exec@benchmark
+
+
+## File structure
+
+The individual benchmarks of this collection are located in
+
+    src/main/java/BinaryTree.java.
+
+Each benchmark is represented by a method that is named after the corresponding settings file in
+
+    configuration/settings.
+
+The analyzed source code is found in
+
+    configuration/code.
+
+Definitions of non-empty procedure inputs are placed in
+
+    configuration/inputs.
+
+Finally, grammars and selector renamings (in case predefined grammars are used) are put into
+
+    configuration/grammar.
+
+

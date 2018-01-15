@@ -1,0 +1,35 @@
+{
+  "name":"M-C",
+  "scenario":"Analyzing the Lindtrom tree traversal for memory safety. Also prove that the return value of the algorithm correctly coincides with the sentinal node.",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"Lindstrom",
+      "method":"lindstrom"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "BT", "definition":"configuration/grammar/BinaryTree.java" }
+    ],
+    "initialState":{
+      "path":"configuration/inputs",
+      "file":"bt.json",
+      "description":"An arbitrary binary tree"
+    }
+  },
+  "options":{
+    "abstractionDistance":0,
+    "maximalStateSpace":100000
+  },
+  "output":{
+    "enabled":false,
+    "stateSpace":{
+      "path":"../attestor-examples-output/BinaryTree/lindstrom_v"
+    }
+  },
+  "modelChecking":{
+    "enabled":true,
+    "formulae":"( G F { terminated } -> (GX {terminated} -> { cur == sen } ) )"
+  }
+}

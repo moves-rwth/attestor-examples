@@ -2,15 +2,19 @@
   xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
   <id>attestor-benchmark</id>
   <sources>
-    <source>src/main/java/AVLTree.java</source>
+    <source>src/main/java/BinaryTree.java</source>
   </sources>
   <resources>
-      <resource>configuration/code/AVLTree.java</resource>
-      <resource>configuration/grammar/avltree.json</resource>
-      <resource>configuration/inputs/balanced_tree.json</resource>
-      <resource>configuration/settings/binary_search.json</resource>
+      <resource>configuration/code/BinaryTree.java</resource>
+      <resource>configuration/grammar/BinaryTree.json</resource>
+      <resource>configuration/inputs/BinaryTree.json</resource>
+      <resource>configuration/settings/lindstrom_m.json</resource>
+      <resource>configuration/settings/lindstrom_s.json</resource>
+      <resource>configuration/settings/lindstrom_c.json</resource>
+      <resource>configuration/settings/lindstrom_v.json</resource>
+      <resource>configuration/settings/lindstrom_n.json</resource>
       <resource>README.md</resource>
       <resource>benchmarks.sh</resource>
-      <resource>full-benchmarks.sh</resource>
+      <resource>run.sh</resource>
   </resources>
 </archetype> 

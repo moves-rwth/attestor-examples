@@ -1,0 +1,35 @@
+{
+  "name":"M-S",
+  "scenario":"Analyzing the Lindtrom tree traversal for memory safety. Also prove that the result is a binary tree again.",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"Lindstrom",
+      "method":"lindstrom"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "BT", "definition":"configuration/grammar/BinaryTree.java" }
+    ],
+    "initialState":{
+      "path":"configuration/inputs",
+      "file":"bt.json",
+      "description":"An arbitrary binary tree"
+    }
+  },
+  "options":{
+    "abstractionDistance":0,
+    "maximalStateSpace":100000
+  },
+  "output":{
+    "enabled":false,
+    "stateSpace":{
+      "path":"../attestor-examples-output/BinaryTree/lindstrom_s"
+    }
+  },
+  "modelChecking":{
+    "enabled":true,
+    "formulae":"(GF {terminated} -> GF { L(RefBT) })"
+  }
+}
