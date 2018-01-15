@@ -1,1 +1,3 @@
 JMH S 40 de.rwth.i2.attestor.examples.ForesterSLL S 66 de.rwth.i2.attestor.examples.generated.ForesterSLL_sll_rev_jmhTest S 7 sll_rev S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 40 de.rwth.i2.attestor.examples.ForesterSLL S 69 de.rwth.i2.attestor.examples.generated.ForesterSLL_sll_delete_jmhTest S 10 sll_delete S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 40 de.rwth.i2.attestor.examples.ForesterSLL S 73 de.rwth.i2.attestor.examples.generated.ForesterSLL_sll_bubblesort_jmhTest S 14 sll_bubblesort S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 

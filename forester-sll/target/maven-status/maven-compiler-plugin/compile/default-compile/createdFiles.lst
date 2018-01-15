@@ -4,5 +4,7 @@ META-INF/CompilerHints
 de/rwth/i2/attestor/examples/generated/ForesterSLL_sll_rev_jmhTest.class
 META-INF/BenchmarkList
 de/rwth/i2/attestor/examples/generated/ForesterSLL_jmhType_B2.class
+de/rwth/i2/attestor/examples/generated/ForesterSLL_sll_delete_jmhTest.class
 de/rwth/i2/attestor/examples/generated/ForesterSLL_jmhType_B1.class
 de/rwth/i2/attestor/examples/generated/ForesterSLL_jmhType_B3.class
+de/rwth/i2/attestor/examples/generated/ForesterSLL_sll_bubblesort_jmhTest.class

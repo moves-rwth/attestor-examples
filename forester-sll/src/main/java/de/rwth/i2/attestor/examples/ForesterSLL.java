@@ -15,4 +15,19 @@ public class ForesterSLL {
                 .run();
     }
 
+    @Benchmark
+    public void sll_delete(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void sll_bubblesort(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
 }
