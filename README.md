@@ -25,7 +25,7 @@ After that a new example can be created by running the following (outside of any
 
     mvn archetype:generate \
         -DarchetypeGroupId=de.rwth.i2.attestor.examples \
-        -DarchetypeVersion=0.4 \
+        -DarchetypeVersion=0.5 \
         -DarchetypeArtifactId=benchmark
 
 Alternatively, there is a shell script new_benchmark.sh containing this command.
@@ -48,28 +48,26 @@ All project related settings of example projects derived from the archetype are 
 Furthermore, "src/..." contains a java file that sets up the Benchmark.
 An example is given below:
 
-    package de.rwth.i2.attestor.examples;
 
-    import avltree.BenchmarkHelper;
-    import org.openjdk.jmh.annotations.Benchmark;
-    import de.rwth.i2.attestor.main.Attestor;
-
-    public class AVLTree {
-
-        @Benchmark
-        public void binary_search() {
-            BenchmarkHelper.run();
-        }
+    @Benchmark
+    public void lindstrom_c(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
     }
 
-In this example, we analyze a binary search method of an AVLTree.
 The BenchmarkHelper class (that is installed automatically through maven) takes care of the setup as long as the name
 of the benchmark *coincides exactly with one of the settings files in configuration/settings*.
 Thus, in this case, there has to be a file
 
-    configuration/settings/binary_search.json
+    configuration/settings/lindstrom_c.json
 
-that specifies the analysis that should be performed.
+Furthermore, BenchmarkHelper allows to add expected outcomes, such as model-checking results and expected state space sizes, that are checked after the analysis.
+
 Further details regarding settings files are found in the [Attestor wiki][2].
 
 [1]: https://github.com/moves-rwth/attestor
