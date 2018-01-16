@@ -41,15 +41,11 @@ public class SLLListOfCLists {
 
             SLLListOfCLists x = first;
             first = first.next;
-//            SLL y = x.head.next;
-            /*while(y != x.head) {
+            SLL y = x.head.next;
+            while(y != x.head) {
                 SLL z = y;
                 y = y.next;
-                z = null;
             }
-
-            x = null;
-            */
         }
 
     }
