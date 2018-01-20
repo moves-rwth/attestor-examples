@@ -30,4 +30,21 @@ public class ForesterDLL {
                 .build()
                 .run();
     }
+
+    @Benchmark
+    public void dll_insertsort1(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void dll_insertsort2(){
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
 }
