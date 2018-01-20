@@ -1,0 +1,28 @@
+{
+  "name":"M",
+  "scenario":"Analyzing memory safety of a Java version of Forester test 'dll-rev.c'. Originals are found at https://github.com/kdudka/predator.",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"DLLRev",
+      "method":"main"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "DLList", "definition":"configuration/grammar/DLL.java" }
+    ],
+    "initialState":{
+    }
+  },
+  "options":{
+    "abstractionDistance":1,
+  },
+  "output":{
+    "enabled":true,
+    "stateSpace":{
+      "path":"../attestor-examples-output/ForesterDLL/dll_rev"
+    },
+  },
+  "modelChecking":{}
+}
