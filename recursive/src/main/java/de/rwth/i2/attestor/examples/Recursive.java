@@ -5,10 +5,10 @@ import jmhBenchmarkHelper.BenchmarkHelper;
 import org.openjdk.jmh.annotations.Benchmark;
 import de.rwth.i2.attestor.main.Attestor;
 
-public class ForesterTree {
+public class Recursive {
 
     @Benchmark
-    public void tree_constructor() {
+    public void sll_rec_traversal() {
         BenchmarkHelper.builder()
                 .expectFinalStates(1)
                 .build()
@@ -16,12 +16,11 @@ public class ForesterTree {
     }
 
     @Benchmark
-    public void tree_dsw() {
+    public void tree_rec_traversal() {
         BenchmarkHelper.builder()
                 .expectFinalStates(1)
                 .build()
                 .run();
     }
-
 
 }
