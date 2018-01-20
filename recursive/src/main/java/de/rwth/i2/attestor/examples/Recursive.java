@@ -16,11 +16,20 @@ public class Recursive {
     }
 
     @Benchmark
+    public void sll_rec_build() {
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
     public void tree_rec_traversal() {
         BenchmarkHelper.builder()
                 .expectFinalStates(1)
                 .build()
                 .run();
     }
+
 
 }
