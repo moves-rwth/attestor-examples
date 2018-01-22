@@ -158,5 +158,27 @@ public class DLList {
         DLList head = buildList();
         traverse(head);
     }
+	
+	public static void buildAndReverse(String[] args) {
+    
+        DLList list = new DLList();
+        for( int i = 0; i < 10; i++ ){
+            list = new DLList( list );
+        }
+		
+		DLList pos = list;
+
+		while(pos != null){
+
+			DLList tmp = pos.nextAlt;
+
+			pos.nextAlt = pos.prevAlt;
+			pos.prevAlt = tmp;
+
+			pos = pos.prevAlt;
+		}
+
+		list = pos;
+    }
     
 }
