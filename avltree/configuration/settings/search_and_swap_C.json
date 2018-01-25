@@ -8,7 +8,7 @@
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "file":"avltree.json"
+            "files":["avltree.json"]
         },
         "initialState":{
             "path":"configuration/inputs",

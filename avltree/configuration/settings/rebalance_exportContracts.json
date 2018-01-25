@@ -8,7 +8,7 @@
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "file":"avltree.json"
+            "files":["avltree.json"]
         },
         "initialState":{
             "path":"configuration/inputs",
@@ -27,7 +27,10 @@
         "stateSpace":{
             "path":"../attestor-examples-output/avltree/rebalance",
         },
-        "contracts":{
+        "grammar":{
+            "path":"../attestor-examples-output/avltree/rebalance",
+        },
+        "contractsForReuse":{
             "path":"configuration/contracts",
             "requestedContracts":[
             {
@@ -35,6 +38,9 @@
                 "filename":"contract_rightRotate"
             }
             ]
+        },
+        "contractsForInspection":{
+            "path":"../attestor-examples-output/avltree/rebalance"
         }
     },
     "modelChecking":{
