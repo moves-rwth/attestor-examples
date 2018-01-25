@@ -1,0 +1,11 @@
+[{
+    "nonterminal":"BLACK",
+    "rank":4,
+    "reductionTentacles":[true,true,true,false],
+    "rules":[]
+},{
+    "nonterminal":"RED",
+    "rank":4,
+    "reductionTentacles":[true,true,true,false],
+    "rules":[]       
+}]
