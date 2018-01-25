@@ -8,7 +8,7 @@
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "file":"bimap.json"
+            "files":["bimap.json"]
         },
         "initialState":{
             "path":"configuration/inputs",

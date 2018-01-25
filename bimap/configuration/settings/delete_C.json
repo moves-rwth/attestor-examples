@@ -8,11 +8,11 @@
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "file":"bimap.json"
+            "files":["bimap.json"]
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"bimap.json",
+            "files":"bimap.json",
             "description":"A heap with an arbitrary BiMap"
         },
         "predefinedGrammars":[]

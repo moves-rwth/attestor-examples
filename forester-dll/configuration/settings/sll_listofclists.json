@@ -9,7 +9,7 @@
     },
     "userDefinedGrammar":{
       "path":"configuration/grammar",
-      "file":"LSLL.json"
+      "files":["LSLL.json"]
     },
     "predefinedGrammars":[
     ],

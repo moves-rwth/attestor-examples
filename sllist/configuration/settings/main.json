@@ -9,7 +9,7 @@
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "file":"sllist.json"
+            "files":["sllist.json"]
         },
         "initialState":{
             "path":"configuration/inputs",

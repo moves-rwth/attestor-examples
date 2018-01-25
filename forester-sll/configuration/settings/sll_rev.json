@@ -19,7 +19,7 @@
     "abstractionDistance":1,
   },
   "output":{
-    "enabled":false,
+    "enabled":true,
     "stateSpace":{
       "path":"../attestor-examples-output/ForesterSLL/sll_rev"
     },
