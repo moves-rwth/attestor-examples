@@ -151,9 +151,11 @@ public class RBTree{
     public static void main( String [] args ){
         
         RBTree testTree = new RBTree();
-        testTree.insert( 42 );
-        testTree.insert( 123 );
-        testTree.insert( 99 );
-        
+		if( ! testTree.isBlack ) {
+			testTree.setBlack();
+		}
+		
+        testTree.setRed();
+		testTree.setBlack();
     }
 }
