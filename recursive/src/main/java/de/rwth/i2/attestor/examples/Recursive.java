@@ -31,5 +31,12 @@ public class Recursive {
                 .run();
     }
 
+    @Benchmark
+    public void sll_rec_zip() {
+        BenchmarkHelper.builder()
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
 
 }

@@ -1,10 +1,10 @@
 {
   "name":"M",
-  "scenario":"Analyzing memory safety of a recursive SLL constructor.",
+  "scenario":"Analyzing memory safety of a recursive SLL zip method.",
   "input":{
     "program":{
       "classpath":"configuration/code",
-      "class":"SLLRecTraverse",
+      "class":"SLLRecZip",
       "method":"main"
     },
     "userDefinedGrammar":{
@@ -21,7 +21,7 @@
   "output":{
     "enabled":false,
     "stateSpace":{
-      "path":"../attestor-examples-output/recursive/sll_rec_build"
+      "path":"../attestor-examples-output/recursive/sll_rec_zip"
     },
   },
   "modelChecking":{}
