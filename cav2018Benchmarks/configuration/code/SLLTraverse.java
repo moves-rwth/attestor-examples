@@ -1,7 +1,5 @@
 public class SLLTraverse {
 
-	private SLL next;
-	
 	public static void traverse( SLL head ){
 
 		SLL cur = head;

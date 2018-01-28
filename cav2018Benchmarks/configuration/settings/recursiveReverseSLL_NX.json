@@ -1,0 +1,35 @@
+{
+    "name":"Reverse SLL recursively",
+    "scenario":"Provide a counterexample showing that the reversed list is not the same list as the initial one.",
+    "specificationDescription":"M-N-X",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLRecursiveReverse",
+            "method":"reverseList"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"SLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "garbageCollection":false
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefSLL/recursiveReverseSLL_M"
+        }
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"G({ terminated } -> {identicNeighbours})"
+    }
+}

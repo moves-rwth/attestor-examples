@@ -1,8 +1,5 @@
 public class SLLReverse {
 
-	private SLL next;
-
-
 	public static void reverseList( SLL head ){
 
 		SLL reversedPart = null;
