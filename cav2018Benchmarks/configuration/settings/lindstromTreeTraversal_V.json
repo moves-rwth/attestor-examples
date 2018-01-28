@@ -1,6 +1,7 @@
 {
-    "name":"M",
-    "scenario":"Memory safety",
+    "name":"Lindstrom Algorithm",
+    "scenario":"Verify that every node is eventually visited by variable cur.",
+    "specificationDescription":"M-V",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -20,13 +21,16 @@
     },
     "options":{
         "abstractionDistance":0,
-        "maximalStateSpace":5000
+        "maximalStateSpace":100000
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse"
-        },
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse_visited"
+        }
     },
-    "modelChecking":{}        
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> F { visited(cur) })"
+    }        
 }

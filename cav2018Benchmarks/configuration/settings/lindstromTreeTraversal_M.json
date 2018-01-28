@@ -1,6 +1,7 @@
 {
-    "name":"M-N",
-    "scenario":"Prove that the neighbourhood of every node is the original one upon termination.",
+    "name":"Lindstrom Algorithm",
+    "scenario":"Verify memory safety.",
+    "specificationDescription":"M",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -20,17 +21,13 @@
     },
     "options":{
         "abstractionDistance":0,
-	    "collapseRules":False,
-        "maximalStateSpace":500000
+        "maximalStateSpace":5000
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse_neighbourhood"
-        }
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse"
+        },
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
-    }        
+    "modelChecking":{}        
 }

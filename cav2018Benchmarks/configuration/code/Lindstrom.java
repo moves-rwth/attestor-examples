@@ -1,4 +1,4 @@
-public class Lindstrom{
+public class Lindstrom {
 		
 	static Tree traverse(Tree root){
 		

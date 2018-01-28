@@ -1,6 +1,7 @@
 {
-    "name":"N-S",
-    "scenario":"After traversal we obtain a tree again.",
+    "name":"Lindstrom Algorithm",
+    "scenario":"Verify that the heap is a binary tree again upon termination.",
+    "specificationDescription":"M-S",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -23,7 +24,7 @@
         "maximalStateSpace":100000
     },
     "output":{
-        "enabled":true,
+        "enabled":false,
         "stateSpace":{
             "path":"../attestor-examples-output/RefBT/lindstromTraverse_shape"
         }

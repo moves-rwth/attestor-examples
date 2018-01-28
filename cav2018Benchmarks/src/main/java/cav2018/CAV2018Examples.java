@@ -4,8 +4,72 @@ import jmhBenchmarkHelper.BenchmarkHelper;
 import org.openjdk.jmh.annotations.Benchmark;
 import de.rwth.i2.attestor.main.Attestor;
 
+/**
+ * Collection of benchmarks to be executed.
+ *
+ * Every method tagged with @Benchmark requires a settings file with the same name in configuration/settings/.
+ * For instance, method foo() executes the benchmark specified by configuration/settings/foo.json.
+ *
+ * Every benchmark may be additionally tagged with expected results, e.g. the expected total number of states,
+ * model-checking results, etc. If executing a benchmark leads to different results, an error is raised.
+ */
 public class CAV2018Examples {
 
+    @Benchmark
+    public void lindstromTreeTraversal_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void lindstromTreeTraversal_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void lindstromTreeTraversal_V(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(2583)
+                .expectMainProcedureStates(2577)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void lindstromTreeTraversal_N(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(67941)
+                .expectMainProcedureStates(67935)
+                .expectFinalStates(10)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void lindstromTreeTraversal_C(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(229)
+                .expectMainProcedureStates(223)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+
+/*
     @Benchmark
     public void getLeft() {
         BenchmarkHelper.builder()
@@ -26,56 +90,9 @@ public class CAV2018Examples {
                 .run();
     }
 
-    @Benchmark
-    public void lindstromTraverse(){
-        BenchmarkHelper.builder()
-                .expectTotalStates(229)
-                .expectMainProcedureStates(223)
-                .expectFinalStates(1)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void lindstromTraverse_visited(){
-        BenchmarkHelper.builder()
-                .expectTotalStates(2583)
-                .expectMainProcedureStates(2577)
-                .expectFinalStates(1)
-                .build()
-                .run();
-    }
-	
-    @Benchmark
-    public void lindstromTraverse_shape(){
-        BenchmarkHelper.builder()
-                .expectTotalStates(229)
-                .expectMainProcedureStates(223)
-                .expectFinalStates(1)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void lindstromTraverse_terminateAtSen(){
-        BenchmarkHelper.builder()
-                .expectTotalStates(229)
-                .expectMainProcedureStates(223)
-                .expectFinalStates(1)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void lindstromTraverse_neighbourhood(){
-        BenchmarkHelper.builder()
-                .expectTotalStates(67941)
-                .expectMainProcedureStates(67935)
-                .expectFinalStates(10)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
+
+    */
 }
