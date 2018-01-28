@@ -51,9 +51,9 @@ public class RefSLL {
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
 		BenchmarkHelper.builder()
-				.expectTotalStates(96)
-				.expectMainProcedureStates(96)
-				.expectFinalStates(1)
+				.expectTotalStates(97)
+				.expectMainProcedureStates(97)
+				.expectFinalStates(2)
 				.expectLTLResults(true)
 				.build()
 				.run();
@@ -95,9 +95,9 @@ public class RefSLL {
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
 		BenchmarkHelper.builder()
-				.expectTotalStates(265)
-				.expectMainProcedureStates(265)
-				.expectFinalStates(1)
+				.expectTotalStates(267)
+				.expectMainProcedureStates(267)
+				.expectFinalStates(3)
 				.expectLTLResults(false)
 				.expectNoCounterexamples(1)
 				.build()
