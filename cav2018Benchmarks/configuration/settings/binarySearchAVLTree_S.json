@@ -1,7 +1,7 @@
 {
     "name":"AVL Tree binary search",
-    "scenario":"Verify memory safety.",
-    "specificationDescription":"M",
+    "scenario":"Verify that the heap is a balanced binary tree at every program location.",
+    "specificationDescription":"M-S",
     "input":{
         "program":{
             "classpath":"configuration/code",
@@ -27,9 +27,11 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/binarySearchAVLTree_M"
+            "path":"../attestor-examples-output/avltree/binarySearchAVLTree_S"
         }
     },
     "modelChecking":{
+        "enabled":true,
+	    "formulae":"G { btree }"
     }
 }

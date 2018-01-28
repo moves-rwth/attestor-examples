@@ -1,5 +1,5 @@
 {
-    "name":"Lindstrom Algorithm",
+    "name":"Lindstrom algorithm",
     "scenario":"Verify that the algorithm terminates at the root of the tree.",
     "specificationDescription":"M-C",
     "input":{
@@ -26,7 +26,7 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse_terminateAtSen"
+            "path":"../attestor-examples-output/RefBT/lindstromTreeTraversal_C"
         }    
     },
     "modelChecking":{

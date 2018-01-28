@@ -1,33 +1,33 @@
 {
-    "name":"AVL Tree binary search",
+    "name":"AVL Tree transform SLL to AVL Tree",
     "scenario":"Verify memory safety.",
     "specificationDescription":"M",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"binarySearch"
+            "method":"sllToAVLTree"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
             "file":"AVLTreeGrammar.json"
         },
         "initialState":{
-            "path":"configuration/inputs",
-            "file":"AVLTree.json",
-            "description":"A general balanced AVL tree"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
     },
     "options":{
-        "maximalStateSpace":500,
-        "abstractionDistance":0,
+        "maximalStateSpace":6000,
+        "abstractionDistance":1,
+        "stateSpacePostProcessing":false,
         "mode":"indexed"
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/binarySearchAVLTree_M"
+            "path":"../attestor-examples-output/avltree/sllToAVLTree_M"
         }
     },
     "modelChecking":{

@@ -12,7 +12,7 @@ set -e
 
 echo "Running benchmark suite for Attestor (single shot)..."
 
-mvn -o exec:exec@run | tee $LOGFILE
+mvn -q -o clean install exec:exec@run | tee $LOGFILE
 echo "done."
 
 cat $LOGFILE | grep -oP "Analyzed method:\s*[\W\w]*/\K\w+.\w+|Benchmark name:\s*\K[\s\W\w]*|Specification summary:\s*\K[\s\W\w]*|w/ procedure calls[\s\W]*\K\d+|w/o procedure calls[\s\W]*\K\d+|final states[\s\W]*\K\d+|Interprocedural Analysis[\s\W]*\K\d+.\d+|Total runtime[\s\W]*\K\d+.\d+|Total verification time[\s\W]*\K\d+.\d+" | awk 'NR%9{printf "%s, ",$0;next;}1' > $CSVFILE
@@ -87,14 +87,30 @@ TAGTEXTFILE
 
 cd $DIR
 echo "creating benchmark table..."
-pdflatex $TEXFILE
+#pdflatex $TEXFILE
 
-echo "\n\n\n\n\n\n"
-echo "-----------------------------------------------------------------------------------------------------------------------\n\n"
-echo "FINISHED EXECUTION\n"
-echo "Details are found in the logfile: $LOGFILE\n"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "-----------------------------------------------------------------------------------------------------------------------"
+echo ""
+echo ""
+echo "FINISHED EXECUTION"
+echo ""
+echo "Details are found in the logfile: $LOGFILE"
+echo ""
 echo "Benchmark results have been written to $PDFFILE."
-echo "\n\n-----------------------------------------------------------------------------------------------------------------------"
-echo "\n\n\n\n\n\n"
-okular $PDFFILE &
+echo ""
+echo ""
+echo "-----------------------------------------------------------------------------------------------------------------------"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+#okular $PDFFILE &
 cd $PATH_ORIGINAL
+
+cat benchmark-results/results.csv

@@ -1,5 +1,5 @@
 {
-    "name":"Lindstrom Algorithm",
+    "name":"Lindstrom algorithm",
     "scenario":"Verify that every node is eventually visited by variable cur.",
     "specificationDescription":"M-V",
     "input":{
@@ -26,7 +26,7 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse_visited"
+            "path":"../attestor-examples-output/RefBT/lindstromTreeTraversal_V"
         }
     },
     "modelChecking":{

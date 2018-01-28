@@ -1,5 +1,5 @@
 {
-    "name":"Lindstrom Algorithm",
+    "name":"Lindstrom algorithm",
     "scenario":"Verify that the tree upon termination coincides with the input tree.",
     "specificationDescription":"M-N",
     "input":{
@@ -27,7 +27,7 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse_neighbourhood"
+            "path":"../attestor-examples-output/RefBT/lindstromTreeTraversal_N"
         }
     },
     "modelChecking":{

@@ -1,12 +1,12 @@
 {
-    "name":"AVL Tree binary search",
+    "name":"AVL Tree leftmost insertion",
     "scenario":"Verify memory safety.",
     "specificationDescription":"M",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"AVLTree",
-            "method":"binarySearch"
+            "method":"leftMostInsert"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -14,22 +14,22 @@
         },
         "initialState":{
             "path":"configuration/inputs",
-            "file":"AVLTree.json",
-            "description":"A general balanced AVL tree"
+            "file":"AVLTreeWithThis.json",
+            "description":"A general balanced AVL tree with a marked element."
         },
         "predefinedGrammars":[]
     },
     "options":{
-        "maximalStateSpace":500,
-        "abstractionDistance":0,
+        "maximalStateSpace":6000,
+        "abstractionDistance":1,
+        "stateSpacePostProcessing":false,
         "mode":"indexed"
     },
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/avltree/binarySearchAVLTree_M"
+            "path":"../attestor-examples-output/avltree/leftMostInsertAVLTree_M"
         }
     },
-    "modelChecking":{
-    }
+    "modelChecking":{}
 }

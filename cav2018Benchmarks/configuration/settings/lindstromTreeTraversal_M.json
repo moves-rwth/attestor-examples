@@ -1,5 +1,5 @@
 {
-    "name":"Lindstrom Algorithm",
+    "name":"Lindstrom algorithm",
     "scenario":"Verify memory safety.",
     "specificationDescription":"M",
     "input":{
@@ -26,7 +26,7 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse"
+            "path":"../attestor-examples-output/RefBT/lindstromTreeTraversal_M"
         },
     },
     "modelChecking":{}        

@@ -1,5 +1,5 @@
 {
-    "name":"Lindstrom Algorithm",
+    "name":"Lindstrom algorithm",
     "scenario":"Verify that the heap is a binary tree again upon termination.",
     "specificationDescription":"M-S",
     "input":{
@@ -26,7 +26,7 @@
     "output":{
         "enabled":false,
         "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTraverse_shape"
+            "path":"../attestor-examples-output/RefBT/lindstromTreeTraversal_S"
         }
     },
     "modelChecking":{

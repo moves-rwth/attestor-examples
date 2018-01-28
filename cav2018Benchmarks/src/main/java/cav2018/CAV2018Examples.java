@@ -78,30 +78,94 @@ public class CAV2018Examples {
                 .run();
     }
 
+    @Benchmark
+    public void binarySearchAVLTree_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(192)
+                .expectMainProcedureStates(192)
+                .expectFinalStates(6)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void leftMostInsertAVLTree_M() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(6120)
+                .expectMainProcedureStates(444)
+                .expectFinalStates(4)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void leftMostInsertAVLTree_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(6120)
+                .expectMainProcedureStates(444)
+                .expectFinalStates(4)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void insertAVLTree_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(10388)
+                .expectMainProcedureStates(1323)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void insertAVLTree_M() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(10388)
+                .expectMainProcedureStates(1323)
+                .expectFinalStates(2)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void sllToAVLTree_M() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(7166)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(2)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void sllToAVLTree_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(7166)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void sllToAVLTree_C() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(7166)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
 /*
 
 
-    @Benchmark
-    public void binary_search_C() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(192)
-                .expectMainProcedureStates(192)
-                .expectFinalStates(6)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void binary_search_S() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(192)
-                .expectMainProcedureStates(192)
-                .expectFinalStates(6)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
 
     @Benchmark
     public void binary_search_S_final() {
@@ -294,59 +358,9 @@ public class CAV2018Examples {
                 .run();
     }
 
-    @Benchmark
-    public void insert() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(6120)
-                .expectMainProcedureStates(444)
-                .expectFinalStates(4)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void insert_S() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(10388)
-                .expectMainProcedureStates(1323)
-                .expectFinalStates(2)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void list_to_avl() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(7166)
-                .expectMainProcedureStates(139)
-                .expectFinalStates(2)
-                .build()
-                .run();
-    }
 
-    @Benchmark
-    public void list_to_avl_C() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(7166)
-                .expectMainProcedureStates(139)
-                .expectFinalStates(2)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
-
-    @Benchmark
-    public void list_to_avl_S() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(7166)
-                .expectMainProcedureStates(139)
-                .expectFinalStates(2)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
-}
 
 
     @Benchmark
