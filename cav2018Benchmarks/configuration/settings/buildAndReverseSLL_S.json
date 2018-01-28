@@ -1,0 +1,36 @@
+{
+    "name":"Construct and reverse SLL",
+    "scenario":"Verify that the result is a singly-linked list again. Garbage collection is disabled to keep list upon termination",
+    "specificationDescription":"M-S",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLReverse",
+            "method":"main"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "garbageCollection":false
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_S"
+        },
+        "report":{
+            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_S"
+        }
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"G ({terminated} -> { L(RefSLList) })"
+    }
+}

@@ -226,4 +226,146 @@ public class CAV2018Examples {
                 .run();
     }
 
+    @Benchmark
+    public void buildAndReverseSLL_M() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(92)
+                .expectMainProcedureStates(48)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndReverseSLL_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(92)
+                .expectMainProcedureStates(48)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndReverseSLL_R() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(92)
+                .expectMainProcedureStates(48)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void traverseSLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(23)
+                .expectMainProcedureStates(23)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void traverseSLL_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(23)
+                .expectMainProcedureStates(23)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void traverseSLL_N(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(97)
+                .expectMainProcedureStates(97)
+                .expectFinalStates(2)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void traverseSLL_R(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(44)
+                .expectMainProcedureStates(44)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void traverseSLL_V(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(46)
+                .expectMainProcedureStates(46)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+
+    @Benchmark
+    public void reverseSLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(46)
+                .expectMainProcedureStates(46)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseSLL_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(46)
+                .expectMainProcedureStates(46)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseSLL_V(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(169)
+                .expectMainProcedureStates(169)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseSLL_NX(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(268)
+                .expectMainProcedureStates(268)
+                .expectFinalStates(4)
+                .expectLTLResults(false)
+                .expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseSLL_R(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(76)
+                .expectMainProcedureStates(76)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
 }

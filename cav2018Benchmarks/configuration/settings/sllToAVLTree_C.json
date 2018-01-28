@@ -15,7 +15,7 @@
         "initialState":{
         },
         "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+            { "type": "SLList", "definition":"configuration/grammar/RenameList.java" }
         ],
     },
     "options":{

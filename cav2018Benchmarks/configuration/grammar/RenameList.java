@@ -1,5 +1,5 @@
 // Please adapt the following mapping here
-@Rename ListNode -> SLL
+@Rename ListNode -> List
 @Rename next -> next
 
 public class ListNode{
