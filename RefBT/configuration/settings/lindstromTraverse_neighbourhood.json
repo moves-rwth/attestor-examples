@@ -20,7 +20,8 @@
     },
     "options":{
         "abstractionDistance":0,
-        "maximalStateSpace":100000
+	"collapseRules":False,
+        "maximalStateSpace":500000
     },
     "output":{
         "enabled":false,

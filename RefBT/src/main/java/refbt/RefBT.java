@@ -71,9 +71,9 @@ public class RefBT {
     @Benchmark
     public void lindstromTraverse_neighbourhood(){
         BenchmarkHelper.builder()
-                .expectTotalStates(30911)
-                .expectMainProcedureStates(30905)
-                .expectFinalStates(1)
+                .expectTotalStates(67941)
+                .expectMainProcedureStates(67935)
+                .expectFinalStates(10)
                 .expectLTLResults(true)
                 .build()
                 .run();
