@@ -413,5 +413,54 @@ public class CAV2018Examples {
                 .run();
     }
 
+    @Benchmark
+    public void findMiddleSLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(75)
+                .expectMainProcedureStates(75)
+                .expectFinalStates(2)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void findMiddleSLL_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(98)
+                .expectMainProcedureStates(98)
+                .expectFinalStates(2)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void findMiddleSLL_V(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(380)
+                .expectMainProcedureStates(380)
+                .expectFinalStates(4)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void findMiddleSLL_N(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(456)
+                .expectMainProcedureStates(456)
+                .expectFinalStates(8)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void findMiddleSLL_R(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(89)
+                .expectMainProcedureStates(89)
+                .expectFinalStates(2)
+                .build()
+                .run();
+    }
 
 }

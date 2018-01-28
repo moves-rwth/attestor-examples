@@ -1,12 +1,12 @@
 {
-    "name":"SLL traversal",
-    "scenario":"Verify memory safety.",
-    "specificationDescription":"M",
+    "name":"SLL find middle element",
+    "scenario":"Verify that the heap is always a list.",
+    "specificationDescription":"M-S",
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"SLLTraverse",
-            "method":"traverse"
+            "class":"SLLFindMiddle",
+            "method":"findMiddle"
         },
         "userDefinedGrammar":{
         },
@@ -20,13 +20,16 @@
     },
     "options":{
         "abstractionDistance":1,
+        "garbageCollection":false
     },
     "output":{
         "stateSpace":{
             "enabled":true,
-            "path":"../attestor-examples-output/RefSLL/traverseSLL_M"
+            "path":"../attestor-examples-output/RefSLL/findMiddle_M"
         }
     },
     "modelChecking":{
+        "enabled":true,
+        "formulae":"G { L(RefSLList) }"
     }
 }

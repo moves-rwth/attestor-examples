@@ -1,12 +1,12 @@
 {
-    "name":"SLL traversal",
-    "scenario":"Verify memory safety.",
-    "specificationDescription":"M",
+    "name":"SLL find middle element",
+    "scenario":"Verify that every element is accessed by variable slow whenever null is returned.",
+    "specificationDescription":"M-V",
     "input":{
         "program":{
             "classpath":"configuration/code",
-            "class":"SLLTraverse",
-            "method":"traverse"
+            "class":"SLLFindMiddle",
+            "method":"findMiddle"
         },
         "userDefinedGrammar":{
         },
@@ -23,10 +23,12 @@
     },
     "output":{
         "stateSpace":{
-            "enabled":true,
-            "path":"../attestor-examples-output/RefSLL/traverseSLL_M"
+            "enabled":false,
+            "path":"../attestor-examples-output/RefSLL/findMiddle_V"
         }
     },
     "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF {return == null} -> F {visited(slow)})"
     }
 }
