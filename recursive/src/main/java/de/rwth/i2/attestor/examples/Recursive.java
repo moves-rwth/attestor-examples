@@ -31,6 +31,7 @@ public class Recursive {
                 .run();
     }
 
+    /*
     @Benchmark
     public void sll_rec_zip() {
         BenchmarkHelper.builder()
@@ -38,5 +39,6 @@ public class Recursive {
                 .build()
                 .run();
     }
+    */
 
 }
