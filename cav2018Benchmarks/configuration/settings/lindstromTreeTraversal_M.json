@@ -15,7 +15,7 @@
         ],
         "initialState":{
             "path":"configuration/inputs",
-            "file":"bt.json",
+            "file":"BinaryTree.json",
             "description":"An arbitrary binary tree"
         }
     },

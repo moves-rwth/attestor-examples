@@ -42,7 +42,7 @@ Every settings file specifies the actual benchmark. This includes:
 
 1. The analyzed source code, which is usually found in `configuration/code`.
 2. The LTL specification verified by the tool.
-3. The graph grammars used to guide abstraction. User-specified graph-grammars are found in `configuration/grammar`.
+3. The graph grammars used to guide abstraction. User-specified graph-grammars are found in `configuration/grammar`. For predefined grammars, such as binary trees, this directory may also contain renaming classes to map node and edge labels to class names and member variables.
 4. The initial heap in case the input is not supposed to be empty, e.g. when analyzing a procedure with parameters. These heaps are found in `configuration/inputs`
 6. A description of the benchmark and verified properties (see `name`, `scenario`, and `specificationDescription`).
 7. Command-line options, such as the maximal number of states until the tool aborts state space generation.
