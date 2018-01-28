@@ -162,24 +162,8 @@ public class CAV2018Examples {
                 .run();
     }
 
-/*
-
-
-
-
     @Benchmark
-    public void binary_search_S_final() {
-        BenchmarkHelper.builder()
-                .expectTotalStates(192)
-                .expectMainProcedureStates(192)
-                .expectFinalStates(6)
-                .expectLTLResults(true)
-                .build()
-                .run();
-    }
-
-    @Benchmark
-    public void search_and_back() {
+    public void searchAndBackAVLTree_M() {
         BenchmarkHelper.builder()
                 .expectTotalStates(455)
                 .expectMainProcedureStates(11)
@@ -189,7 +173,7 @@ public class CAV2018Examples {
     }
 
     @Benchmark
-    public void search_and_back_S() {
+    public void searchAndBackAVLTree_C() {
         BenchmarkHelper.builder()
                 .expectTotalStates(455)
                 .expectMainProcedureStates(11)
@@ -200,7 +184,7 @@ public class CAV2018Examples {
     }
 
     @Benchmark
-    public void search_and_back_C() {
+    public void searchAndBackAVLTree_S() {
         BenchmarkHelper.builder()
                 .expectTotalStates(455)
                 .expectMainProcedureStates(11)
@@ -211,7 +195,7 @@ public class CAV2018Examples {
     }
 
     @Benchmark
-    public void search_and_swap() {
+    public void searchAndSwapAVLTree_M() {
         BenchmarkHelper.builder()
                 .expectTotalStates(3855)
                 .expectMainProcedureStates(920)
@@ -221,7 +205,7 @@ public class CAV2018Examples {
     }
 
     @Benchmark
-    public void search_and_swap_S() {
+    public void searchAndSwapAVLTree_S() {
         BenchmarkHelper.builder()
                 .expectTotalStates(3855)
                 .expectMainProcedureStates(920)
@@ -232,7 +216,7 @@ public class CAV2018Examples {
     }
 
     @Benchmark
-    public void search_and_swap_C() {
+    public void searchAndSwapAVLTree_C() {
         BenchmarkHelper.builder()
                 .expectTotalStates(4104)
                 .expectMainProcedureStates(907)
@@ -242,6 +226,7 @@ public class CAV2018Examples {
                 .run();
     }
 
+/*
     @Benchmark
     public void left_rotate() {
         BenchmarkHelper.builder()
