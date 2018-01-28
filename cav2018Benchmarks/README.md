@@ -3,7 +3,7 @@ Benchmarks for CAV 2018 Submission
 
 This is a collection of examples accompanying a tool paper submission to CAV 2018 based on the JMH benchmark framework.
 
-## Running examples
+## Reproducing Benchmark Results
 
 This directory contains three prepared shell scripts to run all examples.
 Each of these scripts will create a logfile `benchmark-results/log` and a PDF file with a table summarizing all results.
@@ -27,7 +27,7 @@ Finally, it is possible to measure the average runtime for all benchmarks by inv
 Please note that `jmh-average.sh` will take a lot of time to finish, because every example is executed multiple times.
 
 
-## Structure of benchmarks
+## Structure of Benchmarks
 
 A definition of all benchmarks to be executed is found in
 
