@@ -1,0 +1,29 @@
+{
+  "name":"Build tree and traverse recursively",
+  "scenario":"Verify memory safety.",
+  "specificationDescription":"M",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"RecursiveTreeTraverse",
+      "method":"main"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
+    ],
+    "initialState":{
+    }
+  },
+  "options":{
+    "abstractionDistance":1,
+  },
+  "output":{
+    "enabled":false,
+    "stateSpace":{
+      "path":"../attestor-examples-output/recursive/tree_rec_traversal"
+    },
+  },
+  "modelChecking":{}
+}
