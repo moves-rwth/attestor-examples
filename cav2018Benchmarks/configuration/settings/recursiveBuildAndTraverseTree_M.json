@@ -22,7 +22,7 @@
   "output":{
     "enabled":false,
     "stateSpace":{
-      "path":"../attestor-examples-output/recursive/tree_rec_traversal"
+      "path":"../attestor-examples-output/recursive/recursiveBuildAndTraverseTree_M"
     },
   },
   "modelChecking":{}

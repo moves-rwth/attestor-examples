@@ -1,12 +1,12 @@
 {
-  "name":"Build tree and traverse recursively",
-  "scenario":"Verify that the heap is a binary tree upon termination.",
-  "specificationDescription":"M-S",
+  "name":"Recursive tree traversal",
+  "scenario":"Verify memory safety.",
+  "specificationDescription":"M",
   "input":{
     "program":{
       "classpath":"configuration/code",
       "class":"RecursiveTreeTraverse",
-      "method":"main"
+      "method":"traverse"
     },
     "userDefinedGrammar":{
     },
@@ -14,20 +14,19 @@
       { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
     ],
     "initialState":{
+      "path":"configuration/inputs",
+      "file":"BinaryTree.json",
+      "description":"An arbitrary binary tree"
     }
   },
   "options":{
     "abstractionDistance":1,
-    "garbageCollection":false
   },
   "output":{
     "enabled":false,
     "stateSpace":{
-      "path":"../attestor-examples-output/recursive/recursiveTreeTraverse_S"
+      "path":"../attestor-examples-output/recursive/recursiveTreeTraverse_M"
     },
   },
-  "modelChecking":{
-    "enabled":true,
-    "formulae":"GF {terminated} -> GF { L(RefBT) })"
-  }
+  "modelChecking":{}
 }

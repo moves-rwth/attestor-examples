@@ -15,7 +15,6 @@ import de.rwth.i2.attestor.main.Attestor;
  */
 public class CAV2018Examples {
 
-    /*
     @Benchmark
     public void lindstromTreeTraversal_M(){
         BenchmarkHelper.builder()
@@ -430,6 +429,7 @@ public class CAV2018Examples {
                 .expectTotalStates(98)
                 .expectMainProcedureStates(98)
                 .expectFinalStates(2)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
@@ -440,6 +440,7 @@ public class CAV2018Examples {
                 .expectTotalStates(380)
                 .expectMainProcedureStates(380)
                 .expectFinalStates(4)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
@@ -450,6 +451,7 @@ public class CAV2018Examples {
                 .expectTotalStates(456)
                 .expectMainProcedureStates(456)
                 .expectFinalStates(8)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
@@ -460,10 +462,10 @@ public class CAV2018Examples {
                 .expectTotalStates(89)
                 .expectMainProcedureStates(89)
                 .expectFinalStates(2)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
-    */
 
     @Benchmark
     public void recursiveBuildAndTraverseTree_M(){
@@ -481,9 +483,41 @@ public class CAV2018Examples {
                 .expectTotalStates(626)
                 .expectMainProcedureStates(6)
                 .expectFinalStates(1)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
 
+    @Benchmark
+    public void recursiveTraverseTree_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(91)
+                .expectMainProcedureStates(19)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void recursiveTraverseTree_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(91)
+                .expectMainProcedureStates(19)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void recursiveTraverseTree_N(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(21738)
+                .expectMainProcedureStates(546)
+                .expectFinalStates(6)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
 
 }
