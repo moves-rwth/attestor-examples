@@ -1,0 +1,32 @@
+{
+  "name":"M",
+  "scenario":"Analyzing memory safety of a Java version of Forester test 'skip-list-2.c'. Originals are found at https://github.com/kdudka/predator.",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"SkipList",
+      "method":"main"
+    },
+    "userDefinedGrammar":{
+		"path":"configuration/grammar",
+		"file":"SkipList.json"
+    },
+    "predefinedGrammars":[],
+    "initialState":{
+    }
+  },
+  "options":{
+    "abstractionDistance":0,
+	"collapseRules":true,
+  },
+  "output":{
+    "enabled":true,
+    "stateSpace":{
+      "path":"../attestor-examples-output/skipList"
+    },
+	"grammar":{
+		"path":"../attestor-examples-output/skipList"
+	}
+  },
+  "modelChecking":{}
+}
