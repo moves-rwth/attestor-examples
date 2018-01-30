@@ -520,4 +520,14 @@ public class CAV2018Examples {
                 .run();
     }
 
+    @Benchmark
+    public void buildAndTraverseListOfCyclicLists_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(313)
+                .expectMainProcedureStates(296)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
 }
