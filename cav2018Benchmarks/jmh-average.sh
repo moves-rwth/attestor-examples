@@ -58,28 +58,28 @@ cat <<"TAGTEXTFILE" > $TEXFILE
         \item Y: Verification fails, but all counterexamples obtained by the analysis are spurious.
     \end{itemize}
 
-    \paragraph{Number of generated states}
-    Covers the total number of generated states, the number of states generated for the analyzed top-level method, i.e. without states constructed during procedure contract generation, and the number of final states.
+    \paragraph{Number of states}
+    Covers the total number of generated states,and the number of final states.
 
     \paragraph{Runtimes}
     The runtime of Attestor in seconds.
-    Verification time includes state space generation time, but excludes parsers.
-    
+    Total time includes everything.
+    Verification times includes state space generation, model-checking, etc., but excludes parsers.
+
     \pagebreak
 
     \section*{Benchmark Results}
-
-
-    \begin{longtable}{|l|r|r|r|r|r|r|r|}
+    \begin{longtable}{|l|r|r|r|r|r|r|}
         \hline
-            \multicolumn{2}{|c|}{\bfseries Benchmark description} & \multicolumn{3}{c|}{\bfseries Number of generated states} & \multicolumn{3}{c|}{\bfseries Runtimes (in seconds)} 
+            \multicolumn{2}{|c|}{\bfseries Benchmark description} & \multicolumn{2}{c|}{\bfseries Number of states} & \multicolumn{3}{c|}{\bfseries Runtimes (in seconds)}
         \\ \hline
-        \bfseries Analyzed Method & \bfseries Properties & \bfseries Total & \bfseries w/o Procedures & \bfseries Final & \bfseries State Space Gen. (SSG) &\bfseries Verification (incl. SSG) & \bfseries Total
+        \bfseries Analyzed Method & \bfseries Properties & \bfseries Total & \bfseries Final & \bfseries State Space Gen. (SSG) &\bfseries Verification (incl. SSG) & \bfseries Total
         \\ \hline \hline
         \csvreader[head to column names]{results.csv}{}
-        {\program & \properties & \totalStates & \procStates & \finalStates & \stateSpaceGeneration & \verification & \total \\}
-               & & & & & & &\\ \hline
+        {\program & \properties & \totalStates & \finalStates & \stateSpaceGeneration & \verification & \total \\}
+               & & & & & &\\ \hline
     \end{longtable}
+
 \end{document}
 TAGTEXTFILE
 
