@@ -1,0 +1,27 @@
+{
+  "name":"Build and traverse SLL with head ptr",
+  "scenario":"Analyzing memory safety of a Java version of Forester test 'sll-headptr.c'. Originals are found at https://github.com/kdudka/predator.",
+  "specificationDescription":"M",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"SLLHeadPtr",
+      "method":"main"
+    },
+    "userDefinedGrammar":{
+      "path":"configuration/grammar",
+      "file":"SLLHeadPtr.json"
+    },
+    "predefinedGrammars":[
+    ],
+    "initialState":{
+    }
+  },
+  "options":{
+    "abstractionDistance":1,
+  },
+  "output":{
+    "enabled":false,
+  },
+  "modelChecking":{}
+}

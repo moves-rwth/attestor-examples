@@ -1,0 +1,31 @@
+{
+    "name":"Faulty DLL reversal that first traverses the list",
+    "scenario":"Provide a counterexample that the result is not null upon termination.",
+    "specificationDescription":"M-C-X",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"faultyReverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"DLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+       "enabled":true,
+        "formulae":"(GF {terminated} -> F ({ return == null } & {terminated}))"
+    }
+}

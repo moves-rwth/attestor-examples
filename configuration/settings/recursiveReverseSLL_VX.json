@@ -1,0 +1,32 @@
+{
+    "name":"Reverse SLL recursively",
+    "scenario":"Show that not every element is directly accessed by variable first.",
+    "specificationDescription":"M-V-X",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLRecursiveReverse",
+            "method":"reverseList"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"SLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "garbageCollection":false
+    },
+    "output":{
+        "enabled":false,
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF {terminated} -> F {visited(first)})"
+    }
+}

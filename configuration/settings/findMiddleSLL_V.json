@@ -1,0 +1,31 @@
+{
+    "name":"SLL find middle element",
+    "scenario":"Verify that every element is accessed by variable slow whenever null is returned.",
+    "specificationDescription":"M-V",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLFindMiddle",
+            "method":"findMiddle"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"SLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":false,
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF {return == null} -> F {visited(slow)})"
+    }
+}

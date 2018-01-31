@@ -1,0 +1,26 @@
+{
+    "name":"Construct and reverse SLL",
+    "scenario":"Verify memory safety.",
+    "specificationDescription":"M",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLReverse",
+            "method":"main"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+        }
+    },
+    "options":{
+        "abstractionDistance":1
+    },
+    "output":{
+        "enabled":false,
+    },
+    "modelChecking":{}        
+}

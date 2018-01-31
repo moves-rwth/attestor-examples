@@ -1,0 +1,32 @@
+{
+  "name":"Recursive tree traversal",
+  "scenario":"Prove that the tree structure is not broken.",
+  "specificationDescription":"M-S",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"RecursiveTreeTraverse",
+      "method":"traverse"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
+    ],
+    "initialState":{
+      "path":"configuration/inputs",
+      "file":"BinaryTree.json",
+      "description":"An arbitrary binary tree"
+    }
+  },
+  "options":{
+    "abstractionDistance":1,
+  },
+  "output":{
+    "enabled":false,
+  },
+  "modelChecking":{
+    "enabled":true,
+    "formulae":"G { L(RefBT) }"
+  }
+}

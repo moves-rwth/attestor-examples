@@ -1,0 +1,34 @@
+{
+    "name":"AVL Tree transform SLL to AVL Tree",
+    "scenario":"Verify that the heap is a balanced binary tree upon termination.",
+    "specificationDescription":"M-S",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"sllToAVLTree"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"AVLTreeGrammar.json"
+        },
+        "initialState":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameList.java" }
+        ],
+    },
+    "options":{
+        "maximalStateSpace":6000,
+        "abstractionDistance":1,
+        "stateSpacePostProcessing":false,
+        "mode":"indexed"
+    },
+    "output":{
+        "enabled":false,
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF { terminated } -> F ({ terminated } & { btree }))"
+    }
+}

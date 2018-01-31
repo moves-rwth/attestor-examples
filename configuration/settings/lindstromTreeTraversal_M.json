@@ -1,0 +1,30 @@
+{
+    "name":"Lindstrom algorithm",
+    "scenario":"Verify memory safety.",
+    "specificationDescription":"M",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"Lindstrom",
+            "method":"traverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"BinaryTree.json",
+            "description":"An arbitrary binary tree"
+        }
+    },
+    "options":{
+        "abstractionDistance":0,
+        "maximalStateSpace":5000
+    },
+    "output":{
+        "enabled":false,
+    },
+    "modelChecking":{}        
+}
