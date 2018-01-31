@@ -15,7 +15,6 @@ import de.rwth.i2.attestor.main.Attestor;
  */
 public class CAV2018Examples {
 
-    /*
     @Benchmark
     public void lindstromTreeTraversal_M(){
         BenchmarkHelper.builder()
@@ -590,7 +589,6 @@ public class CAV2018Examples {
                 .build()
                 .run();
     }
-    */
 
     @Benchmark
     public void buildAndDeleteElementSLL_M(){
@@ -638,6 +636,18 @@ public class CAV2018Examples {
                 .expectTotalStates(44)
                 .expectMainProcedureStates(38)
                 .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void faultyReverseDLL_MCX(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(81)
+                .expectMainProcedureStates(7)
+                .expectFinalStates(2)
+                .expectLTLResults(false)
+                .expectNoCounterexamples(1)
                 .build()
                 .run();
     }
