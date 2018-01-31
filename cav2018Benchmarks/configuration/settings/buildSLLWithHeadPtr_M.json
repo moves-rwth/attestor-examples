@@ -1,16 +1,16 @@
 {
-  "name":"Build list of cyclic lists",
-  "scenario":"Analyzing memory safety of a Java version of Forester test 'sll-listofclists.c'. Originals are found at https://github.com/kdudka/predator.",
+  "name":"Build and traverse SLL with head ptr",
+  "scenario":"Analyzing memory safety of a Java version of Forester test 'sll-headptr.c'. Originals are found at https://github.com/kdudka/predator.",
   "specificationDescription":"M",
   "input":{
     "program":{
       "classpath":"configuration/code",
-      "class":"ListOfCyclicLists",
+      "class":"SLLHeadPtr",
       "method":"main"
     },
     "userDefinedGrammar":{
       "path":"configuration/grammar",
-      "file":"ListOfCyclicLists.json"
+      "file":"SLLHeadPtr.json"
     },
     "predefinedGrammars":[
     ],
@@ -21,9 +21,9 @@
     "abstractionDistance":1,
   },
   "output":{
-    "enabled":true,
+    "enabled":false,
     "stateSpace":{
-      "path":"../attestor-examples-output/cav2018Benchmarks/buildAndTraverseListOfCyclicLists_M"
+      "path":"../attestor-examples-output/cav2018Benchmarks/buildSLLWithHeadPtr_M"
     },
   },
   "modelChecking":{}

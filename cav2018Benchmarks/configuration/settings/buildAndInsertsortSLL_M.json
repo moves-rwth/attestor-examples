@@ -1,0 +1,29 @@
+{
+  "name":"SLL insertsort",
+  "scenario":"Analyzing memory safety of a Java version of Forester test 'sll-insert-sort.c'. Originals are found at https://github.com/kdudka/predator.",
+  "specificationDescription":"M",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"SLLBuildAndInsertSort",
+      "method":"main"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+    ],
+    "initialState":{
+    }
+  },
+  "options":{
+    "abstractionDistance":1,
+  },
+  "output":{
+    "enabled":false,
+    "stateSpace":{
+      "path":"../attestor-examples-output/cav2018Benchmarks/buildAndInsertSortSLL_M"
+    },
+  },
+  "modelChecking":{}
+}

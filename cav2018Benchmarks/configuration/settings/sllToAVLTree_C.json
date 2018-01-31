@@ -1,7 +1,7 @@
 {
     "name":"AVL Tree transform SLL to AVL Tree",
     "scenario":"Verify that the end of the list has been reached upon termination.",
-    "specificationDescription":"M-S",
+    "specificationDescription":"M-C",
     "input":{
         "program":{
             "classpath":"configuration/code",

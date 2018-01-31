@@ -530,7 +530,6 @@ public class CAV2018Examples {
                 .build()
                 .run();
     }
-    */
 
     @Benchmark
     public void buildAndReverseDLL_M(){
@@ -587,6 +586,37 @@ public class CAV2018Examples {
         BenchmarkHelper.builder()
                 .expectTotalStates(287)
                 .expectMainProcedureStates(280)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+    */
+
+    @Benchmark
+    public void buildAndDeleteElementSLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(152)
+                .expectMainProcedureStates(145)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildSLLWithHeadPtr_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(111)
+                .expectMainProcedureStates(105)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndInsertsortSLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(369)
+                .expectMainProcedureStates(362)
                 .expectFinalStates(1)
                 .build()
                 .run();
