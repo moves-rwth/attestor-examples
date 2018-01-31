@@ -22,10 +22,7 @@
         "abstractionDistance":1,
     },
     "output":{
-        "stateSpace":{
-            "enabled":true,
-            "path":"../attestor-examples-output/RefSLL/traverseSLL_M"
-        }
+        "enabled":false,
     },
     "modelChecking":{
     }

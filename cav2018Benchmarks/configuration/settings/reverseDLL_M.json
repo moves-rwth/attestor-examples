@@ -1,12 +1,12 @@
 {
-    "name":"Find last element of DLL",
-    "scenario":"Fails to prove termination. All counterexamples are spurious. Errors in console output are thus expected.",
-    "specificationDescription":"M-C-Y",
+    "name":"Reverse DLL",
+    "scenario":"Verify memory safety.",
+    "specificationDescription":"M",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"findLast"
+            "method":"reverse"
         },
         "userDefinedGrammar":{
         },
@@ -25,7 +25,5 @@
         "enabled":false,
     },
     "modelChecking":{
-       "enabled":true,
-        "formulae":"F {terminated}"
     }
 }

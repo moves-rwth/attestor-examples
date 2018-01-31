@@ -25,9 +25,6 @@
     },
     "output":{
         "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/lindstromTreeTraversal_M"
-        },
     },
     "modelChecking":{}        
 }

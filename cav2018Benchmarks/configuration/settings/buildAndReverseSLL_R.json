@@ -21,13 +21,7 @@
         "garbageCollection":false
     },
     "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_S"
-        },
-        "report":{
-            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_S"
-        }
+        "enabled":false,
     },
     "modelChecking":{
         "enabled":true,

@@ -664,16 +664,14 @@ public class CAV2018Examples {
                 .build()
                 .run();
     }
-    */
 
     @Benchmark
-    public void reverseDLL_CX(){
+    public void reverseDLL_M(){
         BenchmarkHelper.builder()
                 .expectTotalStates(70)
                 .expectMainProcedureStates(70)
                 .expectFinalStates(1)
-                .expectLTLResults(false)
-                .expectNoCounterexamples(1)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
@@ -688,6 +686,20 @@ public class CAV2018Examples {
                 .build()
                 .run();
     }
+
+
+    @Benchmark
+    public void reverseDLL_CX(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(70)
+                .expectMainProcedureStates(70)
+                .expectFinalStates(1)
+                .expectLTLResults(false)
+                .expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+
 
     @Benchmark
     public void reverseDLL_R(){
@@ -719,6 +731,17 @@ public class CAV2018Examples {
                 .expectFinalStates(15)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+    */
+
+    @Benchmark
+    public void traverseDLL_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(38)
+                .expectMainProcedureStates(38)
+                .expectFinalStates(1)
                 .build()
                 .run();
     }

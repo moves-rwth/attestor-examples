@@ -21,9 +21,6 @@
   },
   "output":{
     "enabled":false,
-    "stateSpace":{
-      "path":"../attestor-examples-output/cav2018Benchmarks/buildAndBubbleSortSLL_M"
-    },
   },
   "modelChecking":{}
 }

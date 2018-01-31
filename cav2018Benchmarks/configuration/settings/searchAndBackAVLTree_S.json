@@ -26,9 +26,6 @@
     },
     "output":{
         "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/searchAndBackAVLTree_S"
-        }
     },
     "modelChecking":{
         "enabled":true,

@@ -23,9 +23,6 @@
     },
     "output":{
         "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/traverseSLL_V"
-        }
     },
     "modelChecking":{
        "enabled":true,

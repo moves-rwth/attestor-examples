@@ -24,9 +24,6 @@
     },
     "output":{
         "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/reverseSLL_S"
-        }
     },
     "modelChecking":{
        "enabled":true,

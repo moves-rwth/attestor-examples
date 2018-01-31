@@ -20,13 +20,7 @@
         "abstractionDistance":1
     },
     "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_M"
-        },
-        "report":{
-            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_M"
-        }
+        "enabled":false,
     },
     "modelChecking":{}        
 }

@@ -20,10 +20,7 @@
     "abstractionDistance":1,
   },
   "output":{
-    "enabled":true,
-    "stateSpace":{
-      "path":"../attestor-examples-output/cav2018Benchmarks/DSWTree_M"
-    },
+    "enabled":false,
   },
   "modelChecking":{}
 }

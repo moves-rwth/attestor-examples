@@ -24,9 +24,6 @@
   },
   "output":{
     "enabled":false,
-    "stateSpace":{
-      "path":"../attestor-examples-output/recursive/recursiveTreeTraverse_S"
-    },
   },
   "modelChecking":{
     "enabled":true,

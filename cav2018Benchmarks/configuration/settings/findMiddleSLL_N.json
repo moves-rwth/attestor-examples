@@ -22,10 +22,7 @@
         "abstractionDistance":1,
     },
     "output":{
-        "stateSpace":{
-            "enabled":false,
-            "path":"../attestor-examples-output/RefSLL/findMiddle_N"
-        }
+        "enabled":false,
     },
     "modelChecking":{
         "enabled":true,

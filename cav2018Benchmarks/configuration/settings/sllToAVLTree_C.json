@@ -26,9 +26,6 @@
     },
     "output":{
         "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/sllToAVLTree_S"
-        }
     },
     "modelChecking":{
         "enabled":true,

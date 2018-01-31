@@ -20,13 +20,9 @@
     },
     "options":{
         "abstractionDistance":1,
-        "garbageCollection":false
     },
     "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/cav2018Benchmarks/reverseDLL"
-        }
+        "enabled":false,
     },
     "modelChecking":{
         "enabled":true,

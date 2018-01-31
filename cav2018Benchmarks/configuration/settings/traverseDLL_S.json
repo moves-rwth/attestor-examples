@@ -1,12 +1,12 @@
 {
-    "name":"Find last element of DLL",
-    "scenario":"Fails to prove termination. All counterexamples are spurious. Errors in console output are thus expected.",
-    "specificationDescription":"M-C-Y",
+    "name":"Traverse DLL",
+    "scenario":"Prove that the result is a doubly-linked list again.",
+    "specificationDescription":"M-S",
     "input":{
         "program":{
             "classpath":"configuration/code",
             "class":"DLList",
-            "method":"findLast"
+            "method":"traverse"
         },
         "userDefinedGrammar":{
         },
@@ -20,12 +20,13 @@
     },
     "options":{
         "abstractionDistance":1,
+        "garbageCollection":false
     },
     "output":{
         "enabled":false,
     },
     "modelChecking":{
        "enabled":true,
-        "formulae":"F {terminated}"
-    }
+	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
+    }        
 }

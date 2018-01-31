@@ -23,9 +23,6 @@
     },
     "output":{
         "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/cav2018Benchmarks/faultyReverseDLL_MCX"
-        }
     },
     "modelChecking":{
        "enabled":true,

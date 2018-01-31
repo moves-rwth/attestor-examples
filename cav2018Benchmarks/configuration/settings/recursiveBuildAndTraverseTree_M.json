@@ -21,9 +21,6 @@
   },
   "output":{
     "enabled":false,
-    "stateSpace":{
-      "path":"../attestor-examples-output/recursive/recursiveBuildAndTraverseTree_M"
-    },
   },
   "modelChecking":{}
 }

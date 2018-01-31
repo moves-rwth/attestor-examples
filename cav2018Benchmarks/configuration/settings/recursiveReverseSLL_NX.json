@@ -23,10 +23,7 @@
         "garbageCollection":false
     },
     "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/recursiveReverseSLL_M"
-        }
+        "enabled":false,
     },
     "modelChecking":{
         "enabled":true,

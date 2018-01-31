@@ -22,12 +22,6 @@
     },
     "output":{
         "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_S"
-        },
-        "report":{
-            "path":"../attestor-examples-output/RefSLL/buildAndReverseSLL_S"
-        }
     },
     "modelChecking":{
         "enabled":true,
