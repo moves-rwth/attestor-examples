@@ -1,0 +1,34 @@
+{
+    "name":"Find last element of DLL",
+    "scenario":"Fails to prove termination. All counterexamples are spurious. Errors in console output are thus expected.",
+    "specificationDescription":"M-C-Y",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"findLast"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"DLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":false,
+        "stateSpace":{
+            "path":"../attestor-examples-output/cav2018Benchmarks/findLastDLL_CY"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+        "formulae":"F {terminated}"
+    }
+}

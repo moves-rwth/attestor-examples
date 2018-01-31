@@ -15,6 +15,7 @@ import de.rwth.i2.attestor.main.Attestor;
  */
 public class CAV2018Examples {
 
+    /*
     @Benchmark
     public void lindstromTreeTraversal_M(){
         BenchmarkHelper.builder()
@@ -641,7 +642,7 @@ public class CAV2018Examples {
     }
 
     @Benchmark
-    public void faultyReverseDLL_MCX(){
+    public void faultyReverseDLL_CX(){
         BenchmarkHelper.builder()
                 .expectTotalStates(81)
                 .expectMainProcedureStates(7)
@@ -652,4 +653,73 @@ public class CAV2018Examples {
                 .run();
     }
 
+    @Benchmark
+    public void findLastDLL_CY(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(44)
+                .expectMainProcedureStates(44)
+                .expectFinalStates(1)
+                .expectLTLResults(false)
+                .expectNoCounterexamples(0)
+                .build()
+                .run();
+    }
+    */
+
+    @Benchmark
+    public void reverseDLL_CX(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(70)
+                .expectMainProcedureStates(70)
+                .expectFinalStates(1)
+                .expectLTLResults(false)
+                .expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseDLL_S(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(70)
+                .expectMainProcedureStates(70)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseDLL_R(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(113)
+                .expectMainProcedureStates(113)
+                .expectFinalStates(1)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseDLL_V(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(569)
+                .expectMainProcedureStates(569)
+                .expectFinalStates(5)
+                .expectLTLResults(true)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void reverseDLL_NX(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(1508)
+                .expectMainProcedureStates(1508)
+                .expectFinalStates(15)
+                .expectLTLResults(false)
+                .expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
 }
