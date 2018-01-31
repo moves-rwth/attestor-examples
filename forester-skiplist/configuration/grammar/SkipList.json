@@ -1,49 +1,15 @@
 [{
-	"nonterminal":"SL-L2",
-	"rank":4,
-	"rules":[
-		{
-			"nodes":[
-			{
-				"type":"SkipListItem",
-				"number":5
-			}
-			],
-			"externals":[0,1,2,3],
-			"variables":[],
-			"selectors":[
-			{
-				"label":"n1",
-				"origin":0,
-				"target":4
-			},{
-				"label":"n2",
-				"origin":1,
-				"target":4
-			},{
-				"label":"n1",
-				"origin":4,
-				"target":2
-			},{
-				"label":"n2",
-				"origin":4,
-				"target":3
-			}
-			],
-			"hyperedges":[]
-		}
-	
-	
-	]
-},{
 	"nonterminal":"SL-L1",
 	"rank":3,
 	"rules":[
 		{
 			"nodes":[
 			{
+				"type":"NULL",
+				"number":1
+			},{
 				"type":"SkipListItem",
-				"number":4
+				"number":3
 			}
 			],
 			"externals":[0,1,2],
@@ -51,19 +17,105 @@
 			"selectors":[
 			{
 				"label":"n1",
-				"origin":0,
+				"origin":1,
 				"target":3
 			},{
 				"label":"n1",
 				"origin":3,
-				"target":1
+				"target":2
 			},{
 				"label":"n2",
 				"origin":3,
-				"target":2
+				"target":0
 			}
 			],
 			"hyperedges":[]
+		},{
+			"nodes":[
+			{
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"SkipListItem",
+				"number":3
+			}
+			],
+			"externals":[0,1,2],
+			"variables":[],
+			"selectors":[
+			{
+				"label":"n1",
+				"origin":1,
+				"target":3
+			},{
+				"label":"n2",
+				"origin":3,
+				"target":0
+			}
+			],
+			"hyperedges":[
+			{
+				"label":"SL-L1",
+				"tentacles":[0,3,2]
+			}
+			]
+		},{
+			"nodes":[
+			{
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"SkipListItem",
+				"number":3
+			}
+			],
+			"externals":[0,1,2],
+			"variables":[],
+			"selectors":[
+			{
+				"label":"n1",
+				"origin":3,
+				"target":2
+			},{
+				"label":"n2",
+				"origin":3,
+				"target":0
+			}
+			],
+			"hyperedges":[
+			{
+				"label":"SL-L1",
+				"tentacles":[0,1,3]
+			}
+			]
+		},{
+			"nodes":[
+			{
+				"type":"NULL",
+				"number":1
+			},{
+				"type":"SkipListItem",
+				"number":3
+			}
+			],
+			"externals":[0,1,2],
+			"variables":[],
+			"selectors":[
+			{
+				"label":"n2",
+				"origin":3,
+				"target":0
+			}
+			],
+			"hyperedges":[
+			{
+				"label":"SL-L1",
+				"tentacles":[0,1,3]
+			},{
+				"label":"SL-L1",
+				"tentacles":[0,3,2]
+			}
+			]
 		}
 	
 	

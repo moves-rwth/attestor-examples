@@ -17,7 +17,6 @@
   },
   "options":{
     "abstractionDistance":0,
-	"collapseRules":true,
   },
   "output":{
     "enabled":true,

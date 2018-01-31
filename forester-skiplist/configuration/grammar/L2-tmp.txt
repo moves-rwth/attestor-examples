@@ -1,0 +1,38 @@
+{
+	"nonterminal":"SL-L2",
+	"rank":4,
+	"rules":[
+		{
+			"nodes":[
+			{
+				"type":"SkipListItem",
+				"number":5
+			}
+			],
+			"externals":[0,1,2,3],
+			"variables":[],
+			"selectors":[
+			{
+				"label":"n1",
+				"origin":0,
+				"target":4
+			},{
+				"label":"n2",
+				"origin":1,
+				"target":4
+			},{
+				"label":"n1",
+				"origin":4,
+				"target":2
+			},{
+				"label":"n2",
+				"origin":4,
+				"target":3
+			}
+			],
+			"hyperedges":[]
+		}
+	
+	
+	]
+},
