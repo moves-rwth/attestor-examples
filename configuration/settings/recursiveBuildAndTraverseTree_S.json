@@ -25,6 +25,6 @@
   },
   "modelChecking":{
     "enabled":true,
-    "formulae":"GF {terminated} -> GF { L(RefBT) })"
+    "formulae":"(GF {terminated} -> GF { L(RefBT) })"
   }
 }

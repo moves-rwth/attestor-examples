@@ -744,7 +744,6 @@ public class CAV2018Examples {
                 .build()
                 .run();
     }
-    */
 
     @Benchmark
     public void skipList_buildList_M(){
@@ -765,5 +764,6 @@ public class CAV2018Examples {
                 .build()
                 .run();
     }
+    */
 
 }
