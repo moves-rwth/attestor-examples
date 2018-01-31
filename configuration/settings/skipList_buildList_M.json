@@ -1,11 +1,12 @@
 {
-  "name":"M",
+  "name":"Skip list insert",
   "scenario":"Analyzing memory safety of a Java version of Forester test 'skip-list-2.c'. Originals are found at https://github.com/kdudka/predator.",
+  "specificationDescription":"M",
   "input":{
     "program":{
       "classpath":"configuration/code",
       "class":"SkipList",
-      "method":"slRandomInsert"
+      "method":"main"
     },
     "userDefinedGrammar":{
 		"path":"configuration/grammar",
@@ -13,8 +14,6 @@
     },
     "predefinedGrammars":[],
     "initialState":{
-        "path":"configuration/inputs",
-        "file":"skiplist.json"
     }
   },
   "options":{
@@ -22,12 +21,6 @@
   },
   "output":{
     "enabled":true,
-    "stateSpace":{
-      "path":"../attestor-examples-output/skipList/insert"
-    },
-	"grammar":{
-		"path":"../attestor-examples-output/skipList"
-	}
   },
   "modelChecking":{}
 }
