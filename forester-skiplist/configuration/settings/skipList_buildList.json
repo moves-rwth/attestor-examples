@@ -21,7 +21,7 @@
   "output":{
     "enabled":true,
     "stateSpace":{
-      "path":"../attestor-examples-output/skipList"
+      "path":"../attestor-examples-output/skipList/buildList"
     },
 	"grammar":{
 		"path":"../attestor-examples-output/skipList"

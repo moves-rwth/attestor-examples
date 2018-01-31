@@ -53,6 +53,7 @@ public static void slRandomInsert( SkipList skipList, int random ){
 		newItem.n2 = a2.n2;
 		a2.n2 = newItem;
 	}
+ 
 }
 
 
@@ -60,15 +61,10 @@ public static void main( String [] args ){
 	
 	SkipList sl = new SkipList();
 
-	slRandomInsert(sl, 12);
-	slRandomInsert(sl, 13);
-	slRandomInsert(sl, 13);
-	slRandomInsert(sl, 13);
 	
-	/*
-	while ( args.length > 42 ) //resolved by nondeterminism
-		slRandomInsert(sl);
-	*/
+	while ( args.length > 42 ){ //resolved by nondeterminism
+		slRandomInsert(sl,13);
+	}
 }
 
  }
