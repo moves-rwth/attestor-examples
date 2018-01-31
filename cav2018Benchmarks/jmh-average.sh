@@ -10,9 +10,8 @@ mkdir -p $DIR
 
 set -e
 
-echo "Running benchmark suite for Attestor (JMH average runtime)."
-echo "This will take some time..."
-mvn -o -q exec:exec@benchmark | tee $LOGFILE
+echo "Running benchmark suite for Attestor (single shot)..."
+mvn -q exec:exec@benchmark | tee $LOGFILE
 echo "done."
 
 cat $LOGFILE | grep -oP "Analyzed method:\s*[\W\w]*/\K\w+.\w+|Benchmark name:\s*\K[\s\W\w]*|Specification summary:\s*\K[\s\W\w]*|w/ procedure calls[\s\W]*\K\d+|w/o procedure calls[\s\W]*\K\d+|final states[\s\W]*\K\d+|Interprocedural Analysis[\s\W]*\K\d+.\d+|Total runtime[\s\W]*\K\d+.\d+|Total verification time[\s\W]*\K\d+.\d+" | awk 'NR%9{printf "%s, ",$0;next;}1' > $CSVFILE
@@ -71,15 +70,15 @@ cat <<"TAGTEXTFILE" > $TEXFILE
     \section*{Benchmark Results}
 
 
-    \begin{longtable}{|l|l|r|r|r|r|r|r|r|}
+    \begin{longtable}{|l|r|r|r|r|r|r|r|}
         \hline
-            \multicolumn{3}{|c|}{\bfseries Benchmark description} & \multicolumn{3}{c|}{\bfseries Number of generated states} & \multicolumn{3}{c|}{\bfseries Runtimes (in seconds)} 
+            \multicolumn{2}{|c|}{\bfseries Benchmark description} & \multicolumn{3}{c|}{\bfseries Number of generated states} & \multicolumn{3}{c|}{\bfseries Runtimes (in seconds)} 
         \\ \hline
-        \bfseries Name & \bfseries Method & \bfseries Properties & \bfseries Total & \bfseries w/o Procedures & \bfseries Final & \bfseries State space generation &\bfseries Verification & \bfseries Total 
+        \bfseries Analyzed Method & \bfseries Properties & \bfseries Total & \bfseries w/o Procedures & \bfseries Final & \bfseries State Space Gen. (SSG) &\bfseries Verification (incl. SSG) & \bfseries Total
         \\ \hline \hline
         \csvreader[head to column names]{results.csv}{}
-        {\name & \program & \properties & \totalStates & \procStates & \finalStates & \stateSpaceGeneration & \verification & \total \\}
-               & & & & & & & &\\ \hline
+        {\program & \properties & \totalStates & \procStates & \finalStates & \stateSpaceGeneration & \verification & \total \\}
+               & & & & & & &\\ \hline
     \end{longtable}
 \end{document}
 TAGTEXTFILE
@@ -89,12 +88,27 @@ cd $DIR
 echo "creating benchmark table..."
 pdflatex $TEXFILE
 
-echo "\n\n\n\n\n\n"
-echo "-----------------------------------------------------------------------------------------------------------------------\n\n"
-echo "FINISHED EXECUTION\n"
-echo "Details are found in the logfile: $LOGFILE\n"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "-----------------------------------------------------------------------------------------------------------------------"
+echo ""
+echo ""
+echo "FINISHED EXECUTION"
+echo ""
+echo "Details are found in the logfile: $LOGFILE"
+echo ""
 echo "Benchmark results have been written to $PDFFILE."
-echo "\n\n-----------------------------------------------------------------------------------------------------------------------"
-echo "\n\n\n\n\n\n"
-okular $PDFFILE &
+echo ""
+echo ""
+echo "-----------------------------------------------------------------------------------------------------------------------"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+evince $PDFFILE & > /dev/null
 cd $PATH_ORIGINAL
+

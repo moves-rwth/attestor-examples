@@ -622,4 +622,24 @@ public class CAV2018Examples {
                 .run();
     }
 
+    @Benchmark
+    public void DSWTree_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(1334)
+                .expectMainProcedureStates(1328)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void constructTree_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(44)
+                .expectMainProcedureStates(38)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
 }

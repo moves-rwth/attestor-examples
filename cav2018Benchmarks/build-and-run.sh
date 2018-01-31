@@ -75,7 +75,7 @@ cat <<"TAGTEXTFILE" > $TEXFILE
         \hline
             \multicolumn{2}{|c|}{\bfseries Benchmark description} & \multicolumn{3}{c|}{\bfseries Number of generated states} & \multicolumn{3}{c|}{\bfseries Runtimes (in seconds)} 
         \\ \hline
-        \bfseries Analyzed Method & \bfseries Properties & \bfseries Total & \bfseries w/o Procedures & \bfseries Final & \bfseries State space generation &\bfseries Verification & \bfseries Total 
+        \bfseries Analyzed Method & \bfseries Properties & \bfseries Total & \bfseries w/o Procedures & \bfseries Final & \bfseries State Space Gen. (SSG) &\bfseries Verification (incl. SSG) & \bfseries Total
         \\ \hline \hline
         \csvreader[head to column names]{results.csv}{}
         {\program & \properties & \totalStates & \procStates & \finalStates & \stateSpaceGeneration & \verification & \total \\}
