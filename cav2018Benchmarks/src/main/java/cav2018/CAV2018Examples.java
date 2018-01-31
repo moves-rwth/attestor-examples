@@ -15,6 +15,7 @@ import de.rwth.i2.attestor.main.Attestor;
  */
 public class CAV2018Examples {
 
+    /*
     @Benchmark
     public void lindstromTreeTraversal_M(){
         BenchmarkHelper.builder()
@@ -260,8 +261,8 @@ public class CAV2018Examples {
     @Benchmark
     public void traverseSLL_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(23)
-                .expectMainProcedureStates(23)
+                .expectTotalStates(13)
+                .expectMainProcedureStates(13)
                 .expectFinalStates(1)
                 .expectLTLResults(true)
                 .build()
@@ -525,6 +526,67 @@ public class CAV2018Examples {
         BenchmarkHelper.builder()
                 .expectTotalStates(313)
                 .expectMainProcedureStates(296)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+    */
+
+    @Benchmark
+    public void buildAndReverseDLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(277)
+                .expectMainProcedureStates(271)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndInsertDLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(379)
+                .expectMainProcedureStates(373)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndInsertsortDLL1_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(4302)
+                .expectMainProcedureStates(4296)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndInsertsortDLL2_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(1332)
+                .expectMainProcedureStates(1326)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildCyclicDLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(104)
+                .expectMainProcedureStates(98)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
+
+    @Benchmark
+    public void buildAndBubbleSortSLL_M(){
+        BenchmarkHelper.builder()
+                .expectTotalStates(287)
+                .expectMainProcedureStates(280)
                 .expectFinalStates(1)
                 .build()
                 .run();

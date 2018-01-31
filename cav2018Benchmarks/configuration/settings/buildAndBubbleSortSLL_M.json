@@ -1,16 +1,17 @@
 {
-  "name":"M",
+  "name":"SLL Bubblesort",
   "scenario":"Analyzing memory safety of a Java version of Forester test 'sll-bubblesort.c'. Originals are found at https://github.com/kdudka/predator.",
+  "specificationDescription":"M",
   "input":{
     "program":{
       "classpath":"configuration/code",
-      "class":"SLLBubblesort",
+      "class":"SLLBuildAndBubblesort",
       "method":"main"
     },
     "userDefinedGrammar":{
     },
     "predefinedGrammars":[
-      { "type": "SLList", "definition":"configuration/grammar/SLL.java" }
+      { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
     ],
     "initialState":{
     }
@@ -21,7 +22,7 @@
   "output":{
     "enabled":false,
     "stateSpace":{
-      "path":"../attestor-examples-output/ForesterSLL/sll_bubblesort"
+      "path":"../attestor-examples-output/cav2018Benchmarks/buildAndBubbleSortSLL_M"
     },
   },
   "modelChecking":{}
