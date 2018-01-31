@@ -4,30 +4,30 @@
 	"rules":[
 		{
 			"nodes":[
-			{
-				"type":"NULL",
-				"number":1
-			},{
-				"type":"SkipListItem",
-				"number":3
-			}
+                {
+                    "type":"NULL",
+                    "number":1
+                },{
+                    "type":"SkipListItem",
+                    "number":3
+                }
 			],
 			"externals":[0,1,2],
 			"variables":[],
 			"selectors":[
-			{
-				"label":"n1",
-				"origin":1,
-				"target":3
-			},{
-                "label":"n1",
-                "origin":3,
-                "target":2
-            },{
-                "label":"n2",
-                "origin":3,
-                "target":0
-            }
+                {
+                    "label":"n1",
+                    "origin":1,
+                    "target":3
+                },{
+                    "label":"n1",
+                    "origin":3,
+                    "target":2
+                },{
+                    "label":"n2",
+                    "origin":3,
+                    "target":0
+                }
 			],
 			"hyperedges":[]
 		},{
