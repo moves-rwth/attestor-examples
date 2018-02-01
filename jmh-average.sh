@@ -109,6 +109,5 @@ echo ""
 echo ""
 echo ""
 echo ""
-evince $PDFFILE & > /dev/null
 cd $PATH_ORIGINAL
 
