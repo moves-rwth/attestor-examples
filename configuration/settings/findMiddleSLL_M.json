@@ -22,7 +22,7 @@
         "abstractionDistance":1
     },
     "output":{
-        "enabled":false,
+        "enabled":true,
     },
     "modelChecking":{
     }

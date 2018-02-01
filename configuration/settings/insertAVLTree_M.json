@@ -27,7 +27,7 @@
         "garbageCollection":false
     },
     "output":{
-        "enabled":false,
+        "enabled":true,
     },
     "modelChecking":{
     }

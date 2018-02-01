@@ -27,7 +27,7 @@
         "stateSpacePostProcessing":false
     },
     "output":{
-        "enabled":false,
+        "enabled":true,
     },
     "modelChecking":{
        "enabled":true,

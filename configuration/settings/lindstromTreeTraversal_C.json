@@ -24,7 +24,7 @@
         "maximalStateSpace":100000
     },
     "output":{
-        "enabled":false,
+        "enabled":true,
     },
     "modelChecking":{
        "enabled":true,
