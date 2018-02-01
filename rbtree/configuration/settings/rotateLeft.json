@@ -1,0 +1,35 @@
+{
+    "scenario":"memory safety",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"RBTree",
+            "method":"leftRotate"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "files":["RedBlackTree.json","RedBlackTree_red.json","RedBlackTree_black.json"]
+        },
+        "initialState":{
+        },
+        "predefinedGrammars":[
+        ],
+    },
+    "options":{
+        "maximalStateSpace":6000,
+        "abstractionDistance":0,
+        "stateSpacePostProcessing":false,
+        "mode":"indexed"
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/redBlackTree/main",
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/redBlackTree/main",
+        }
+    },
+    "modelChecking":{
+    }
+}

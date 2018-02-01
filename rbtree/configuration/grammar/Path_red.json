@@ -1,0 +1,31 @@
+[
+   {
+        "nonterminal":"P-Red",
+        "index":["()"],
+        "rank":4,
+        "rules":[
+            {
+                "nodes":[
+                    {
+                        "type":"int_0",
+                        "number":1
+                    },{
+                        "type":"int_1",
+                        "number":1,
+                    },{
+                        "type":"NULL",
+                        "number":1,
+                    },{
+                        "type":"RBTree",
+                        "number":3
+                    }
+                
+                ]
+            }
+        
+        
+        ]
+   }
+
+
+]
