@@ -17,6 +17,23 @@ public class SLLFindMiddle {
 		return slow;
 	}
 
+	public static SLL findMiddleFaulty( SLL head ){
+
+		SLL slow = head;
+		SLL fast = head;
+		while( fast != null ){
+
+			fast = fast.next;
+			slow = slow.next;
+			if(fast != null) {
+				slow = fast.next;
+			}
+
+		}
+
+		return slow;
+	}
+
 	public static void main( String [] args ){
 
 	}

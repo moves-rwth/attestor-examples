@@ -129,8 +129,27 @@ public class DLList {
 		head = pos;
 	}
 
+	public static void faultyReverse2(DLList head){
 
-    public static DLList buildList(){
+		DLList pos = head;
+
+		while(pos != null){
+
+			DLList tmp = pos.nextAlt;
+
+			// FAULT: pos.nextAlt = pos.prevAlt;
+			pos.prevAlt = tmp;
+
+			pos = pos.prevAlt;
+		}
+
+		head = pos;
+	}
+
+
+
+
+	public static DLList buildList(){
         DLList list = new DLList();
         for( int i = 0; i < 10; i++ ){
             list = new DLList( list );

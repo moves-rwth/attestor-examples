@@ -1,0 +1,31 @@
+{
+    "name":"Reverse DLL",
+    "scenario":"Prove that the result is a doubly-linked list again.",
+    "specificationDescription":"M-S-X",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"faultyReverse2"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"DLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":false,
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
+    }
+}
