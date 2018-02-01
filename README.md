@@ -5,13 +5,19 @@ This is a collection of examples accompanying a tool paper submission to CAV 201
 
 ## Reproducing Benchmark Results
 
-This directory contains three prepared shell scripts to run all examples.
+This directory contains four prepared shell scripts to run all examples.
 Each of these scripts will create a logfile `benchmark-results/log` and a PDF file with a table summarizing all results.
 This table is found at `benchmark-results/results.pdf`.
 
 To execute all benchmarks once, use the following shell script:
 
     $ ./run.sh
+
+
+If you also want to use the GUI, please run the following shell script:
+
+    $ ./run-gui.sh
+
 
 To fully rebuild Attestor and all benchmarks and run all benchmarks afterwards, use the following shell script:
 
@@ -25,6 +31,7 @@ Finally, it is possible to measure the average runtime for all benchmarks by inv
     $ ./jmh-average.sh
 
 Please note that `jmh-average.sh` will take a lot of time to finish, because every example is executed multiple times.
+
 
 
 ## Structure of Benchmarks
