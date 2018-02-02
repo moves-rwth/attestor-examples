@@ -337,7 +337,7 @@
              "hyperedges":[
                 {
                     "label":"BLACK",
-                    "index":["s","()"],
+                    "index":["()"],
                     "tentacles":[0,1,2,4]
                 },{
                     "label":"RED",
