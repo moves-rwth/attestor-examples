@@ -8,7 +8,7 @@
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
-            "files":["RedBlackTree.json","RedBlackTree_red.json","RedBlackTree_black.json"]
+            "files":["RedBlackTree.json","RedBlackTree_red.json","RedBlackTree_black.json","Path_red.json","Path_black.json"]
         },
         "initialState":{
         },
@@ -17,7 +17,7 @@
     },
     "options":{
         "maximalStateSpace":6000,
-        "abstractionDistance":0,
+        "abstractionDistance":1,
         "stateSpacePostProcessing":false,
         "mode":"indexed"
     },
