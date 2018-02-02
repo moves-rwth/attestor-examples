@@ -11,6 +11,8 @@
             "files":["RedBlackTree.json","RedBlackTree_red.json","RedBlackTree_black.json","Path_red.json","Path_black.json"]
         },
         "initialState":{
+			"path":"configuration/inputs",
+			"file":"beforeLeftRotate.json"
         },
         "predefinedGrammars":[
         ],
