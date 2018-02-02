@@ -2,7 +2,7 @@
     "nonterminal":"BLACK",
     "rank":4,
     "reductionTentacles":[true,true,true,false],
-    "index":["s","Z"],
+    "index":["Z"],
     "rules":[
         {
             "nodes":[
@@ -187,7 +187,7 @@
     "nonterminal":"BLACK",
     "rank":4,
     "reductionTentacles":[true,true,true,false],
-    "index":["s","s","()"],
+    "index":["s","()"],
     "rules":[
         {
              "nodes":[
@@ -233,11 +233,11 @@
              "hyperedges":[
                 {
                     "label":"BLACK",
-                    "index":["s","()"],
+                    "index":["()"],
                     "tentacles":[0,1,2,4]
                 },{
                     "label":"BLACK",
-                    "index":["s","()"],
+                    "index":["()"],
                     "tentacles":[0,1,2,5]
                 }
             ]
@@ -289,7 +289,7 @@
                     "tentacles":[0,1,2,4]
                 },{
                     "label":"BLACK",
-                    "index":["s","()"],
+                    "index":["()"],
                     "tentacles":[0,1,2,5]
                 }
             ]
@@ -337,7 +337,7 @@
              "hyperedges":[
                 {
                     "label":"BLACK",
-                    "index":["s","()"],
+                    "index":[S"()"],
                     "tentacles":[0,1,2,4]
                 },{
                     "label":"RED",
