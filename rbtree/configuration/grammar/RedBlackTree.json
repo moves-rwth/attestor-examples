@@ -8,4 +8,14 @@
     "rank":4,
     "reductionTentacles":[true,true,true,false],
     "rules":[]       
+},{
+	"nonterminal":"P-Red",
+    "rank":4,
+	"reductionTentacles":[true,true,true,false],
+	"rules":[]
+},{
+	"nonterminal":"P-Black",
+    "rank":4,
+	"reductionTentacles":[true,true,true,false],
+	"rules":[]
 }]
