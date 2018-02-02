@@ -4,7 +4,7 @@
         "program":{
             "classpath":"configuration/code",
             "class":"RBTree",
-            "method":"leftRotate"
+            "method":"search"
         },
         "userDefinedGrammar":{
             "path":"configuration/grammar",
@@ -12,7 +12,7 @@
         },
         "initialState":{
 			"path":"configuration/inputs",
-			"file":"beforeLeftRotate.json"
+			"file":"balancedTree.json"
         },
         "predefinedGrammars":[
         ],
@@ -20,16 +20,16 @@
     "options":{
         "maximalStateSpace":6000,
         "abstractionDistance":1,
-        "stateSpacePostProcessing":false,
+        "stateSpacePostProcessing":true,
         "mode":"indexed"
     },
     "output":{
         "enabled":true,
         "stateSpace":{
-            "path":"../attestor-examples-output/redBlackTree/main",
+            "path":"../attestor-examples-output/redBlackTree/search",
         },
         "grammar":{
-            "path":"../attestor-examples-output/redBlackTree/main",
+            "path":"../attestor-examples-output/redBlackTree",
         }
     },
     "modelChecking":{

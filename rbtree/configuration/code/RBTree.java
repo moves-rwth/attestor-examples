@@ -27,6 +27,32 @@ public class RBTree{
     public boolean isBlack(){
         return this.isBlack;
     }
+	
+	public RBTree traverseLeft(){
+			
+		RBTree curr = this;
+		while( curr.left != null ){
+			curr = curr.left;
+		}
+		
+		return curr;
+	}
+	
+	public RBTree search( int value ){
+			
+		RBTree curr = this;
+		while( curr != null ){
+			if( curr.key < value ){
+				curr = curr.left;
+			}else if( curr.key > value	){
+				curr = curr.right;
+			}else{
+				return curr;
+			}
+		}
+		
+		return curr;
+	}
     
     public void insert( int value ){
         RBTree node, great, grand, parent;
