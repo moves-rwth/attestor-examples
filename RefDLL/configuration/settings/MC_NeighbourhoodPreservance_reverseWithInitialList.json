@@ -18,16 +18,13 @@
         }
     },
     "options":{
-        "abstractionDistance":1
+        "abstractionDistance":1,
     },
     "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_NeighbourhoodPreservance_reverseWithInitialList"
-        }
+        "enabled":true
     },
     "modelChecking":{
        "enabled":true,
-	   "formulae":"( G F { terminated } -> F ( { terminated } & ! { identicNeighbours } ) )"
-    }        
+       "formulae":"( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
+    }
 }

@@ -39,9 +39,9 @@ public class RefDLL {
 	@Benchmark
 	public void MC_Completeness_traverseWithInitialList(){
 		BenchmarkHelper.builder()
-				.expectTotalStates(347)
-				.expectMainProcedureStates(347)
-				.expectFinalStates(1)
+				.expectTotalStates(305)
+				.expectMainProcedureStates(305)
+				.expectFinalStates(5)
 				.expectLTLResults(true)
 				.build()
 				.run();
@@ -50,9 +50,9 @@ public class RefDLL {
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_traverseWithInitialList(){
 		BenchmarkHelper.builder()
-				.expectTotalStates(670)
-				.expectMainProcedureStates(670)
-				.expectFinalStates(1)
+				.expectTotalStates(820)
+				.expectMainProcedureStates(820)
+				.expectFinalStates(15)
 				.expectLTLResults(true)
 				.build()
 				.run();
@@ -81,9 +81,9 @@ public class RefDLL {
 	@Benchmark
 	public void MC_Completeness_reverseWithInitialList(){
 		BenchmarkHelper.builder()
-				.expectTotalStates(651)
-				.expectMainProcedureStates(651)
-				.expectFinalStates(1)
+				.expectTotalStates(569)
+				.expectMainProcedureStates(569)
+				.expectFinalStates(5)
 				.expectLTLResults(true)
 				.build()
 				.run();
@@ -92,9 +92,9 @@ public class RefDLL {
 	@Benchmark
 	public void MC_NeighbourhoodPreservance_reverseWithInitialList(){
 		BenchmarkHelper.builder()
-				.expectTotalStates(1214)
-				.expectMainProcedureStates(1214)
-				.expectFinalStates(1)
+				.expectTotalStates(1508)
+				.expectMainProcedureStates(1508)
+				.expectFinalStates(15)
 				.expectNoCounterexamples(1)
 				.build()
 				.run();

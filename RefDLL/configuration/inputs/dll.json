@@ -6,7 +6,7 @@
 			},
 			{
 				"type":"DLList",
-				"number":3
+				"number":2
 			}
 			],
 			"externals":[],
@@ -24,7 +24,7 @@
 			"hyperedges":[
 				{
 					"label":"RefDLList",
-					"tentacles":[3,1,2,0]
+					"tentacles":[0,1,2,0]
 				},
 			]
 		}
