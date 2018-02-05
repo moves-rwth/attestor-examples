@@ -1,0 +1,32 @@
+{
+    "name":"AVL Tree leftmost insertion",
+    "scenario":"Verify memory safety.",
+    "specificationDescription":"M",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"leftMostInsert"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"AVLTreeGrammar.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"AVLTreeWithThis.json",
+            "description":"A general balanced AVL tree with a marked element."
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":6000,
+        "abstractionDistance":1,
+        "stateSpacePostProcessing":false,
+        "mode":"indexed"
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{}
+}

@@ -1,0 +1,31 @@
+{
+    "name":"Reverse DLL",
+    "scenario":"Prove that every element is accessed by variable pos.",
+    "specificationDescription":"M-V",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"reverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"DLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"(GF {terminated} -> F {visited(pos)})"
+    }
+}

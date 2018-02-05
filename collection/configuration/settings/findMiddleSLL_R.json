@@ -1,0 +1,31 @@
+{
+    "name":"SLL find middle element",
+    "scenario":"Verify that fast is always reachable by slow.",
+    "specificationDescription":"M-R",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLFindMiddle",
+            "method":"findMiddle"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"SLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"G ({fast != slow} -> {isReachable(slow,fast,[next])})"
+    }
+}

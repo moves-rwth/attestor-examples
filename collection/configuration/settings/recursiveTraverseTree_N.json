@@ -1,0 +1,32 @@
+{
+  "name":"Recursive tree traversal",
+  "scenario":"Prove that the input tree coincides with the tree upon termination.",
+  "specificationDescription":"M-N",
+  "input":{
+    "program":{
+      "classpath":"configuration/code",
+      "class":"RecursiveTreeTraverse",
+      "method":"traverse"
+    },
+    "userDefinedGrammar":{
+    },
+    "predefinedGrammars":[
+      { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
+    ],
+    "initialState":{
+      "path":"configuration/inputs",
+      "file":"BinaryTree.json",
+      "description":"An arbitrary binary tree"
+    }
+  },
+  "options":{
+    "abstractionDistance":1,
+  },
+  "output":{
+    "enabled":true,
+  },
+  "modelChecking":{
+    "enabled":true,
+    "formulae":"( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
+  }
+}

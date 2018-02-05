@@ -1,0 +1,36 @@
+{
+    "name":"AVL Tree binary search and back to root",
+    "scenario":"Verify that the algorithm returns at the root of the tree.",
+    "specificationDescription":"M-C",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"AVLTree",
+            "method":"searchAndSwap"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"AVLTreeGrammar.json"
+        },
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"AVLTree.json",
+            "description":"A general balanced AVL tree"
+        },
+        "predefinedGrammars":[]
+    },
+    "options":{
+        "maximalStateSpace":5000,
+        "abstractionDistance":1,
+        "mode":"indexed",
+        "garbageCollection":false,
+        "stateSpacePostProcessing":false
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"G ({terminated} -> { return.parent == null })"
+    }
+}

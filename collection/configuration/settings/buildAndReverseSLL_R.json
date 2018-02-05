@@ -1,0 +1,30 @@
+{
+    "name":"Construct and reverse SLL",
+    "scenario":"Verify that null is reachable from head upon termination.",
+    "specificationDescription":"M-R",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLReverse",
+            "method":"main"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "garbageCollection":false
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+        "enabled":true,
+        "formulae":"F (X {terminated} -> {isReachable(head,null,[next])})"
+    }
+}

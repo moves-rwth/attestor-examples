@@ -1,0 +1,31 @@
+{
+    "name":"Reverse SLL",
+    "scenario":"Verify that every element is eventually accessed by variable current.",
+    "specificationDescription":"M-V",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLLReverse",
+            "method":"reverseList"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"SLL.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> F {visited(current)})"
+    }        
+}

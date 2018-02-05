@@ -1,0 +1,31 @@
+{
+    "name":"DLL reversal",
+    "scenario":"Prove that initially head reaches tail via next pointers and tail reaches head via prev pointers. Also prove the reverse upon termination.",
+    "specificationDescription":"M-R",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"reverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"DLLHeadTail.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"XX ( {isReachable(head,tail,[nextAlt])} & {isReachable(tail,head,[prevAlt])}); F (X {terminated} -> ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])}))"
+    }        
+}
