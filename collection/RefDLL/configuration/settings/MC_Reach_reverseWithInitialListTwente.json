@@ -1,0 +1,33 @@
+{
+    "name":"M-R",
+    "scenario":"memory safety",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"reverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"dllHeadTail.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+        "logging":true
+    },
+    "output":{
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialListTwente"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> F ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])}))"
+    }        
+}

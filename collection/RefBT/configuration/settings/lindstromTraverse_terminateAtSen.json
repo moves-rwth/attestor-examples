@@ -1,0 +1,35 @@
+{
+    "name":"M-C",
+    "scenario":"Lindstrom terminates",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"Lindstrom",
+            "method":"traverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"bt.json",
+            "description":"An arbitrary binary tree"
+        }
+    },
+    "options":{
+        "abstractionDistance":0,
+        "maximalStateSpace":100000
+    },
+    "output":{
+        "enabled":false,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse_terminateAtSen"
+        }    
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"( G F { terminated } -> (GX {terminated} -> { cur == sen } ) )"
+    }        
+}

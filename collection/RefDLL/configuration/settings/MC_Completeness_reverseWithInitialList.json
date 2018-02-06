@@ -1,0 +1,33 @@
+{
+    "name":"M-V",
+    "scenario":"(C) every DLL element has been accessed by variable pos",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"reverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"dllNull.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefDLL/MC_Completeness_reverseWithInitialList"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> F {visited(pos)})"
+    }        
+}

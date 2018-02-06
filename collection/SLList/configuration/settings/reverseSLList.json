@@ -1,0 +1,26 @@
+{
+    "name":"Reverse SLL",
+    "scenario":"Verify memory safety using a custom grammar.",
+    "specificationDescription":"M",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"SLList",
+            "method":"main"
+        },
+        "userDefinedGrammar":{
+            "path":"configuration/grammar",
+            "file":"SLList.json"
+        },
+        "initialState":{
+        },
+        "predefinedGrammars":[],
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":true,
+    },
+    "modelChecking":{}
+}

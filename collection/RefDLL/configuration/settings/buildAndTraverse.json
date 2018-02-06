@@ -1,0 +1,32 @@
+{
+    "name":"M",
+    "scenario":"Memory safety",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"main"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+        }
+    },
+    "options":{
+        "abstractionDistance":1
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefDLL/buildAndTraverse"
+        },
+        "grammar":{
+            "path":"../attestor-examples-output/RefDLL",
+            "folder":"grammarOutput"
+        }
+    },
+    "modelChecking":{}        
+}

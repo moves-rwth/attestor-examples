@@ -1,0 +1,33 @@
+{
+    "name":"M-C-Y",
+    "scenario":"Spurious counterexample test",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"DLList",
+            "method":"findLast"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"dllNull.json"
+        }
+    },
+    "options":{
+        "abstractionDistance":1,
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefDLL/CEG_06"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+        "formulae":"F {terminated}"
+    }
+}

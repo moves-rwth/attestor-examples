@@ -1,0 +1,35 @@
+{
+    "name":"N-S",
+    "scenario":"After traversal we obtain a tree again.",
+    "input":{
+        "program":{
+            "classpath":"configuration/code",
+            "class":"Lindstrom",
+            "method":"traverse"
+        },
+        "userDefinedGrammar":{
+        },
+        "predefinedGrammars":[
+            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
+        ],
+        "initialState":{
+            "path":"configuration/inputs",
+            "file":"bt.json",
+            "description":"An arbitrary binary tree"
+        }
+    },
+    "options":{
+        "abstractionDistance":0,
+        "maximalStateSpace":100000
+    },
+    "output":{
+        "enabled":true,
+        "stateSpace":{
+            "path":"../attestor-examples-output/RefBT/lindstromTraverse_shape"
+        }
+    },
+    "modelChecking":{
+       "enabled":true,
+	   "formulae":"(GF {terminated} -> GF { L(RefBT) })"
+    }        
+}
