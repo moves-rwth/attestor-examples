@@ -17,6 +17,40 @@ public class RefDLL {
     }
 
     @Benchmark
+    public void faultyReverse1_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(41)
+                .expectMainProcedureStates(41)
+                .expectFinalStates(1)
+				.expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+    
+    @Benchmark
+    public void faultyReverse2_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(23)
+                .expectMainProcedureStates(23)
+                .expectFinalStates(1)
+				.expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+    
+    @Benchmark
+    public void faultyReverse3_S() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(36)
+                .expectMainProcedureStates(36)
+                .expectFinalStates(1)
+				.expectNoCounterexamples(1)
+                .build()
+                .run();
+    }
+
+
+    @Benchmark
     public void buildList() {
           BenchmarkHelper.builder()
                   .expectTotalStates(65)

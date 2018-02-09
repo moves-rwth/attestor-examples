@@ -130,6 +130,59 @@ public class DLList {
 	}
 
 
+	public static void faultyReverse1(DLList head){
+
+		DLList pos = head;
+
+		while(pos != null){
+
+			DLList tmp = pos.nextAlt;
+
+			//pos.nextAlt = pos.prevAlt;
+		    //pos.prevAlt = tmp;
+            pos.prevAlt = pos.nextAlt;
+
+			pos = pos.prevAlt;
+		}
+
+		head = pos;
+	}
+	
+    public static void faultyReverse2(DLList head){
+
+		DLList pos = head;
+
+		while(pos != null){
+
+			DLList tmp = pos.nextAlt;
+
+			pos.nextAlt = pos.prevAlt;
+		    //pos.prevAlt = tmp;
+
+			pos = pos.prevAlt;
+		}
+
+		head = pos;
+	}
+    
+    public static void faultyReverse3(DLList head){
+
+		DLList pos = head;
+
+		while(pos != null){
+
+			DLList tmp = pos.nextAlt;
+
+			//pos.nextAlt = pos.prevAlt;
+		    pos.prevAlt = tmp;
+
+			pos = pos.prevAlt;
+		}
+
+		head = pos;
+	}
+
+
     public static DLList buildList(){
         DLList list = new DLList();
         for( int i = 0; i < 10; i++ ){
