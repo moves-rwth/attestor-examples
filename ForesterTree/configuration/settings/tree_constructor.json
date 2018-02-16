@@ -1,28 +1,29 @@
 {
-  "name":"M",
-  "scenario":"Analyzing memory safety of a Java version of Forester test 'tree.c'. Originals are found at https://github.com/kdudka/predator.",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"TreeConstructor",
-      "method":"main"
+    "name": "M",
+    "scenario": "Analyzing memory safety of a Java version of Forester test 'tree.c'. Originals are found at https://github.com/kdudka/predator.",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "TreeConstructor",
+            "method": "main"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "BT",
+                "definition": "configuration/grammar/Tree.java"
+            }
+        ],
+        "initialState": {}
     },
-    "userDefinedGrammar":{
+    "options": {
+        "abstractionDistance": 1
     },
-    "predefinedGrammars":[
-      { "type": "BT", "definition":"configuration/grammar/Tree.java" }
-    ],
-    "initialState":{
-    }
-  },
-  "options":{
-    "abstractionDistance":1,
-  },
-  "output":{
-    "enabled":true,
-    "stateSpace":{
-      "path":"../attestor-examples-output/ForesterTree/tree"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/ForesterTree/tree"
+        }
     },
-  },
-  "modelChecking":{}
+    "modelChecking": {}
 }

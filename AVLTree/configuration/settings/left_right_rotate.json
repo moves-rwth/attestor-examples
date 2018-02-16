@@ -1,35 +1,37 @@
 {
-    "scenario":"memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"rotateLeftRight"
+    "scenario": "memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "rotateLeftRight"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"before_left_right_2.json",
-            "description":"AVL tree that needs left right rotation"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "before_left_right_2.json",
+            "description": "AVL tree that needs left right rotation"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":2000,
-        "abstractionDistance":1,
-        "mode":"indexed"
+    "options": {
+        "maximalStateSpace": 2000,
+        "abstractionDistance": 1,
+        "mode": "indexed"
     },
-    "output":{
-        "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/left_right_rotate"
+    "output": {
+        "enabled": false,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/left_right_rotate"
         },
-		"grammar":{
-			"path":"../attestor-examples-output/avltree"
-		}
+        "grammar": {
+            "path": "../attestor-examples-output/avltree"
+        }
     },
-    "modelChecking":{}
+    "modelChecking": {}
 }

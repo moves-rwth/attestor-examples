@@ -1,31 +1,33 @@
 {
-    "name":"SLL traversal",
-    "scenario":"Verify that the list coincides with the input list upon termination.",
-    "specificationDescription":"M-N",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"SLLTraverse",
-            "method":"traverse"
+    "name": "SLL traversal",
+    "scenario": "Verify that the list coincides with the input list upon termination.",
+    "specificationDescription": "M-N",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLTraverse",
+            "method": "traverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"SLL.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "SLL.json"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"({terminated} -> {identicNeighbours})"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "({terminated} -> {identicNeighbours})"
+    }
 }

@@ -1,34 +1,36 @@
 {
-    "name":"M-S",
-    "scenario":"SLL shape upon termination",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"ListNodeAlt",
-            "method":"reverseList"
+    "name": "M-S",
+    "scenario": "SLL shape upon termination",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "ListNodeAlt",
+            "method": "reverseList"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"sllHeadTail.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "sllHeadTail.json"
         }
     },
-    "options":{
-        "abstractionDistance":1,
-        "garbageCollection":false
+    "options": {
+        "abstractionDistance": 1,
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/MC_Shape_reverseWithInitialList"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefSLL/MC_Shape_reverseWithInitialList"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(GF {terminated} -> GF { L(RefSLList) })"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> GF { L(RefSLList) })"
+    }
 }

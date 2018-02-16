@@ -1,37 +1,40 @@
 {
-    "name":"M-S",
-    "scenario":"(S) shape: doubly-linked list",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"traverse"
+    "name": "M-S",
+    "scenario": "(S) shape: doubly-linked list",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "traverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"dll.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "dll.json"
         }
     },
-    "options":{
-        "abstractionDistance":0,
-        "garbageCollection":false
+    "options": {
+        "abstractionDistance": 0,
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Shape_traverseWithInitialList"},
-        "grammar":{
-            "path":"../attestor-examples-output/RefDLL/MC_Shape_traverseWithInitialList",
-            "folder":"grammar"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/MC_Shape_traverseWithInitialList"
+        },
+        "grammar": {
+            "path": "../attestor-examples-output/RefDLL/MC_Shape_traverseWithInitialList",
+            "folder": "grammar"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> GF { L(RefDLList) })"
+    }
 }

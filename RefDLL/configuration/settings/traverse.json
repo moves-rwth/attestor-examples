@@ -1,35 +1,37 @@
 {
-    "name":"M",
-    "scenario":"Memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"traverse"
+    "name": "M",
+    "scenario": "Memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "traverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"dll.json",
-            "description":"A heap with an arbitrary long doubly-linked list and head variable"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "dll.json",
+            "description": "A heap with an arbitrary long doubly-linked list and head variable"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/traverse"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/traverse"
         },
-        "grammar":{
-            "path":"../attestor-examples-output/RefDLL",
-            "folder":"grammarOutput"
+        "grammar": {
+            "path": "../attestor-examples-output/RefDLL",
+            "folder": "grammarOutput"
         }
     },
-    "modelChecking":{}        
+    "modelChecking": {}
 }

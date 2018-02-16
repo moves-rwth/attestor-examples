@@ -1,30 +1,31 @@
 {
-    "name":"Construct and reverse SLL",
-    "scenario":"Show that the result is a list again.",
-    "specificationDescription":"M-S",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"SLLReverse",
-            "method":"main"
+    "name": "Construct and reverse SLL",
+    "scenario": "Show that the result is a list again.",
+    "specificationDescription": "M-S",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLReverse",
+            "method": "main"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-        }
+        "initialState": {}
     },
-    "options":{
-        "abstractionDistance":1,
-        "garbageCollection":false
+    "options": {
+        "abstractionDistance": 1,
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-        "enabled":true,
-        "formulae":"G ({terminated} -> { L(RefSLList) })"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "G ({terminated} -> { L(RefSLList) })"
     }
 }

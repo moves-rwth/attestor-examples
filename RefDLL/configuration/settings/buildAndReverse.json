@@ -1,33 +1,34 @@
 {
-    "name":"buildReverse M",
-    "scenario":"Memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"buildAndReverse"
+    "name": "buildReverse M",
+    "scenario": "Memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "buildAndReverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
-        }
+        "initialState": {}
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/buildAndReverse"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/buildAndReverse"
         },
-        "grammar":{
-            "path":"../attestor-examples-output/RefDLL",
-            "folder":"grammarOutput"
+        "grammar": {
+            "path": "../attestor-examples-output/RefDLL",
+            "folder": "grammarOutput"
         },
-        "report":{}
+        "report": {}
     },
-    "modelChecking":{}        
+    "modelChecking": {}
 }

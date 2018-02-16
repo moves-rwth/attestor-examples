@@ -1,42 +1,43 @@
 {
-    "scenario":"Memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"rebalance"
+    "scenario": "Memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "rebalance"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"inserted.json",
-            "description":"AVL after a node has been inserted"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "inserted.json",
+            "description": "AVL after a node has been inserted"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":2000,
-        "abstractionDistance":1,
-        "mode":"indexed",
+    "options": {
+        "maximalStateSpace": 2000,
+        "abstractionDistance": 1,
+        "mode": "indexed"
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/rebalance",
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/rebalance"
         },
-        "contracts":{
-            "path":"configuration/contracts",
-            "requestedContracts":[
-            {
-                "signature":"<AVLTree: AVLTree rotateRight(AVLTree)>",
-                "filename":"contract_rightRotate"
-            }
+        "contracts": {
+            "path": "configuration/contracts",
+            "requestedContracts": [
+                {
+                    "signature": "<AVLTree: AVLTree rotateRight(AVLTree)>",
+                    "filename": "contract_rightRotate"
+                }
             ]
         }
     },
-    "modelChecking":{
-    }
+    "modelChecking": {}
 }

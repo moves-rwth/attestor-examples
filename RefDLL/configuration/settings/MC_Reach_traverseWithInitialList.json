@@ -1,33 +1,35 @@
 {
-    "name":"M-R",
-    "scenario":"reachability",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"traverse"
+    "name": "M-R",
+    "scenario": "reachability",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "traverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"dll.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "dll.json"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Reach_traverseWithInitialList"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/MC_Reach_traverseWithInitialList"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"F (X {terminated} -> ({isReachable(head,tail,[nextAlt])} & {isReachable(tail,head,[prevAlt])}))"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "F (X {terminated} -> ({isReachable(head,tail,[nextAlt])} & {isReachable(tail,head,[prevAlt])}))"
+    }
 }

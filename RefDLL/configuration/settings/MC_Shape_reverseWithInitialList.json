@@ -1,34 +1,36 @@
 {
-    "name":"M-S",
-    "scenario":"(S) shape: doubly-linked list",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"reverse"
+    "name": "M-S",
+    "scenario": "(S) shape: doubly-linked list",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "reverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"dll.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "dll.json"
         }
     },
-    "options":{
-        "abstractionDistance":1,
-        "garbageCollection":false
+    "options": {
+        "abstractionDistance": 1,
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialList"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/MC_Shape_reverseWithInitialList"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> GF { L(RefDLList) })"
+    }
 }

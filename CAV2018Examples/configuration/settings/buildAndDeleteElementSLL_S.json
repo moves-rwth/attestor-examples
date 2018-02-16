@@ -1,30 +1,31 @@
 {
-  "name":"Delete element from SLL",
-  "scenario":"Analyzing memory safety of a Java version of Forester test 'sll-delete.c'. Originals are found at https://github.com/kdudka/predator.",
-  "specificationDescription":"M",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"SLLBuildAndDeleteElement",
-      "method":"main"
+    "name": "Delete element from SLL",
+    "scenario": "Analyzing memory safety of a Java version of Forester test 'sll-delete.c'. Originals are found at https://github.com/kdudka/predator.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLBuildAndDeleteElement",
+            "method": "main"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
+        ],
+        "initialState": {}
     },
-    "userDefinedGrammar":{
+    "options": {
+        "abstractionDistance": 1,
+        "garbageCollection": false
     },
-    "predefinedGrammars":[
-      { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
-    ],
-    "initialState":{
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "G ({terminated} -> { L(RefSLList) })"
     }
-  },
-  "options":{
-    "abstractionDistance":1,
-    "garbageCollection":false
-  },
-  "output":{
-    "enabled":true,
-  },
-  "modelChecking":{
-    "enabled":true,
-    "formulae":"G ({terminated} -> { L(RefSLList) })"
-  }
 }

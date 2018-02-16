@@ -1,31 +1,33 @@
 {
-    "name":"Reverse SLL",
-    "scenario":"Verify that the head reachable from tail upon termination. ",
-    "specificationDescription":"M-R",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"SLLReverse",
-            "method":"reverseList"
+    "name": "Reverse SLL",
+    "scenario": "Verify that the head reachable from tail upon termination. ",
+    "specificationDescription": "M-R",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLReverse",
+            "method": "reverseList"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"SLLWithTail.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "SLLWithTail.json"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-       "enabled":true,
-        "formulae":"(X {isReachable(head,tail,[next])} & F (X {terminated} -> {isReachable(tail,head,[next])}))"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(X {isReachable(head,tail,[next])} & F (X {terminated} -> {isReachable(tail,head,[next])}))"
     }
 }

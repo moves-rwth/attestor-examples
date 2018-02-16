@@ -1,31 +1,33 @@
 {
-    "name":"SLL find middle element",
-    "scenario":"Disprobve that every element is accessed by variable slow.",
-    "specificationDescription":"M-C-X",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"SLLFindMiddle",
-            "method":"findMiddle"
+    "name": "SLL find middle element",
+    "scenario": "Disprobve that every element is accessed by variable slow.",
+    "specificationDescription": "M-C-X",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLFindMiddle",
+            "method": "findMiddle"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"SLL.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "SLL.json"
         }
     },
-    "options":{
-        "abstractionDistance":1,
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-        "enabled":true,
-        "formulae":"(GF {terminated} -> GF {visited(slow)})"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> GF {visited(slow)})"
     }
 }

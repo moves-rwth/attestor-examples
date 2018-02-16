@@ -1,34 +1,38 @@
 {
-    "scenario":"memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"switchSubtrees"
+    "scenario": "memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "switchSubtrees"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"debug_switch.json",
-            "description":"A general balanced AVL tree"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "debug_switch.json",
+            "description": "A general balanced AVL tree"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":5000,
-        "abstractionDistance":1,
-        "aggressiveAbstractionThreshold":5,
-        "mode":"indexed",
-        "logging":false,
-        "stateRefinement":["balance"]
+    "options": {
+        "maximalStateSpace": 5000,
+        "abstractionDistance": 1,
+        "aggressiveAbstractionThreshold": 5,
+        "mode": "indexed",
+        "logging": false,
+        "stateRefinement": [
+            "balance"
+        ]
     },
-    "output":{
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/switch_subtrees"
+    "output": {
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/switch_subtrees"
         }
     },
-    "modelChecking":{}
+    "modelChecking": {}
 }

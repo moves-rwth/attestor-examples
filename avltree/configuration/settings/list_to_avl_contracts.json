@@ -1,0 +1,42 @@
+{
+    "scenario": "memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "sllToAVLTree"
+        },
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
+        },
+        "initialState": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
+        ]
+    },
+    "options": {
+        "maximalStateSpace": 6000,
+        "abstractionDistance": 1,
+        "stateSpacePostProcessing": false,
+        "mode": "indexed"
+    },
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/list_to_avl"
+        },
+        "grammar": {
+            "path": "../attestor-examples-output/avltree/list_to_avl"
+        },
+        "contractsForInspection": {
+            "path": "../attestor-examples-output/avltree/list_to_avl"
+        }
+    },
+    "modelChecking": {}
+}

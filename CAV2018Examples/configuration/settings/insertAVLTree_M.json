@@ -1,34 +1,35 @@
 {
-    "name":"AVL Tree insertion",
-    "scenario":"Verify memory safety",
-    "specificationDescription":"M",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"insert"
+    "name": "AVL Tree insertion",
+    "scenario": "Verify memory safety",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "insert"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"AVLTreeGrammar.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "AVLTreeGrammar.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"AVLTreeWithThis.json",
-            "description":"A general balanced AVL tree with one marked element"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "AVLTreeWithThis.json",
+            "description": "A general balanced AVL tree with one marked element"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":6000,
-        "abstractionDistance":1,
-        "mode":"indexed",
-        "stateSpacePostProcessing":false,
-        "garbageCollection":false
+    "options": {
+        "maximalStateSpace": 6000,
+        "abstractionDistance": 1,
+        "mode": "indexed",
+        "stateSpacePostProcessing": false,
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-    }
+    "modelChecking": {}
 }

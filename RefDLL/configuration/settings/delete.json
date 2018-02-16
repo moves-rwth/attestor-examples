@@ -1,29 +1,30 @@
 {
-    "name":"M",
-    "scenario":"Memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"testDelete"
+    "name": "M",
+    "scenario": "Memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "testDelete"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
+        "initialState": {}
+    },
+    "options": {
+        "abstractionDistance": 1,
+        "logging": true,
+        "garbageCollection": true
+    },
+    "output": {
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/delete"
         }
     },
-    "options":{
-        "abstractionDistance":1,
-        "logging":true,
-		"garbageCollection":true
-    },
-    "output":{
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/delete"
-        }
-    },
-    "modelChecking":{}        
+    "modelChecking": {}
 }

@@ -1,29 +1,31 @@
 {
-  "name":"Recursive tree traversal",
-  "scenario":"Verify memory safety.",
-  "specificationDescription":"M",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"RecursiveTreeTraverse",
-      "method":"traverse"
+    "name": "Recursive tree traversal",
+    "scenario": "Verify memory safety.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "RecursiveTreeTraverse",
+            "method": "traverse"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "BT",
+                "definition": "configuration/grammar/RenameBinaryTree.java"
+            }
+        ],
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "BinaryTree.json",
+            "description": "An arbitrary binary tree"
+        }
     },
-    "userDefinedGrammar":{
+    "options": {
+        "abstractionDistance": 1
     },
-    "predefinedGrammars":[
-      { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
-    ],
-    "initialState":{
-      "path":"configuration/inputs",
-      "file":"BinaryTree.json",
-      "description":"An arbitrary binary tree"
-    }
-  },
-  "options":{
-    "abstractionDistance":1,
-  },
-  "output":{
-    "enabled":true,
-  },
-  "modelChecking":{}
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
 }

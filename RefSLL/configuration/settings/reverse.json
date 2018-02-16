@@ -1,31 +1,32 @@
 {
     "name": "M",
-    "scenario":"memory safety: build and reverse list",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"ListNodeAlt",
-            "method":"main"
+    "scenario": "memory safety: build and reverse list",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "ListNodeAlt",
+            "method": "main"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-        }
+        "initialState": {}
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/reverse"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefSLL/reverse"
         },
-        "report":{
-            "path":"../attestor-examples-output/RefSLL/reverse"
+        "report": {
+            "path": "../attestor-examples-output/RefSLL/reverse"
         }
     },
-    "modelChecking":{}        
+    "modelChecking": {}
 }

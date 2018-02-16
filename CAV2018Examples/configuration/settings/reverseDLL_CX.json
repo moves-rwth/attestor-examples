@@ -1,31 +1,33 @@
 {
-    "name":"DLL reversal",
-    "scenario":"Provide a counterexample showing that pos might be null upon termination.",
-    "specificationDescription":"M-C-X",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"reverse"
+    "name": "DLL reversal",
+    "scenario": "Provide a counterexample showing that pos might be null upon termination.",
+    "specificationDescription": "M-C-X",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "reverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLList.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"DLL.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "DLL.json"
         }
     },
-    "options":{
-        "abstractionDistance":1,
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-       "enabled":true,
-        "formulae":"(GF {terminated} -> F ({ pos != null } & X{terminated}))"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> F ({ pos != null } & X{terminated}))"
     }
 }

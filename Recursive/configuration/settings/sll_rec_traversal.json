@@ -1,28 +1,29 @@
 {
-  "name":"M",
-  "scenario":"Analyzing memory safety of a recursive SLL traversal.",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"SLLRecTraverse",
-      "method":"main"
+    "name": "M",
+    "scenario": "Analyzing memory safety of a recursive SLL traversal.",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLRecTraverse",
+            "method": "main"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/SLL.java"
+            }
+        ],
+        "initialState": {}
     },
-    "userDefinedGrammar":{
+    "options": {
+        "abstractionDistance": 1
     },
-    "predefinedGrammars":[
-      { "type": "SLList", "definition":"configuration/grammar/SLL.java" }
-    ],
-    "initialState":{
-    }
-  },
-  "options":{
-    "abstractionDistance":1,
-  },
-  "output":{
-    "enabled":false,
-    "stateSpace":{
-      "path":"../attestor-examples-output/recursive/sll_rec_traversal"
+    "output": {
+        "enabled": false,
+        "stateSpace": {
+            "path": "../attestor-examples-output/recursive/sll_rec_traversal"
+        }
     },
-  },
-  "modelChecking":{}
+    "modelChecking": {}
 }

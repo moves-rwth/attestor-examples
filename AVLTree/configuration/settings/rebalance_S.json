@@ -1,35 +1,37 @@
 {
-    "scenario":"(S) shape: balanced tree in final states",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"rebalance"
+    "scenario": "(S) shape: balanced tree in final states",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "rebalance"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"inserted.json",
-            "description":"AVL after a node has been inserted"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "inserted.json",
+            "description": "AVL after a node has been inserted"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":2000,
-        "abstractionDistance":1,
-        "mode":"indexed"
+    "options": {
+        "maximalStateSpace": 2000,
+        "abstractionDistance": 1,
+        "mode": "indexed"
     },
-    "output":{
-        "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/rebalance_S"
+    "output": {
+        "enabled": false,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/rebalance_S"
         }
     },
-    "modelChecking":{
-        "enabled":true,
-	    "formulae":"(GF { terminated } -> F ({ terminated } & { btree }))"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF { terminated } -> F ({ terminated } & { btree }))"
     }
 }

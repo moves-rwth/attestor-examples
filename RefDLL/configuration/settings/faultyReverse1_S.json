@@ -1,34 +1,36 @@
 {
-    "name":"Faulty DLL reversal",
-    "scenario":"Verify that the result is a DLL again. This is expected to fail.",
-    "specificationDescription":"M-S-X",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"faultyReverse1"
+    "name": "Faulty DLL reversal",
+    "scenario": "Verify that the result is a DLL again. This is expected to fail.",
+    "specificationDescription": "M-S-X",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "faultyReverse1"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"dllNullHeadTail.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "dllNullHeadTail.json"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialList"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefDLL/MC_Reach_reverseWithInitialList"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(GF {terminated} -> GF { L(RefDLList) })"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> GF { L(RefDLList) })"
+    }
 }

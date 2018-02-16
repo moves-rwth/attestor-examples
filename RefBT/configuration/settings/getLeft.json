@@ -1,35 +1,37 @@
 {
-    "name":"M",
-    "scenario":"memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"BTNodeAlt",
-            "method":"getLeft"
+    "name": "M",
+    "scenario": "memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "BTNodeAlt",
+            "method": "getLeft"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "BT", "definition":"configuration/grammar/RenameBTNodeAlt.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "BT",
+                "definition": "configuration/grammar/RenameBTNodeAlt.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"btalt.json",
-            "description":"An arbitrary binary tree"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "btalt.json",
+            "description": "An arbitrary binary tree"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefBT/getLeft"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefBT/getLeft"
         },
-        "grammar":{
-            "path":"../attestor-examples-output/RefBT",
-            "folder":"grammarOutput",
+        "grammar": {
+            "path": "../attestor-examples-output/RefBT",
+            "folder": "grammarOutput"
         }
     },
-    "modelChecking":{}        
+    "modelChecking": {}
 }

@@ -1,34 +1,38 @@
 {
-    "scenario":"memory safety",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"executeRebalance"
+    "scenario": "memory safety",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "executeRebalance"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"inserted.json",
-            "description":"AVL after a node has been inserted"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "inserted.json",
+            "description": "AVL after a node has been inserted"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":2000,
-        "abstractionDistance":1,
-        "aggressiveReturnAbstraction":true,
-        "mode":"indexed",
-        "logging":false,
-        "stateRefinement":["balance"]
+    "options": {
+        "maximalStateSpace": 2000,
+        "abstractionDistance": 1,
+        "aggressiveReturnAbstraction": true,
+        "mode": "indexed",
+        "logging": false,
+        "stateRefinement": [
+            "balance"
+        ]
     },
-    "output":{
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/call_rebalance"
+    "output": {
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/call_rebalance"
         }
     },
-    "modelChecking":{}
+    "modelChecking": {}
 }

@@ -1,26 +1,27 @@
 {
-  "name":"Build tree and traverse recursively",
-  "scenario":"Verify memory safety.",
-  "specificationDescription":"M",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"RecursiveTreeTraverse",
-      "method":"main"
+    "name": "Build tree and traverse recursively",
+    "scenario": "Verify memory safety.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "RecursiveTreeTraverse",
+            "method": "main"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "BT",
+                "definition": "configuration/grammar/RenameBinaryTree.java"
+            }
+        ],
+        "initialState": {}
     },
-    "userDefinedGrammar":{
+    "options": {
+        "abstractionDistance": 1
     },
-    "predefinedGrammars":[
-      { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
-    ],
-    "initialState":{
-    }
-  },
-  "options":{
-    "abstractionDistance":1,
-  },
-  "output":{
-    "enabled":true,
-  },
-  "modelChecking":{}
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
 }

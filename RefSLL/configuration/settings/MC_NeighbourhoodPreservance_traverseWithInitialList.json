@@ -1,33 +1,35 @@
 {
-    "name":"M-N",
-    "scenario":"same list after traversal",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"ListNodeAlt",
-            "method":"traverseList"
+    "name": "M-N",
+    "scenario": "same list after traversal",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "ListNodeAlt",
+            "method": "traverseList"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "SLList", "definition":"configuration/grammar/RenameSLL.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"sll.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "sll.json"
         }
     },
-    "options":{
-        "abstractionDistance":1
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
-        "stateSpace":{
-            "path":"../attestor-examples-output/RefSLL/MC_NeighbourhoodPreservance_traverseWithInitialList"
+    "output": {
+        "enabled": true,
+        "stateSpace": {
+            "path": "../attestor-examples-output/RefSLL/MC_NeighbourhoodPreservance_traverseWithInitialList"
         }
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"({terminated} -> {identicNeighbours})"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "({terminated} -> {identicNeighbours})"
+    }
 }

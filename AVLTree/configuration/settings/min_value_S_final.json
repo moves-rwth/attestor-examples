@@ -1,37 +1,39 @@
 {
-    "scenario":"(S) shape: balanced tree in final states",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"minValue"
+    "scenario": "(S) shape: balanced tree in final states",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "minValue"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"balanced_tree.json",
-            "description":"A general balanced AVL tree"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "balanced_tree.json",
+            "description": "A general balanced AVL tree"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":500,
-        "abstractionDistance":1,
-        "stateSpacePostProcessing":false,
-        "mode":"indexed",
-        "garbageCollection":false
+    "options": {
+        "maximalStateSpace": 500,
+        "abstractionDistance": 1,
+        "stateSpacePostProcessing": false,
+        "mode": "indexed",
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/min_value_S"
+    "output": {
+        "enabled": false,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/min_value_S"
         }
     },
-    "modelChecking":{
-        "enabled":true,
-        "formulae":"G ({terminated} -> { btree })"
-    }      
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "G ({terminated} -> { btree })"
+    }
 }

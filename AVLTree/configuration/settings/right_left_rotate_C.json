@@ -1,33 +1,35 @@
 {
-    "scenario":"(C) correctness: return placed on tree element",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"rotateRightLeft"
+    "scenario": "(C) correctness: return placed on tree element",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "rotateRightLeft"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"before_right_left.json",
-            "description":"A general balanced AVL tree"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "before_right_left.json",
+            "description": "A general balanced AVL tree"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":2000,
-        "abstractionDistance":1,
-        "mode":"indexed",
-        "logging":false,
+    "options": {
+        "maximalStateSpace": 2000,
+        "abstractionDistance": 1,
+        "mode": "indexed",
+        "logging": false
     },
-    "output":{
-        "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/right_left_rotate"
+    "output": {
+        "enabled": false,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/right_left_rotate"
         }
     },
-    "modelChecking":{}
+    "modelChecking": {}
 }

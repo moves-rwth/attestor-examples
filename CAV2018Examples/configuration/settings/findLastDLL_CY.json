@@ -1,31 +1,33 @@
 {
-    "name":"Find last element of DLL",
-    "scenario":"Fails to prove termination. All counterexamples are spurious. Errors in console output are thus expected.",
-    "specificationDescription":"M-C-Y",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"DLList",
-            "method":"findLast"
+    "name": "Find last element of DLL",
+    "scenario": "Fails to prove termination. All counterexamples are spurious. Errors in console output are thus expected.",
+    "specificationDescription": "M-C-Y",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLList",
+            "method": "findLast"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "DLList", "definition":"configuration/grammar/RenameDLList.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLList.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"DLL.json"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "DLL.json"
         }
     },
-    "options":{
-        "abstractionDistance":1,
+    "options": {
+        "abstractionDistance": 1
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-       "enabled":true,
-        "formulae":"F {terminated}"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "F {terminated}"
     }
 }

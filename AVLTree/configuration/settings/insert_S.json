@@ -1,37 +1,39 @@
 {
-    "scenario":"(S) shape: balanced tree in final states",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"AVLTree",
-            "method":"insert"
+    "scenario": "(S) shape: balanced tree in final states",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "insert"
         },
-        "userDefinedGrammar":{
-            "path":"configuration/grammar",
-            "file":"avltree.json"
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "avltree.json"
+            ]
         },
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"balanced_tree_with_this.json",
-            "description":"A general balanced AVL tree after insertion of an element"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "balanced_tree_with_this.json",
+            "description": "A general balanced AVL tree after insertion of an element"
         },
-        "predefinedGrammars":[]
+        "predefinedGrammars": []
     },
-    "options":{
-        "maximalStateSpace":6000,
-        "abstractionDistance":1,
-        "mode":"indexed",
-        "stateSpacePostProcessing":false,
-        "garbageCollection":false
+    "options": {
+        "maximalStateSpace": 6000,
+        "abstractionDistance": 1,
+        "mode": "indexed",
+        "stateSpacePostProcessing": false,
+        "garbageCollection": false
     },
-    "output":{
-        "enabled":false,
-        "stateSpace":{
-            "path":"../attestor-examples-output/avltree/insert_S"
+    "output": {
+        "enabled": false,
+        "stateSpace": {
+            "path": "../attestor-examples-output/avltree/insert_S"
         }
     },
-    "modelChecking":{
-        "enabled":true,
-        "formulae":"(GF { terminated } -> F ({ terminated } & { btree }))"
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF { terminated } -> F ({ terminated } & { btree }))"
     }
 }

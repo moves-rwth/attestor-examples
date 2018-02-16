@@ -1,26 +1,27 @@
 {
-  "name":"Skip list insert",
-  "scenario":"Analyzing memory safety of a Java version of Forester test 'skip-list-2.c'. Originals are found at https://github.com/kdudka/predator.",
-  "specificationDescription":"M",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"SkipList",
-      "method":"main"
+    "name": "Skip list insert",
+    "scenario": "Analyzing memory safety of a Java version of Forester test 'skip-list-2.c'. Originals are found at https://github.com/kdudka/predator.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SkipList",
+            "method": "main"
+        },
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "SkipList.json"
+            ]
+        },
+        "predefinedGrammars": [],
+        "initialState": {}
     },
-    "userDefinedGrammar":{
-		"path":"configuration/grammar",
-		"file":"SkipList.json"
+    "options": {
+        "abstractionDistance": 0
     },
-    "predefinedGrammars":[],
-    "initialState":{
-    }
-  },
-  "options":{
-    "abstractionDistance":0,
-  },
-  "output":{
-    "enabled":true,
-  },
-  "modelChecking":{}
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
 }

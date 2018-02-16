@@ -1,33 +1,35 @@
 {
-    "name":"Lindstrom algorithm",
-    "scenario":"Verify that the heap is a binary tree again upon termination.",
-    "specificationDescription":"M-S",
-    "input":{
-        "program":{
-            "classpath":"configuration/code",
-            "class":"Lindstrom",
-            "method":"traverse"
+    "name": "Lindstrom algorithm",
+    "scenario": "Verify that the heap is a binary tree again upon termination.",
+    "specificationDescription": "M-S",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "Lindstrom",
+            "method": "traverse"
         },
-        "userDefinedGrammar":{
-        },
-        "predefinedGrammars":[
-            { "type": "BT", "definition":"configuration/grammar/RenameBTLindstrom.java" }
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "BT",
+                "definition": "configuration/grammar/RenameBTLindstrom.java"
+            }
         ],
-        "initialState":{
-            "path":"configuration/inputs",
-            "file":"BinaryTree.json",
-            "description":"An arbitrary binary tree"
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "BinaryTree.json",
+            "description": "An arbitrary binary tree"
         }
     },
-    "options":{
-        "abstractionDistance":0,
-        "maximalStateSpace":100000
+    "options": {
+        "abstractionDistance": 0,
+        "maximalStateSpace": 100000
     },
-    "output":{
-        "enabled":true,
+    "output": {
+        "enabled": true
     },
-    "modelChecking":{
-       "enabled":true,
-	   "formulae":"(GF {terminated} -> GF { L(RefBT) })"
-    }        
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "(GF {terminated} -> GF { L(RefBT) })"
+    }
 }

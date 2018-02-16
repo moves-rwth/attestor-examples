@@ -1,26 +1,27 @@
 {
-  "name":"DSW Tree Traversal",
-  "scenario":"Analyzing memory safety of a Java version of Forester test 'tree-dsw.c'. Originals are found at https://github.com/kdudka/predator.",
-  "specificationDescription":"M",
-  "input":{
-    "program":{
-      "classpath":"configuration/code",
-      "class":"TreeDSW",
-      "method":"main"
+    "name": "DSW Tree Traversal",
+    "scenario": "Analyzing memory safety of a Java version of Forester test 'tree-dsw.c'. Originals are found at https://github.com/kdudka/predator.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "TreeDSW",
+            "method": "main"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "BT",
+                "definition": "configuration/grammar/RenameBinaryTree.java"
+            }
+        ],
+        "initialState": {}
     },
-    "userDefinedGrammar":{
+    "options": {
+        "abstractionDistance": 1
     },
-    "predefinedGrammars":[
-      { "type": "BT", "definition":"configuration/grammar/RenameBinaryTree.java" }
-    ],
-    "initialState":{
-    }
-  },
-  "options":{
-    "abstractionDistance":1,
-  },
-  "output":{
-    "enabled":true,
-  },
-  "modelChecking":{}
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
 }
