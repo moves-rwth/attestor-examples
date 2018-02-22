@@ -173,12 +173,7 @@ public class AVLTree {
 	public  void insert( int value) {
 		
         AVLTree n = this;
-        
-		if(n == null) {
-			n = new AVLTree(null, null, null, 0);
-			return;
-		}
-		
+ 		
 		while(n != null) {
             if( n.key == value) {    
             	return; // value already exists

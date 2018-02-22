@@ -246,8 +246,8 @@ public class AVLTree {
     @Benchmark
     public void insert_S() {
         BenchmarkHelper.builder()
-                .expectTotalStates(10388)
-                .expectMainProcedureStates(1323)
+                .expectTotalStates(10386)
+                .expectMainProcedureStates(1321)
                 .expectFinalStates(2)
                 .expectLTLResults(true)
                 .build()
