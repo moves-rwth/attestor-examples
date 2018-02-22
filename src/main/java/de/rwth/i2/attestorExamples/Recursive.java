@@ -27,11 +27,13 @@ public class Recursive {
     public void tree_rec_traversal() {
         BenchmarkHelper.builder()
                 .expectFinalStates(1)
+                .expectTotalStates(714)
+                .expectMainProcedureStates(6)
                 .build()
                 .run();
     }
 
-    /*
+    
     @Benchmark
     public void sll_rec_zip() {
         BenchmarkHelper.builder()
@@ -39,6 +41,6 @@ public class Recursive {
                 .build()
                 .run();
     }
-    */
+    
 
 }

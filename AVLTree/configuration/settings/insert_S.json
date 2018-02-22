@@ -27,7 +27,7 @@
         "garbageCollection": false
     },
     "output": {
-        "enabled": false,
+        "enabled": true,
         "stateSpace": {
             "path": "../attestor-examples-output/avltree/insert_S"
         }

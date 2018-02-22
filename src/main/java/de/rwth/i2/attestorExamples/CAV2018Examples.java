@@ -470,7 +470,7 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveBuildAndTraverseTree_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(626)
+                .expectTotalStates(714)
                 .expectMainProcedureStates(6)
                 .expectFinalStates(1)
                 .build()
@@ -480,7 +480,7 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveBuildAndTraverseTree_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(626)
+                .expectTotalStates(714)
                 .expectMainProcedureStates(6)
                 .expectFinalStates(1)
                 .expectLTLResults(true)

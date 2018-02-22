@@ -25,7 +25,10 @@
         "garbageCollection": false
     },
     "output": {
-        "enabled": true
+        "enabled": true,
+        "path":"../attestor-examples-output/recursive/reverseList",
+        "stateSpace":{},
+        "contracts":{}
     },
     "modelChecking": {
         "enabled": true,

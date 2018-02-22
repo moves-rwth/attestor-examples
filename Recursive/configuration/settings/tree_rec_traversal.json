@@ -20,9 +20,12 @@
         "abstractionDistance": 1
     },
     "output": {
-        "enabled": false,
+        "enabled": true,
         "stateSpace": {
             "path": "../attestor-examples-output/recursive/tree_rec_traversal"
+        },
+        "contractsForInspection":{
+             "path": "../attestor-examples-output/recursive/tree_rec_traversal"
         }
     },
     "modelChecking": {}
