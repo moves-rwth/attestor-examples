@@ -22,7 +22,7 @@
     },
     "options": {
         "abstractionDistance": 1,
-        "aggressiveNullAbstraction": false,
+        "stateSpacePostProcessing": false,
     },
     "output": {
         "enabled": true,
