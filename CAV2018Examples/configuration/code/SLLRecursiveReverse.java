@@ -1,28 +1,29 @@
 public class SLLRecursiveReverse {
 
 
-	public static void reverseList( SLL head ){
+    public static SLL reverseList( SLL head ){
 
 		SLL first;
 		SLL rest;
 
 		if(head == null) {
-			return;
+			return head;
 		}
 
 		first = head;
 		rest = first.next;
 
 		if(rest == null) {
-			return;
+			return first;
 		}
 
-		reverseList(rest);
+		rest = reverseList(rest);
 
 		first.next.next = first;
 		first.next = null;
 
 		head = rest;
+		return head;
 
 	}
 
