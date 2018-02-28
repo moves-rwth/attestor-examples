@@ -371,9 +371,9 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveReverseSLL_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(40)
-                .expectMainProcedureStates(16)
-                .expectFinalStates(1)
+                .expectTotalStates(172)
+                .expectMainProcedureStates(32)
+                .expectFinalStates(2)
                 .build()
                 .run();
     }
@@ -381,9 +381,9 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveReverseSLL_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(40)
-                .expectMainProcedureStates(16)
-                .expectFinalStates(1)
+                .expectTotalStates(172)
+                .expectMainProcedureStates(32)
+                .expectFinalStates(2)
                 .expectLTLResults(true)
                 .build()
                 .run();

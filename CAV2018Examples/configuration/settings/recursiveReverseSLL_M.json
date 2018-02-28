@@ -22,20 +22,12 @@
     },
     "options": {
         "abstractionDistance": 1,
-        "aggressiveReturnAbstraction":false
+        "stateSpacePostProcessing":false
     },
     "output": {
         "enabled": true,
         "stateSpace":{ "path":"../attestor-examples-output/recursive/reverseList" },
         "contractsForInspection":{ "path":"../attestor-examples-output/recursive/reverseList" },
-        "contractsForReuse":{
-            "path":"configuration/contracts",
-            "requestedContracts": [
-                {
-                    "signature": "<SLLRecursiveReverse: SLL reverseList(SLL)>",
-                    "filename": "contract_reverse"
-                }
-            ]}
     },
     "modelChecking": {}
 }
