@@ -25,7 +25,9 @@
         "garbageCollection": false
     },
     "output": {
-        "enabled": true
+        "enabled": true,
+        "stateSpace":{"path":"../attestor-examples-output/recursive/reverseList/MVX"},
+        "contractsForInspection":{"path":"../attestor-examples-output/recursive/reverseList/MVX" }
     },
     "modelChecking": {
         "enabled": true,

@@ -371,8 +371,8 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveReverseSLL_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(172)
-                .expectMainProcedureStates(32)
+                .expectTotalStates(148)
+                .expectMainProcedureStates(23)
                 .expectFinalStates(2)
                 .build()
                 .run();
@@ -381,8 +381,8 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveReverseSLL_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(172)
-                .expectMainProcedureStates(32)
+                .expectTotalStates(148)
+                .expectMainProcedureStates(23)
                 .expectFinalStates(2)
                 .expectLTLResults(true)
                 .build()
@@ -392,26 +392,28 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveReverseSLL_VX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(148)
-                .expectMainProcedureStates(31)
-                .expectFinalStates(1)
+                .expectTotalStates(889)
+                .expectMainProcedureStates(95)
+                .expectFinalStates(7)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
                 .build()
                 .run();
     }
 
+    
     @Benchmark
     public void recursiveReverseSLL_NX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(823)
-                .expectMainProcedureStates(104)
-                .expectFinalStates(3)
+                .expectTotalStates(2195)
+                .expectMainProcedureStates(139)
+                .expectFinalStates(8)
                 .expectLTLResults(false)
-                .expectNoCounterexamples(1)
+                //.expectNoCounterexamples(1)
                 .build()
                 .run();
     }
+    
 
     @Benchmark
     public void findMiddleSLL_M(){
@@ -470,7 +472,7 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveBuildAndTraverseTree_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(714)
+                .expectTotalStates(741)
                 .expectMainProcedureStates(6)
                 .expectFinalStates(1)
                 .build()
@@ -480,7 +482,7 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveBuildAndTraverseTree_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(714)
+                .expectTotalStates(741)
                 .expectMainProcedureStates(6)
                 .expectFinalStates(1)
                 .expectLTLResults(true)
@@ -491,8 +493,8 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveTraverseTree_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(91)
-                .expectMainProcedureStates(19)
+                .expectTotalStates(222)
+                .expectMainProcedureStates(27)
                 .expectFinalStates(1)
                 .build()
                 .run();
@@ -501,8 +503,8 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveTraverseTree_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(91)
-                .expectMainProcedureStates(19)
+                .expectTotalStates(222)
+                .expectMainProcedureStates(27)
                 .expectFinalStates(1)
                 .expectLTLResults(true)
                 .build()
@@ -512,10 +514,10 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveTraverseTree_N(){
         BenchmarkHelper.builder()
-                .expectTotalStates(21738)
-                .expectMainProcedureStates(546)
-                .expectFinalStates(6)
-                .expectLTLResults(true)
+                .expectTotalStates(35680)
+                .expectMainProcedureStates(644)
+                .expectFinalStates(17)
+                //.expectLTLResults(true)
                 .build()
                 .run();
     }

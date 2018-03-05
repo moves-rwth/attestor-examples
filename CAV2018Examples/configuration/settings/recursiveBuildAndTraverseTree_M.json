@@ -21,7 +21,8 @@
         "abstractionDistance": 1
     },
     "output": {
-        "enabled": true
+        "enabled": true,
+        "stateSpace":{"path":"../attestor-examples-output/recursive/buildAndTraverseTree"}
     },
     "modelChecking": {}
 }

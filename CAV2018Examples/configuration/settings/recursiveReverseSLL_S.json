@@ -22,7 +22,8 @@
     },
     "options": {
         "abstractionDistance": 1,
-        "garbageCollection": false
+        "garbageCollection": false,
+        "stateSpacePostProcessing":false
     },
     "output": {
         "enabled": true,
