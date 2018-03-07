@@ -21,7 +21,8 @@
         }
     },
     "options": {
-        "abstractionDistance": 1
+        "abstractionDistance": 1,
+        "verifyCounterexamples":true
     },
     "output": {
         "enabled": true

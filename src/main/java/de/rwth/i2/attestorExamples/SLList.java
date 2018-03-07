@@ -9,6 +9,7 @@ import de.rwth.i2.attestor.main.Attestor;
  *
  */
 public class SLList {
+
     @Benchmark
     public void reverseSLList() {
         BenchmarkHelper.builder()

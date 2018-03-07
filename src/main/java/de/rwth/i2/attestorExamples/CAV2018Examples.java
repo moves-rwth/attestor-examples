@@ -229,8 +229,8 @@ public class CAV2018Examples {
     @Benchmark
     public void buildAndReverseSLL_M() {
         BenchmarkHelper.builder()
-                .expectTotalStates(92)
-                .expectMainProcedureStates(48)
+                .expectTotalStates(95)
+                .expectMainProcedureStates(50)
                 .expectFinalStates(1)
                 .build()
                 .run();
@@ -239,8 +239,8 @@ public class CAV2018Examples {
     @Benchmark
     public void buildAndReverseSLL_S() {
         BenchmarkHelper.builder()
-                .expectTotalStates(92)
-                .expectMainProcedureStates(48)
+                .expectTotalStates(95)
+                .expectMainProcedureStates(50)
                 .expectFinalStates(1)
                 .build()
                 .run();
@@ -249,8 +249,8 @@ public class CAV2018Examples {
     @Benchmark
     public void buildAndReverseSLL_R() {
         BenchmarkHelper.builder()
-                .expectTotalStates(92)
-                .expectMainProcedureStates(48)
+                .expectTotalStates(95)
+                .expectMainProcedureStates(50)
                 .expectFinalStates(1)
                 .expectLTLResults(true)
                 .build()
@@ -392,9 +392,9 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveReverseSLL_VX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(889)
-                .expectMainProcedureStates(95)
-                .expectFinalStates(7)
+                .expectTotalStates(1074)
+                .expectMainProcedureStates(70)
+                .expectFinalStates(6)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
                 .build()
@@ -439,9 +439,9 @@ public class CAV2018Examples {
     @Benchmark
     public void findMiddleSLL_V(){
         BenchmarkHelper.builder()
-                .expectTotalStates(380)
-                .expectMainProcedureStates(380)
-                .expectFinalStates(4)
+                .expectTotalStates(384)
+                .expectMainProcedureStates(384)
+                .expectFinalStates(8)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -472,8 +472,8 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveBuildAndTraverseTree_M(){
         BenchmarkHelper.builder()
-                .expectTotalStates(741)
-                .expectMainProcedureStates(6)
+                .expectTotalStates(1170)
+                .expectMainProcedureStates(9)
                 .expectFinalStates(1)
                 .build()
                 .run();
@@ -482,8 +482,8 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveBuildAndTraverseTree_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(741)
-                .expectMainProcedureStates(6)
+                .expectTotalStates(1170)
+                .expectMainProcedureStates(9)
                 .expectFinalStates(1)
                 .expectLTLResults(true)
                 .build()
@@ -503,9 +503,9 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveTraverseTree_S(){
         BenchmarkHelper.builder()
-                .expectTotalStates(222)
-                .expectMainProcedureStates(27)
-                .expectFinalStates(1)
+                .expectTotalStates(972)
+                .expectMainProcedureStates(34)
+                .expectFinalStates(4)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -514,10 +514,10 @@ public class CAV2018Examples {
     @Benchmark
     public void recursiveTraverseTree_N(){
         BenchmarkHelper.builder()
-                .expectTotalStates(35680)
-                .expectMainProcedureStates(644)
-                .expectFinalStates(17)
-                //.expectLTLResults(true)
+                .expectTotalStates(295904)
+                .expectMainProcedureStates(1033)
+                .expectFinalStates(86)
+                .expectLTLResults(true)
                 .build()
                 .run();
     }
@@ -645,8 +645,8 @@ public class CAV2018Examples {
     @Benchmark
     public void faultyReverseDLL_CX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(81)
-                .expectMainProcedureStates(7)
+                .expectTotalStates(106)
+                .expectMainProcedureStates(9)
                 .expectFinalStates(2)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
@@ -657,9 +657,9 @@ public class CAV2018Examples {
     @Benchmark
     public void findLastDLL_CY(){
         BenchmarkHelper.builder()
-                .expectTotalStates(44)
-                .expectMainProcedureStates(44)
-                .expectFinalStates(1)
+                .expectTotalStates(55)
+                .expectMainProcedureStates(55)
+                .expectFinalStates(2)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(0)
                 .build()
@@ -769,8 +769,9 @@ public class CAV2018Examples {
     @Benchmark
     public void findMiddleSLL_VX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(380)
-                .expectMainProcedureStates(380)
+                .expectTotalStates(508)
+                .expectMainProcedureStates(508)
+                .expectFinalStates(11)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
                 .build()

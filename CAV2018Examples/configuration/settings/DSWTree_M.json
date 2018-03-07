@@ -18,7 +18,8 @@
         "initialState": {}
     },
     "options": {
-        "abstractionDistance": 1
+        "abstractionDistance": 1,
+        "maximalStateSpace": 10000
     },
     "output": {
         "enabled": true

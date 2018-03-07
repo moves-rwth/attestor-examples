@@ -22,7 +22,8 @@
         }
     },
     "options": {
-        "abstractionDistance": 1
+        "abstractionDistance": 1,
+        "stateSpacePostProcessing":true,
     },
     "output": {
         "enabled": true,

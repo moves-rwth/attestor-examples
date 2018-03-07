@@ -88,9 +88,9 @@ public class AVLTree {
     @Benchmark
     public void search_and_swap() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3855)
-                .expectMainProcedureStates(920)
-                .expectFinalStates(1)
+                .expectTotalStates(4104)
+                .expectMainProcedureStates(907)
+                .expectFinalStates(7)
                 .build()
                 .run();
     }
@@ -98,9 +98,9 @@ public class AVLTree {
     @Benchmark
     public void search_and_swap_S() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3855)
-                .expectMainProcedureStates(920)
-                .expectFinalStates(1)
+                .expectTotalStates(4104)
+                .expectMainProcedureStates(907)
+                .expectFinalStates(7)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -120,9 +120,9 @@ public class AVLTree {
     @Benchmark
     public void left_rotate() {
         BenchmarkHelper.builder()
-                .expectTotalStates(190)
-                .expectMainProcedureStates(190)
-                .expectFinalStates(1)
+                .expectTotalStates(201)
+                .expectMainProcedureStates(201)
+                .expectFinalStates(12)
                 .build()
                 .run();
     }
@@ -130,9 +130,9 @@ public class AVLTree {
     @Benchmark
     public void left_right_rotate() {
         BenchmarkHelper.builder()
-                .expectTotalStates(1132)
-                .expectMainProcedureStates(64)
-                .expectFinalStates(1)
+                .expectTotalStates(1539)
+                .expectMainProcedureStates(416)
+                .expectFinalStates(12)
                 .build()
                 .run();
     }
@@ -204,9 +204,9 @@ public class AVLTree {
     @Benchmark
     public void rebalance() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3644)
-                .expectMainProcedureStates(402)
-                .expectFinalStates(2)
+                .expectTotalStates(4926)
+                .expectMainProcedureStates(656)
+                .expectFinalStates(16)
                 .build()
                 .run();
     }
@@ -214,9 +214,9 @@ public class AVLTree {
     @Benchmark
     public void rebalance_S() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3644)
-                .expectMainProcedureStates(402)
-                .expectFinalStates(2)
+                .expectTotalStates(4926)
+                .expectMainProcedureStates(656)
+                .expectFinalStates(16)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -225,9 +225,9 @@ public class AVLTree {
     @Benchmark
     public void rebalance_C() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3644)
-                .expectMainProcedureStates(402)
-                .expectFinalStates(2)
+                .expectTotalStates(4926)
+                .expectMainProcedureStates(656)
+                .expectFinalStates(16)
                 .expectLTLResults(true)
                 .build()
                 .run();

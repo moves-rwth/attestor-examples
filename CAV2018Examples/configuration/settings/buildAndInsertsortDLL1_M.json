@@ -18,7 +18,7 @@
         "initialState": {}
     },
     "options": {
-        "maximalStateSpace": 5000,
+        "maximalStateSpace": 10000,
         "abstractionDistance": 1
     },
     "output": {
