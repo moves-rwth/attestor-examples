@@ -1,5 +1,7 @@
 {
-    "scenario": "(C) correctness: return element placed on tree element or null",
+    "name": "AVL: Binary search",
+    "specificationDescription": "M-C",
+    "scenario": "return element placed on tree element or null",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -25,10 +27,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/binary_search_C"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

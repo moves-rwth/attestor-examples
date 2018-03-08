@@ -1,5 +1,7 @@
 {
-    "scenario": "memory safety",
+    "name": "AVL: Rebalance function call",
+    "specificationDescription": "M",
+    "scenario": "Prove memory safety",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -22,17 +24,10 @@
     "options": {
         "maximalStateSpace": 2000,
         "abstractionDistance": 1,
-        "aggressiveReturnAbstraction": true,
-        "mode": "indexed",
-        "logging": false,
-        "stateRefinement": [
-            "balance"
-        ]
+        "mode": "indexed"
     },
     "output": {
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/call_rebalance"
-        }
+        "enabled":true
     },
     "modelChecking": {}
 }

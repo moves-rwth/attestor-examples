@@ -1,5 +1,7 @@
 {
-    "scenario": "(C) correctness: return placed on tree element",
+    "name": "AVL: Left-Right Rotation",
+    "specificationDescription": "M-C",
+    "scenario": "Prove that return is placed on a tree element",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -26,10 +28,7 @@
         "logging": false
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/right_left_rotate"
-        }
+        "enabled": true
     },
     "modelChecking": {}
 }

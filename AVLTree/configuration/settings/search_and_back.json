@@ -1,5 +1,7 @@
 {
-    "scenario": "memory safety",
+    "name": "AVL: Search and back to root",
+    "specificationDescription": "M",
+    "scenario": "Prove memory safety",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -25,10 +27,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/binary_search_and_back"
-        }
+        "enabled": true
     },
     "modelChecking": {}
 }

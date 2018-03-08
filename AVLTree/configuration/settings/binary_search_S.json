@@ -1,5 +1,7 @@
 {
-    "scenario": "(S) shape: balanced tree for all states",
+    "name": "AVL: Binary search",
+    "specificationDescription": "M-S",
+    "scenario": "Invariant: Balanced tree",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -25,10 +27,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/binary_search_S"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

@@ -1,5 +1,7 @@
 {
-    "scenario": "(C) correctness: return at the root of the tree",
+    "name": "AVL: Search and swap",
+    "specificationDescription": "M-C",
+    "scenario": "Return at the root of the tree",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -27,10 +29,7 @@
         "stateSpacePostProcessing": false
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/binary_search_and_swap_C"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

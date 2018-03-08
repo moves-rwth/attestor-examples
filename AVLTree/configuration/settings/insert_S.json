@@ -1,5 +1,7 @@
 {
-    "scenario": "(S) shape: balanced tree in final states",
+    "name": "AVL: Insertion",
+    "specificationDescription": "M-S",
+    "scenario": "Prove that the result is a balanced tree again",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -27,10 +29,7 @@
         "garbageCollection": false
     },
     "output": {
-        "enabled": true,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/insert_S"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

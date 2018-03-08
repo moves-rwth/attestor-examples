@@ -1,5 +1,7 @@
 {
-    "scenario": "(S) shape",
+    "name": "AVL: Search and swap",
+    "specificationDescription": "M-S",
+    "scenario": "Tree is balanced upon termination",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -26,10 +28,7 @@
         "garbageCollection": false
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/binary_search_and_swap_subtrees"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

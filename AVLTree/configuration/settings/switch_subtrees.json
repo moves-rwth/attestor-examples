@@ -1,5 +1,7 @@
 {
-    "scenario": "memory safety",
+    "name": "AVL: Switch subtrees",
+    "specificationDescription": "M",
+    "scenario": "Prove memory safety",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -22,17 +24,10 @@
     "options": {
         "maximalStateSpace": 5000,
         "abstractionDistance": 1,
-        "aggressiveAbstractionThreshold": 5,
-        "mode": "indexed",
-        "logging": false,
-        "stateRefinement": [
-            "balance"
-        ]
+        "mode": "indexed"
     },
     "output": {
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/switch_subtrees"
-        }
+        "enabled":true
     },
     "modelChecking": {}
 }

@@ -13,7 +13,7 @@ import de.rwth.i2.attestor.main.Attestor;
  * Every benchmark may be additionally tagged with expected results, e.g. the expected total number of states,
  * model-checking results, etc. If executing a benchmark leads to different results, an error is raised.
  */
-public class CAV2018Examples {
+public class Benchmarks {
 
     @Benchmark
     public void lindstromTreeTraversal_M(){

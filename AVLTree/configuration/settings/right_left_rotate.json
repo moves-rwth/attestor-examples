@@ -1,5 +1,7 @@
 {
-    "scenario": "Memory safety",
+    "name": "AVL: Left-Right Rotation",
+    "specificationDescription": "M",
+    "scenario": "Prove memory safety",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -25,10 +27,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": true,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/right_left_rotate"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

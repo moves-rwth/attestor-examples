@@ -1,5 +1,7 @@
 {
-    "scenario": "(S) shape: balanced tree in final states",
+    "name": "AVL: List to AVLTree",
+    "specificationDescription": "M-S",
+    "scenario": "Prove that the tree is balanced upon termination",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -28,10 +30,7 @@
         "garbageCollection": false
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/list_to_avl_S"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

@@ -1,5 +1,7 @@
 {
-    "scenario": "(S) shape: balanced tree for all states",
+    "name": "AVL: minimal value",
+    "specificationDescription": "M-S",
+    "scenario": "Invariant: Balanced tree",
     "input": {
         "program": {
             "classpath": "configuration/code",

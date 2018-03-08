@@ -1,5 +1,7 @@
 {
-    "scenario": "memory safety",
+    "name": "AVL: List to AVLTree",
+    "specificationDescription": "M",
+    "scenario": "Prove memory safety",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -27,10 +29,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/list_to_avl"
-        }
+        "enabled": true
     },
     "modelChecking": {}
 }

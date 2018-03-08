@@ -1,5 +1,7 @@
 {
-    "scenario": "(C) correctness: return to root of the tree",
+    "name": "AVL: Search and back to root",
+    "specificationDescription": "M-C",
+    "scenario": "Return at the root of the tree",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -25,10 +27,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/binary_search_and_back_C"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

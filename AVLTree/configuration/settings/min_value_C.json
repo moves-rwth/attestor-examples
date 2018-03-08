@@ -1,5 +1,7 @@
 {
-    "scenario": "(C) correctness: return value is leftmost leaf in the tree",
+    "name": "AVL: minimal value",
+    "specificationDescription": "M-C",
+    "scenario": "Prove that return value is leftmost leaf in the tree",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -26,10 +28,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/min_value_C"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

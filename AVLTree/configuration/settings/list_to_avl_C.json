@@ -1,5 +1,7 @@
 {
-    "scenario": "(C) correctness: end of list has reached",
+    "name": "AVL: List to AVLTree",
+    "specificationDescription": "M-C",
+    "scenario": "Prove that the end of the list is reached upon termination",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -27,10 +29,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/list_to_avl_C"
-        }
+        "enabled": true
     },
     "modelChecking": {
         "enabled": true,

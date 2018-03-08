@@ -1,5 +1,7 @@
 {
-    "scenario": "memory safety",
+    "name": "AVL: minimal value",
+    "specificationDescription": "M",
+    "scenario": "Prove memory safety",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -26,10 +28,7 @@
         "mode": "indexed"
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/avltree/min_value"
-        }
+        "enabled": false
     },
     "modelChecking": {}
 }
