@@ -1,0 +1,106 @@
+name,property,states,generation,mc,verification,total
+AVL: Binary search,M,192,0.118,0.000,0.119,0.997
+AVL: Binary search,M-C,192,0.118,0.023,0.143,1.051
+AVL: Binary search,M-S,192,0.204,0.019,0.229,1.105
+AVL: Binary search,M-S (final),192,0.195,0.019,0.219,1.123
+AVL: Insertion,M,6120,2.180,0.000,2.181,3.102
+AVL: Insertion,M-S,10386,3.436,0.106,3.549,4.420
+AVL: Left-Right Rotation,M,1539,0.888,0.000,0.889,1.774
+AVL: Left Rotation,M,201,0.198,0.000,0.199,1.129
+AVL: List to AVLTree,M,7166,2.699,0.000,2.699,3.657
+AVL: List to AVLTree,M-C,7166,2.842,0.025,2.869,3.816
+AVL: List to AVLTree,M-S,7166,2.264,0.026,2.296,3.232
+AVL: maximal value,M,71,0.086,0.000,0.086,0.999
+AVL: minimal value,M,220,0.213,0.000,0.214,1.128
+AVL: minimal value,M-C,220,0.219,0.022,0.243,1.179
+AVL: minimal value,M-S,220,0.283,0.019,0.308,1.255
+AVL: minimal value,M-S (final),220,0.286,0.019,0.309,1.255
+AVL: Rebalance,M,4926,2.443,0.000,2.444,3.359
+AVL: Rebalance,M-C,4926,2.527,0.141,2.670,3.626
+AVL: Rebalance,M-S,4926,2.753,0.076,2.836,3.797
+AVL: Left-Right Rotation,M,1534,1.088,0.049,1.139,2.112
+AVL: Right Rotation,M,201,0.219,0.000,0.220,1.203
+AVL: Search and back to root,M,455,0.219,0.000,0.220,1.209
+AVL: Search and back to root,M-C,455,0.212,0.009,0.222,1.251
+AVL: Search and back to root,M-S,455,0.232,0.014,0.253,1.193
+AVL: Search and swap,M,4104,1.344,0.000,1.345,2.284
+AVL: Search and swap,M-C,4104,1.213,0.046,1.260,2.306
+AVL: Search and swap,M-S,4104,1.627,0.087,1.721,2.691
+DSW Tree Traversal,M,1334,0.452,0.000,0.452,1.240
+AVL Tree binary search,M,192,0.128,0.000,0.129,1.098
+AVL Tree binary search,M-S,192,0.220,0.020,0.245,1.198
+SLL Bubblesort,M,287,0.141,0.000,0.141,0.977
+Delete element from SLL,M,152,0.104,0.000,0.104,0.900
+Build and insert into DLL,M,379,0.215,0.000,0.215,1.037
+DLL insertion sort 1,M,4302,1.803,0.000,1.803,2.616
+DLL insertion sort 2,M,1332,0.713,0.000,0.713,1.537
+SLL insertsort,M,369,0.173,0.000,0.173,0.973
+Build and reverse DLL,M,277,0.198,0.000,0.198,0.975
+Construct and reverse SLL,M,95,0.095,0.000,0.095,0.920
+Construct and reverse SLL,M-R,95,0.094,0.007,0.115,0.976
+Construct and reverse SLL,M-S,95,0.112,0.013,0.126,0.963
+Build list of cyclic lists,M,313,0.183,0.000,0.183,1.008
+Build and traverse cyclic DLL,M,104,0.122,0.000,0.122,0.936
+Build and traverse SLL with head ptr,M,111,0.114,0.000,0.114,0.898
+Build and traverse tree,M,44,0.061,0.000,0.061,0.910
+Faulty DLL reversal that first traverses the list,M-C-X,93,0.173,0.015,0.189,1.100
+Find last element of DLL,M-C-Y,46,0.123,0.015,0.138,1.031
+SLL find middle element,M,75,0.070,0.000,0.070,0.837
+SLL find middle element,M-N,456,0.182,0.027,0.210,1.064
+SLL find middle element,M-R,89,0.100,0.017,0.131,0.944
+SLL find middle element,M-R-X,65,0.108,0.012,0.132,0.947
+SLL find middle element,M-S,98,0.114,0.017,0.131,0.996
+SLL find middle element,M-V,384,0.154,0.030,0.185,1.052
+SLL find middle element,M-C-X,421,0.223,0.036,0.259,1.134
+AVL Tree insertion,M,10388,4.055,0.000,4.056,5.013
+AVL Tree insertion,M-S,10388,3.755,0.120,3.881,4.866
+AVL Tree leftmost insertion,M,6120,2.194,0.000,2.194,3.160
+AVL Tree leftmost insertion,M-S,6120,2.129,0.053,2.189,3.194
+Lindstrom algorithm,M-C,229,0.129,0.012,0.143,0.908
+Lindstrom algorithm,M,229,0.134,0.000,0.134,0.959
+Lindstrom algorithm,M-N,67941,9.360,9.121,18.481,19.417
+Lindstrom algorithm,M-S,229,0.175,0.070,0.245,1.053
+Lindstrom algorithm,M-V,2583,0.540,0.104,0.644,1.548
+Build tree and traverse recursively,M,1170,0.349,0.000,0.349,1.148
+Build tree and traverse recursively,M-S,1170,0.301,0.012,0.314,1.196
+Reverse SLL recursively,M,148,0.076,0.000,0.076,0.824
+Reverse SLL recursively,M-N-X,2195,0.142,0.020,0.162,1.032
+Reverse SLL recursively,M-S,148,0.079,0.011,0.091,0.854
+Reverse SLL recursively,M-V-X,1074,0.108,0.018,0.126,0.975
+Recursive tree traversal,M,222,0.117,0.000,0.117,0.980
+Recursive tree traversal,M-N,295904,10.349,0.072,10.420,11.583
+Recursive tree traversal,M-S,972,0.192,0.011,0.203,1.025
+DLL reversal,M-C-X,86,0.191,0.027,0.219,1.155
+Reverse DLL,M,70,0.077,0.000,0.077,0.952
+Reverse DLL,M-N-X,1332,1.069,0.064,1.134,2.248
+DLL reversal,M-R,113,0.164,0.011,0.196,1.060
+Reverse DLL,M-S,70,0.092,0.035,0.128,0.983
+Reverse DLL,M-S-X,35,0.103,0.026,0.129,1.025
+Reverse DLL,M-V,572,0.168,0.029,0.196,1.238
+Reverse SLL,M,46,0.058,0.000,0.058,0.816
+Reverse SLL,M-N-X,383,0.201,0.024,0.225,1.135
+Reverse SLL,M-R,76,0.095,0.011,0.120,0.948
+Reverse SLL,M-S,46,0.079,0.013,0.092,0.920
+Reverse SLL,M-V,170,0.083,0.014,0.097,1.034
+AVL Tree binary search and back to root,M-C,455,0.226,0.009,0.236,1.233
+AVL Tree binary search and back to root,M,455,0.218,0.000,0.219,1.173
+AVL Tree binary search and back to root,M-S,455,0.217,0.011,0.233,1.257
+AVL Tree binary search swap,M-C,4104,1.322,0.084,1.407,2.395
+AVL Tree search and swap,M,4104,1.399,0.000,1.400,2.254
+AVL Tree search and swap,M-S,4104,1.534,0.083,1.623,2.578
+Skip list insert,M,330,0.189,0.000,0.189,1.064
+Skip list insert,M,302,0.169,0.000,0.169,1.035
+AVL Tree transform SLL to AVL Tree,M-C,7166,2.780,0.031,2.813,3.838
+AVL Tree transform SLL to AVL Tree,M,7166,2.694,0.000,2.694,3.703
+AVL Tree transform SLL to AVL Tree,M-S,7166,2.720,0.029,2.754,3.805
+Traverse DLL,M-S,38,0.076,0.025,0.102,0.973
+SLL traversal,M,13,0.038,0.000,0.038,0.865
+SLL traversal,M-N,97,0.073,0.003,0.076,0.928
+SLL traversal,M-R,44,0.074,0.009,0.095,0.877
+SLL traversal,M-S,23,0.059,0.011,0.070,0.907
+SLL traversal,M-V,47,0.033,0.011,0.044,0.902
+Faulty SLL traversal,M-X,19,0.053,0.011,0.064,0.886
+Recursive SLL construction,M,103,0.085,0.000,0.085,0.864
+Recursive SLL traversal,M,82,0.076,0.000,0.076,0.899
+Recursive zip to SLLs,M,575,0.174,0.000,0.174,1.071
+Recursive tree traversal,M,1170,0.318,0.000,0.318,1.123
