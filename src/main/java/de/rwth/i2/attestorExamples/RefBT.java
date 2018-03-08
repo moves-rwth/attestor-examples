@@ -19,9 +19,9 @@ public class RefBT {
     @Benchmark
     public void getLeftmostChild() {
         BenchmarkHelper.builder()
-                .expectTotalStates(21)
-                .expectMainProcedureStates(21)
-                .expectFinalStates(1)
+                .expectTotalStates(22)
+                .expectMainProcedureStates(22)
+                .expectFinalStates(2)
                 .build()
                 .run();
     }

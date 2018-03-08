@@ -23,7 +23,7 @@
     "options": {
         "abstractionDistance": 1,
         "garbageCollection": false,
-        "checkCounterexamples":true
+        "verifyCounterexamples":true
     },
     "output": {
         "enabled": true

@@ -197,9 +197,9 @@ public class CAV2018Examples {
     @Benchmark
     public void searchAndSwapAVLTree_M() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3855)
-                .expectMainProcedureStates(920)
-                .expectFinalStates(1)
+                .expectTotalStates(4104)
+                .expectMainProcedureStates(907)
+                .expectFinalStates(7)
                 .build()
                 .run();
     }
@@ -207,9 +207,9 @@ public class CAV2018Examples {
     @Benchmark
     public void searchAndSwapAVLTree_S() {
         BenchmarkHelper.builder()
-                .expectTotalStates(3855)
-                .expectMainProcedureStates(920)
-                .expectFinalStates(1)
+                .expectTotalStates(4104)
+                .expectMainProcedureStates(907)
+                .expectFinalStates(7)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -304,9 +304,9 @@ public class CAV2018Examples {
     @Benchmark
     public void traverseSLL_V(){
         BenchmarkHelper.builder()
-                .expectTotalStates(46)
-                .expectMainProcedureStates(46)
-                .expectFinalStates(1)
+                .expectTotalStates(47)
+                .expectMainProcedureStates(47)
+                .expectFinalStates(2)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -337,9 +337,9 @@ public class CAV2018Examples {
     @Benchmark
     public void reverseSLL_V(){
         BenchmarkHelper.builder()
-                .expectTotalStates(169)
-                .expectMainProcedureStates(169)
-                .expectFinalStates(1)
+                .expectTotalStates(170)
+                .expectMainProcedureStates(170)
+                .expectFinalStates(2)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -348,9 +348,9 @@ public class CAV2018Examples {
     @Benchmark
     public void reverseSLL_NX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(268)
-                .expectMainProcedureStates(268)
-                .expectFinalStates(4)
+                .expectTotalStates(383)
+                .expectMainProcedureStates(383)
+                .expectFinalStates(6)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
                 .build()
@@ -401,7 +401,6 @@ public class CAV2018Examples {
                 .run();
     }
 
-    
     @Benchmark
     public void recursiveReverseSLL_NX(){
         BenchmarkHelper.builder()
@@ -409,7 +408,7 @@ public class CAV2018Examples {
                 .expectMainProcedureStates(139)
                 .expectFinalStates(8)
                 .expectLTLResults(false)
-                //.expectNoCounterexamples(1)
+                .expectNoCounterexamples(1)
                 .build()
                 .run();
     }
@@ -645,7 +644,7 @@ public class CAV2018Examples {
     @Benchmark
     public void faultyReverseDLL_CX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(106)
+                .expectTotalStates(93)
                 .expectMainProcedureStates(9)
                 .expectFinalStates(2)
                 .expectLTLResults(false)
@@ -657,8 +656,8 @@ public class CAV2018Examples {
     @Benchmark
     public void findLastDLL_CY(){
         BenchmarkHelper.builder()
-                .expectTotalStates(55)
-                .expectMainProcedureStates(55)
+                .expectTotalStates(46)
+                .expectMainProcedureStates(46)
                 .expectFinalStates(2)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(0)
@@ -692,8 +691,8 @@ public class CAV2018Examples {
     @Benchmark
     public void reverseDLL_CX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(70)
-                .expectMainProcedureStates(70)
+                .expectTotalStates(86)
+                .expectMainProcedureStates(86)
                 .expectFinalStates(1)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
@@ -716,9 +715,9 @@ public class CAV2018Examples {
     @Benchmark
     public void reverseDLL_V(){
         BenchmarkHelper.builder()
-                .expectTotalStates(569)
-                .expectMainProcedureStates(569)
-                .expectFinalStates(5)
+                .expectTotalStates(572)
+                .expectMainProcedureStates(572)
+                .expectFinalStates(8)
                 .expectLTLResults(true)
                 .build()
                 .run();
@@ -727,8 +726,8 @@ public class CAV2018Examples {
     @Benchmark
     public void reverseDLL_NX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(1508)
-                .expectMainProcedureStates(1508)
+                .expectTotalStates(1332)
+                .expectMainProcedureStates(1332)
                 .expectFinalStates(15)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
@@ -769,8 +768,8 @@ public class CAV2018Examples {
     @Benchmark
     public void findMiddleSLL_VX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(508)
-                .expectMainProcedureStates(508)
+                .expectTotalStates(421)
+                .expectMainProcedureStates(421)
                 .expectFinalStates(11)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
@@ -781,8 +780,8 @@ public class CAV2018Examples {
     @Benchmark
     public void findMiddleSLL_RX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(52)
-                .expectMainProcedureStates(52)
+                .expectTotalStates(65)
+                .expectMainProcedureStates(65)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
                 .build()
@@ -792,8 +791,8 @@ public class CAV2018Examples {
     @Benchmark
     public void reverseDLL_SX(){
         BenchmarkHelper.builder()
-                .expectTotalStates(36)
-                .expectMainProcedureStates(36)
+                .expectTotalStates(35)
+                .expectMainProcedureStates(35)
                 .expectFinalStates(1)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
