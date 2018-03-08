@@ -1,5 +1,5 @@
 {
-    "name": "AVL: Search and back to root",
+    "name": "AVL: Search and swap",
     "specificationDescription": "M",
     "scenario": "Prove memory safety",
     "input": {

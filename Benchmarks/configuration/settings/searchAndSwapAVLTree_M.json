@@ -1,5 +1,5 @@
 {
-    "name": "AVL Tree search swap moving back",
+    "name": "AVL Tree search and swap",
     "scenario": "Verify memory safety while searching an element and swapping subtrees while moving back to root.",
     "specificationDescription": "M",
     "input": {

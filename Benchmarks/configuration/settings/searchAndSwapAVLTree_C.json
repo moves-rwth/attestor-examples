@@ -1,5 +1,5 @@
 {
-    "name": "AVL Tree binary search and back to root",
+    "name": "AVL Tree binary search swap",
     "scenario": "Verify that the algorithm returns at the root of the tree.",
     "specificationDescription": "M-C",
     "input": {

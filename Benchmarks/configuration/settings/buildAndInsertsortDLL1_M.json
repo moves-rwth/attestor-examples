@@ -1,5 +1,5 @@
 {
-    "name": "DLL insertion sort",
+    "name": "DLL insertion sort 1",
     "scenario": "Analyzing memory safety of a Java version of Forester test 'dll_insertsort1.c'. Originals are found at https://github.com/kdudka/predator.",
     "specificationDescription": "M",
     "input": {
