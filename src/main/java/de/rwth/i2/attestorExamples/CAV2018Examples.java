@@ -803,8 +803,8 @@ public class CAV2018Examples {
     @Benchmark
     public void traverseSLL_X(){
         BenchmarkHelper.builder()
-                .expectTotalStates(22)
-                .expectMainProcedureStates(22)
+                .expectTotalStates(19)
+                .expectMainProcedureStates(19)
                 .expectFinalStates(1)
                 .expectLTLResults(false)
                 .expectNoCounterexamples(1)
