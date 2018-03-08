@@ -1,6 +1,7 @@
 {
-    "name": "M",
+    "name": "Recursive SLL traversal",
     "scenario": "Analyzing memory safety of a recursive SLL traversal.",
+    "specificationDescription": "M",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -20,10 +21,7 @@
         "abstractionDistance": 1
     },
     "output": {
-        "enabled": false,
-        "stateSpace": {
-            "path": "../attestor-examples-output/recursive/sll_rec_traversal"
-        }
+        "enabled": false
     },
     "modelChecking": {}
 }

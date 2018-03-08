@@ -1,6 +1,7 @@
 {
-    "name": "M",
+    "name": "Recursive tree traversal",
     "scenario": "Analyzing memory safety of a recursive binary tree traversal.",
+    "specificationDescription": "M",
     "input": {
         "program": {
             "classpath": "configuration/code",
@@ -20,12 +21,7 @@
         "abstractionDistance": 1
     },
     "output": {
-        "enabled": true,
-        "stateSpace": {
-            "path": "../attestor-examples-output/recursive/tree_rec_traversal"
-        },
-        "contractsForInspection":{
-             "path": "../attestor-examples-output/recursive/tree_rec_traversal"
+        "enabled": true
         }
     },
     "modelChecking": {}
