@@ -1,0 +1,36 @@
+{
+    "name": "AVL Tree binary search",
+    "scenario": "Verify that the heap is a balanced binary tree at every program location.",
+    "specificationDescription": "M-S",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "AVLTree",
+            "method": "binarySearch"
+        },
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "AVLTreeGrammar.json"
+            ]
+        },
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "AVLTree.json",
+            "description": "A general balanced AVL tree"
+        },
+        "predefinedGrammars": []
+    },
+    "options": {
+        "maximalStateSpace": 500,
+        "abstractionDistance": 0,
+        "mode": "indexed"
+    },
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {
+        "enabled": true,
+        "formulae": "G { btree }"
+    }
+}

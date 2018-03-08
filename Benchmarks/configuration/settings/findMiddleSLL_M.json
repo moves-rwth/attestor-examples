@@ -1,0 +1,30 @@
+{
+    "name": "SLL find middle element",
+    "scenario": "Verify memory safety.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "SLLFindMiddle",
+            "method": "findMiddle"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "SLList",
+                "definition": "configuration/grammar/RenameSLL.java"
+            }
+        ],
+        "initialState": {
+            "path": "configuration/inputs",
+            "file": "SLL.json"
+        }
+    },
+    "options": {
+        "abstractionDistance": 1
+    },
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
+}

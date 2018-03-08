@@ -1,0 +1,63 @@
+{
+    "variables": [
+        {
+            "name": "null",
+            "target": 0
+        },
+        {
+            "name": "false",
+            "target": 1
+        },
+        {
+            "name": "1",
+            "target": 2
+        },
+        {
+            "name": "true",
+            "target": 2
+        },
+        {
+            "name": "0",
+            "target": 1
+        },
+        {
+            "name": "@parameter0:",
+            "target": 3
+        }
+    ],
+    "nodes": [
+        {
+            "number": 1,
+            "type": "NULL"
+        },
+        {
+            "number": 1,
+            "type": "int"
+        },
+        {
+            "number": 1,
+            "type": "int"
+        },
+        {
+            "number": 1,
+            "type": "SLL"
+        }
+    ],
+    "hyperedges": [
+        {
+            "label": "RefSLList",
+            "tentacles": [
+                3,
+                0
+            ]
+        }
+    ],
+    "externals": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "selectors": []
+}
+}

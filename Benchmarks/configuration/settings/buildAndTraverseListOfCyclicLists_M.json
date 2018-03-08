@@ -1,0 +1,27 @@
+{
+    "name": "Build list of cyclic lists",
+    "scenario": "Analyzing memory safety of a Java version of Forester test 'sll-listofclists.c'. Originals are found at https://github.com/kdudka/predator.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "ListOfCyclicLists",
+            "method": "main"
+        },
+        "userDefinedGrammar": {
+            "path": "configuration/grammar",
+            "files": [
+                "ListOfCyclicLists.json"
+            ]
+        },
+        "predefinedGrammars": [],
+        "initialState": {}
+    },
+    "options": {
+        "abstractionDistance": 1
+    },
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
+}

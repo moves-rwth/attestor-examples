@@ -1,0 +1,27 @@
+{
+    "name": "Build and reverse DLL",
+    "scenario": "Verify memory safety of a Java version of Forester test 'dll-rev.c'. Originals are found at https://github.com/kdudka/predator.",
+    "specificationDescription": "M",
+    "input": {
+        "program": {
+            "classpath": "configuration/code",
+            "class": "DLLBuildAndReverse",
+            "method": "main"
+        },
+        "userDefinedGrammar": {},
+        "predefinedGrammars": [
+            {
+                "type": "DLList",
+                "definition": "configuration/grammar/RenameDLL.java"
+            }
+        ],
+        "initialState": {}
+    },
+    "options": {
+        "abstractionDistance": 1
+    },
+    "output": {
+        "enabled": true
+    },
+    "modelChecking": {}
+}
