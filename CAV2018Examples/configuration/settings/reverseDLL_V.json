@@ -21,7 +21,7 @@
         }
     },
     "options": {
-        "abstractionDistance": 1
+        "abstractionDistance": 1,
     },
     "output": {
         "enabled": true

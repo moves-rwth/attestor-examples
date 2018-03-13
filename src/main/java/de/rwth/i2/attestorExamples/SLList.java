@@ -9,11 +9,12 @@ import de.rwth.i2.attestor.main.Attestor;
  *
  */
 public class SLList {
+
     @Benchmark
     public void reverseSLList() {
         BenchmarkHelper.builder()
-                .expectTotalStates(90)
-                .expectMainProcedureStates(47)
+                .expectTotalStates(93)
+                .expectMainProcedureStates(49)
                 .expectFinalStates(1)
                 .build()
                 .run();

@@ -1,6 +1,6 @@
 {
     "name": "SLL find middle element",
-    "scenario": "Disprobve that every element is accessed by variable slow.",
+    "scenario": "Disprove that every element is accessed by variable slow.",
     "specificationDescription": "M-C-X",
     "input": {
         "program": {
@@ -21,7 +21,8 @@
         }
     },
     "options": {
-        "abstractionDistance": 1
+        "abstractionDistance": 1,
+        "verifyCounterexamples":true
     },
     "output": {
         "enabled": true

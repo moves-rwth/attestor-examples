@@ -22,7 +22,8 @@
     },
     "options": {
         "abstractionDistance": 1,
-        "garbageCollection": false
+        "garbageCollection": false,
+        "verifyCounterexamples":true
     },
     "output": {
         "enabled": true

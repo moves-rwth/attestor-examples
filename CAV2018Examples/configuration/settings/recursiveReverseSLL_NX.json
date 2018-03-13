@@ -23,7 +23,8 @@
     "options": {
         "abstractionDistance": 1,
         "garbageCollection": false,
-        "stateSpacePostProcessing":false
+        "stateSpacePostProcessing":false,
+        "verifyCounterexamples":false
     },
     "output": {
         "enabled": true,
