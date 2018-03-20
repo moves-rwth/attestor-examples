@@ -1,0 +1,11 @@
+# Benchmark: M-C-X
+--description "Counterexample for final position"
+--classpath "configuration/code"
+--class "DLList"
+--method "traverseInverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "(GF {terminated} -> F ({ pos != null } & X{terminated}))"
+--admissible-abstraction
+--canonical

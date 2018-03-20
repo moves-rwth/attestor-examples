@@ -1,0 +1,12 @@
+# Benchmark: AVL Tree insertion
+# Specification: M
+--description "Verify memory safety"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "insert"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTreeWithThis.json"
+--admissible-abstraction
+--no-garbage-collector
+--max-state-space 6000

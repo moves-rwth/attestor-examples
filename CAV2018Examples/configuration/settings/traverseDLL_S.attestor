@@ -1,0 +1,12 @@
+# Benchmark: Traverse DLL
+# Specification: M-S
+--description "Prove that the result is a doubly-linked list again."
+--classpath "configuration/code"
+--class "DLList"
+--method "traverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--model-checking "(GF {terminated} -> GF { L(RefDLList) })"
+--admissible-abstraction
+--no-garbage-collector

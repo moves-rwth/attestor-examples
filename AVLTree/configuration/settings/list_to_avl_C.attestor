@@ -1,0 +1,12 @@
+--description "(C) correctness: end of list has reached"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "sllToAVLTree"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--predefined-grammar "SLList"
+--rename ListNode=List next=next
+--initial "configuration/inputs/emptyInput.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { return == null }))"
+--admissible-abstraction
+--max-state-space 6000

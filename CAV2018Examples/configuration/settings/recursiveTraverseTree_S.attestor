@@ -1,0 +1,11 @@
+# Benchmark: Recursive tree traversal
+# Specification: M-S
+--description "Prove that the tree structure is not broken."
+--classpath "configuration/code"
+--class "RecursiveTreeTraverse"
+--method "traverse"
+--predefined-grammar "BT"
+--rename BTNode=Tree left=left right=right
+--initial "configuration/inputs/BinaryTree.json"
+--model-checking "G { L(RefBT) }"
+--admissible-abstraction

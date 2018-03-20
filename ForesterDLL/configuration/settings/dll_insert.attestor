@@ -1,0 +1,8 @@
+# Benchmark: M
+--description "Analyzing memory safety of a Java version of Forester test 'dll-insert.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "DLLInsert"
+--method "main"
+--predefined-grammar "DLList"
+--rename DLListNode=DLL next=next prev=prev
+--admissible-abstraction

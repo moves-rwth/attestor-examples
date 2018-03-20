@@ -1,0 +1,10 @@
+# Benchmark: DSW Tree Traversal
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'tree-dsw.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "TreeDSW"
+--method "main"
+--predefined-grammar "BT" 
+--rename BTNode=Tree left=left right=right
+--admissible-abstraction
+--max-state-space 10000

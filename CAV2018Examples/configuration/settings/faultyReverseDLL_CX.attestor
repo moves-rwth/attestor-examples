@@ -1,0 +1,12 @@
+# Benchmark: Faulty DLL reversal that first traverses the list
+# Specification: M-C-X
+--description "Provide a counterexample that the result is not null upon termination."
+--classpath "configuration/code"
+--class "DLList"
+--method "faultyReverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--model-checking "(GF {terminated} -> F ({ return == null } & {terminated}))"
+--admissible-abstraction
+--canonical

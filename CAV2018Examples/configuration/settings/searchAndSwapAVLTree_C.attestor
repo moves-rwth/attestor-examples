@@ -1,0 +1,12 @@
+# Benchmark: AVL Tree binary search and back to root
+# Specification: M-C
+--description "Verify that the algorithm returns at the root of the tree."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "searchAndSwap"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTree.json"
+--model-checking "G ({terminated} -> { return.parent == null })"
+--admissible-abstraction
+--no-garbage-collector

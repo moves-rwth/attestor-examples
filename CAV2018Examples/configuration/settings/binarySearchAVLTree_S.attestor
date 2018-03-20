@@ -1,0 +1,11 @@
+# Benchmark: AVL Tree binary search
+# Specification: M-S
+--description "Verify that the heap is a balanced binary tree at every program location."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "binarySearch"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTree.json"
+--model-checking "G { btree }"
+--max-state-space 500

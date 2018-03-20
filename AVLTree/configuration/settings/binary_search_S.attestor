@@ -1,0 +1,9 @@
+--description "(S) shape: balanced tree for all states"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "binarySearch"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/balanced_tree.json"
+--model-checking "G { btree }"
+--max-state-space 500

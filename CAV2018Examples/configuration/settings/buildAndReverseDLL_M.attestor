@@ -1,0 +1,9 @@
+# Benchmark: Build and reverse DLL
+# Specification: M
+--description "Verify memory safety of a Java version of Forester test 'dll-rev.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "DLLBuildAndReverse"
+--method "main"
+--predefined-grammar "DLList"
+--rename DLListNode=DLL next=next prev=prev
+--admissible-abstraction

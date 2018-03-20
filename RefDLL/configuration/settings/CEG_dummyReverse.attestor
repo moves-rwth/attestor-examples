@@ -1,0 +1,11 @@
+# Benchmark: M-C-X
+--description "Counterexample test with procedure calls"
+--classpath "configuration/code"
+--class "DLList"
+--method "dummyReverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "(GF {terminated} -> F ({ return == null } & {terminated}))"
+--admissible-abstraction
+--canonical

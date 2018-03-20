@@ -1,0 +1,9 @@
+# Benchmark: Recursive zip to SLLs
+# Specification: M
+--description "Analyzing memory safety of a recursive SLL zip method."
+--classpath "configuration/code"
+--class "SLLRecZip"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--admissible-abstraction

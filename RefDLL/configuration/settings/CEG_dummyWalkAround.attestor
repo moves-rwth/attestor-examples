@@ -1,0 +1,11 @@
+# Benchmark: M-C-X
+--description "Counterexample with nested procedures"
+--classpath "configuration/code"
+--class "DLList"
+--method "dummyWalkAround"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "(GF {terminated} -> F ({ return == null } & {terminated}))"
+--admissible-abstraction
+--canonical

@@ -1,0 +1,11 @@
+# Benchmark: Lindstrom algorithm
+# Specification: M-S
+--description "Verify that the heap is a binary tree again upon termination."
+--classpath "configuration/code"
+--class "Lindstrom"
+--method "traverse"
+--predefined-grammar "BT"
+--rename BTNode=Tree left=left right=right
+--initial "configuration/inputs/BinaryTree.json"
+--model-checking "(GF {terminated} -> GF { L(RefBT) })"
+--max-state-space 100000

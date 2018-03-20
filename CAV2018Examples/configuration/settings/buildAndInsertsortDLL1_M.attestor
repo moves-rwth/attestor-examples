@@ -1,0 +1,10 @@
+# Benchmark: DLL insertion sort
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'dll_insertsort1.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "DLLBuildAndInsertsort1"
+--method "main"
+--predefined-grammar "DLList"
+--rename DLListNode=DLL next=next prev=prev
+--admissible-abstraction
+--max-state-space 10000

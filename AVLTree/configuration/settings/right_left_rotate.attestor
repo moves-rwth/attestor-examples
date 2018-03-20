@@ -1,0 +1,10 @@
+--description "Memory safety"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "rotateRightLeft"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/before_right_left.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { return != null }))"
+--admissible-abstraction
+--max-state-space 2000

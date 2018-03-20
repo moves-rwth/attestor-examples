@@ -1,0 +1,10 @@
+# Benchmark: AVL Tree search swap moving back
+# Specification: M
+--description "Verify memory safety while searching an element and swapping subtrees while moving back to root."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "searchAndSwap"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTree.json"
+--admissible-abstraction

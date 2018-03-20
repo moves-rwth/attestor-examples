@@ -1,0 +1,12 @@
+# Benchmark: Reverse DLL
+# Specification: M-N-X
+--description "Provide a counterexample proving that the reverse list is not the same list as the input list."
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--model-checking "( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
+--admissible-abstraction
+--canonical

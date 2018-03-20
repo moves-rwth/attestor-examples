@@ -1,0 +1,13 @@
+--description "(S) shape: balanced tree in final states"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "sllToAVLTree"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--predefined-grammar "SLList"
+--rename ListNode=List next=next
+--initial "configuration/inputs/emptyInput.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--no-garbage-collector
+--max-state-space 6000

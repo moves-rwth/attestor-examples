@@ -1,0 +1,9 @@
+# Benchmark: M
+--description "memory safety"
+--classpath "configuration/code"
+--class "BTNodeAlt"
+--method "getLeftmostChild"
+--predefined-grammar "BT"
+--rename BTNode=BTNodeAlt left=leftAlt right=rightAlt
+--initial "configuration/inputs/btalt.json"
+--admissible-abstraction

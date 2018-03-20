@@ -1,0 +1,12 @@
+# Benchmark: SLL find middle element
+# Specification: M-S
+--description "Verify that the heap is always a list."
+--classpath "configuration/code"
+--class "SLLFindMiddle"
+--method "findMiddle"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "G { L(RefSLList) }"
+--admissible-abstraction
+--no-garbage-collector

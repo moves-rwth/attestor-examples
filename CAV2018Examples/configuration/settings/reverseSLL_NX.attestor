@@ -1,0 +1,13 @@
+# Benchmark: Reverse SLL
+# Specification: M-N-X
+--description "Provide a counterexample showing that the reversed list is not the same list as the initial one."
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "G({ terminated } -> {identicNeighbours})"
+--admissible-abstraction
+--canonical
+--no-garbage-collector

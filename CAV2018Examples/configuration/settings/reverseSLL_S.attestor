@@ -1,0 +1,12 @@
+# Benchmark: Reverse SLL
+# Specification: M-S
+--description "Verify that the result is an SLL again upon termination. "
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "G ({terminated} -> { L(RefSLList) })"
+--admissible-abstraction
+--no-garbage-collector

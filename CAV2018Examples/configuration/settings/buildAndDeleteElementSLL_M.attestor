@@ -1,0 +1,9 @@
+# Benchmark: Delete element from SLL
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'sll-delete.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "SLLBuildAndDeleteElement"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--admissible-abstraction

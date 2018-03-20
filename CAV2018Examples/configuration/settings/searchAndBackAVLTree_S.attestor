@@ -1,0 +1,11 @@
+# Benchmark: AVL Tree binary search and back to root
+# Specification: M-S
+--description "Verify that the heap is a balanced binary tree upon termination."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "searchAndBack"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTree.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--max-state-space 2000

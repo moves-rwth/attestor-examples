@@ -1,0 +1,11 @@
+# Benchmark: Construct and reverse SLL
+# Specification: M-R
+--description "Verify that null is reachable from head upon termination."
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--model-checking "F (X {terminated} -> {isReachable(head,null,[next])})"
+--admissible-abstraction
+--no-garbage-collector

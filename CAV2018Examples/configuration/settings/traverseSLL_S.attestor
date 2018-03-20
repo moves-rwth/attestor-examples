@@ -1,0 +1,12 @@
+# Benchmark: SLL traversal
+# Specification: M-S
+--description "Verify that the heap is always a list."
+--classpath "configuration/code"
+--class "SLLTraverse"
+--method "traverse"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "G { L(RefSLList) }"
+--admissible-abstraction
+--no-garbage-collector

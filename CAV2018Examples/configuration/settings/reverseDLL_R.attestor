@@ -1,0 +1,12 @@
+# Benchmark: DLL reversal
+# Specification: M-R
+--description "Prove that initially head reaches tail via next pointers and tail reaches head via prev pointers. Also prove the reverse upon termination."
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLLHeadTail.json"
+--model-checking "XX ( {isReachable(head,tail,[nextAlt])} & {isReachable(tail,head,[prevAlt])})"
+--model-checking " F (X {terminated} -> ( {isReachable(head,tail,[prevAlt])} & {isReachable(tail,head,[nextAlt])}))"
+--admissible-abstraction

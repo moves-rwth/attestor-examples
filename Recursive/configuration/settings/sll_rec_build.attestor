@@ -1,0 +1,9 @@
+# Benchmark: Recursive SLL construction
+# Specification: M
+--description "Analyzing memory safety of a recursive SLL constructor."
+--classpath "configuration/code"
+--class "SLLRecBuild"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--admissible-abstraction

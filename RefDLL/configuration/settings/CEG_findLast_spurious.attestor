@@ -1,0 +1,11 @@
+# Benchmark: M-C-Y
+--description "Spurious counterexample test"
+--classpath "configuration/code"
+--class "DLList"
+--method "findLast"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "F {terminated}"
+--admissible-abstraction
+--canonical

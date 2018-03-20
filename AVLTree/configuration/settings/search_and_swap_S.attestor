@@ -1,0 +1,10 @@
+--description "(S) shape"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "searchAndSwap"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/balanced_tree.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--no-garbage-collector

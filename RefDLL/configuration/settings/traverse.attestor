@@ -1,0 +1,9 @@
+# Benchmark: M
+--description "Memory safety"
+--classpath "configuration/code"
+--class "DLList"
+--method "traverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dll.json"
+--admissible-abstraction

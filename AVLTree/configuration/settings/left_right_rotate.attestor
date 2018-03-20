@@ -1,0 +1,9 @@
+--description "memory safety"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "rotateLeftRight"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/before_left_right_2.json"
+--admissible-abstraction
+--max-state-space 2000

@@ -1,0 +1,12 @@
+# Benchmark: DLL reversal
+# Specification: M-C-X
+--description "Provide a counterexample showing that pos might be null upon termination."
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--model-checking "(GF {terminated} -> F ({ pos != null } & X{terminated}))"
+--admissible-abstraction
+--canonical

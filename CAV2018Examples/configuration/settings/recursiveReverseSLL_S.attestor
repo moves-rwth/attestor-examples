@@ -1,0 +1,12 @@
+# Benchmark: Reverse SLL recursively
+# Specification: M-S
+--description "Verify that the result is a list again."
+--classpath "configuration/code"
+--class "SLLRecursiveReverse"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "G ({terminated} -> { L(RefSLList) })"
+--admissible-abstraction
+--no-garbage-collector

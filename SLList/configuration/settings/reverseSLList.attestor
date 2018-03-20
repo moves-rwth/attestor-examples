@@ -1,0 +1,8 @@
+# Benchmark: Reverse SLL
+# Specification: M
+--description "Verify memory safety using a custom grammar."
+--classpath "configuration/code"
+--class "SLList"
+--method "main"
+--grammar "configuration/grammar/SLList.json"
+--admissible-abstraction

@@ -1,0 +1,10 @@
+# Benchmark: M-R
+--description "tba"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sllHeadTail.json"
+--model-checking "(X {isReachable(head,tail,[nextAlt])} & F (X {terminated} -> {isReachable(tail,head,[nextAlt])}))"
+--admissible-abstraction

@@ -1,0 +1,11 @@
+# Benchmark: M-C-X
+--description "Counterexample for return value"
+--classpath "configuration/code"
+--class "DLList"
+--method "walkAround"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "(GF {terminated} -> F ({ return == null } & {terminated}))"
+--admissible-abstraction
+--canonical

@@ -1,0 +1,8 @@
+# Benchmark: Build list of cyclic lists
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'sll-listofclists.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "ListOfCyclicLists"
+--method "main"
+--grammar "configuration/grammar/ListOfCyclicLists.json"
+--admissible-abstraction

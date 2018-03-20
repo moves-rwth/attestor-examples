@@ -1,0 +1,11 @@
+# Benchmark: M-N
+--description "same list after reversal (expected to fail)"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sll.json"
+--model-checking "FG ! {identicNeighbours}"
+--admissible-abstraction
+--canonical

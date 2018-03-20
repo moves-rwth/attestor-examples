@@ -1,0 +1,12 @@
+# Benchmark: Find last element of DLL
+# Specification: M-C-Y
+--description "Fails to prove termination. All counterexamples are spurious. Errors in console output are thus expected."
+--classpath "configuration/code"
+--class "DLList"
+--method "findLast"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--model-checking "F {terminated}"
+--admissible-abstraction
+--canonical

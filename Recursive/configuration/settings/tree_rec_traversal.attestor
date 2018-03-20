@@ -1,0 +1,9 @@
+# Benchmark: Recursive tree traversal
+# Specification: M
+--description "Analyzing memory safety of a recursive binary tree traversal."
+--classpath "configuration/code"
+--class "TreeRecTraverse"
+--method "main"
+--predefined-grammar "BT"
+--rename BTNode=Tree left=left right=right
+--admissible-abstraction

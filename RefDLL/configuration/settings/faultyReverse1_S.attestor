@@ -1,0 +1,12 @@
+# Benchmark: Faulty DLL reversal
+# Specification: M-S-X
+--description "Verify that the result is a DLL again. This is expected to fail."
+--classpath "configuration/code"
+--class "DLList"
+--method "faultyReverse1"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNullHeadTail.json"
+--model-checking "(GF {terminated} -> GF { L(RefDLList) })"
+--admissible-abstraction
+--canonical

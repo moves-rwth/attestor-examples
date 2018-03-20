@@ -1,0 +1,12 @@
+# Benchmark: SLL find middle element
+# Specification: M-R-X
+--description "Get a counterexample for a faulty implementation."
+--classpath "configuration/code"
+--class "SLLFindMiddle"
+--method "findMiddleFaulty"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "G ({fast != slow} -> {isReachable(slow,fast,[next])})"
+--admissible-abstraction
+--canonical

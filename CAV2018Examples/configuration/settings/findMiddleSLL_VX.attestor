@@ -1,0 +1,12 @@
+# Benchmark: SLL find middle element
+# Specification: M-C-X
+--description "Disprove that every element is accessed by variable slow."
+--classpath "configuration/code"
+--class "SLLFindMiddle"
+--method "findMiddle"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "(GF {terminated} -> GF {visited(slow)})"
+--admissible-abstraction
+--canonical

@@ -1,0 +1,8 @@
+# Benchmark: M
+--description "Analyzing memory safety of a Java version of Forester test 'sll-insert-sort.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "SLLInsertSort"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--admissible-abstraction

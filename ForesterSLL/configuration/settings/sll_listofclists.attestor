@@ -1,0 +1,7 @@
+# Benchmark: M
+--description "Analyzing memory safety of a Java version of Forester test 'sll-listofclists.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "SLLListOfCLists"
+--method "main"
+--grammar "configuration/grammar/LSLL.json"
+--admissible-abstraction

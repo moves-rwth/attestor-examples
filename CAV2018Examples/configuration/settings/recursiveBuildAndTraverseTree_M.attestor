@@ -1,0 +1,9 @@
+# Benchmark: Build tree and traverse recursively
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "RecursiveTreeTraverse"
+--method "main"
+--predefined-grammar "BT"
+--rename BTNode=Tree left=left right=right
+--admissible-abstraction

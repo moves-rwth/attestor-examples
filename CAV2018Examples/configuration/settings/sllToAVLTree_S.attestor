@@ -1,0 +1,14 @@
+# Benchmark: AVL Tree transform SLL to AVL Tree
+# Specification: M-S
+--description "Verify that the heap is a balanced binary tree upon termination."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "sllToAVLTree"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--predefined-grammar "SLList"
+--rename ListNode=List next=next
+--initial "configuration/inputs/emptyInput.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--max-state-space 6000

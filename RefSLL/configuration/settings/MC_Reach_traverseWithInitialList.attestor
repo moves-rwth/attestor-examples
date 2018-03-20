@@ -1,0 +1,10 @@
+# Benchmark: M-R
+--description "tail reachable from head via nextAlt selectors upon termination"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "traverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sllHeadTail.json"
+--model-checking "F (X {terminated} -> {isReachable(head,tail,[nextAlt])})"
+--admissible-abstraction

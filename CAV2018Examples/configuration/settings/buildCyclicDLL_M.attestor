@@ -1,0 +1,9 @@
+# Benchmark: Build and traverse cyclic DLL
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'cdll.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "BuildCyclicDLL"
+--method "main"
+--predefined-grammar "DLList"
+--rename DLListNode=DLL next=next prev=prev
+--admissible-abstraction

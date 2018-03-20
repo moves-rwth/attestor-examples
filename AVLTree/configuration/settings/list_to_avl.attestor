@@ -1,0 +1,11 @@
+--description "memory safety"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "sllToAVLTree"
+--grammar "configuration/grammar/avltree.json"
+--initial "configuration/inputs/emptyInput.json"
+--indexed
+--predefined-grammar "SLList"
+--rename ListNode=List next=next
+--admissible-abstraction
+--max-state-space 6000

@@ -1,0 +1,12 @@
+# Benchmark: AVL Tree search swap moving back
+# Specification: M-S
+--description "Verify that the result is a balanced binary tree while searching an element and swapping subtrees while moving back to root."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "searchAndSwap"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTree.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--no-garbage-collector

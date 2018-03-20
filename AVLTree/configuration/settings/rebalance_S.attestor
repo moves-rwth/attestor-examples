@@ -1,0 +1,10 @@
+--description "(S) shape: balanced tree in final states"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "rebalance"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/inserted.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--max-state-space 2000

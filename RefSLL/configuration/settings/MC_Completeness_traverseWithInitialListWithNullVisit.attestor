@@ -1,0 +1,10 @@
+# Benchmark: M-V
+--description "sll + null visited by cur"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "traverseListWithNullVisit"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sllHeadTail.json"
+--model-checking "(GF {terminated} -> F {visited(cur)})"
+--admissible-abstraction

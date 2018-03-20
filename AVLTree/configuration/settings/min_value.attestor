@@ -1,0 +1,9 @@
+--description "memory safety"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "minValue"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/balanced_tree.json"
+--admissible-abstraction
+--max-state-space 500

@@ -1,0 +1,11 @@
+# Benchmark: M-X
+--description "check whether elements have the same pointer structure after reversal (expected to fail)"
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dll.json"
+--model-checking "( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
+--admissible-abstraction
+--canonical

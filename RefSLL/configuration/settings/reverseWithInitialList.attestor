@@ -1,0 +1,9 @@
+# Benchmark: M
+--description "memory safety"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sll.json"
+--admissible-abstraction

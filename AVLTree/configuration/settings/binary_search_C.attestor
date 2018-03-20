@@ -1,0 +1,9 @@
+--description "(C) correctness: return element placed on tree element or null"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "binarySearch"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/balanced_tree.json"
+--model-checking "G ({terminated} -> { return == return })"
+--max-state-space 500

@@ -1,0 +1,10 @@
+# Benchmark: M-N
+--description "(C) output DLL is exactly the same as the input DLL"
+--classpath "configuration/code"
+--class "DLList"
+--method "traverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dll.json"
+--model-checking "( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
+--admissible-abstraction

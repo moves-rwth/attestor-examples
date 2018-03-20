@@ -1,0 +1,9 @@
+# Benchmark: SLL Bubblesort
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'sll-bubblesort.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "SLLBuildAndBubblesort"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--admissible-abstraction

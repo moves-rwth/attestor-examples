@@ -1,0 +1,12 @@
+# Benchmark: M-C-X
+--description "Counterexample generation test after list reversal"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sllHeadTail.json"
+--model-checking "(GF {terminated} -> F ({ terminated } & { cur != null }))"
+--admissible-abstraction
+--canonical
+--no-garbage-collector

@@ -1,0 +1,10 @@
+# Benchmark: M-V
+--description "(C) every DLL element has been accessed by variable pos"
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "(GF {terminated} -> F {visited(pos)})"
+--admissible-abstraction

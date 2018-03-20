@@ -1,0 +1,12 @@
+# Benchmark: Reverse DLL
+# Specification: M-S-X
+--description "Prove that the result is a doubly-linked list again."
+--classpath "configuration/code"
+--class "DLList"
+--method "faultyReverse2"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--model-checking "(GF {terminated} -> GF { L(RefDLList) })"
+--admissible-abstraction
+--canonical

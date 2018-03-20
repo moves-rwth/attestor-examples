@@ -1,0 +1,11 @@
+# Benchmark: Reverse SLL
+# Specification: M-R
+--description "Verify that the head reachable from tail upon termination. "
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLLWithTail.json"
+--model-checking "(X {isReachable(head,tail,[next])} & F (X {terminated} -> {isReachable(tail,head,[next])}))"
+--admissible-abstraction

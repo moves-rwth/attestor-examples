@@ -1,0 +1,10 @@
+# Benchmark: M-R
+--description "reachability"
+--classpath "configuration/code"
+--class "DLList"
+--method "traverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dll.json"
+--model-checking "F (X {terminated} -> ({isReachable(head,tail,[nextAlt])} & {isReachable(tail,head,[prevAlt])}))"
+--admissible-abstraction

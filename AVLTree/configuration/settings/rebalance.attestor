@@ -1,0 +1,9 @@
+--description "Memory safety"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "rebalance"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/inserted.json"
+--admissible-abstraction
+--max-state-space 2000

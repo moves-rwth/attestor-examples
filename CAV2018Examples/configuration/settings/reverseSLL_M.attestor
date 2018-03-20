@@ -1,0 +1,10 @@
+# Benchmark: Reverse SLL
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--admissible-abstraction

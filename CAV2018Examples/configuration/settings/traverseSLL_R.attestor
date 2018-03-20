@@ -1,0 +1,11 @@
+# Benchmark: SLL traversal
+# Specification: M-R
+--description "Verify that the list tail is reachable from the head upon termination."
+--classpath "configuration/code"
+--class "SLLTraverse"
+--method "traverse"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLLWithTail.json"
+--model-checking "F (X {terminated} -> {isReachable(head,tail,[next])})"
+--admissible-abstraction

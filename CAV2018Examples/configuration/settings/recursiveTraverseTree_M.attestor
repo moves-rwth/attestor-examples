@@ -1,0 +1,11 @@
+# Benchmark: Recursive tree traversal
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "RecursiveTreeTraverse"
+--method "traverse"
+--predefined-grammar "BT"
+--rename BTNode=Tree left=left right=right
+--initial "configuration/inputs/BinaryTree.json"
+--admissible-abstraction
+--post-processing

@@ -1,0 +1,10 @@
+# Benchmark: AVL Tree binary search and back to root
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "searchAndBack"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTree.json"
+--max-state-space 2000

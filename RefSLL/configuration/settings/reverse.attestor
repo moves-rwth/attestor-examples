@@ -1,0 +1,8 @@
+# Benchmark: M
+--description "memory safety: build and reverse list"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--admissible-abstraction

@@ -1,0 +1,11 @@
+# Benchmark: Reverse SLL
+# Specification: M-V
+--description "Verify that every element is eventually accessed by variable current."
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--model-checking "(GF {terminated} -> F {visited(current)})"
+--admissible-abstraction

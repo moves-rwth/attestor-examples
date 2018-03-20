@@ -1,0 +1,11 @@
+# Benchmark: M-S
+--description "(S) shape: doubly-linked list"
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dll.json"
+--model-checking "(GF {terminated} -> GF { L(RefDLList) })"
+--admissible-abstraction
+--no-garbage-collector

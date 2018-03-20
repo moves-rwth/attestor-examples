@@ -1,0 +1,11 @@
+# Benchmark: M-S
+--description "SLL shape upon termination"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sllHeadTail.json"
+--model-checking "(GF {terminated} -> GF { L(RefSLList) })"
+--admissible-abstraction
+--no-garbage-collector

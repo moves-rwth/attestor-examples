@@ -1,0 +1,10 @@
+# Benchmark: SLL find middle element
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "SLLFindMiddle"
+--method "findMiddle"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--initial "configuration/inputs/SLL.json"
+--admissible-abstraction

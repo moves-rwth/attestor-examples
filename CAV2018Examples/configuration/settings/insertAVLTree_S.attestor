@@ -1,0 +1,13 @@
+# Benchmark: AVL Tree insertion
+# Specification: M-S
+--description "Verify that the heap is a balanced binary tree upon termination"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "insert"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTreeWithThis.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--no-garbage-collector
+--max-state-space 6000

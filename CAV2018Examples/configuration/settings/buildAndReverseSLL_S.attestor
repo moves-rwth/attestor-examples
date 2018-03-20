@@ -1,0 +1,11 @@
+# Benchmark: Construct and reverse SLL
+# Specification: M-S
+--description "Show that the result is a list again."
+--classpath "configuration/code"
+--class "SLLReverse"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--model-checking "G ({terminated} -> { L(RefSLList) })"
+--admissible-abstraction
+--no-garbage-collector

@@ -1,0 +1,13 @@
+# Benchmark: AVL Tree transform SLL to AVL Tree
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "sllToAVLTree"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--predefined-grammar "SLList"
+--rename ListNode=List next=next
+--initial "configuration/inputs/emptyInput.json"
+--admissible-abstraction
+--max-state-space 6000

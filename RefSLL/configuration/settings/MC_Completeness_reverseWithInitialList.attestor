@@ -1,0 +1,10 @@
+# Benchmark: M-V
+--description "all elements visited by 'current' upon termination"
+--classpath "configuration/code"
+--class "ListNodeAlt"
+--method "reverseList"
+--predefined-grammar "SLList"
+--rename ListNode=ListNodeAlt next=nextAlt
+--initial "configuration/inputs/sll.json"
+--model-checking "(GF {terminated} -> F {visited(current)})"
+--admissible-abstraction

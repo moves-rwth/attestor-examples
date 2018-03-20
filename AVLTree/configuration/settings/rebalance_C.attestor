@@ -1,0 +1,10 @@
+--description "(C) correctness: return placed on tree element"
+--classpath "configuration/code"
+--class "AVLTree"
+--method "rebalance"
+--grammar "configuration/grammar/avltree.json"
+--indexed
+--initial "configuration/inputs/inserted.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { return != null }))"
+--admissible-abstraction
+--max-state-space 2000

@@ -1,0 +1,8 @@
+# Benchmark: Skip list insert
+# Specification: M
+--description "Analyzing memory safety of a Java version of Forester test 'skip-list-3.c'. Originals are found at https://github.com/kdudka/predator."
+--classpath "configuration/code"
+--class "SkipList"
+--method "slRandomInsert"
+--grammar "configuration/grammar/SkipList.json"
+--initial "configuration/inputs/skiplist.json"

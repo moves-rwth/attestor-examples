@@ -1,0 +1,9 @@
+# Benchmark: Recursive SLL traversal
+# Specification: M
+--description "Analyzing memory safety of a recursive SLL traversal."
+--classpath "configuration/code"
+--class "SLLRecTraverse"
+--method "main"
+--predefined-grammar "SLList"
+--rename ListNode=SLL next=next
+--admissible-abstraction

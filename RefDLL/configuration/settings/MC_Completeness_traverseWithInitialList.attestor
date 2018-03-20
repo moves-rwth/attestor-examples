@@ -1,0 +1,10 @@
+# Benchmark: M-V
+--description "Every DLL element has been accessed by variable cur"
+--classpath "configuration/code"
+--class "DLList"
+--method "traverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/dllNull.json"
+--model-checking "(GF {terminated} -> F {visited(cur)})"
+--admissible-abstraction

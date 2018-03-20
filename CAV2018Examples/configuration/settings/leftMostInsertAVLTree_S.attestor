@@ -1,0 +1,13 @@
+# Benchmark: AVL Tree leftmost insertion
+# Specification: M-S
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "AVLTree"
+--method "leftMostInsert"
+--grammar "configuration/grammar/AVLTreeGrammar.json"
+--indexed
+--initial "configuration/inputs/AVLTreeWithThis.json"
+--model-checking "(GF { terminated } -> F ({ terminated } & { btree }))"
+--admissible-abstraction
+--no-garbage-collector
+--max-state-space 6000

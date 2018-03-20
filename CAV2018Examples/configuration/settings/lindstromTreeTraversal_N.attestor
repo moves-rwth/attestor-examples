@@ -1,0 +1,12 @@
+# Benchmark: Lindstrom algorithm
+# Specification: M-N
+--description "Verify that the tree upon termination coincides with the input tree."
+--classpath "configuration/code"
+--class "Lindstrom"
+--method "traverse"
+--predefined-grammar "BT"
+--rename BTNode=Tree left=left right=right
+--initial "configuration/inputs/BinaryTree.json"
+--model-checking "( G F { terminated } -> F ( { terminated } & { identicNeighbours } ) )"
+--no-rule-collapsing
+--max-state-space 500000

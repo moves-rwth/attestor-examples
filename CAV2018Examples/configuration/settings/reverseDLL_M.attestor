@@ -1,0 +1,10 @@
+# Benchmark: Reverse DLL
+# Specification: M
+--description "Verify memory safety."
+--classpath "configuration/code"
+--class "DLList"
+--method "reverse"
+--predefined-grammar "DLList"
+--rename DLListNode=DLList next=nextAlt prev=prevAlt
+--initial "configuration/inputs/DLL.json"
+--admissible-abstraction
