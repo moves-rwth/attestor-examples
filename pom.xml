@@ -5,7 +5,7 @@
 
     <groupId>de.rwth.i2</groupId>
     <artifactId>attestor-examples</artifactId>
-    <version>0.3.5-SNAPSHOT</version>
+    <version>0.3.6-SNAPSHOT</version>
     <packaging>jar</packaging>
 
 
@@ -52,7 +52,7 @@
 
 
     <properties>
-        <benchmarkHelper.version>0.3.5-SNAPSHOT</benchmarkHelper.version>
+        <benchmarkHelper.version>0.3.6-SNAPSHOT</benchmarkHelper.version>
         <jmh.version>1.19</jmh.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
@@ -138,28 +138,6 @@
                         <configuration>
                             <arguments>
                                 <argument>-Dattestor.ne=true</argument>
-                                <argument>-Dattestor.checkExpectedSize=true</argument>
-                                <argument>-Djmh.ignoreLock=true</argument>
-                                <argument>-jar</argument>
-                                <argument>${project.build.directory}${file.separator}benchmarks.jar</argument>
-                                <argument>-bm</argument>
-                                <argument>ss</argument>
-                                <argument>-f</argument>
-                                <argument>1</argument>
-                                <argument>-rf</argument>
-                                <argument>text</argument>
-                                <argument>-foe</argument>
-                                <argument>true</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>runWithReport</id>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>
                                 <argument>-Dattestor.checkExpectedSize=true</argument>
                                 <argument>-Djmh.ignoreLock=true</argument>
                                 <argument>-jar</argument>
