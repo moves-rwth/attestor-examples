@@ -1,0 +1,8 @@
+--description "walkthrough example. Memory safety"
+--name "prepend SLL"
+--classpath "configuration/code"
+--class "SLList"
+--method "prependSLList"
+--grammar "configuration/grammar/SLList.json"
+--initial "configuration/inputs/list.json"
+--export
