@@ -19,4 +19,14 @@ public class SLList {
                 .build()
                 .run();
     }
+
+    @Benchmark
+    public void SIDreverseSLList() {
+        BenchmarkHelper.builder()
+                .expectTotalStates(93)
+                .expectMainProcedureStates(49)
+                .expectFinalStates(1)
+                .build()
+                .run();
+    }
 }

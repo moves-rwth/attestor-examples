@@ -82,6 +82,17 @@ public class RefSLL {
 	}
 
 	@Benchmark
+	public void MC_Shape_SH_traverseWithInitialList(){
+		BenchmarkHelper.builder()
+				.expectTotalStates(29)
+				.expectMainProcedureStates(29)
+				.expectFinalStates(1)
+				.expectLTLResults(true)
+				.build()
+				.run();
+	}
+
+	@Benchmark
 	public void MC_Completeness_reverseWithInitialList(){
 		BenchmarkHelper.builder()
 				.expectTotalStates(170)

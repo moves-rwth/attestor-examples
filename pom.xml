@@ -5,7 +5,7 @@
 
     <groupId>de.rwth.i2</groupId>
     <artifactId>attestor-examples</artifactId>
-    <version>0.3.9-SNAPSHOT</version>
+    <version>0.40</version>
     <packaging>jar</packaging>
 
 
@@ -52,7 +52,7 @@
 
 
     <properties>
-        <benchmarkHelper.version>0.3.9-SNAPSHOT</benchmarkHelper.version>
+        <benchmarkHelper.version>0.40</benchmarkHelper.version>
         <jmh.version>1.19</jmh.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>benchmarks</uberjar.name>

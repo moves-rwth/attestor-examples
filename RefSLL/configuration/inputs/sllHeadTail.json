@@ -1,39 +1,37 @@
 		{
 			"nodes":[
 			{
-				"type":"NULL",
-				"number":1
-			},
-			{
 				"type":"ListNodeAlt",
 				"number":2
+			},{
+				"type":"NULL",
+				"number":1
 			}
 			],
 			"externals":[],
 			"variables":[
 				{
 					"name":"null",
-					"target":0
+					"target":2
 				},{
+                    "name":"tail",
+                    "target":0
+                },{
                     "name":"@parameter0:",
                     "target":1,
-                },
-                {
-                    "name":"tail",
-                    "target":2
                 }
 			],
 			"selectors":[
 			     {
 			         "label":"nextAlt",
-					 "origin":2,
-					 "target":0
+					 "origin":0,
+					 "target":2
 			     }
 			],
 			"hyperedges":[
 				{
 					"label":"RefSLList",
-					"tentacles":[1,2]
+					"tentacles":[1,0]
 				},
 			]
 		}

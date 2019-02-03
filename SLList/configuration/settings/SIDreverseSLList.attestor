@@ -1,0 +1,9 @@
+# Benchmark: Reverse SLL
+# Specification: M
+--verbose
+--description "Verify memory safety using a custom grammar."
+--classpath "configuration/code"
+--class "SLList"
+--method "main"
+--inductive-predicates "configuration/grammar/SLList.sid"
+--admissible-abstraction
